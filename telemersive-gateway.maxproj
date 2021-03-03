@@ -44,16 +44,6 @@
 			"enabled" : 1,
 			"includeincollective" : 1
 		}
-,
-		"1" : 		{
-			"bootpath" : "/",
-			"projectrelativepath" : "../../../../../../../../..",
-			"label" : "",
-			"recursive" : 1,
-			"enabled" : 1,
-			"includeincollective" : 0
-		}
-
 	}
 ,
 	"detailsvisible" : 1,
