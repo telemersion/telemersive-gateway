@@ -9,15 +9,15 @@ You need to have [MaxMSP](https://cycling74.com/) installed. There is no need fo
 
 
 ### Download
-To install the Telemersive Gateway: clone the gitlab repository into a directory called 'TeSApp'. It is important, that the directory is called this way, otherwise the MaxProject will not work:
+To install the Telemersive Gateway: clone the gitlab repository into a directory called 'telemersive-gateway'. It is important, that the directory is called this way, otherwise the MaxProject will not work:
 
 ```
-git clone https://gitlab.zhdk.ch/TPF/tesapp.git
+git clone https://gitlab.zhdk.ch/telemersive-bus/telemersive-gateway.git
 ```
 
 ### Startup for the first time
 1. open MaxMSP
-2. Go to File > Open.. and navigate to 'TelemersiveGateway.maxproj'
+2. Go to File > Open.. and navigate to 'telemersive-gateway.maxproj'
 3. Inside the new Project Window locate 'TelemersiveGateway.maxpat' and double click it
 4. You might be confronted with different popup windows mentioning missing dependencies:
     * Missing MaxPackages like
