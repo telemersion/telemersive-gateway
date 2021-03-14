@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 586.0, 246.0, 232.0, 591.0 ],
+		"rect" : [ 462.0, 162.0, 738.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,42 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 318.0, 228.0, 34.0, 22.0 ],
+					"text" : "sel 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 318.0, 19.5, 32.0, 22.0 ],
+					"text" : "t b b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 95.0, 298.0, 54.0, 22.0 ],
+					"text" : "deferlow"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
@@ -328,7 +364,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 299.0, 57.0, 22.0 ],
+					"patching_rect" : [ 95.0, 322.0, 57.0, 22.0 ],
 					"text" : "tosymbol"
 				}
 
@@ -404,7 +440,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 229.333333333333343, 91.0, 43.0, 22.0 ],
+					"patching_rect" : [ 229.333333333333343, 99.0, 43.0, 22.0 ],
 					"text" : "* 1000"
 				}
 
@@ -416,7 +452,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 229.333333333333343, 153.0, 29.5, 22.0 ],
+					"patching_rect" : [ 229.333333333333343, 158.0, 29.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -428,7 +464,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 277.833333333333371, 91.0, 77.0, 22.0 ],
+					"patching_rect" : [ 277.833333333333371, 99.0, 77.0, 22.0 ],
 					"text" : "loadmess #2"
 				}
 
@@ -440,8 +476,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 277.833333333333371, 120.0, 29.5, 22.0 ],
-					"text" : "+ 0"
+					"patching_rect" : [ 277.833333333333371, 127.0, 30.0, 22.0 ],
+					"text" : "* 10"
 				}
 
 			}
@@ -452,7 +488,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 229.333333333333343, 62.0, 99.0, 22.0 ],
+					"patching_rect" : [ 229.333333333333343, 70.0, 99.0, 22.0 ],
 					"text" : "receiveR roomID"
 				}
 
@@ -464,7 +500,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 140.666666666666657, 27.0, 117.0, 22.0 ],
+					"patching_rect" : [ 140.666666666666686, 19.5, 117.0, 22.0 ],
 					"text" : "receiveR serverURL"
 				}
 
@@ -485,7 +521,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 52.0, 27.0, 69.0, 47.0 ],
+					"patching_rect" : [ 52.0, 89.5, 97.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 100.0, 40.0 ],
 					"viewvisibility" : 1
@@ -499,7 +535,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 273.833333333333371, 27.0, 56.0, 22.0 ],
+					"patching_rect" : [ 487.833333333333371, 16.0, 56.0, 22.0 ],
 					"text" : "autopattr",
 					"varname" : "u181005868"
 				}
@@ -512,7 +548,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 52.0, 104.0, 35.0, 22.0 ],
+					"patching_rect" : [ 52.0, 142.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -522,8 +558,8 @@
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 4,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
 					"patching_rect" : [ 52.0, 191.0, 285.0, 22.0 ],
 					"text" : "deviceOSC_view #1 #2",
 					"varname" : "gui"
@@ -582,8 +618,39 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-16", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"order" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 1,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 3 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"midpoints" : [ 327.5, 264.0, 461.0, 264.0, 461.0, 9.5, 327.5, 9.5 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -633,8 +700,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-3", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 61.5, 228.0, 25.5, 228.0, 25.5, 11.0, 61.5, 11.0 ],
+					"midpoints" : [ 61.5, 228.0, 25.5, 228.0, 25.5, 80.0, 61.5, 80.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -655,7 +729,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-30", 1 ]
 				}
 
@@ -684,6 +758,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
 					"source" : [ "obj-7", 0 ]
 				}
@@ -706,43 +787,43 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "deviceOSC_view.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SVGButton.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceOSC_button.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceOSC_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}

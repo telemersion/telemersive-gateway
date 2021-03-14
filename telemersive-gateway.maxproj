@@ -2,7 +2,7 @@
 	"name" : "telemersive-gateway",
 	"version" : 1,
 	"creationdate" : 3688306570,
-	"modificationdate" : 3697612838,
+	"modificationdate" : 3698585798,
 	"viewrect" : [ 24.0, 103.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -44,6 +44,7 @@
 			"enabled" : 1,
 			"includeincollective" : 1
 		}
+
 	}
 ,
 	"detailsvisible" : 1,
