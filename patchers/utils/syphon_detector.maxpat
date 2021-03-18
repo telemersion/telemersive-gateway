@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 357.0, 230.0, 562.0, 503.0 ],
+		"rect" : [ 357.0, 144.0, 554.0, 494.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -686,7 +686,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-34",
-					"items" : "<empty>",
+					"items" : [ "name='GatewaySyphonRX0'", "app='uv'" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -718,7 +718,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 360.5, 447.339539000000002, 154.0, 22.0 ],
-					"text" : "sprintf name='%s' app='%s'"
+					"text" : "sprintf app='%s' name='%s'"
 				}
 
 			}
@@ -1139,7 +1139,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 210.5, 404.339539000000002, 238.0, 22.0 ],
-					"text" : "sprintf symout syphon:name='%s':app='%s'"
+					"text" : "sprintf symout syphon:app='%s':name='%s'"
 				}
 
 			}
@@ -1193,7 +1193,7 @@
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
 					"patching_rect" : [ 144.75, 304.339539000000002, 282.0, 22.0 ],
-					"text" : "route dim servername appname clear"
+					"text" : "route dim appname servername clear"
 				}
 
 			}
@@ -1603,12 +1603,12 @@
 , 			{
 				"name" : "rnbodefault",
 				"default" : 				{
-					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
+					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
+					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 					"fontsize" : [ 12.0 ],
 					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 					"fontname" : [ "Lato" ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -1628,17 +1628,15 @@
 , 			{
 				"name" : "rnbohighcontrast",
 				"default" : 				{
-					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"fontsize" : [ 13.0 ],
+					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
-					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -1649,7 +1647,9 @@
 						"proportion" : 0.5,
 						"autogradient" : 0.0
 					}
-
+,
+					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
+					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
