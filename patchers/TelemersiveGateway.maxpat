@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -86,8 +86,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -209,13 +209,13 @@
 						"styles" : [ 							{
 								"name" : "rnbodefault",
 								"default" : 								{
-									"fontname" : [ "Lato" ],
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 									"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 									"fontsize" : [ 12.0 ],
+									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+									"fontname" : [ "Lato" ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -234,17 +234,18 @@
 , 							{
 								"name" : "rnbohighcontrast",
 								"default" : 								{
+									"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 									"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+									"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"fontsize" : [ 13.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-									"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontsize" : [ 13.0 ],
 									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-									"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -254,8 +255,7 @@
 										"proportion" : 0.5,
 										"autogradient" : 0.0
 									}
-,
-									"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -345,7 +345,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 644.5, 85.0, 69.0, 21.0 ],
+					"patching_rect" : [ 644.5, 85.0, 69.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -466,8 +466,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -525,7 +525,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 300.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "213.55.241.53"
+									"text" : "195.176.29.132"
 								}
 
 							}
@@ -553,7 +553,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 200.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "192.168.1.102"
+									"text" : "10.128.96.182"
 								}
 
 							}
@@ -578,7 +578,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 359.0, 392.0, 50.0, 49.0 ],
+									"patching_rect" : [ 359.0, 392.0, 50.0, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.833333333333371, 113.5, 159.0, 22.0 ],
 									"text" : "telemersion.zhdk.ch"
@@ -805,7 +805,7 @@
 									"patching_rect" : [ 73.333333333333371, 234.5, 103.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.833333333333371, 65.5, 159.0, 22.0 ],
-									"text" : "MartinMac"
+									"text" : "WinZH_Video"
 								}
 
 							}
@@ -831,7 +831,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 500.0, 20.0, 198.0, 22.0 ],
-									"text" : "onDMRkDvaKmgi3wcaBzXkM",
+									"text" : "fL3mPe4shAZUmt5zuFqmXD",
 									"textjustification" : 1
 								}
 
@@ -911,13 +911,13 @@
 						"styles" : [ 							{
 								"name" : "rnbodefault",
 								"default" : 								{
-									"fontname" : [ "Lato" ],
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 									"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 									"fontsize" : [ 12.0 ],
+									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+									"fontname" : [ "Lato" ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -936,17 +936,18 @@
 , 							{
 								"name" : "rnbohighcontrast",
 								"default" : 								{
+									"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 									"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+									"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"fontsize" : [ 13.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-									"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontsize" : [ 13.0 ],
 									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-									"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -956,8 +957,7 @@
 										"proportion" : 0.5,
 										"autogradient" : 0.0
 									}
-,
-									"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -1014,8 +1014,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1059,7 +1059,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 168.5, 349.0, 95.0, 49.0 ],
+									"patching_rect" : [ 168.5, 349.0, 95.0, 50.0 ],
 									"saved_object_attributes" : 									{
 										"client_rect" : [ 4, 44, 358, 172 ],
 										"parameter_enable" : 0,
@@ -1094,8 +1094,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1164,7 +1164,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 89.0, 63.0, 91.0, 73.0 ],
+													"patching_rect" : [ 89.0, 63.0, 91.0, 75.0 ],
 													"text" : "window flags menu, window flags nofloat, window title, window exec"
 												}
 
@@ -1179,7 +1179,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 189.0, 76.0, 132.0, 60.0 ],
+													"patching_rect" : [ 189.0, 76.0, 132.0, 62.0 ],
 													"text" : "window flags nomenu, window flags float, window notitle, window exec, front"
 												}
 
@@ -1217,10 +1217,10 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 89.0, 5.0, 171.0, 33.0 ],
+													"patching_rect" : [ 89.0, 5.0, 171.0, 34.0 ],
 													"presentation" : 1,
 													"presentation_linecount" : 2,
-													"presentation_rect" : [ 69.0, 47.0, 171.0, 33.0 ],
+													"presentation_rect" : [ 69.0, 47.0, 171.0, 34.0 ],
 													"text" : "please wait, app is preparing preliminary configurations...."
 												}
 
@@ -1309,14 +1309,14 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 870.0, 186.0, 512.0, 480.0 ],
+										"rect" : [ 1271.0, 211.0, 512.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1400,8 +1400,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1974,13 +1974,13 @@
 , 											{
 												"name" : "rnbodefault",
 												"default" : 												{
-													"fontname" : [ "Lato" ],
 													"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 													"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 													"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 													"fontsize" : [ 12.0 ],
+													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+													"fontname" : [ "Lato" ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -1999,17 +1999,18 @@
 , 											{
 												"name" : "rnbohighcontrast",
 												"default" : 												{
+													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 													"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"fontsize" : [ 13.0 ],
 													"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"fontsize" : [ 13.0 ],
 													"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -2019,8 +2020,7 @@
 														"proportion" : 0.5,
 														"autogradient" : 0.0
 													}
-,
-													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -2063,8 +2063,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2199,7 +2199,6 @@
 													"embed" : 1,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
-													"hidden" : 1,
 													"id" : "obj-7",
 													"lockeddragscroll" : 0,
 													"maxclass" : "bpatcher",
@@ -2210,8 +2209,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2252,10 +2251,10 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 50.0, 100.0, 390.0, 33.0 ],
+																	"patching_rect" : [ 50.0, 100.0, 390.0, 34.0 ],
 																	"presentation" : 1,
 																	"presentation_linecount" : 2,
-																	"presentation_rect" : [ 0.0, 0.0, 356.0, 33.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 356.0, 34.0 ],
 																	"text" : "in order to work on windows, you need to have cygwin installed on your computer and enabled under 'externals'."
 																}
 
@@ -2283,8 +2282,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2704,13 +2703,13 @@
 , 															{
 																"name" : "rnbodefault",
 																"default" : 																{
-																	"fontname" : [ "Lato" ],
 																	"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 																	"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 																	"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 																	"fontsize" : [ 12.0 ],
+																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+																	"fontname" : [ "Lato" ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -2729,17 +2728,18 @@
 , 															{
 																"name" : "rnbohighcontrast",
 																"default" : 																{
+																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 																	"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"fontsize" : [ 13.0 ],
 																	"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"fontsize" : [ 13.0 ],
 																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -2749,8 +2749,7 @@
 																		"proportion" : 0.5,
 																		"autogradient" : 0.0
 																	}
-,
-																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 																}
 ,
 																"parentstyle" : "",
@@ -2869,13 +2868,13 @@
 , 											{
 												"name" : "rnbodefault",
 												"default" : 												{
-													"fontname" : [ "Lato" ],
 													"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 													"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 													"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 													"fontsize" : [ 12.0 ],
+													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+													"fontname" : [ "Lato" ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -2894,17 +2893,18 @@
 , 											{
 												"name" : "rnbohighcontrast",
 												"default" : 												{
+													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 													"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"fontsize" : [ 13.0 ],
 													"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"fontsize" : [ 13.0 ],
 													"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -2914,8 +2914,7 @@
 														"proportion" : 0.5,
 														"autogradient" : 0.0
 													}
-,
-													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -2947,8 +2946,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3014,9 +3013,9 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 50.0, 20.0, 550.0, 40.0 ],
+													"patching_rect" : [ 50.0, 20.0, 550.0, 41.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 184.0, 12.0, 72.0, 40.0 ],
+													"presentation_rect" : [ 184.0, 12.0, 72.0, 41.0 ],
 													"text" : "Chat"
 												}
 
@@ -3145,7 +3144,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-14",
-													"items" : [ "19:02:41", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "19:02:33", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "19:02:30", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:48:56", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:48:34", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:48:31", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:47:47", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:47:43", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:47:15", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:47:08", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:47:01", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:46:40", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:46:37", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:46:34", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:46:23", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:46:21", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:46:18", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:46:16", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:37:45", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:36:22", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:35:28", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:34:29", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:13:38", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:12:16", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:11:55", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:11:31", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:06:54", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "18:01:46", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:00:15", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "17:58:01", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "17:44:29", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "17:41:28", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "17:37:15", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "17:35:52", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "17:33:03", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "17:31:05", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "15:57:21", "GMT+0100", "[FastWinDormund]:", ">", "has", "joined", "room", ",", "15:52:51", "GMT+0100", "[FastWinDormund]:", "<", "has", "left", "room", ",", "13:21:47", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "13:20:58", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "13:20:39", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "10:58:37", "GMT+0100", "[FastWinDormund]:", ">", "has", "joined", "room", ",", "09:44:15", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room" ],
+													"items" : [ "14:14:26", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "14:09:18", "GMT+0100", "[WinZH_Video]:", "<", "has", "left", "room", ",", "14:07:48", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "14:07:29", "GMT+0100", "[WinZH_Video]:", "<", "has", "left", "room", ",", "14:05:22", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "14:05:11", "GMT+0100", "[WinZH_Video]:", "<", "has", "left", "room", ",", "14:05:02", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "13:53:33", "GMT+0100", "[WinZH_Video]:", "<", "has", "left", "room", ",", "13:46:00", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "13:45:56", "GMT+0100", "[WinZH_Video]:", "<", "has", "left", "room", ",", "13:45:49", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "13:45:42", "GMT+0100", "[WinZH_Video]:", "<", "has", "left", "room", ",", "13:42:40", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "13:42:32", "GMT+0100", "[WinZH_Video]:", "<", "has", "left", "room", ",", "13:42:26", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "13:26:18", "GMT+0100", "[WinZH_Video]:", "<", "has", "left", "room", ",", "11:44:34", "GMT+0100", "[JohannesMac]:", "<", "has", "left", "room", ",", "11:39:15", "GMT+0100", "[JohannesMac]:", ">", "has", "joined", "room", ",", "11:38:51", "GMT+0100", "[JohannesMac]:", "<", "has", "left", "room", ",", "11:25:06", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "11:23:11", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "11:09:57", "GMT+0100", "[JohannesMac]:", ">", "has", "joined", "room", ",", "19:26:12", "GMT+0100", "[MoCapZH]:", "<", "has", "left", "room", ",", "19:01:18", "GMT+0100", "[WinZH_Video]:", "<", "has", "left", "room", ",", "18:59:49", "GMT+0100", "[JohannesMac]:", "<", "has", "left", "room", ",", "18:51:10", "GMT+0100", "[WinZH_Video]:", ">", "has", "joined", "room", ",", "18:37:30", "GMT+0100", "[MoCapZH]:", ">", "has", "joined", "room", ",", "18:37:17", "GMT+0100", "[MoCapZH]:", "<", "has", "left", "room", ",", "18:24:42", "GMT+0100", "[JohannesMac]:", ">", "has", "joined", "room", ",", "18:23:59", "GMT+0100", "[JohannesMac]:", "<", "has", "left", "room", ",", "18:19:51", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "18:05:36", "GMT+0100", "[MoCapZH]:", ">", "has", "joined", "room", ",", "18:05:20", "GMT+0100", "[MoCapZH]:", "<", "has", "left", "room", ",", "17:54:08", "GMT+0100", "[MoCapZH]:", ">", "has", "joined", "room", ",", "17:53:45", "GMT+0100", "[MoCapZH]:", "<", "has", "left", "room", ",", "17:49:22", "GMT+0100", "[MoCapZH]:", ">", "has", "joined", "room", ",", "17:45:31", "GMT+0100", "[JohannesMac]:", ">", "has", "joined", "room", ",", "13:05:01", "GMT+0100", "[MartinMac]:", "<", "has", "left", "room", ",", "13:02:36", "GMT+0100", "[DortmundMac]:", ">", "has", "joined", "room", ",", "13:00:11", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "12:03:25", "GMT+0100", "[DortmundMac]:", "<", "has", "left", "room", ",", "11:57:59", "GMT+0100", "[DortmundMac]:", ">", "has", "joined", "room" ],
 													"maxclass" : "chooser",
 													"multiselect" : 0,
 													"numinlets" : 1,
@@ -3154,7 +3153,8 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 54.0, 373.0, 200.0, 122.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 3.5, 86.0, 433.0, 581.0 ]
+													"presentation_rect" : [ 3.5, 86.0, 433.0, 581.0 ],
+													"textjustification" : 0
 												}
 
 											}
@@ -3286,13 +3286,13 @@
 , 											{
 												"name" : "rnbodefault",
 												"default" : 												{
-													"fontname" : [ "Lato" ],
 													"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 													"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 													"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 													"fontsize" : [ 12.0 ],
+													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+													"fontname" : [ "Lato" ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -3311,17 +3311,18 @@
 , 											{
 												"name" : "rnbohighcontrast",
 												"default" : 												{
+													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 													"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"fontsize" : [ 13.0 ],
 													"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"fontsize" : [ 13.0 ],
 													"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -3331,8 +3332,7 @@
 														"proportion" : 0.5,
 														"autogradient" : 0.0
 													}
-,
-													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -3363,8 +3363,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3406,10 +3406,10 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 133.0, 72.0, 374.0, 33.0 ],
+													"patching_rect" : [ 133.0, 72.0, 374.0, 34.0 ],
 													"presentation" : 1,
 													"presentation_linecount" : 2,
-													"presentation_rect" : [ 46.0, 32.0, 348.0, 33.0 ],
+													"presentation_rect" : [ 46.0, 32.0, 348.0, 34.0 ],
 													"text" : "Test the (two way) connection latency between this peer and all other peers"
 												}
 
@@ -3501,7 +3501,8 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 181.0, 327.0, 200.0, 122.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 42.0, 133.0, 357.0, 256.0 ]
+													"presentation_rect" : [ 42.0, 133.0, 357.0, 256.0 ],
+													"textjustification" : 0
 												}
 
 											}
@@ -3686,8 +3687,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3900,8 +3901,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4182,8 +4183,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4655,8 +4656,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4904,8 +4905,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -5257,8 +5258,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -6046,8 +6047,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6505,13 +6506,13 @@
 , 											{
 												"name" : "rnbodefault",
 												"default" : 												{
-													"fontname" : [ "Lato" ],
 													"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 													"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 													"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 													"fontsize" : [ 12.0 ],
+													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+													"fontname" : [ "Lato" ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -6530,17 +6531,18 @@
 , 											{
 												"name" : "rnbohighcontrast",
 												"default" : 												{
+													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 													"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"fontsize" : [ 13.0 ],
 													"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"fontsize" : [ 13.0 ],
 													"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -6550,8 +6552,7 @@
 														"proportion" : 0.5,
 														"autogradient" : 0.0
 													}
-,
-													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -6583,8 +6584,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -6639,8 +6640,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -6675,6 +6676,17 @@
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-5",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 265.0, 69.0, 83.0, 22.0 ],
+																	"text" : "print scriptinfo"
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-22",
 																	"maxclass" : "newobj",
@@ -6765,10 +6777,10 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 237.0, 15.0, 150.0, 33.0 ],
+																	"patching_rect" : [ 237.0, 15.0, 150.0, 34.0 ],
 																	"presentation" : 1,
 																	"presentation_linecount" : 2,
-																	"presentation_rect" : [ 214.0, 5.0, 150.0, 33.0 ],
+																	"presentation_rect" : [ 214.0, 5.0, 150.0, 34.0 ],
 																	"text" : "generate error - only for debugging!!!"
 																}
 
@@ -7005,6 +7017,15 @@
 														"lines" : [ 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-39", 0 ],
+																	"order" : 1,
+																	"source" : [ "obj-1", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-5", 0 ],
+																	"order" : 0,
 																	"source" : [ "obj-1", 0 ]
 																}
 
@@ -7176,13 +7197,13 @@
 														"styles" : [ 															{
 																"name" : "rnbodefault",
 																"default" : 																{
-																	"fontname" : [ "Lato" ],
 																	"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 																	"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 																	"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 																	"fontsize" : [ 12.0 ],
+																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+																	"fontname" : [ "Lato" ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -7201,17 +7222,18 @@
 , 															{
 																"name" : "rnbohighcontrast",
 																"default" : 																{
+																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 																	"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"fontsize" : [ 13.0 ],
 																	"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"fontsize" : [ 13.0 ],
 																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -7221,8 +7243,7 @@
 																		"proportion" : 0.5,
 																		"autogradient" : 0.0
 																	}
-,
-																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 																}
 ,
 																"parentstyle" : "",
@@ -7261,7 +7282,7 @@
 													"patching_rect" : [ 333.0, 14.0, 260.0, 22.0 ],
 													"presentation" : 1,
 													"presentation_linecount" : 2,
-													"presentation_rect" : [ 225.0, 49.0, 117.0, 35.0 ],
+													"presentation_rect" : [ 225.0, 49.0, 117.0, 36.0 ],
 													"text" : "script npm uninstall telemersive-bus"
 												}
 
@@ -7288,7 +7309,7 @@
 													"patching_rect" : [ 142.0, 14.0, 186.0, 22.0 ],
 													"presentation" : 1,
 													"presentation_linecount" : 2,
-													"presentation_rect" : [ 116.0, 49.0, 101.0, 35.0 ],
+													"presentation_rect" : [ 116.0, 49.0, 101.0, 36.0 ],
 													"text" : "script npm install telemersive-bus"
 												}
 
@@ -7304,8 +7325,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -7539,7 +7560,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 170.0, 60.0, 83.0, 70.0 ],
+													"patching_rect" : [ 170.0, 60.0, 83.0, 72.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 208.0, 17.0, 174.0, 30.0 ],
 													"text" : "install  libraries (only once)"
@@ -7744,13 +7765,13 @@
 										"styles" : [ 											{
 												"name" : "rnbodefault",
 												"default" : 												{
-													"fontname" : [ "Lato" ],
 													"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 													"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 													"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 													"fontsize" : [ 12.0 ],
+													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+													"fontname" : [ "Lato" ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -7769,17 +7790,18 @@
 , 											{
 												"name" : "rnbohighcontrast",
 												"default" : 												{
+													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 													"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"fontsize" : [ 13.0 ],
 													"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"fontsize" : [ 13.0 ],
 													"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -7789,8 +7811,7 @@
 														"proportion" : 0.5,
 														"autogradient" : 0.0
 													}
-,
-													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -7822,8 +7843,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7866,7 +7887,6 @@
 													"embed" : 1,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
-													"hidden" : 1,
 													"id" : "obj-1",
 													"lockeddragscroll" : 0,
 													"maxclass" : "bpatcher",
@@ -7877,8 +7897,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -8157,8 +8177,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 328.0, 173.0, 247.0, 35.0 ],
-																	"text" : ";\rmax launchbrowser https://www.cygwin.com/"
+																	"patching_rect" : [ 328.0, 173.0, 247.0, 36.0 ],
+																	"text" : ";\r\nmax launchbrowser https://www.cygwin.com/"
 																}
 
 															}
@@ -8195,7 +8215,6 @@
 																	"clickthrough" : 0,
 																	"enablehscroll" : 0,
 																	"enablevscroll" : 0,
-																	"hidden" : 1,
 																	"id" : "obj-1",
 																	"lockeddragscroll" : 0,
 																	"maxclass" : "bpatcher",
@@ -8280,7 +8299,6 @@
 																"box" : 																{
 																	"fontface" : 0,
 																	"fontsize" : 13.0,
-																	"hidden" : 1,
 																	"id" : "obj-53",
 																	"keymode" : 1,
 																	"lines" : 1,
@@ -8571,13 +8589,13 @@
 , 															{
 																"name" : "rnbodefault",
 																"default" : 																{
-																	"fontname" : [ "Lato" ],
 																	"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 																	"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 																	"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 																	"fontsize" : [ 12.0 ],
+																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+																	"fontname" : [ "Lato" ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -8596,17 +8614,18 @@
 , 															{
 																"name" : "rnbohighcontrast",
 																"default" : 																{
+																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 																	"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"fontsize" : [ 13.0 ],
 																	"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"fontsize" : [ 13.0 ],
 																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -8616,8 +8635,7 @@
 																		"proportion" : 0.5,
 																		"autogradient" : 0.0
 																	}
-,
-																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 																}
 ,
 																"parentstyle" : "",
@@ -8645,8 +8663,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -8869,7 +8887,6 @@
 													"embed" : 1,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
-													"hidden" : 1,
 													"id" : "obj-22",
 													"lockeddragscroll" : 0,
 													"maxclass" : "bpatcher",
@@ -8880,8 +8897,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -9166,8 +9183,8 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 121.5, 40.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "<empty>" ],
-																		"version" : [ 0 ]
+																		"filepath" : [ "D:/00_core/NatNet2OSC/Motive2.x/NatNetThree2OSC.exe" ],
+																		"version" : [ 2 ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -9177,7 +9194,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"hidden" : 1,
 																	"id" : "obj-12",
 																	"items" : [ "off", ",", "NatNet2", ",", "NatNet3" ],
 																	"maxclass" : "umenu",
@@ -9226,8 +9242,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 534.0, 187.0, 253.0, 49.0 ],
-																	"text" : ";\rmax launchbrowser https://github.com/tecartlab/app_NatNet2OSC"
+																	"patching_rect" : [ 534.0, 187.0, 253.0, 50.0 ],
+																	"text" : ";\r\nmax launchbrowser https://github.com/tecartlab/app_NatNet2OSC"
 																}
 
 															}
@@ -9253,8 +9269,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 328.0, 173.0, 191.0, 62.0 ],
-																	"text" : ";\rmax launchbrowser https://github.com/tecartlab/app_NatNetThree2OSC"
+																	"patching_rect" : [ 328.0, 173.0, 191.0, 64.0 ],
+																	"text" : ";\r\nmax launchbrowser https://github.com/tecartlab/app_NatNetThree2OSC"
 																}
 
 															}
@@ -9291,7 +9307,6 @@
 																	"clickthrough" : 0,
 																	"enablehscroll" : 0,
 																	"enablevscroll" : 0,
-																	"hidden" : 1,
 																	"id" : "obj-1",
 																	"lockeddragscroll" : 0,
 																	"maxclass" : "bpatcher",
@@ -9376,9 +9391,9 @@
 																"box" : 																{
 																	"fontface" : 0,
 																	"fontsize" : 13.0,
-																	"hidden" : 1,
 																	"id" : "obj-53",
 																	"keymode" : 1,
+																	"linecount" : 2,
 																	"lines" : 1,
 																	"maxclass" : "textedit",
 																	"numinlets" : 1,
@@ -9388,6 +9403,7 @@
 																	"patching_rect" : [ 50.0, 252.0, 213.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 37.5, 27.0, 361.0, 22.0 ],
+																	"text" : "D:/00_core/NatNet2OSC/Motive2.x/NatNetThree2OSC.exe",
 																	"varname" : "filepath"
 																}
 
@@ -9706,13 +9722,13 @@
 , 															{
 																"name" : "rnbodefault",
 																"default" : 																{
-																	"fontname" : [ "Lato" ],
 																	"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 																	"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 																	"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 																	"fontsize" : [ 12.0 ],
+																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+																	"fontname" : [ "Lato" ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -9731,17 +9747,18 @@
 , 															{
 																"name" : "rnbohighcontrast",
 																"default" : 																{
+																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 																	"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"fontsize" : [ 13.0 ],
 																	"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"fontsize" : [ 13.0 ],
 																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -9751,8 +9768,7 @@
 																		"proportion" : 0.5,
 																		"autogradient" : 0.0
 																	}
-,
-																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 																}
 ,
 																"parentstyle" : "",
@@ -9787,8 +9803,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -10013,7 +10029,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "/Applications/_Video/uv-qt.app" ]
+																		"filepath" : [ "D:/00_core/UltraGrid/app/uv.exe" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -10029,7 +10045,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 370.0, 36.0, 63.0, 35.0 ],
+																	"patching_rect" : [ 370.0, 36.0, 63.0, 36.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 189.5, 1.0, 87.0, 22.0 ],
 																	"text" : "download 1.6+"
@@ -10044,8 +10060,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 370.0, 81.0, 184.0, 49.0 ],
-																	"text" : ";\rmax launchbrowser http://www.ultragrid.cz/download/"
+																	"patching_rect" : [ 370.0, 81.0, 184.0, 50.0 ],
+																	"text" : ";\r\nmax launchbrowser http://www.ultragrid.cz/download/"
 																}
 
 															}
@@ -10109,8 +10125,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 2,
-																			"revision" : 0,
+																			"minor" : 1,
+																			"revision" : 10,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -10418,7 +10434,7 @@
 																	"patching_rect" : [ 50.0, 283.0, 311.0, 20.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 37.5, 30.0, 361.0, 22.0 ],
-																	"text" : "/Applications/_Video/uv-qt.app",
+																	"text" : "D:/00_core/UltraGrid/app/uv.exe",
 																	"varname" : "filepath"
 																}
 
@@ -10681,13 +10697,13 @@
 , 															{
 																"name" : "rnbodefault",
 																"default" : 																{
-																	"fontname" : [ "Lato" ],
 																	"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 																	"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 																	"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 																	"fontsize" : [ 12.0 ],
+																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+																	"fontname" : [ "Lato" ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -10706,17 +10722,18 @@
 , 															{
 																"name" : "rnbohighcontrast",
 																"default" : 																{
+																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 																	"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"fontsize" : [ 13.0 ],
 																	"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"fontsize" : [ 13.0 ],
 																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -10726,8 +10743,7 @@
 																		"proportion" : 0.5,
 																		"autogradient" : 0.0
 																	}
-,
-																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 																}
 ,
 																"parentstyle" : "",
@@ -10878,13 +10894,13 @@
 , 											{
 												"name" : "rnbodefault",
 												"default" : 												{
-													"fontname" : [ "Lato" ],
 													"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 													"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 													"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 													"fontsize" : [ 12.0 ],
+													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+													"fontname" : [ "Lato" ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -10903,17 +10919,18 @@
 , 											{
 												"name" : "rnbohighcontrast",
 												"default" : 												{
+													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 													"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"fontsize" : [ 13.0 ],
 													"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"fontsize" : [ 13.0 ],
 													"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -10923,8 +10940,7 @@
 														"proportion" : 0.5,
 														"autogradient" : 0.0
 													}
-,
-													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -10957,8 +10973,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 0,
+											"minor" : 1,
+											"revision" : 10,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -11007,19 +11023,19 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"offset" : [ 0.0, 0.0 ],
-													"outlettype" : [ "", "" ],
+													"outlettype" : [ "bang", "" ],
 													"patcher" : 													{
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+														"rect" : [ 2038.0, 383.0, 773.0, 480.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -11048,6 +11064,103 @@
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-14",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "", "", "", "" ],
+																	"patching_rect" : [ 350.0, 13.0, 56.0, 22.0 ],
+																	"restore" : 																	{
+																		"enable_autojoin" : [ 0 ]
+																	}
+,
+																	"text" : "autopattr",
+																	"varname" : "u451008705"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-9",
+																	"maxclass" : "button",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "bang" ],
+																	"parameter_enable" : 0,
+																	"patching_rect" : [ 332.0, 271.0, 24.0, 24.0 ]
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-23",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "bang" ],
+																	"patching_rect" : [ 332.0, 240.5, 67.0, 22.0 ],
+																	"text" : "delay 4000"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-13",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 332.0, 208.5, 51.0, 22.0 ],
+																	"text" : "gate"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-6",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 364.0, 138.0, 46.0, 22.0 ],
+																	"text" : "route 0"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"fontsize" : 10.0,
+																	"hidden" : 1,
+																	"id" : "obj-11",
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 378.0, 177.5, 142.0, 18.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 18.0, 37.0, 105.0, 18.0 ],
+																	"text" : "enable auto join"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"hidden" : 1,
+																	"hint" : "automatically joins after a successfull connection",
+																	"id" : "obj-8",
+																	"maxclass" : "toggle",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "int" ],
+																	"parameter_enable" : 0,
+																	"patching_rect" : [ 332.0, 175.5, 24.0, 24.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 0.0, 37.0, 16.0, 16.0 ],
+																	"varname" : "enable_autojoin"
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-4",
 																	"maxclass" : "message",
@@ -11255,6 +11368,13 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-23", 0 ],
+																	"source" : [ "obj-13", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-19", 0 ],
 																	"source" : [ "obj-15", 0 ]
 																}
@@ -11270,6 +11390,15 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-4", 0 ],
+																	"order" : 1,
+																	"source" : [ "obj-2", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-6", 0 ],
+																	"order" : 0,
 																	"source" : [ "obj-2", 0 ]
 																}
 
@@ -11283,7 +11412,14 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-19", 0 ],
+																	"destination" : [ "obj-9", 0 ],
+																	"source" : [ "obj-23", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-11", 0 ],
 																	"order" : 0,
 																	"source" : [ "obj-4", 0 ]
 																}
@@ -11291,7 +11427,23 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-19", 0 ],
+																	"order" : 2,
+																	"source" : [ "obj-4", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-22", 0 ],
+																	"order" : 3,
+																	"source" : [ "obj-4", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-8", 0 ],
 																	"order" : 1,
 																	"source" : [ "obj-4", 0 ]
 																}
@@ -11307,7 +11459,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-1", 0 ],
-																	"order" : 2,
+																	"order" : 3,
 																	"source" : [ "obj-49", 0 ]
 																}
 
@@ -11315,7 +11467,7 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-12", 0 ],
-																	"order" : 1,
+																	"order" : 2,
 																	"source" : [ "obj-49", 0 ]
 																}
 
@@ -11323,17 +11475,140 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-15", 0 ],
+																	"order" : 1,
+																	"source" : [ "obj-49", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-6", 0 ],
 																	"order" : 0,
 																	"source" : [ "obj-49", 0 ]
 																}
 
 															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-13", 1 ],
+																	"source" : [ "obj-6", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-13", 0 ],
+																	"source" : [ "obj-8", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-56", 0 ],
+																	"source" : [ "obj-9", 0 ]
+																}
+
+															}
+ ],
+														"styles" : [ 															{
+																"name" : "AudioStatus_Menu",
+																"default" : 																{
+																	"bgfillcolor" : 																	{
+																		"type" : "color",
+																		"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+																		"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																		"angle" : 270.0,
+																		"proportion" : 0.39,
+																		"autogradient" : 0
+																	}
+
+																}
+,
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "Jamoma_highlighted_orange",
+																"default" : 																{
+																	"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+																}
+,
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "STYLE1",
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "jpatcher001",
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "rnbodefault",
+																"default" : 																{
+																	"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
+																	"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
+																	"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
+																	"fontsize" : [ 12.0 ],
+																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+																	"fontname" : [ "Lato" ],
+																	"bgfillcolor" : 																	{
+																		"type" : "color",
+																		"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																		"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																		"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
+																		"angle" : 270.0,
+																		"proportion" : 0.39,
+																		"autogradient" : 0.0
+																	}
+
+																}
+,
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "rnbohighcontrast",
+																"default" : 																{
+																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
+																	"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
+																	"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"fontsize" : [ 13.0 ],
+																	"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+																	"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+																	"bgfillcolor" : 																	{
+																		"type" : "color",
+																		"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+																		"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
+																		"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
+																		"angle" : 270.0,
+																		"proportion" : 0.5,
+																		"autogradient" : 0.0
+																	}
+
+																}
+,
+																"parentstyle" : "",
+																"multi" : 0
+															}
  ]
 													}
 ,
-													"patching_rect" : [ 373.5, 406.0, 266.0, 39.5 ],
+													"patching_rect" : [ 373.5, 389.0, 266.0, 56.5 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 99.0, 474.75, 266.0, 39.5 ],
+													"presentation_rect" : [ 99.0, 474.75, 266.0, 55.5 ],
+													"varname" : "join",
 													"viewvisibility" : 1
 												}
 
@@ -11357,14 +11632,14 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 57.0, 324.0, 640.0, 480.0 ],
+														"rect" : [ 1114.0, 388.0, 284.0, 654.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -11394,13 +11669,211 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-31",
+																	"maxclass" : "button",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "bang" ],
+																	"parameter_enable" : 0,
+																	"patching_rect" : [ 493.166666666666629, 176.5, 24.0, 24.0 ]
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-29",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 460.166666666666629, 245.0, 52.0, 22.0 ],
+																	"text" : "gate 1 0"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-19",
+																	"maxclass" : "newobj",
+																	"numinlets" : 0,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 493.166666666666629, 138.5, 79.0, 22.0 ],
+																	"text" : "r scriptReady"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"fontsize" : 10.0,
+																	"id" : "obj-27",
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 507.166666666666629, 210.0, 142.0, 18.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 16.5, 37.0, 99.0, 18.0 ],
+																	"text" : "enable auto connect"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"hint" : "connects automatically on startup",
+																	"id" : "obj-28",
+																	"maxclass" : "toggle",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "int" ],
+																	"parameter_enable" : 0,
+																	"patching_rect" : [ 460.0, 207.0, 24.0, 24.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 0.0, 38.0, 16.0, 16.0 ],
+																	"varname" : "enable_autoconnect"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-26",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 4,
+																	"outlettype" : [ "", "", "", "" ],
+																	"patching_rect" : [ 292.0, 15.0, 56.0, 22.0 ],
+																	"restore" : 																	{
+																		"enable_autoconnect" : [ 0 ],
+																		"enable_autoreconnect" : [ 0 ]
+																	}
+,
+																	"text" : "autopattr",
+																	"varname" : "u566004496"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-25",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 270.0, 285.5, 29.5, 22.0 ],
+																	"text" : "1"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-23",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "bang" ],
+																	"patching_rect" : [ 270.0, 248.5, 67.0, 22.0 ],
+																	"text" : "delay 2000"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-22",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 267.25, 107.0, 29.5, 22.0 ],
+																	"text" : "0"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-17",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 302.0, 107.0, 29.5, 22.0 ],
+																	"text" : "1"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-15",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 302.0, 148.5, 52.0, 22.0 ],
+																	"text" : "gate 1 0"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-13",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 270.0, 216.5, 51.0, 22.0 ],
+																	"text" : "gate"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-12",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 335.0, 107.0, 46.0, 22.0 ],
+																	"text" : "route 0"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"fontsize" : 10.0,
+																	"id" : "obj-11",
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 316.0, 185.5, 142.0, 18.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 145.0, 37.0, 114.0, 18.0 ],
+																	"text" : "enable auto re-connect"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"hint" : "reconnects automatically if for some reason the connection was closed.",
+																	"id" : "obj-8",
+																	"maxclass" : "toggle",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "int" ],
+																	"parameter_enable" : 0,
+																	"patching_rect" : [ 270.0, 183.5, 24.0, 24.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 128.0, 37.0, 16.0, 16.0 ],
+																	"varname" : "enable_autoreconnect"
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"comment" : "",
 																	"id" : "obj-4",
 																	"index" : 3,
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 216.0, 372.0, 30.0, 30.0 ]
+																	"patching_rect" : [ 280.5, 460.0, 30.0, 30.0 ]
 																}
 
 															}
@@ -11411,7 +11884,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 25.0, 130.0, 72.0, 22.0 ],
+																	"patching_rect" : [ 25.0, 199.0, 72.0, 22.0 ],
 																	"text" : "prepend set"
 																}
 
@@ -11423,7 +11896,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 82.0, 263.5, 66.0, 22.0 ],
+																	"patching_rect" : [ 154.0, 416.0, 66.0, 22.0 ],
 																	"text" : "disconnect"
 																}
 
@@ -11435,7 +11908,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 50.0, 308.0, 51.0, 22.0 ],
+																	"patching_rect" : [ 50.0, 416.0, 51.0, 22.0 ],
 																	"text" : "connect"
 																}
 
@@ -11447,7 +11920,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 50.0, 100.5, 87.0, 22.0 ],
+																	"patching_rect" : [ 50.0, 107.0, 87.0, 22.0 ],
 																	"text" : "prepend active"
 																}
 
@@ -11459,7 +11932,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "int" ],
-																	"patching_rect" : [ 50.0, 72.0, 29.5, 22.0 ],
+																	"patching_rect" : [ 50.0, 78.5, 29.5, 22.0 ],
 																	"text" : "!- 1"
 																}
 
@@ -11471,7 +11944,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 82.0, 70.0, 87.0, 22.0 ],
+																	"patching_rect" : [ 154.0, 107.0, 87.0, 22.0 ],
 																	"text" : "prepend active"
 																}
 
@@ -11491,7 +11964,7 @@
 																	"numoutlets" : 3,
 																	"outlettype" : [ "", "", "int" ],
 																	"parameter_enable" : 0,
-																	"patching_rect" : [ 82.0, 177.0, 97.0, 30.0 ],
+																	"patching_rect" : [ 154.0, 335.0, 97.0, 30.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 131.0, 0.0, 129.0, 35.0 ],
 																	"rounded" : 10.0,
@@ -11516,7 +11989,7 @@
 																	"numoutlets" : 3,
 																	"outlettype" : [ "", "", "int" ],
 																	"parameter_enable" : 0,
-																	"patching_rect" : [ 50.0, 218.0, 97.0, 30.0 ],
+																	"patching_rect" : [ 50.0, 339.0, 97.0, 30.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 0.0, 0.0, 128.0, 35.0 ],
 																	"rounded" : 10.0,
@@ -11548,7 +12021,7 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 50.0, 372.0, 30.0, 30.0 ]
+																	"patching_rect" : [ 50.0, 460.0, 30.0, 30.0 ]
 																}
 
 															}
@@ -11560,7 +12033,7 @@
 																	"maxclass" : "outlet",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 85.0, 372.0, 30.0, 30.0 ]
+																	"patching_rect" : [ 154.0, 460.0, 30.0, 30.0 ]
 																}
 
 															}
@@ -11568,7 +12041,30 @@
 														"lines" : [ 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-14", 0 ],
+																	"order" : 1,
 																	"source" : [ "obj-1", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-17", 0 ],
+																	"order" : 0,
+																	"source" : [ "obj-1", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-15", 1 ],
+																	"source" : [ "obj-12", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-23", 0 ],
+																	"source" : [ "obj-13", 0 ]
 																}
 
 															}
@@ -11576,6 +12072,27 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-43", 0 ],
 																	"source" : [ "obj-14", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-13", 1 ],
+																	"source" : [ "obj-15", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-15", 0 ],
+																	"source" : [ "obj-17", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-31", 0 ],
+																	"source" : [ "obj-19", 0 ]
 																}
 
 															}
@@ -11597,8 +12114,59 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-41", 0 ],
+																	"destination" : [ "obj-15", 0 ],
+																	"source" : [ "obj-22", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-25", 0 ],
+																	"source" : [ "obj-23", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-1", 0 ],
+																	"source" : [ "obj-25", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-29", 0 ],
+																	"source" : [ "obj-28", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-25", 0 ],
+																	"source" : [ "obj-29", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-22", 0 ],
+																	"order" : 0,
 																	"source" : [ "obj-3", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-41", 0 ],
+																	"order" : 1,
+																	"source" : [ "obj-3", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-29", 1 ],
+																	"source" : [ "obj-31", 0 ]
 																}
 
 															}
@@ -11611,15 +12179,7 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-2", 0 ],
-																	"order" : 2,
-																	"source" : [ "obj-42", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-5", 0 ],
+																	"destination" : [ "obj-12", 0 ],
 																	"order" : 0,
 																	"source" : [ "obj-42", 0 ]
 																}
@@ -11627,8 +12187,24 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-7", 0 ],
+																	"destination" : [ "obj-2", 0 ],
+																	"order" : 3,
+																	"source" : [ "obj-42", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-5", 0 ],
 																	"order" : 1,
+																	"source" : [ "obj-42", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-7", 0 ],
+																	"order" : 2,
 																	"source" : [ "obj-42", 0 ]
 																}
 
@@ -11658,17 +12234,118 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-13", 0 ],
+																	"source" : [ "obj-8", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-1", 0 ],
 																	"source" : [ "obj-9", 0 ]
 																}
 
 															}
+ ],
+														"styles" : [ 															{
+																"name" : "AudioStatus_Menu",
+																"default" : 																{
+																	"bgfillcolor" : 																	{
+																		"type" : "color",
+																		"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+																		"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+																		"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																		"angle" : 270.0,
+																		"proportion" : 0.39,
+																		"autogradient" : 0
+																	}
+
+																}
+,
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "Jamoma_highlighted_orange",
+																"default" : 																{
+																	"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+																}
+,
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "STYLE1",
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "jpatcher001",
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "rnbodefault",
+																"default" : 																{
+																	"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
+																	"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
+																	"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
+																	"fontsize" : [ 12.0 ],
+																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+																	"fontname" : [ "Lato" ],
+																	"bgfillcolor" : 																	{
+																		"type" : "color",
+																		"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																		"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																		"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
+																		"angle" : 270.0,
+																		"proportion" : 0.39,
+																		"autogradient" : 0.0
+																	}
+
+																}
+,
+																"parentstyle" : "",
+																"multi" : 0
+															}
+, 															{
+																"name" : "rnbohighcontrast",
+																"default" : 																{
+																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
+																	"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
+																	"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"fontsize" : [ 13.0 ],
+																	"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+																	"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+																	"bgfillcolor" : 																	{
+																		"type" : "color",
+																		"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+																		"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
+																		"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
+																		"angle" : 270.0,
+																		"proportion" : 0.5,
+																		"autogradient" : 0.0
+																	}
+
+																}
+,
+																"parentstyle" : "",
+																"multi" : 0
+															}
  ]
 													}
 ,
-													"patching_rect" : [ 25.5, 306.5, 260.0, 39.5 ],
+													"patching_rect" : [ 25.5, 306.5, 261.0, 56.5 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 99.0, 273.75, 260.0, 39.5 ],
+													"presentation_rect" : [ 99.0, 265.5, 260.0, 56.5 ],
+													"varname" : "connect",
 													"viewvisibility" : 1
 												}
 
@@ -11698,7 +12375,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 654.5, 99.0, 45.0, 30.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 53.0, 527.5, 45.0, 30.0 ],
+													"presentation_rect" : [ 53.0, 545.5, 45.0, 30.0 ],
 													"text" : "7"
 												}
 
@@ -11838,7 +12515,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 151.5, 552.0, 119.0, 30.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 99.0, 570.0, 260.0, 32.0 ],
+													"presentation_rect" : [ 99.0, 588.0, 260.0, 32.0 ],
 													"rounded" : 10.0,
 													"text" : "import..",
 													"textcolor" : [ 0.8, 0.8, 0.8, 1.0 ],
@@ -11898,7 +12575,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 286.0, 552.0, 119.0, 30.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 99.0, 606.0, 260.0, 32.0 ],
+													"presentation_rect" : [ 99.0, 624.0, 260.0, 32.0 ],
 													"rounded" : 10.0,
 													"text" : "export...",
 													"textcolor" : [ 0.8, 0.8, 0.8, 1.0 ],
@@ -11922,7 +12599,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 552.5, 548.0, 119.0, 30.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 232.0, 519.0, 129.0, 47.0 ],
+													"presentation_rect" : [ 232.0, 537.0, 129.0, 47.0 ],
 													"rounded" : 10.0,
 													"text" : "close",
 													"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
@@ -11947,7 +12624,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 431.5, 548.0, 119.0, 30.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 99.0, 519.0, 131.0, 47.0 ],
+													"presentation_rect" : [ 99.0, 537.0, 131.0, 47.0 ],
 													"rounded" : 10.0,
 													"text" : "save",
 													"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
@@ -12083,14 +12760,14 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 1061.0, 225.0, 318.0, 551.0 ],
+														"rect" : [ 1061.0, 225.0, 548.0, 551.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -12210,14 +12887,14 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 2,
-																			"revision" : 0,
+																			"minor" : 1,
+																			"revision" : 10,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
 ,
 																		"classnamespace" : "box",
-																		"rect" : [ 789.0, 209.0, 1014.0, 678.0 ],
+																		"rect" : [ 889.0, 224.0, 1014.0, 678.0 ],
 																		"bglocked" : 0,
 																		"openinpresentation" : 1,
 																		"default_fontsize" : 12.0,
@@ -12254,7 +12931,7 @@
 																					"outlettype" : [ "", "", "", "" ],
 																					"patching_rect" : [ 85.0, 12.0, 56.0, 22.0 ],
 																					"restore" : 																					{
-																						"card" : [ "en0" ]
+																						"card" : [ "Ethernet", 2 ]
 																					}
 ,
 																					"text" : "autopattr",
@@ -12297,8 +12974,8 @@
 																						"fileversion" : 1,
 																						"appversion" : 																						{
 																							"major" : 8,
-																							"minor" : 2,
-																							"revision" : 0,
+																							"minor" : 1,
+																							"revision" : 10,
 																							"architecture" : "x64",
 																							"modernui" : 1
 																						}
@@ -12714,7 +13391,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 3,
 																					"outlettype" : [ "", "bang", "bang" ],
-																					"patching_rect" : [ 473.416662931442261, 540.583353757858276, 290.0, 49.0 ],
+																					"patching_rect" : [ 473.416662931442261, 540.583353757858276, 290.0, 50.0 ],
 																					"text" : "dialog You have NO active network card in your system. Please check your networksettings. @mode 1"
 																				}
 
@@ -12774,7 +13451,7 @@
 																					"presentation" : 1,
 																					"presentation_rect" : [ 0.0, -0.0, 180.0, 20.0 ],
 																					"readonly" : 1,
-																					"text" : "en0",
+																					"text" : "Ethernet 2",
 																					"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																					"varname" : "card"
 																				}
@@ -12873,7 +13550,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 3,
 																					"outlettype" : [ "", "bang", "bang" ],
-																					"patching_rect" : [ 508.416662931442261, 466.833312511444092, 247.0, 49.0 ],
+																					"patching_rect" : [ 508.416662931442261, 466.833312511444092, 247.0, 50.0 ],
 																					"text" : "dialog You have more than one active network card in your system. Please choose the one you want to use. @mode 1"
 																				}
 
@@ -13469,7 +14146,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 22.0, 221.5, 69.0, 33.0 ],
+																	"patching_rect" : [ 22.0, 221.5, 69.0, 34.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 0.0, 40.0, 70.0, 20.0 ],
 																	"text" : "RouterUser"
@@ -13496,7 +14173,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 22.0, 165.0, 68.0, 33.0 ],
+																	"patching_rect" : [ 22.0, 165.0, 68.0, 34.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 0.0, 0.0, 69.0, 20.0 ],
 																	"text" : "RouterURL"
@@ -13514,8 +14191,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 2,
-																			"revision" : 0,
+																			"minor" : 1,
+																			"revision" : 10,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -14007,13 +14684,13 @@
 														"styles" : [ 															{
 																"name" : "rnbodefault",
 																"default" : 																{
-																	"fontname" : [ "Lato" ],
 																	"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 																	"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 																	"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 																	"fontsize" : [ 12.0 ],
+																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+																	"fontname" : [ "Lato" ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -14032,17 +14709,18 @@
 , 															{
 																"name" : "rnbohighcontrast",
 																"default" : 																{
+																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 																	"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"fontsize" : [ 13.0 ],
 																	"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"fontsize" : [ 13.0 ],
 																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -14052,8 +14730,7 @@
 																		"proportion" : 0.5,
 																		"autogradient" : 0.0
 																	}
-,
-																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 																}
 ,
 																"parentstyle" : "",
@@ -14101,9 +14778,9 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 369.0, 69.0, 196.0, 24.0 ],
+													"patching_rect" : [ 369.0, 69.0, 196.0, 25.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 99.0, 319.0, 169.0, 24.0 ],
+													"presentation_rect" : [ 99.0, 324.0, 169.0, 25.0 ],
 													"text" : "create / join a room"
 												}
 
@@ -14116,9 +14793,9 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 131.0, 45.0, 208.0, 42.0 ],
+													"patching_rect" : [ 131.0, 45.0, 208.0, 43.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 99.0, 12.0, 245.0, 24.0 ],
+													"presentation_rect" : [ 99.0, 12.0, 245.0, 25.0 ],
 													"text" : "connect to the telemersive-router"
 												}
 
@@ -14155,8 +14832,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 2,
-															"revision" : 0,
+															"minor" : 1,
+															"revision" : 10,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -14223,7 +14900,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 264.0, 26.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"peerName" : [ "MartinMac" ],
+																		"peerName" : [ "WinZH_Video" ],
 																		"roomName" : [ "telemersion" ],
 																		"roomPwd" : [ "2021" ]
 																	}
@@ -14295,8 +14972,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 2,
-																			"revision" : 0,
+																			"minor" : 1,
+																			"revision" : 10,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -14530,7 +15207,7 @@
 																	"patching_rect" : [ 107.5, 121.0, 201.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 80.0, 0.0, 180.0, 20.0 ],
-																	"text" : "MartinMac",
+																	"text" : "WinZH_Video",
 																	"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																	"varname" : "peerName"
 																}
@@ -14691,13 +15368,13 @@
 														"styles" : [ 															{
 																"name" : "rnbodefault",
 																"default" : 																{
-																	"fontname" : [ "Lato" ],
 																	"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 																	"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 																	"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 																	"fontsize" : [ 12.0 ],
+																	"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+																	"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+																	"fontname" : [ "Lato" ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -14716,17 +15393,18 @@
 , 															{
 																"name" : "rnbohighcontrast",
 																"default" : 																{
+																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 																	"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+																	"fontsize" : [ 13.0 ],
 																	"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 																	"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-																	"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-																	"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"fontsize" : [ 13.0 ],
 																	"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-																	"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 																	"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-																	"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 																	"bgfillcolor" : 																	{
 																		"type" : "color",
 																		"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -14736,8 +15414,7 @@
 																		"proportion" : 0.5,
 																		"autogradient" : 0.0
 																	}
-,
-																	"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 																}
 ,
 																"parentstyle" : "",
@@ -14774,7 +15451,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.5, 459.0, 308.0, 22.0 ],
-													"text" : "join MartinMac telemersion \"2021\""
+													"text" : "join WinZH_Video telemersion \"2021\""
 												}
 
 											}
@@ -15120,13 +15797,13 @@
 , 											{
 												"name" : "rnbodefault",
 												"default" : 												{
-													"fontname" : [ "Lato" ],
 													"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 													"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 													"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 													"fontsize" : [ 12.0 ],
+													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+													"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+													"fontname" : [ "Lato" ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -15145,17 +15822,18 @@
 , 											{
 												"name" : "rnbohighcontrast",
 												"default" : 												{
+													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 													"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+													"fontsize" : [ 13.0 ],
 													"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-													"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"fontsize" : [ 13.0 ],
 													"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-													"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-													"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 													"bgfillcolor" : 													{
 														"type" : "color",
 														"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -15165,8 +15843,7 @@
 														"proportion" : 0.5,
 														"autogradient" : 0.0
 													}
-,
-													"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 												}
 ,
 												"parentstyle" : "",
@@ -15515,13 +16192,13 @@
 , 							{
 								"name" : "rnbodefault",
 								"default" : 								{
-									"fontname" : [ "Lato" ],
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 									"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 									"fontsize" : [ 12.0 ],
+									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+									"fontname" : [ "Lato" ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -15540,17 +16217,18 @@
 , 							{
 								"name" : "rnbohighcontrast",
 								"default" : 								{
+									"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 									"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+									"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"fontsize" : [ 13.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-									"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontsize" : [ 13.0 ],
 									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-									"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -15560,8 +16238,7 @@
 										"proportion" : 0.5,
 										"autogradient" : 0.0
 									}
-,
-									"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 								}
 ,
 								"parentstyle" : "",
@@ -15679,35 +16356,35 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "resize_patcher.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sendR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SVGButton.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "maxBusClient.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/node_content",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/node_content",
 				"patcherrelativepath" : "../node_content",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -15732,288 +16409,269 @@
 			}
 , 			{
 				"name" : "tg.filesync.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "config.json",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PeerList.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "peerList.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Peer.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Rack.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Slot.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceOSC_local.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceOSC_view.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceOSC_button.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceOSC_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "UDPChainOne.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/udp",
-				"patcherrelativepath" : "./udp",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "deviceUG_local.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceUG_view.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dynRangeMenu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceUG_button.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceUG_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.shell.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shellHelper.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceMC_local.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceMC_view.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceMC_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceMC_button.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceSYNC_local.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceSYNC_view.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceSYNC_button.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "deviceSYNC_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PeerBus.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "config_peer.json",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "peerLogic.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OSDependentPatches.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "syphon_detector.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"name" : "spout_detector.maxpat",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_custom_cheatsheet.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dep.test.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dep.packageTest.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sadam.udpClient.mxo",
-				"type" : "iLaX"
+				"name" : "shell.mxe64",
+				"type" : "mx64"
 			}
 , 			{
-				"name" : "sadam.udpSender.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sadam.udpReceiver.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "jit.gl.syphonclient.mxo",
-				"type" : "iLaX"
+				"name" : "jit.gl.spoutreceiver.mxe64",
+				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "rnbodefault",
 				"default" : 				{
-					"fontname" : [ "Lato" ],
 					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
-					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
 					"fontsize" : [ 12.0 ],
+					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+					"fontname" : [ "Lato" ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -16032,17 +16690,18 @@
 , 			{
 				"name" : "rnbohighcontrast",
 				"default" : 				{
+					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 					"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"fontsize" : [ 13.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontsize" : [ 13.0 ],
 					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -16052,8 +16711,7 @@
 						"proportion" : 0.5,
 						"autogradient" : 0.0
 					}
-,
-					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",

@@ -2,3 +2,4 @@ config.json
 config_peer.json
 debug.log
 package-lock.json
+node_content/node_modules/
