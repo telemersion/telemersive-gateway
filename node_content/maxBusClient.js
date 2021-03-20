@@ -11,7 +11,9 @@ let log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'a'});
 let log_stdout = process.stdout;
 
 const zeroPad = (num, places) => String(num).padStart(places, '0');
+const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
 
+let peerName = "..";
 let verbose_out = false;
 let verbose_in = false;
 
@@ -21,7 +23,7 @@ console.log = function(d, v) { //
     // current date
     let date = new Date();
 
-    let timestamp = zeroPad(date.getHours(),2) + ":"+ zeroPad(date.getMinutes(),2) + ":"+ zeroPad(date.getSeconds(),2) + "."+ zeroPad(date.getMilliseconds(),3) + "> ";
+    let timestamp = monthNames[date.getMonth()] + " " + zeroPad(date.getDate(),2) + " " + zeroPad(date.getHours(),2) + ":"+ zeroPad(date.getMinutes(),2) + ":"+ zeroPad(date.getSeconds(),2) + "."+ zeroPad(date.getMilliseconds(),3) + " " + peerName + ": ";
 
     log_file.write(timestamp + util.format(d) + '\n');
     if(v == null){
@@ -61,6 +63,7 @@ const handlers = {
     Client.configureServer(_serverHost, _serverPort, _serverUser, _serverPwd, _localIP);
   },
   join: async (_peerName, _roomName, _roomPwd) => {
+	peerName = _peerName;
     await Client.join(_peerName, _roomName, _roomPwd);
   },
   leave: async () => {
@@ -94,7 +97,9 @@ const handlers = {
     await Client.peer.mqttClient.unsubscribe(_topic);
   },
   logmax: async (..._messages) => {
-      console.log("MAX CONSOLE > " + _messages , 1);
+	  if(_messages[0] !== 'stdout'){
+      	  console.log("MAX CONSOLE > " + _messages , 1);
+	  }
   },
   setverbose_out: async (_verbose) => {
     verbose_out = _verbose;
