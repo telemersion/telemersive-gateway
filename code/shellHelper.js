@@ -8,6 +8,9 @@ var myWinTask = null;
 var myOS = null;
 var myTitle = null;
 
+var myPortNumber = null;
+var OSXProcessID = null;
+
 var copyFeedback = false;
 var runningFeedback = false;
 
@@ -43,7 +46,11 @@ function pkill(){
 		outlet(1, 'pkill');
 		if(myOS === 'windows'){
 			outlet(1, 'taskkill', '/FI', 'WINDOWTITLE eq '+ myTitle, '/T', '/F');
-		}
+		} else {
+            if(OSXProcessID != null){
+                outlet(1, 'kill', OSXProcessID);
+            }
+        }
 		isRunning = false;
 	}
 }
@@ -57,13 +64,33 @@ function execute(){
 	if(myOS === 'windows'){
 	   outlet(0, 'start', myTitle, '/min',  myCommands);
     } else {
-	   outlet(0, myCommands);
+        var myCom = new Array();
+        for(var i = 1; i < myCommands.length; i++){
+            myCom.push(myCommands[i]);
+        }
+        //myCom += '\"';
+	   outlet(1, "open", "-g", "-a", myCommands[0], "--args",  myCom);
+	   outlet(0, "ps", "aux", "|", "grep", "uv", "|", "grep", "-v", "awk", "|", "awk", '\'/'+ myPortNumber +'/', '{print', "pid ", '\\$2}\'');
+	   //outlet(0, myCommands);
     }
 	isRunning = true;
 }
 
+function pid(_processID){
+    post("processID = " + _processID + "\n");
+    OSXProcessID = _processID;
+}
+
 function start(){
 	myCommands = arrayfromargs(arguments);
+        
+    for(var i = 1; i < myCommands.length; i++){
+        if((typeof myCommands[i]) === 'string'){
+            if(myCommands[i].indexOf("-P") == 0){
+                myPortNumber = myCommands[i];
+            }
+        }
+    }
 
 	myPath = myCommands[0];
 

@@ -2,6 +2,9 @@ let APPVERSION = "TeGateway_v1"; // use simple numbering
 // only apps with the same version as the first peer that opens the room
 // will be accepted -  all other will be declined by the manager
 
+// used for switchboard hack:
+const superagent = require('superagent');
+
 let maxApi = require("max-api");
 let telemersion, BusClient, Client;
 
@@ -16,6 +19,10 @@ const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep
 let peerName = "..";
 let verbose_out = false;
 let verbose_in = false;
+
+// needed for switchboard hack
+let proxyHost = null;
+let proxyRoom = null;
 
 // overwrite console.log function, if second value is provided,
 // the log will not be print out on the console, but only stored to the file
@@ -60,9 +67,11 @@ const handlers = {
     await Client.disconnectServer();
   },
   configure: (_serverHost, _serverPort, _serverUser, _serverPwd, _localIP) => {
-    Client.configureServer(_serverHost, _serverPort, _serverUser, _serverPwd, _localIP);
+    proxyHost = _serverHost;
+    Client.configureServer('mqtt://'+_serverHost, _serverPort, _serverUser, _serverPwd, _localIP);
   },
   join: async (_peerName, _roomName, _roomPwd) => {
+    proxyRoom = _roomName;
 	peerName = _peerName;
     await Client.join(_peerName, _roomName, _roomPwd);
   },
@@ -114,6 +123,32 @@ const handlers = {
   error: async () => {
       let obj =  [{name: "Frank"}];
       console.log(obj[1].name);
+  },
+// switchboard hack. Remove once switchboard works fine again.
+  restartProxy: async (_port, _type, _description) => {
+    if(proxyHost !== null && proxyRoom !== null){
+        console.log('Atempting to restart proxy: ' + _port + ' at ' + proxyHost + ' in ' + proxyRoom);
+        try {
+            const resDel = await superagent.delete('http://'+proxyHost+':3591/proxies/' + _port);
+            let reply = JSON.parse(resDel["text"]);
+            console.log(reply["msg"]);
+
+            // current date
+            let date = new Date();
+
+            let timestamp = "| restarted by " + peerName + " at " + monthNames[date.getMonth()] + " " + zeroPad(date.getDate(),2) + " " + zeroPad(date.getHours(),2) + ":"+ zeroPad(date.getMinutes(),2) + ":"+ zeroPad(date.getSeconds(),2) + "."+ zeroPad(date.getMilliseconds(),3);
+
+            let payload = { room: proxyRoom, port: _port, type: _type, description: _description + timestamp };
+            const resAdd = await superagent.post('http://'+proxyHost+':3591/proxies/').send(payload);
+            reply = JSON.parse(resAdd["text"]);
+            console.log(reply["msg"]);
+        } catch (err) {
+            let reply = JSON.parse(err.response["text"]);
+            console.error(reply["msg"]);
+        }
+    } else {
+        console.log('Unable to restart proxy. Not yet connected');   
+    }
   }
 };
 
@@ -139,3 +174,4 @@ try {
 } catch (err) {
 	bubbledUp("bus", [ 'error', 'script', "Required libraries not installed. Please check [config] > debug and install libraries."])
 }
+
