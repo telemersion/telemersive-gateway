@@ -4,6 +4,7 @@ var myIndex=0;
 var myPath = null;
 var myCommands = null;
 var myWinPath = null;
+var myNewPath = null;
 var myWinTask = null;
 var myOS = null;
 var myTitle = null;
@@ -35,8 +36,7 @@ function loadbang(){
 
 function testRunning(){
 	if(myOS === 'windows'){
-		post('test running : ' + myTitle + ' \n');
-		outlet(1, 'tasklist', '/FI', 'WINDOWTITLE eq '+ myTitle, '/NH');
+		outlet(1, 'tasklist', '/NH', '/FI', 'imagename eq '+ myWinTask);
 		runningFeedback = true;
 	}
 }
@@ -45,12 +45,9 @@ function pkill(){
 	if(isRunning){
 		outlet(1, 'pkill');
 		if(myOS === 'windows'){
-			outlet(1, 'taskkill', '/FI', 'WINDOWTITLE eq '+ myTitle, '/T', '/F');
-		} else {
-            if(OSXProcessID != null){
-                outlet(1, 'kill', OSXProcessID);
-            }
-        }
+			outlet(1, 'taskkill', '/IM', myWinTask, '/F');
+			del();
+		}
 		isRunning = false;
 	}
 }
@@ -62,27 +59,17 @@ function notifydeleted(){
 function execute(){
 	//post("execute: " + myCommands + "\n");
 	if(myOS === 'windows'){
-	   outlet(0, 'start', myTitle, '/min',  myCommands);
-    } else {
-        var myCom = new Array();
-        for(var i = 1; i < myCommands.length; i++){
-            myCom.push(myCommands[i]);
-        }
-	   //outlet(1, "open", "-g", "-a", myCommands[0], "--args",  myCom);
-	   //outlet(0, "ps", "aux", "|", "grep", "uv", "|", "grep", "-v", "awk", "|", "awk", '\'/'+ myPortNumber +'/', '{print', "pid ", '\\$2}\'');
-	   outlet(0, myCommands);
-    }
+		outlet(0, '"', myCommands, '"');
+	   //outlet(0, 'start', myTitle, '/min',  myCommands);
+  } else {
+		outlet(0, myCommands);
+  }
 	isRunning = true;
-}
-
-function pid(_processID){
-    post("processID = " + _processID + "\n");
-    OSXProcessID = _processID;
 }
 
 function start(){
 	myCommands = arrayfromargs(arguments);
-        
+
     for(var i = 1; i < myCommands.length; i++){
         if((typeof myCommands[i]) === 'string'){
             if(myCommands[i].indexOf("-P") == 0){
@@ -95,6 +82,8 @@ function start(){
 
 	if(myOS === 'windows'){
 		myWinPath = myPath.replace(/\//g, '\\\\');
+		myNewPath = myWinPath.replace('.exe', '_tb' + myIndex + '.exe');
+		myCommands[0] = myPath.replace('.exe', '_tb' + myIndex + '.exe');
 		myWinTask = myCommands[0].substring(myCommands[0].lastIndexOf('/') + 1);
 		// on windows we have to replace apostrophes with quotation marks:
 		for(var i = 1; i < myCommands.length; i++){
@@ -111,6 +100,18 @@ function start(){
 	//post("my window path " + myWinPath + "\n");
 }
 
+function del(){
+	if(myOS === 'windows' && myNewPath != null){
+		outlet(0, "del", myNewPath);
+	}
+}
+
+function copy(){
+	if(myOS === 'windows' && myNewPath != null){
+		copyFeedback = true;
+		outlet(0, "copy",  myWinPath, myNewPath);
+	}
+}
 
 function anything()
 {
@@ -122,13 +123,14 @@ function anything()
 		if(a[0] === myWinTask){
 			// -> task is already running - need to kill..
 			post("found running task: " + myWinTask + ". Killing it...\n");
-			pkill();
-		} else {
-			//post("found no running task: " + myWinTask + ".\n");
+			outlet(1, 'taskkill', '/IM', myWinTask, '/F');
 		}
+		copy();
 		runningFeedback = false;
-		execute();
 	} else {
+		if(a[0] === "Exit"){ // if the script exits, the path can be removed
+			del();
+		}
 	}
 }
 
