@@ -68,10 +68,9 @@ function execute(){
         for(var i = 1; i < myCommands.length; i++){
             myCom.push(myCommands[i]);
         }
-        //myCom += '\"';
-	   outlet(1, "open", "-g", "-a", myCommands[0], "--args",  myCom);
-	   outlet(0, "ps", "aux", "|", "grep", "uv", "|", "grep", "-v", "awk", "|", "awk", '\'/'+ myPortNumber +'/', '{print', "pid ", '\\$2}\'');
-	   //outlet(0, myCommands);
+	   //outlet(1, "open", "-g", "-a", myCommands[0], "--args",  myCom);
+	   //outlet(0, "ps", "aux", "|", "grep", "uv", "|", "grep", "-v", "awk", "|", "awk", '\'/'+ myPortNumber +'/', '{print', "pid ", '\\$2}\'');
+	   outlet(0, myCommands);
     }
 	isRunning = true;
 }
