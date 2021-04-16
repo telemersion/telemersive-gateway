@@ -1,4 +1,4 @@
-outlets = 2;
+outlets = 3;
 
 var myIndex=0;
 var myPath = null;
@@ -85,6 +85,8 @@ function start(){
 		myNewPath = myWinPath.replace('.exe', '_tb' + myIndex + '.exe');
 		myCommands[0] = myPath.replace('.exe', '_tb' + myIndex + '.exe');
 		myWinTask = myCommands[0].substring(myCommands[0].lastIndexOf('/') + 1);
+		// setting the routepass filter for myWinTask
+		outlet(2, myWinTask);
 		// on windows we have to replace apostrophes with quotation marks:
 		for(var i = 1; i < myCommands.length; i++){
             if((typeof myCommands[i]) === 'string'){
@@ -113,25 +115,24 @@ function copy(){
 	}
 }
 
+function Exit(){
+	del();
+}
+	
 function anything()
 {
-	var a = arrayfromargs(messagename, arguments);
 	if(copyFeedback){
 		execute();
 		copyFeedback = false;
 	} else if(runningFeedback){
-		if(a[0] === myWinTask){
+		if(messagename === myWinTask){
 			// -> task is already running - need to kill..
 			post("found running task: " + myWinTask + ". Killing it...\n");
 			outlet(1, 'taskkill', '/IM', myWinTask, '/F');
 		}
 		copy();
 		runningFeedback = false;
-	} else {
-		if(a[0] === "Exit"){ // if the script exits, the path can be removed
-			del();
-		}
-	}
+	} 
 }
 
 function ignore(){
