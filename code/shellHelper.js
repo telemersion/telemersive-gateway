@@ -43,7 +43,7 @@ function testRunning(){
 
 function pkill(){
 	if(isRunning){
-		outlet(1, 'pkill');
+		outlet(2, 'pkill');
 		if(myOS === 'windows'){
 			outlet(1, 'taskkill', '/IM', myWinTask, '/F');
 			del();
@@ -59,10 +59,10 @@ function notifydeleted(){
 function execute(){
 	//post("execute: " + myCommands + "\n");
 	if(myOS === 'windows'){
-		outlet(0, '"', myCommands, '"');
+		outlet(2, '"', myCommands, '"');
 	   //outlet(0, 'start', myTitle, '/min',  myCommands);
   } else {
-		outlet(0, myCommands);
+		outlet(2, myCommands);
   }
 	isRunning = true;
 }
@@ -85,8 +85,6 @@ function start(){
 		myNewPath = myWinPath.replace('.exe', '_tb' + myIndex + '.exe');
 		myCommands[0] = myPath.replace('.exe', '_tb' + myIndex + '.exe');
 		myWinTask = myCommands[0].substring(myCommands[0].lastIndexOf('/') + 1);
-		// setting the routepass filter for myWinTask
-		outlet(2, myWinTask);
 		// on windows we have to replace apostrophes with quotation marks:
 		for(var i = 1; i < myCommands.length; i++){
             if((typeof myCommands[i]) === 'string'){
