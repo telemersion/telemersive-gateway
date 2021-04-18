@@ -71,7 +71,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "one2manyMo", "ultragrid", "#2" ],
+					"args" : [ "one2manyMo", "ultragrid", "#2", "#4" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -362,7 +362,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 12.5, 425.0, 62.0, 22.0 ],
 					"text" : "tg.monitor",
-					"varname" : "monitor[1]"
+					"varname" : "monitor"
 				}
 
 			}
@@ -1012,7 +1012,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 108.0, 221.0, 103.0, 22.0 ],
-													"text" : "4451_cche"
+													"text" : "5508_cche"
 												}
 
 											}

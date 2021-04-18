@@ -561,7 +561,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"patching_rect" : [ 52.0, 191.0, 285.0, 22.0 ],
-					"text" : "deviceOSC_view #1 #2",
+					"text" : "deviceOSC_view #1 #2 1 0",
 					"varname" : "gui"
 				}
 
@@ -801,6 +801,13 @@
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "restartProxy.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",

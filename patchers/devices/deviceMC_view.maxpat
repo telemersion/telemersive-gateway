@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 701.0, 207.0, 422.0, 340.0 ],
+		"rect" : [ 325.0, 208.0, 422.0, 340.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -52,7 +52,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "one2manyBi", "mocap", "#2" ],
+					"args" : [ "one2manyBi", "mocap", "#2", "#4" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -67,7 +67,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"patching_rect" : [ 742.0, 103.0, 73.333333333333371, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 57.0, 66.0, 23.0 ],
+					"presentation_rect" : [ 6.0, 54.0, 66.0, 23.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -585,7 +585,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 12.5, 425.0, 62.0, 22.0 ],
 					"text" : "tg.monitor",
-					"varname" : "tg.monitor"
+					"varname" : "monitor"
 				}
 
 			}
