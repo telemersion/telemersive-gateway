@@ -62,8 +62,10 @@ function append(_peerName, _peerID, _peerLocalIPv4, _peerPublicIPv4)
     if(myPeerList.contains(_peerID)){
        // we make a sanity check if nothing has changed
         var localPeer = myPeerList.get(_peerID);
-        localPeer.set("verified", 1); // this indicates an existing peer
-        myPeerList.set(_peerID, localPeer);
+		if(localPeer.get("verified") !== 3){
+        	localPeer.set("verified", 1); // this indicates an existing peer
+        	myPeerList.set(_peerID, localPeer);
+		}
     }
     // since in the last step a peer might have been removed because of a change we test again
     if(!myPeerList.contains(_peerID)){
