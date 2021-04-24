@@ -46,6 +46,9 @@ function initNodeSpace(){
     }
 }
 
+function peerJoined(_peerJoined){
+   	outlet(0, "peerJoined", _peerJoined);
+}
 
 function peerName(_peerName){
 	if(myPeerName !== _peerName){		
