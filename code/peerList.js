@@ -23,8 +23,8 @@ function bang()
 function joined(_joined){
 	if(_joined == 0){
 		dpost("local peer left room. cleaning up list of remote peers..");
-		clear();
-		done();
+		//clear();
+		//done();
 	}
 }
 
@@ -47,8 +47,10 @@ function clear()
         }
         for(var i = 0; i < keys.length; i++){
             var localPeer = myPeerList.get(keys[i]);
-            localPeer.set("verified", 0);
-            myPeerList.set(keys[i], localPeer);
+			if(localPeer.get("verified") !== 3){
+            	localPeer.set("verified", 0);
+            	myPeerList.set(keys[i], localPeer);
+			}
         }
     }
 }
@@ -56,26 +58,27 @@ function clear()
 // next we get all the current peers sequentially
 function append(_peerName, _peerID, _peerLocalIPv4, _peerPublicIPv4)
 {
-    // first test if the peerID is already existing
+   // first test if the peerID is already existing
     if(myPeerList.contains(_peerID)){
-        // we make a sanity check if nothing has changed
+       // we make a sanity check if nothing has changed
         var localPeer = myPeerList.get(_peerID);
         if(localPeer.get("peerName") !== _peerName ||
             localPeer.get("peerLocalIPv4") !== _peerLocalIPv4 ||
             localPeer.get("peerPublicIPv4") !== _peerPublicIPv4){
             // something changed.
-            localPeer.set("peerName", _peerName);
+ 			dpost("update peer ("+_peerName+")");
+            
+			localPeer.set("peerName", _peerName);
             localPeer.set("peerLocalIPv4", _peerLocalIPv4);
             localPeer.set("peerPublicIPv4", _peerPublicIPv4);
             localPeer.set("verified", 2); // this indicates a changed peer
-        } else {
-            // verify the remote peer
-            localPeer.set("verified", 1); // this indicates an existing peer
-        }
+        } 
         myPeerList.set(_peerID, localPeer);
     }
     // since in the last step a peer might have been removed because of a change we test again
     if(!myPeerList.contains(_peerID)){
+ 		dpost("append peer ("+_peerName+")");
+
         var localPeer = new Dict();
         localPeer.set("peerName", _peerName);
         localPeer.set("peerLocalIPv4", _peerLocalIPv4);
@@ -88,19 +91,21 @@ function append(_peerName, _peerID, _peerLocalIPv4, _peerPublicIPv4)
 // once we got all the peer info, we can create, rearrange, cleanup
 function done()
 {
+	dpost("updating remote peer list...");
+	
     // first remove all the peers not verified
     var keys = myPeerList.getkeys();
     if(keys != null){
         if(typeof(keys) == 'string'){
             keys = [keys];
         }
-		dpost("remote peers found:" + keys);
         for(var i = 0; i < keys.length; i++){
             var localPeer = myPeerList.get(keys[i]);
             if(localPeer.get("verified") === 0){
-				dpost("remove remote peer: " + localPeer.get("peerName"));
+				dpost("... remove remote peer: " + localPeer.get("peerName"));
                 // this peer has gone
                 removePeer(keys[i]);
+				return; // peer is beeing removed and sends a 'done' message
             }
         }
     }
@@ -113,9 +118,11 @@ function done()
         for(var i = 0; i < keys.length; i++){
             var localPeer = myPeerList.get(keys[i]);
             if(localPeer.get("verified") === 3){
-				dpost("add remote peer: " + localPeer.get("peerName"));
-                slots.push(keys[i]);
+				dpost("... add remote peer: " + localPeer.get("peerName"));
                 createPeer(keys[i]);
+    			localPeer.set("verified", 1); // this indicates an existing peer
+				myPeerList.set(keys[i], localPeer);
+				return; // peer is beeing removed and sends a 'done' message
             }
         }
     }
@@ -124,19 +131,25 @@ function done()
     slots.forEach(update);
 }
 
-function createPeer(_peerID){
-    this.patcher.remove(this.patcher.getnamed(_peerID));
-    this.patcher.message(makeCreationMessage(_peerID));
-}
-
 function update(_peerID, _index) {
     var localPeer = myPeerList.get(_peerID);
-    messnamed("pl_" + _peerID, "peerName", localPeer.get("peerName"));
-    messnamed("pl_" + _peerID, "peerLocalIPv4", localPeer.get("peerLocalIPv4"));
-    messnamed("pl_" + _peerID, "peerPublicIPv4", localPeer.get("peerPublicIPv4"));
-    messnamed("pl_" + _peerID, "roomName", myRoomName);
-    messnamed("pl_" + _peerID, "roomID", myRoomID);
-    messnamed("pl_" + _peerID, "slot", _index);
+    if(localPeer.get("verified") === 2){
+   		messnamed("pl_" + _peerID, "peerName", localPeer.get("peerName"));
+    	messnamed("pl_" + _peerID, "peerLocalIP", localPeer.get("peerLocalIPv4"));
+    	messnamed("pl_" + _peerID, "peerPublicIP", localPeer.get("peerPublicIPv4"));
+    	messnamed("pl_" + _peerID, "roomName", myRoomName);
+    	messnamed("pl_" + _peerID, "roomID", myRoomID);
+    	messnamed("pl_" + _peerID, "slot", _index);
+    	localPeer.set("verified", 1); // this indicates an verified peer
+		myPeerList.set(_peerID, localPeer);
+	}
+}
+
+function createPeer(_peerID){
+    slots.push(_peerID);
+
+    this.patcher.remove(this.patcher.getnamed(_peerID));
+    this.patcher.message(makeCreationMessage(_peerID));
 }
 
 function makeCreationMessage(_peerID){
@@ -158,13 +171,13 @@ function makeCreationMessage(_peerID){
 	msp.push(1);
 	msp.push("@args");
 	msp.push("remote");
+	msp.push(slotIndex);
 	msp.push(_peerID);
 	msp.push(localPeer.get("peerName"));
 	msp.push(localPeer.get("peerLocalIPv4"));
 	msp.push(localPeer.get("peerPublicIPv4"));
 	msp.push(myRoomName);
 	msp.push(myRoomID);
-	msp.push(slotIndex);
     //dpost("makeCreationMessage() " + msp + "\n");
 	return msp;
 }

@@ -129,10 +129,17 @@ const handlers = {
     if(proxyHost !== null && proxyRoom !== null){
         console.log('Atempting to restart proxy: ' + _port + ' at ' + proxyHost + ' in ' + proxyRoom);
         try {
+            console.log('... stopping proxy....');
             const resDel = await superagent.delete('http://'+proxyHost+':3591/proxies/' + _port);
             let reply = JSON.parse(resDel["text"]);
             console.log(reply["msg"]);
 
+        } catch (err) {
+            let reply = JSON.parse(err.response["text"]);
+            console.error(reply["msg"]);
+        }
+        try {
+            console.log('... starting proxy....');
             // current date
             let date = new Date();
 
