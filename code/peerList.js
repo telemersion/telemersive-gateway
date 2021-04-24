@@ -118,7 +118,18 @@ function done()
             }
         }
     }
+
+    // update Slots with new peer
+    slots.forEach(update);
 }
+
+function update(_peerID, _index) {
+    var localPeer = myPeerList.get(_peerID);
+    if(localPeer.get("verified") === 1){
+    	messnamed("pl_" + _peerID, "slot", _index);
+	}
+}
+
 
 function createPeer(_peerID){
     slots.push(_peerID);
