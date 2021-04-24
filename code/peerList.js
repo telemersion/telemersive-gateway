@@ -62,17 +62,7 @@ function append(_peerName, _peerID, _peerLocalIPv4, _peerPublicIPv4)
     if(myPeerList.contains(_peerID)){
        // we make a sanity check if nothing has changed
         var localPeer = myPeerList.get(_peerID);
-        if(localPeer.get("peerName") !== _peerName ||
-            localPeer.get("peerLocalIPv4") !== _peerLocalIPv4 ||
-            localPeer.get("peerPublicIPv4") !== _peerPublicIPv4){
-            // something changed.
- 			dpost("update peer ("+_peerName+")");
-            
-			localPeer.set("peerName", _peerName);
-            localPeer.set("peerLocalIPv4", _peerLocalIPv4);
-            localPeer.set("peerPublicIPv4", _peerPublicIPv4);
-            localPeer.set("verified", 2); // this indicates a changed peer
-        } 
+        localPeer.set("verified", 1); // this indicates an existing peer
         myPeerList.set(_peerID, localPeer);
     }
     // since in the last step a peer might have been removed because of a change we test again
@@ -126,23 +116,6 @@ function done()
             }
         }
     }
-
-    // update Slots with new peer
-    slots.forEach(update);
-}
-
-function update(_peerID, _index) {
-    var localPeer = myPeerList.get(_peerID);
-    if(localPeer.get("verified") === 2){
-   		messnamed("pl_" + _peerID, "peerName", localPeer.get("peerName"));
-    	messnamed("pl_" + _peerID, "peerLocalIP", localPeer.get("peerLocalIPv4"));
-    	messnamed("pl_" + _peerID, "peerPublicIP", localPeer.get("peerPublicIPv4"));
-    	messnamed("pl_" + _peerID, "roomName", myRoomName);
-    	messnamed("pl_" + _peerID, "roomID", myRoomID);
-    	messnamed("pl_" + _peerID, "slot", _index);
-    	localPeer.set("verified", 1); // this indicates an verified peer
-		myPeerList.set(_peerID, localPeer);
-	}
 }
 
 function createPeer(_peerID){
