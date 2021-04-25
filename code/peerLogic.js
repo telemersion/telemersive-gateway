@@ -98,14 +98,14 @@ function slot(_index){
         dpost("start creation animation...");
 		// start creation animation
         taskMover = new Task(creaMover, this, 720, 0, 20);
-        taskMover.interval = 33; // 60fps
+        taskMover.interval = 33; // 30fps
         taskMover.repeat(21);
 	}
 	if(mySlotIndex != _index){
         dpost("start reshuffle animation...");
 		// start reshuflle animation
         taskMover = new Task(shuffleMover, this, mySlotIndex, _index, 20);
-        taskMover.interval = 33; // 60fps
+        taskMover.interval = 33; // 30fps
         taskMover.repeat(21);
         mySlotIndex = _index;
 	}
@@ -115,9 +115,9 @@ function remove(){
     dpost("start remove animation... \n");
     // remove abstraction
     outlet(0, "peerJoined", 0);
-    taskMover = new Task(reMover, this, 0, 720, 20);
-    taskMover.interval = 33; // 60fps
-    taskMover.repeat(21);
+    taskMover = new Task(reMover, this, 0, 720, 10);
+    taskMover.interval = 50; // 20fps
+    taskMover.repeat(11);
 }
 
 function shuffleMover(_indxStart, _indxTarget, _maxStep)
@@ -128,7 +128,6 @@ function shuffleMover(_indxStart, _indxTarget, _maxStep)
     } else {
         arguments.callee.task.cancel();
     	dpost("... reshuffle animation done.");
-		messnamed("peerManager", "done");
     }
 }
 

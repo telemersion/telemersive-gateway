@@ -1820,12 +1820,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-35",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 385.0, 148.0, 62.0 ],
+					"patching_rect" : [ 38.0, 385.0, 143.0, 76.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
@@ -1833,7 +1833,7 @@
 						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
-					"text" : "pattrstorage localPeer @outputmode 4 @autorestore 0 @savemode 0",
+					"text" : "pattrstorage localPeer @outputmode 4 @autorestore 0 @savemode 0 @changemode 1",
 					"varname" : "localPeer"
 				}
 
@@ -3251,7 +3251,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-34", 1 ],
-					"midpoints" : [ 47.5, 460.0, 200.75, 460.0, 200.75, 339.0, 145.5, 339.0 ],
+					"midpoints" : [ 47.5, 471.0, 200.75, 471.0, 200.75, 339.0, 145.5, 339.0 ],
 					"source" : [ "obj-35", 0 ]
 				}
 

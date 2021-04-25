@@ -4,6 +4,7 @@ var mySlotSize = 45;
 var myval=0;
 var myPeerList = new Dict("remotePeerList");;
 var slots = [];
+var isJoined = 0;
 
 var myRoomName = "unkown";
 var myRoomID = 0;
@@ -15,16 +16,14 @@ function dpost(_post){
 	post("peerList: " + _post + "\n");
 }
 
-function bang()
-{
-	outlet(0,"myvalue","is",myval);
-}
-
 function joined(_joined){
-	if(_joined == 0){
-		dpost("local peer left room. cleaning up list of remote peers..");
-		//clear();
-		//done();
+	if(isJoined !== _joined){
+		isJoined = _joined;
+		if(_joined == 0){
+			dpost("local peer left room. cleaning up list of remote peers..");
+			//clear();
+			//done();
+		}
 	}
 }
 
@@ -121,6 +120,14 @@ function done()
 
     // update Slots with new peer
     slots.forEach(update);
+
+	if(isJoined === 1){
+		outlet(0, "peerList", "uptodate");
+	} else {
+		if(myPeerList.getkeys() === null){
+			outlet(0, "peerList", "clear");
+		}
+	}
 }
 
 function update(_peerID, _index) {
@@ -180,8 +187,8 @@ function removePeer(_peerID){
 
 function anything()
 {
-	var a = arrayfromargs(messagename, arguments);
-	post("received message " + a + "\n");
-	myval = a;
-	bang();
+	//var a = arrayfromargs(messagename, arguments);
+	//post("received message " + a + "\n");
+	//myval = a;
+	//bang();
 }
