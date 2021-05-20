@@ -67,7 +67,7 @@ function peerID(_peerID){
 function peerLocalIP(_peerLocalIP){
 	if(myPeerLocalIP !== _peerLocalIP){
 		myPeerLocalIP = _peerLocalIP;
-    	outlet(0, "peerLocalIPv4", myPeerLocalIP);
+    	outlet(0, "peerLocalIP", myPeerLocalIP);
 	}
 }
 
