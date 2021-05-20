@@ -1,20 +1,50 @@
 
-var mySlotSize = 45;
-
 var myval=0;
 var myPeerList = new Dict("remotePeerList");;
+var myPeerCount = 0;
 var slots = [];
 var isJoined = 0;
 
 var myRoomName = "unkown";
 var myRoomID = 0;
 
+var slotResizer = null;
+var mySlotHeight = 45;
+var myRootPatcher = null;
+
+var myRootSize = null;
+
 if (jsarguments.length>1)
 	myval = jsarguments[1];
+
+function loadbang(){
+    post("gathering information on the patcher hierarchy..\n");
+    if(this.patcher.box != null){
+        myRootPatcher = this.patcher.box.patcher;
+        myRootSize = myRootPatcher.wind.size;        
+    }
+}
 
 function dpost(_post){
 	post("peerList: " + _post + "\n");
 }
+
+function resize(_height){
+    myRootPatcher.wind.size = [myRootSize[0], myRootSize[1] + _height];
+}
+
+function slotResize(_indxStart, _indxTarget, _maxStep)
+{
+    var iter = arguments.callee.task.iterations;
+    if(iter <= _maxStep){
+        myRootPatcher.wind.size = [myRootSize[0], myRootSize[1] + _indxStart * mySlotHeight + _indxTarget * mySlotHeight / _maxStep * iter ];
+    } else {
+        arguments.callee.task.cancel();
+        arguments.callee.task.freepeer();
+    	dpost("... slot-resize animation done.");
+    }
+}
+
 
 function joined(_joined){
 	if(isJoined !== _joined){
@@ -82,8 +112,27 @@ function append(_peerName, _peerID, _peerLocalIPv4, _peerPublicIPv4)
 // once we got all the peer info, we can create, rearrange, cleanup
 function done()
 {
-	dpost("updating remote peer list...");
+    var currentPeerCount = 0;
+    if(myPeerList.getkeys() != null){
+        if(typeof(myPeerList.getkeys()) == 'string'){
+            currentPeerCount = 1;
+        } else {
+            currentPeerCount = myPeerList.getkeys().length;
+        }
+    }
+	dpost("updating remote peer list...("+currentPeerCount+")");
+    if(myPeerCount != currentPeerCount){
+    	dpost("Start slot-resize animation ("+myPeerCount+" / " + currentPeerCount + ") ...\n");
+        if(slotResizer !== null && slotResizer.running){
+            slotResizer.cancel();
+        }
+        slotResizer = new Task(slotResize, this, myPeerCount, (currentPeerCount - myPeerCount), 10);
+        slotResizer.interval = 33; // 30fps
+        slotResizer.repeat(11);
+        myPeerCount =  currentPeerCount;
+    }
 	
+	dpost("carry on \n");
     // first remove all the peers not verified
     var keys = myPeerList.getkeys();
     if(keys != null){
@@ -127,7 +176,7 @@ function done()
 		if(myPeerList.getkeys() === null){
 			outlet(0, "peerList", "clear");
 		}
-	}
+	}    
 }
 
 function update(_peerID, _index) {
@@ -155,9 +204,9 @@ function makeCreationMessage(_peerID){
     msp.push("Peer.maxpat");
     msp.push("@presentation_rect");
 	msp.push(720);
-	msp.push(slotIndex * mySlotSize);
+	msp.push(slotIndex * mySlotHeight);
 	msp.push(720);
-	msp.push(mySlotSize);
+	msp.push(mySlotHeight);
 	msp.push("@varname");
 	msp.push(_peerID);
 	msp.push("@presentation");
@@ -184,6 +233,8 @@ function removePeer(_peerID){
     // remove the slot
     slots.splice(slots.indexOf(_peerID), 1);
 }
+
+
 
 function anything()
 {

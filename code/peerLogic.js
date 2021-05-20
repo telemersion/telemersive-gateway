@@ -115,9 +115,9 @@ function remove(){
     dpost("start remove animation... \n");
     // remove abstraction
     outlet(0, "peerJoined", 0);
-    taskMover = new Task(reMover, this, 0, 720, 10);
+    taskMover = new Task(reMover, this, 0, 720, 1);
     taskMover.interval = 50; // 20fps
-    taskMover.repeat(11);
+    taskMover.repeat(2);
 }
 
 function shuffleMover(_indxStart, _indxTarget, _maxStep)
@@ -151,6 +151,7 @@ function reMover(_indxStart, _indxTarget, _maxStep)
         myUberPatcher.message("script", "sendbox", myPeerID, "presentation_position", _indxStart + (_indxTarget - _indxStart)/_maxStep * iter, mySlotIndex * mySlotSize);
     } else {
         arguments.callee.task.cancel();
+        arguments.callee.task.freepeer();
     	dpost("... remove animation done.");
 		messnamed("peerManager", "done");
         myUberPatcher.remove(myUberPatcher.getnamed(myPeerID));
