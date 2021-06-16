@@ -75,3 +75,14 @@ You will be presented with a choice:
 'cancel' will cancel the process.
 'No' will quit the app **without** saving the current state.
 'Yes' will quit the app **after** saving the current state.
+
+### FAQ
+
+* Using ultragrid, I want to send a Spout stream, but the receiver only gets a black texture.
+  * Check the local Spout settings. The local machine needs to be able to share textures via GPU (a dedicated GFX-Card). In some instances it was enough to simply open the spout settings (located at C:\Program Files\SPOUT-2007\SPOUTSETTINGS) and confirm with 'OK'
+* I am sending a stream, and one machine receives the stream and the other is not.
+  * Check the firewall. Both Windows and OSX will request a confirmation if a network connection is started (usually only once for each channels).
+    * Windows: Settings > Update & Security > Windows Security > Firewall and Network protection > Allow an app through the firewall
+      * look for 'NatNetThree2OSC' and 'uv_tb0' .. 'uv_tb9'
+    * OSX: System preferences > Security & Privacy > Firewall > Firewall Options
+      * look for 'uv-qt'
