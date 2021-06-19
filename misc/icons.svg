@@ -13,7 +13,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
-   sodipodi:docname="icons.svg">
+   sodipodi:docname="icons.svg"
+   inkscape:export-filename="/Users/maybites/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media/UI_Switch.png"
+   inkscape:export-xdpi="30.719999"
+   inkscape:export-ydpi="30.719999">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,11 +26,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.52954665"
-     inkscape:cx="231.71487"
-     inkscape:cy="556.58096"
+     inkscape:zoom="0.53367583"
+     inkscape:cx="298.429"
+     inkscape:cy="444.27363"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer10"
      inkscape:document-rotation="0"
      showgrid="false"
      units="mm"
@@ -220,7 +223,7 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="UpStream"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -239,7 +242,7 @@
      inkscape:groupmode="layer"
      id="g988"
      inkscape:label="UpStreamMinor"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -258,7 +261,7 @@
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="DownStream"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -277,7 +280,7 @@
      inkscape:groupmode="layer"
      id="g996"
      inkscape:label="DownStreamMinor"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -291,5 +294,345 @@
        height="199.29001"
        x="0.57103157"
        y="0.57103157" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="Switch"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       id="Layer_1"
+       transform="matrix(3.1327898,0,0,3.1889719,7.5073228,-8.4910449)"
+       style="stroke-width:0.0837088"
+       inkscape:export-filename="/Users/maybites/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media/Layer_1.png"
+       inkscape:export-xdpi="30"
+       inkscape:export-ydpi="30">
+      <g
+         id="g959"
+         style="stroke-width:0.0837088">
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill="#929292"
+           id="path955"
+           style="stroke-width:0.00748781" />
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill-opacity="0"
+           stroke="#4c4c4c"
+           stroke-width="0.0209273"
+           id="path957" />
+      </g>
+      <g
+         id="g965"
+         style="stroke-width:0.0837088">
+        <path
+           d="M 8,22 C 3.582,22 0,18.418 0,14 0,9.582 3.582,6 8,6 c 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill="#000000"
+           id="path961"
+           style="stroke-width:0.00748781" />
+        <path
+           d="M 8,22 C 3.582,22 0,18.418 0,14 0,9.582 3.582,6 8,6 c 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill-opacity="0"
+           stroke="#3e3e3e"
+           stroke-width="0.0837088"
+           id="path963" />
+      </g>
+    </g>
+    <g
+       id="Layer_1-6"
+       transform="matrix(3.1860825,0,0,3.2432915,6.3582688,54.979153)"
+       style="stroke-width:0.0823078"
+       inkscape:export-filename="/Users/maybites/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media/Layer_1.png"
+       inkscape:export-xdpi="30"
+       inkscape:export-ydpi="30">
+      <g
+         id="g1047"
+         style="stroke-width:0.0823078">
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill="#ddfa1a"
+           id="path1043"
+           style="stroke-width:0.00640963" />
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill-opacity="0"
+           stroke="#4c4c4c"
+           stroke-width="0.020577"
+           id="path1045" />
+      </g>
+      <g
+         id="g1053"
+         style="stroke-width:0.0823078">
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill="#000000"
+           id="path1049"
+           style="stroke-width:0.00640963" />
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill-opacity="0"
+           stroke="#3e3e3e"
+           stroke-width="0.0823078"
+           id="path1051" />
+      </g>
+    </g>
+    <g
+       id="g1083"
+       transform="matrix(3.1327898,0,0,3.1889719,7.5073228,-8.4910449)"
+       style="stroke-width:0.0837088"
+       inkscape:export-filename="/Users/maybites/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media/Layer_1.png"
+       inkscape:export-xdpi="30"
+       inkscape:export-ydpi="30">
+      <g
+         id="g1075"
+         style="stroke-width:0.0837088">
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill="#929292"
+           id="path1071"
+           style="stroke-width:0.00748781" />
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill-opacity="0"
+           stroke="#4c4c4c"
+           stroke-width="0.0209273"
+           id="path1073" />
+      </g>
+      <g
+         id="g1081"
+         style="stroke-width:0.0837088">
+        <path
+           d="M 8,22 C 3.582,22 0,18.418 0,14 0,9.582 3.582,6 8,6 c 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill="#000000"
+           id="path1077"
+           style="stroke-width:0.00748781" />
+        <path
+           d="M 8,22 C 3.582,22 0,18.418 0,14 0,9.582 3.582,6 8,6 c 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill-opacity="0"
+           stroke="#3e3e3e"
+           stroke-width="0.0837088"
+           id="path1079" />
+      </g>
+    </g>
+    <g
+       id="g1097"
+       transform="matrix(3.1860825,0,0,3.2432915,6.3582688,54.979153)"
+       style="stroke-width:0.0823078"
+       inkscape:export-filename="/Users/maybites/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media/Layer_1.png"
+       inkscape:export-xdpi="30"
+       inkscape:export-ydpi="30">
+      <g
+         id="g1089"
+         style="stroke-width:0.0823078">
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill="#ddfa1a"
+           id="path1085"
+           style="stroke-width:0.00640963" />
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill-opacity="0"
+           stroke="#4c4c4c"
+           stroke-width="0.020577"
+           id="path1087" />
+      </g>
+      <g
+         id="g1095"
+         style="stroke-width:0.0823078">
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill="#000000"
+           id="path1091"
+           style="stroke-width:0.00640963" />
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill-opacity="0"
+           stroke="#3e3e3e"
+           stroke-width="0.0823078"
+           id="path1093" />
+      </g>
+    </g>
+    <g
+       id="g1111"
+       transform="matrix(3.1327898,0,0,3.1889719,107.37716,-8.4910449)"
+       style="stroke-width:0.0837088"
+       inkscape:export-filename="/Users/maybites/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media/Layer_1.png"
+       inkscape:export-xdpi="30"
+       inkscape:export-ydpi="30">
+      <g
+         id="g1103"
+         style="stroke-width:0.0837088">
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill="#929292"
+           id="path1099"
+           style="stroke-width:0.00748781" />
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill-opacity="0"
+           stroke="#4c4c4c"
+           stroke-width="0.0209273"
+           id="path1101" />
+      </g>
+      <g
+         id="g1109"
+         style="stroke-width:0.0837088">
+        <path
+           d="M 8,22 C 3.582,22 0,18.418 0,14 0,9.582 3.582,6 8,6 c 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill="#000000"
+           id="path1105"
+           style="stroke-width:0.00748781" />
+        <path
+           d="M 8,22 C 3.582,22 0,18.418 0,14 0,9.582 3.582,6 8,6 c 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill-opacity="0"
+           stroke="#3e3e3e"
+           stroke-width="0.0837088"
+           id="path1107" />
+      </g>
+    </g>
+    <g
+       id="g1125"
+       transform="matrix(3.1860825,0,0,3.2432915,106.2281,54.979153)"
+       style="stroke-width:0.0823078"
+       inkscape:export-filename="/Users/maybites/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media/Layer_1.png"
+       inkscape:export-xdpi="30"
+       inkscape:export-ydpi="30">
+      <g
+         id="g1117"
+         style="stroke-width:0.0823078">
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill="#ddfa1a"
+           id="path1113"
+           style="stroke-width:0.00640963" />
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill-opacity="0"
+           stroke="#4c4c4c"
+           stroke-width="0.020577"
+           id="path1115" />
+      </g>
+      <g
+         id="g1123"
+         style="stroke-width:0.0823078">
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill="#000000"
+           id="path1119"
+           style="stroke-width:0.00640963" />
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill-opacity="0"
+           stroke="#3e3e3e"
+           stroke-width="0.0823078"
+           id="path1121" />
+      </g>
+    </g>
+    <g
+       id="g1139"
+       transform="matrix(3.1860825,0,0,3.2432915,6.3582688,117.57806)"
+       style="stroke-width:0.0823078">
+      <g
+         id="g1131"
+         style="stroke-width:0.0823078">
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill="#ddfa1a"
+           id="path1127"
+           style="stroke-width:0.00640963" />
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill-opacity="0"
+           stroke="#4c4c4c"
+           stroke-width="0.020577"
+           id="path1129" />
+      </g>
+      <g
+         id="g1137"
+         style="stroke-width:0.0823078">
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill="#000000"
+           id="path1133"
+           style="stroke-width:0.00640963" />
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill-opacity="0"
+           stroke="#3e3e3e"
+           stroke-width="0.0823078"
+           id="path1135" />
+      </g>
+    </g>
+    <g
+       id="g1153"
+       transform="matrix(3.1860825,0,0,3.2432915,6.3582688,117.57806)"
+       style="stroke-width:0.0823078">
+      <g
+         id="g1145"
+         style="stroke-width:0.0823078">
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill="#ddfa1a"
+           id="path1141"
+           style="stroke-width:0.00640963" />
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill-opacity="0"
+           stroke="#4c4c4c"
+           stroke-width="0.020577"
+           id="path1143" />
+      </g>
+      <g
+         id="g1151"
+         style="stroke-width:0.0823078">
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill="#000000"
+           id="path1147"
+           style="stroke-width:0.00640963" />
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill-opacity="0"
+           stroke="#3e3e3e"
+           stroke-width="0.0823078"
+           id="path1149" />
+      </g>
+    </g>
+    <g
+       id="g1167"
+       transform="matrix(3.1860825,0,0,3.2432915,106.2281,117.57806)"
+       style="stroke-width:0.0823078">
+      <g
+         id="g1159"
+         style="stroke-width:0.0823078">
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill="#ddfa1a"
+           id="path1155"
+           style="stroke-width:0.00640963" />
+        <path
+           d="M 7.642,7 H 20.358 C 24.579,7 28,9.674 28,12.973 v 2.054 C 28,18.326 24.579,21 20.358,21 H 7.642 C 3.421,21 0,18.326 0,15.027 V 12.973 C 0,9.674 3.421,7 7.642,7 Z"
+           fill-opacity="0"
+           stroke="#4c4c4c"
+           stroke-width="0.020577"
+           id="path1157" />
+      </g>
+      <g
+         id="g1165"
+         style="stroke-width:0.0823078">
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill="#000000"
+           id="path1161"
+           style="stroke-width:0.00640963" />
+        <path
+           d="m 20,22 c -4.418,0 -8,-3.582 -8,-8 0,-4.418 3.582,-8 8,-8 4.418,0 8,3.582 8,8 0,4.418 -3.582,8 -8,8 z"
+           fill-opacity="0"
+           stroke="#3e3e3e"
+           stroke-width="0.0823078"
+           id="path1163" />
+      </g>
+    </g>
   </g>
 </svg>
