@@ -136,6 +136,13 @@ function done()
             currentPeerCount = myPeerList.getkeys().length;
         }
     }
+	// depending on the amount of peers, we will have to show the slider:
+	if(currentPeerCount > 14){
+		outlet(0, "hidden", 0);
+	} else {
+		outlet(0, "hidden", 1);
+	}
+
 	dpost("updating remote peer list...("+currentPeerCount+")");
     if(myPeerCount != currentPeerCount){
     	dpost("Start slot-resize animation ("+myPeerCount+" / " + currentPeerCount + ") ...\n");
