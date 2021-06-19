@@ -37,7 +37,7 @@ function slotResize(_indxStart, _indxTarget, _maxStep)
 {
     var iter = arguments.callee.task.iterations;
     if(iter <= _maxStep){
-        myRootPatcher.wind.size = [myRootSize[0], myRootSize[1] + _indxStart * mySlotHeight + _indxTarget * mySlotHeight / _maxStep * iter ];
+		resize(_indxStart * mySlotHeight + _indxTarget * mySlotHeight / _maxStep * iter );
     } else {
         arguments.callee.task.cancel();
         arguments.callee.task.freepeer();
@@ -203,9 +203,9 @@ function makeCreationMessage(_peerID){
 	msp.push("bpatcher");
     msp.push("Peer.maxpat");
     msp.push("@presentation_rect");
-	msp.push(720);
+	msp.push(1220);
 	msp.push(slotIndex * mySlotHeight);
-	msp.push(720);
+	msp.push(1220);
 	msp.push(mySlotHeight);
 	msp.push("@varname");
 	msp.push(_peerID);
