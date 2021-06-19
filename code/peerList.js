@@ -13,6 +13,11 @@ var mySlotHeight = 45;
 var myRootPatcher = null;
 
 var myRootSize = null;
+var myListHeight = 0;
+var myExpandWidth = 500;
+
+var myFlagHeight = true;
+var myFlagWidth = false;
 
 if (jsarguments.length>1)
 	myval = jsarguments[1];
@@ -29,15 +34,26 @@ function dpost(_post){
 	post("peerList: " + _post + "\n");
 }
 
-function resize(_height){
-    myRootPatcher.wind.size = [myRootSize[0], myRootSize[1] + _height];
+function expand(_flagHeight, _flagWidth){
+	myFlagHeight = (_flagHeight == 1)?true:false;
+	myFlagWidth = (_flagWidth == 1)?true:false;
+	applyWindowSize();
+}
+
+function resizeWinHeight(_height){
+	myListHeight = _height;
+	applyWindowSize();
+}
+
+function applyWindowSize(){
+    myRootPatcher.wind.size = [(myFlagWidth)?myRootSize[0] + myExpandWidth: myRootSize[0], (myFlagHeight)?myRootSize[1] + myListHeight:myRootSize[1]];
 }
 
 function slotResize(_indxStart, _indxTarget, _maxStep)
 {
     var iter = arguments.callee.task.iterations;
     if(iter <= _maxStep){
-		resize(_indxStart * mySlotHeight + _indxTarget * mySlotHeight / _maxStep * iter );
+		resizeWinHeight(_indxStart * mySlotHeight + _indxTarget * mySlotHeight / _maxStep * iter );
     } else {
         arguments.callee.task.cancel();
         arguments.callee.task.freepeer();

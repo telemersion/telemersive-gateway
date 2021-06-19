@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 73.0, 263.0, 1221.0, 471.0 ],
+		"rect" : [ 179.0, 258.0, 1221.0, 471.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1113.0, 60.0, 65.0, 35.0 ],
+					"text" : "routepass expand"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1113.0, 88.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1159.0, 106.0, 29.5, 22.0 ],
 					"text" : "!- 0"
 				}
 
@@ -57,7 +70,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1113.0, 133.0, 64.0, 22.0 ],
+					"patching_rect" : [ 1159.0, 133.0, 64.0, 22.0 ],
 					"text" : "offset 0 $1"
 				}
 
@@ -71,7 +84,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1113.0, 170.0, 67.0, 22.0 ],
+					"patching_rect" : [ 1159.0, 170.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -86,7 +99,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1113.0, 37.0, 30.0, 30.0 ]
+					"patching_rect" : [ 1113.0, 25.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -389,7 +402,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1024.0, 95.0, 75.0, 22.0 ],
+					"patching_rect" : [ 1024.0, 113.0, 75.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "peerList.js",
 						"parameter_enable" : 0
@@ -416,7 +429,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -425,6 +438,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-9", 1 ]
 				}
 
 			}
