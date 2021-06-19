@@ -1,4 +1,4 @@
-let APPVERSION = "TeGateway_v1"; // use simple numbering
+let APPVERSION = "TeGateway_v2"; // use simple numbering
 // only apps with the same version as the first peer that opens the room
 // will be accepted -  all other will be declined by the manager
 
