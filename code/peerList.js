@@ -192,14 +192,6 @@ function done()
 
     // update Slots with new peer
     slots.forEach(update);
-
-	if(isJoined === 1){
-		outlet(0, "peerList", "uptodate");
-	} else {
-		if(myPeerList.getkeys() === null){
-			outlet(0, "peerList", "clear");
-		}
-	}    
 }
 
 function update(_peerID, _index) {

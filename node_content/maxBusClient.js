@@ -165,15 +165,17 @@ try {
 	Client.setCallback(bubbledUp);
 
 	init = async () =>{
-  		maxApi.setDict('internalIPs', await Client.init());
   		// send default settings
   		bubbledUp("bus", ["broker", "connected", 0]);
   		bubbledUp("bus", ["peer", "joined", 0]);
   		bubbledUp("bus", [ "rooms", "menu", "clear"]);
-  		bubbledUp("bus", [ "rooms", "menu", "listing"]);
+  		bubbledUp("bus", [ "rooms", "listing"]);
   		bubbledUp("bus", [ "rooms", "done"]);
   		bubbledUp("bus", [ "peers", "menu", "clear"]);
   		bubbledUp("bus", [ "peers", "done"]);
+
+  		maxApi.setDict('internalIPs', await Client.init());
+
   		bubbledUp("bus", [ "ready"]);
 	}
 
