@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 363.0, 371.0, 718.0, 480.0 ],
+		"rect" : [ 509.0, 650.0, 696.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,15 +41,17 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"border" : 0,
-					"filename" : "deviceToggle_test.js",
+					"filename" : "jsui_toggle_svg.js",
 					"id" : "obj-1",
-					"jsarguments" : [ "autolockunselected_off.svg", "autolockunselected.svg" ],
+					"jsarguments" : [ "autolockunselected_off.svg", "autolockunselected.svg", "@offset", 4, 4 ],
 					"maxclass" : "jsui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.0, 67.0, 50.0, 42.0 ],
+					"patching_rect" : [ 47.0, 67.0, 58.0, 42.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 47.0, 67.0, 104.0, 79.5 ],
 					"varname" : "toggle"
 				}
 
@@ -92,10 +94,10 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 187.0, 101.5, 73.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 337, 187, 669, 271 ],
+						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 200, 200, 800, 500 ]
+						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
 					"text" : "pattrstorage",
@@ -146,14 +148,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "deviceButton.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/code",
 				"patcherrelativepath" : "../../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceToggle_test.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
+				"name" : "jsui_toggle_svg.js",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/code",
 				"patcherrelativepath" : "../../code",
 				"type" : "TEXT",
 				"implicit" : 1
