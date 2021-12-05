@@ -3,16 +3,16 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 509.0, 650.0, 696.0, 480.0 ],
+		"rect" : [ 506.0, 243.0, 462.0, 480.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -49,9 +49,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.0, 67.0, 58.0, 42.5 ],
+					"patching_rect" : [ 47.0, 67.0, 71.0, 56.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 47.0, 67.0, 104.0, 79.5 ],
+					"presentation_rect" : [ 47.0, 67.0, 77.0, 52.0 ],
 					"varname" : "toggle"
 				}
 
@@ -148,14 +148,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "deviceButton.js",
-				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/code",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
 				"patcherrelativepath" : "../../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jsui_toggle_svg.js",
-				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/code",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
 				"patcherrelativepath" : "../../code",
 				"type" : "TEXT",
 				"implicit" : 1
