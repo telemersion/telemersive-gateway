@@ -93,8 +93,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.5, 239.0, 151.0, 22.0 ],
-					"text" : "sprintf %s/%s/%s/%s/%s/#"
+					"patching_rect" : [ 350.5, 239.0, 155.0, 22.0 ],
+					"text" : "sprintf /%s/%s/%s/%s/%s/#"
 				}
 
 			}
@@ -343,7 +343,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.0, 293.0, 106.0, 116.0 ],
+					"patching_rect" : [ 86.0, 293.0, 109.0, 116.0 ],
 					"text" : "script newobject bpatcher #3 @size #4 40 @args #1 #2 @presentation_rect 0 0 #4 40 @varname device @presentation 1"
 				}
 
@@ -389,7 +389,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 349.0, 130.0, 64.0, 31.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 58.0, 40.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 4.0, 40.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}

@@ -294,7 +294,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 109.5, 190.0, 178.0, 22.0 ],
-									"text" : "sprintf /peer/%s/+/rack/+/loaded"
+									"text" : "sprintf /peer/%s/rack/+/+/loaded"
 								}
 
 							}
