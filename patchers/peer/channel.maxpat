@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "int" ],
+					"patching_rect" : [ 63.0, 227.0, 48.0, 22.0 ],
+					"text" : "change"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-77",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 185.5, 255.0, 42.0, 22.0 ],
+					"patching_rect" : [ 185.5, 283.0, 42.0, 22.0 ],
 					"text" : "t b b b"
 				}
 
@@ -57,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 63.0, 255.0, 42.0, 22.0 ],
+					"patching_rect" : [ 63.0, 283.0, 42.0, 22.0 ],
 					"text" : "t b b b"
 				}
 
@@ -193,7 +205,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 63.0, 228.0, 264.0, 22.0 ],
+					"patching_rect" : [ 63.0, 256.0, 264.0, 22.0 ],
 					"text" : "route 1 0"
 				}
 
@@ -205,7 +217,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.5, 293.0, 111.0, 22.0 ],
+					"patching_rect" : [ 208.5, 321.0, 111.0, 22.0 ],
 					"text" : "script delete device"
 				}
 
@@ -302,9 +314,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 54.0, 89.0, 37.0, 17.0 ],
+					"patching_rect" : [ 54.0, 89.0, 37.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, -2.0, 16.0, 17.0 ]
+					"presentation_rect" : [ 1.0, -2.0, 16.0, 18.0 ]
 				}
 
 			}
@@ -338,12 +350,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-44",
-					"linecount" : 8,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.0, 293.0, 109.0, 116.0 ],
+					"patching_rect" : [ 86.0, 321.0, 112.0, 105.0 ],
 					"text" : "script newobject bpatcher #3 @size #4 40 @args #1 #2 @presentation_rect 0 0 #4 40 @varname device @presentation 1"
 				}
 
@@ -398,6 +410,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"source" : [ "obj-29", 0 ]
 				}
@@ -447,7 +466,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-41", 0 ]
 				}
 
