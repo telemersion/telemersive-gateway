@@ -2228,7 +2228,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 38.0, 385.0, 143.0, 76.0 ],
+					"patching_rect" : [ 38.0, 385.0, 134.0, 76.0 ],
 					"saved_object_attributes" : 					{
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
@@ -2236,7 +2236,7 @@
 						"storage_rect" : [ 583, 69, 1034, 197 ]
 					}
 ,
-					"text" : "pattrstorage localPeer @outputmode 4 @autorestore 0 @savemode 0 @changemode 1",
+					"text" : "pattrstorage localPeer @outputmode 2 @autorestore 0 @savemode 0 @changemode 1",
 					"varname" : "localPeer"
 				}
 
