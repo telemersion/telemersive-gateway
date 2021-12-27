@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 749.0, 174.0, 640.0, 480.0 ],
+		"rect" : [ 749.0, 174.0, 640.0, 555.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 63.0, 263.0, 54.0, 22.0 ],
+					"text" : "deferlow"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
@@ -79,7 +91,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 185.5, 283.0, 42.0, 22.0 ],
+					"patching_rect" : [ 185.5, 322.0, 42.0, 22.0 ],
 					"text" : "t b b b"
 				}
 
@@ -91,7 +103,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "bang" ],
-					"patching_rect" : [ 63.0, 283.0, 42.0, 22.0 ],
+					"patching_rect" : [ 63.0, 322.0, 42.0, 22.0 ],
 					"text" : "t b b b"
 				}
 
@@ -192,7 +204,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 63.0, 256.0, 264.0, 22.0 ],
+					"patching_rect" : [ 63.0, 295.0, 264.0, 22.0 ],
 					"text" : "route 1 0"
 				}
 
@@ -204,7 +216,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.5, 321.0, 111.0, 22.0 ],
+					"patching_rect" : [ 208.5, 360.0, 111.0, 22.0 ],
 					"text" : "script delete device"
 				}
 
@@ -326,7 +338,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 208.5, 438.0, 67.0, 22.0 ],
+					"patching_rect" : [ 208.5, 485.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -342,7 +354,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.0, 321.0, 117.0, 102.0 ],
+					"patching_rect" : [ 86.0, 360.0, 117.0, 102.0 ],
 					"text" : "script newobject bpatcher #3 @size #4 40 @args #1 #2 @presentation_rect 0 0 #4 40 @varname device @presentation 1"
 				}
 
@@ -388,7 +400,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 349.0, 130.0, 64.0, 31.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 40.0, 40.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 4.0, 40.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
@@ -397,7 +409,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -483,6 +495,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-77", 0 ],
 					"source" : [ "obj-48", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-48", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
