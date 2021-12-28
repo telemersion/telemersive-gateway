@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 226.0, 180.0, 268.0, 247.0 ],
+		"rect" : [ 236.0, 406.0, 268.0, 247.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,46 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 99.0, 22.0, 37.0, 22.0 ],
+					"text" : "osc 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 112.0, 81.0, 72.0, 22.0 ],
+					"text" : "prepend set"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 8.0,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 112.0, 111.0, 109.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 26.0, 98.0, 15.0 ],
+					"text" : "OSC",
+					"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"handoff" : "",
 					"id" : "obj-11",
 					"maxclass" : "ubutton",
@@ -55,6 +95,7 @@
 			}
 , 			{
 				"box" : 				{
+					"args" : [ "@size", 25, 25, "@colorON", 0.5, 0.0, 0.875, 1.0, "@colorOFF", 0.26, 0.0, 0.5, 1.0 ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -66,12 +107,12 @@
 					"maxclass" : "bpatcher",
 					"name" : "deviceOSC_icon.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 24.0, 48.0, 34.0, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 33.0, 5.0, 30.0, 33.0 ],
+					"presentation_rect" : [ 35.0, 2.0, 25.0, 25.0 ],
 					"varname" : "direction",
 					"viewvisibility" : 1
 				}
@@ -153,7 +194,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgoncolor" : [ 0.235294117647059, 0.564705882352941, 0.250980392156863, 1.0 ],
+					"bgoncolor" : [ 0.125490196078431, 0.494117647058824, 0.894117647058824, 1.0 ],
 					"id" : "obj-6",
 					"ignoreclick" : 1,
 					"maxclass" : "textbutton",
@@ -215,6 +256,27 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-32", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "deviceOSC_icon.maxpat",
@@ -265,7 +327,7 @@
 , 			{
 				"name" : "rnbodefault",
 				"default" : 				{
-					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -276,12 +338,12 @@
 						"autogradient" : 0.0
 					}
 ,
-					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
+					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 					"fontsize" : [ 12.0 ],
 					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
-					"fontname" : [ "Lato" ],
-					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ]
+					"fontname" : [ "Lato" ]
 				}
 ,
 				"parentstyle" : "",
@@ -290,8 +352,9 @@
 , 			{
 				"name" : "rnbohighcontrast",
 				"default" : 				{
+					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -302,16 +365,15 @@
 						"autogradient" : 0.0
 					}
 ,
-					"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontsize" : [ 13.0 ],
 					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
-					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
-					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 764.0, 385.0, 676.0, 480.0 ],
+		"rect" : [ 338.0, 346.0, 676.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -250,7 +250,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 585.75, 324.0, 121.0, 22.0 ],
+					"patching_rect" : [ 585.75, 318.0, 121.0, 22.0 ],
 					"text" : "textcolor $1 $2 $3 $4"
 				}
 
@@ -262,7 +262,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 543.0, 294.0, 121.0, 22.0 ],
+					"patching_rect" : [ 538.5, 286.0, 121.0, 22.0 ],
 					"text" : "textcolor $1 $2 $3 $4"
 				}
 
@@ -274,7 +274,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 414.0, 409.0, 55.0, 22.0 ],
+					"patching_rect" : [ 433.0, 409.0, 55.0, 22.0 ],
 					"text" : "hidden 1"
 				}
 
@@ -298,7 +298,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 623.75, 352.0, 123.0, 22.0 ],
+					"patching_rect" : [ 381.75, 383.0, 123.0, 22.0 ],
 					"text" : "sprintf symout %s fps"
 				}
 
@@ -310,7 +310,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 623.75, 376.0, 45.0, 22.0 ],
+					"patching_rect" : [ 381.75, 407.0, 45.0, 22.0 ],
 					"text" : "hint $1"
 				}
 
@@ -375,7 +375,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 450.0, 474.0, 35.0, 13.0 ],
+					"patching_rect" : [ 433.0, 472.0, 35.0, 13.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 17.0, 13.0 ],
 					"textcolor" : [ 0.0, 0.5, 0.265625, 1.0 ],
@@ -414,7 +414,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 382.0, 151.0, 137.0, 22.0 ],
+					"patching_rect" : [ 382.0, 155.0, 137.0, 22.0 ],
 					"text" : "route colorON colorOFF"
 				}
 
@@ -1426,7 +1426,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-4", 5 ]
 				}
 
@@ -1442,7 +1442,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-4", 5 ]
 				}
 
