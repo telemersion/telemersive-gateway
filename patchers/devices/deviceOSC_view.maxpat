@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 75.0, 427.0, 411.0, 108.0 ],
+		"rect" : [ 650.0, 177.0, 411.0, 108.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,31 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "@size", 60, 60, "@colorON", 0.212598, 0.672707, 1.0, 1.0, "@colorOFF", 0.04181, 0.0, 0.86755, 1.0 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-21",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "deviceOSC_icon.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int", "" ],
+					"patching_rect" : [ 75.0, 285.0, 34.0, 34.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 7.0, 41.65625, 60.0, 60.0 ],
+					"varname" : "direction[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 0.43 ],
@@ -121,7 +146,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 217.0, 7.0, 48.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 6.34375, 60.0, 38.3125 ],
+					"presentation_rect" : [ 6.0, 0.34375, 60.0, 39.3125 ],
 					"ratio" : 1,
 					"tracking" : 1,
 					"varname" : "enable"
@@ -1416,7 +1441,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgoncolor" : [ 0.125490196078431, 0.494117647058824, 0.894117647058824, 1.0 ],
+					"bgoncolor" : [ 0.052632, 0.359294, 1.0, 1.0 ],
 					"hint" : "press to open device",
 					"id" : "obj-40",
 					"ignoreclick" : 1,
@@ -1426,9 +1451,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 132.25, 67.0, 59.0, 26.0 ],
+					"patching_rect" : [ 138.25, 55.0, 59.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 2.0, 70.0, 102.0 ],
+					"presentation_rect" : [ 2.0, 2.0, 70.0, 104.0 ],
 					"rounded" : 8.0,
 					"text" : "",
 					"texton" : "",
@@ -1533,14 +1558,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"order" : 3,
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
 					"order" : 2,
 					"source" : [ "obj-20", 0 ]
 				}
@@ -1578,6 +1595,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"order" : 0,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -1727,7 +1753,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 1 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -1735,7 +1761,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
-					"order" : 1,
+					"order" : 2,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -1759,6 +1793,13 @@
 				"name" : "receiveR.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "deviceOSC_icon.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}

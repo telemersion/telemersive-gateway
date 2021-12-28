@@ -2,7 +2,7 @@
 	"name" : "telemersive-gateway",
 	"version" : 1,
 	"creationdate" : 3688306570,
-	"modificationdate" : 3721289708,
+	"modificationdate" : 3723571085,
 	"viewrect" : [ 24.0, 103.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -18,10 +18,11 @@
 			"deviceButtonTestbed.maxpat" : 			{
 				"kind" : "patcher"
 			}
-
-		}
 ,
-		"media" : 		{
+			"colorScheme.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -34,10 +35,6 @@
 		}
 ,
 		"externals" : 		{
-
-		}
-,
-		"other" : 		{
 
 		}
 
