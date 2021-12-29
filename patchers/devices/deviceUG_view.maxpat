@@ -793,6 +793,8 @@
 					"patching_rect" : [ 668.999999999999886, 21.5, 56.0, 22.0 ],
 					"restore" : 					{
 						"description" : [ "ultragrid" ],
+						"enable" : [ 0 ],
+						"select" : [ 0 ],
 						"updateMenu" : [ 1 ]
 					}
 ,
@@ -866,7 +868,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 588.0, 238.0, 440.0, 550.0 ],
+						"rect" : [ 939.0, 281.0, 440.0, 550.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1093,7 +1095,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 108.0, 221.0, 103.0, 22.0 ],
-													"text" : "5941_cche"
+													"text" : "6397_cche"
 												}
 
 											}
@@ -2629,7 +2631,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 719.0, 136.0, 479.0, 405.0 ],
+										"rect" : [ 898.0, 142.0, 479.0, 405.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -2697,9 +2699,10 @@
 													"lockedsize" : 0,
 													"maxclass" : "bpatcher",
 													"name" : "dynRangeMenu.maxpat",
-													"numinlets" : 0,
-													"numoutlets" : 0,
+													"numinlets" : 1,
+													"numoutlets" : 1,
 													"offset" : [ 0.0, 0.0 ],
+													"outlettype" : [ "" ],
 													"patching_rect" : [ 85.184296000000018, 116.0, 203.0, 25.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 80.0, 0.0, 217.0, 25.0 ],
@@ -2935,6 +2938,13 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-62", 0 ],
+													"source" : [ "obj-21", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-4", 0 ],
 													"source" : [ "obj-3", 0 ]
 												}
@@ -2986,6 +2996,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-9", 0 ],
 													"source" : [ "obj-7", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-21", 0 ],
+													"source" : [ "obj-9", 0 ]
 												}
 
 											}
@@ -5735,7 +5752,7 @@
 									"id" : "obj-2",
 									"linecount" : 2,
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 367.25, 85.0, 74.0, 35.0 ],
@@ -7737,7 +7754,7 @@
 												"box" : 												{
 													"id" : "obj-9",
 													"maxclass" : "newobj",
-													"numinlets" : 0,
+													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 29.166666666666686, 15.0, 99.0, 22.0 ],
@@ -9473,8 +9490,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/MQTTQuery/patchers/mockup",
-				"patcherrelativepath" : "../../../MQTTQuery/patchers/mockup",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "dynRangeMenu.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -9486,10 +9510,24 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.view.appearance.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.monitor.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "UI_Switch.png",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"patcherrelativepath" : "../../media",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
