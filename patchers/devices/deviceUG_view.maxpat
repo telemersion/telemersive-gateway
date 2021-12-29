@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 514.0, 309.0, 408.0, 278.0 ],
+		"rect" : [ 514.0, 309.0, 405.0, 276.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,7 +38,20 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
+		"title" : "s > UltraGrid > channel 0",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 579.0, 398.0, 43.0, 22.0 ],
+					"text" : "pak s i"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-63",
 					"maxclass" : "newobj",
@@ -120,7 +133,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 708.0, 435.0, 104.0, 22.0 ],
+					"patching_rect" : [ 708.0, 463.0, 104.0, 22.0 ],
 					"text" : "routepass bgcolor"
 				}
 
@@ -424,7 +437,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 85.083333333333258, 232.0, 59.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 27.0, 324.0, 243.0 ],
+					"presentation_rect" : [ 74.0, 26.0, 327.0, 247.0 ],
 					"proportion" : 0.5
 				}
 
@@ -704,7 +717,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 579.0, 425.0, 75.0, 22.0 ],
+					"patching_rect" : [ 579.0, 453.0, 75.0, 22.0 ],
 					"text" : "prepend title"
 				}
 
@@ -716,7 +729,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 612.166666666666742, 472.0, 67.0, 22.0 ],
+					"patching_rect" : [ 597.0, 499.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -729,7 +742,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 759.0, 349.0, 77.0, 22.0 ],
+					"patching_rect" : [ 748.0, 362.0, 77.0, 22.0 ],
 					"text" : "loadmess #2"
 				}
 
@@ -741,8 +754,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 579.0, 397.0, 199.0, 22.0 ],
-					"text" : "sprintf %s > UltraGrid > channel %s"
+					"patching_rect" : [ 579.0, 425.0, 241.0, 22.0 ],
+					"text" : "sprintf symout %s > UltraGrid > channel %s"
 				}
 
 			}
@@ -780,8 +793,6 @@
 					"patching_rect" : [ 668.999999999999886, 21.5, 56.0, 22.0 ],
 					"restore" : 					{
 						"description" : [ "ultragrid" ],
-						"enable" : [ 0 ],
-						"select" : [ 1 ],
 						"updateMenu" : [ 1 ]
 					}
 ,
@@ -836,7 +847,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-32",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -1083,7 +1093,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 108.0, 221.0, 103.0, 22.0 ],
-													"text" : "1935_cche"
+													"text" : "5941_cche"
 												}
 
 											}
@@ -3278,6 +3288,7 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-15",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -3419,7 +3430,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 22.0, 37.0, 56.0, 22.0 ],
 									"restore" : 									{
-										"type" : [ 1 ]
+										"type" : [ 0 ]
 									}
 ,
 									"text" : "autopattr",
@@ -4178,6 +4189,7 @@
 									"embed" : 1,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
+									"hidden" : 1,
 									"id" : "obj-19",
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
@@ -5091,7 +5103,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-33",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -7511,6 +7522,7 @@
 											}
 , 											{
 												"box" : 												{
+													"hidden" : 1,
 													"hint" : "This allows you to receive another channel to receive than the default. This way you can recieve a stream you are sending yourself to the gateway server.",
 													"id" : "obj-7",
 													"items" : [ "default", ",", "channel", 0, ",", "channel", 1, ",", "channel", 2, ",", "channel", 3, ",", "channel", 4, ",", "channel", 5, ",", "channel", 6, ",", "channel", 7, ",", "channel", 8, ",", "channel", 9 ],
@@ -7631,7 +7643,7 @@
 													"patching_rect" : [ 151.125, 495.0, 50.0, 22.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 0.0, 22.0, 46.0, 22.0 ],
-													"text" : "1",
+													"text" : "0",
 													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 
@@ -8277,7 +8289,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 215.0, 57.0, 50.0, 22.0 ],
-													"text" : "1"
+													"text" : "0"
 												}
 
 											}
@@ -8871,7 +8883,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 708.0, 471.0, 95.0, 26.0 ],
+					"patching_rect" : [ 708.0, 499.0, 95.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 74.0, 26.0, 327.0, 247.0 ],
 					"proportion" : 0.5
@@ -8926,7 +8938,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 2 ],
-					"midpoints" : [ 621.666666666666742, 504.0, 575.5, 504.0, 575.5, 414.0, 559.333333333333258, 414.0 ],
+					"midpoints" : [ 606.5, 527.0, 575.5, 527.0, 575.5, 414.0, 559.333333333333258, 414.0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -8963,7 +8975,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
+					"destination" : [ "obj-62", 0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -9418,6 +9430,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-62", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
 					"source" : [ "obj-63", 0 ]
 				}
@@ -9439,7 +9458,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
+					"destination" : [ "obj-62", 1 ],
 					"source" : [ "obj-8", 0 ]
 				}
 

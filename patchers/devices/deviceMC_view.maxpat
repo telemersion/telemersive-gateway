@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 83.0, 304.0, 416.0, 391.0 ],
+		"rect" : [ 348.0, 265.0, 399.0, 392.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,27 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
+		"title" : "s > MoCap > channel 0",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 426.0, 427.0, 43.0, 22.0 ],
+					"text" : "pak s i"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 539.0, 469.0, 104.0, 22.0 ],
+					"patching_rect" : [ 564.0, 487.0, 104.0, 22.0 ],
 					"text" : "routepass bgcolor"
 				}
 
@@ -111,7 +124,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 235.083333333333258, 165.0, 59.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 27.0, 324.0, 357.0 ],
+					"presentation_rect" : [ 72.0, 26.0, 325.0, 366.0 ],
 					"proportion" : 0.5
 				}
 
@@ -565,7 +578,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 531.5, 384.0, 68.0, 22.0 ],
+					"patching_rect" : [ 540.333333333333485, 371.0, 68.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -803,7 +816,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.0, 460.0, 75.0, 22.0 ],
+					"patching_rect" : [ 426.0, 483.0, 75.0, 22.0 ],
 					"text" : "prepend title"
 				}
 
@@ -815,21 +828,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 426.0, 504.0, 67.0, 22.0 ],
+					"patching_rect" : [ 426.0, 512.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 606.0, 384.0, 77.0, 22.0 ],
-					"text" : "loadmess #2"
 				}
 
 			}
@@ -840,8 +841,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.0, 432.0, 199.0, 22.0 ],
-					"text" : "sprintf %s > MoCap > channel %s"
+					"patching_rect" : [ 426.0, 455.0, 231.0, 22.0 ],
+					"text" : "sprintf symout %s > MoCap > channel %s"
 				}
 
 			}
@@ -852,20 +853,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 426.0, 403.0, 90.0, 22.0 ],
+					"patching_rect" : [ 426.0, 398.0, 90.0, 22.0 ],
 					"text" : "route title"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.0, 371.0, 103.0, 22.0 ],
-					"text" : "receiveC #1_peer"
 				}
 
 			}
@@ -3046,7 +3035,7 @@
 ,
 					"patching_rect" : [ 367.833333333333371, 264.0, 349.083333333333258, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 190.0, 338.0, 194.0 ],
+					"presentation_rect" : [ 72.0, 190.0, 338.0, 194.0 ],
 					"varname" : "natnet",
 					"viewvisibility" : 1
 				}
@@ -4522,7 +4511,7 @@
 ,
 					"patching_rect" : [ 358.5, 76.75, 354.500000000000114, 52.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.5, 57.0, 336.5, 52.0 ],
+					"presentation_rect" : [ 73.5, 57.0, 336.5, 52.0 ],
 					"varname" : "connection",
 					"viewvisibility" : 1
 				}
@@ -5473,7 +5462,7 @@
 ,
 					"patching_rect" : [ 361.833333333333371, 177.5, 351.166666666666742, 77.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 111.0, 338.0, 77.0 ],
+					"presentation_rect" : [ 72.0, 111.0, 338.0, 77.0 ],
 					"varname" : "localudp",
 					"viewvisibility" : 1
 				}
@@ -6070,7 +6059,7 @@
 ,
 					"patching_rect" : [ 358.5, 44.75, 332.166666666666629, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 27.0, 338.0, 26.0 ],
+					"presentation_rect" : [ 72.0, 27.0, 338.0, 26.0 ],
 					"varname" : "direction",
 					"viewvisibility" : 1
 				}
@@ -6107,10 +6096,34 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 539.0, 500.0, 95.0, 26.0 ],
+					"patching_rect" : [ 564.0, 518.0, 95.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 27.0, 324.0, 361.0 ],
+					"presentation_rect" : [ 74.0, 27.0, 320.0, 361.0 ],
 					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 630.0, 371.0, 77.0, 22.0 ],
+					"text" : "loadmess #2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 426.0, 371.0, 103.0, 22.0 ],
+					"text" : "receiveC #1_peer"
 				}
 
 			}
@@ -6202,15 +6215,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"source" : [ "obj-17", 0 ]
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-17", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
-					"source" : [ "obj-17", 1 ]
+					"destination" : [ "obj-38", 0 ],
+					"source" : [ "obj-17", 0 ]
 				}
 
 			}
@@ -6364,6 +6377,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -6485,7 +6505,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-22", 1 ],
+					"destination" : [ "obj-38", 1 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -6499,16 +6519,16 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/MQTTQuery/patchers/mockup",
-				"patcherrelativepath" : "../../../MQTTQuery/patchers/mockup",
+				"name" : "receiveC.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveC.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"name" : "receiveR.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/MQTTQuery/patchers/mockup",
+				"patcherrelativepath" : "../../../MQTTQuery/patchers/mockup",
 				"type" : "JSON",
 				"implicit" : 1
 			}
