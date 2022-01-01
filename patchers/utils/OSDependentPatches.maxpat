@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 516.0, 268.0, 640.0, 480.0 ],
+		"rect" : [ 93.0, 346.0, 804.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,66 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 23.5, 245.0, 239.5, 22.0 ],
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 23.5, 275.0, 213.0, 35.0 ],
+					"text" : "script connect texDetect 0 detector 0, script connect detector 0 texSelect 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 515.0, 360.894714222656262, 160.0, 22.0 ],
+					"text" : "s gateway::texture::selection",
+					"varname" : "texSelect"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 515.0, 245.0, 159.0, 22.0 ],
+					"text" : "r gateway::texture::detection",
+					"varname" : "texDetect"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 130.0, 317.0, 54.0, 22.0 ],
+					"patching_rect" : [ 296.0, 75.5, 54.0, 22.0 ],
 					"text" : "deferlow"
 				}
 
@@ -57,7 +111,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 130.0, 344.0, 67.0, 22.0 ],
+					"patching_rect" : [ 296.0, 102.5, 67.0, 22.0 ],
 					"text" : "delay 2000"
 				}
 
@@ -68,7 +122,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 130.0, 373.0, 138.0, 22.0 ],
+					"patching_rect" : [ 296.0, 131.5, 138.0, 22.0 ],
 					"text" : "s updateTextureSources"
 				}
 
@@ -116,7 +170,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 205.333333333333371, 223.0, 58.0, 22.0 ],
+					"patching_rect" : [ 371.333333333333371, 3.5, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -126,13 +180,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-2",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.5, 162.0, 161.0, 49.0 ],
-					"text" : "script newobject newobj @text spout_detector @patching_position 515 305"
+					"patching_rect" : [ 23.5, 162.0, 160.5, 62.0 ],
+					"text" : "script newobject newobj @text spout_detector @varname detector @patching_position 515 305"
 				}
 
 			}
@@ -141,13 +195,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-33",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.333333333333371, 162.0, 165.0, 49.0 ],
-					"text" : "script newobject newobj @text syphon_detector @patching_position 515 305"
+					"patching_rect" : [ 198.333333333333371, 162.0, 166.0, 62.0 ],
+					"text" : "script newobject newobj @text syphon_detector @varname detector @patching_position 515 305"
 				}
 
 			}
@@ -158,7 +212,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 23.5, 262.0, 67.0, 22.0 ],
+					"patching_rect" : [ 244.0, 337.0, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -172,7 +226,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 238.333333333333371, 331.0, 243.0, 35.0 ],
+					"patching_rect" : [ 404.333333333333371, 89.5, 243.0, 35.0 ],
 					"text" : ";\rmax system windows getruntime #0_win"
 				}
 
@@ -197,7 +251,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 205.333333333333371, 290.0, 257.0, 35.0 ],
+					"patching_rect" : [ 371.333333333333371, 48.5, 257.0, 35.0 ],
 					"text" : ";\rmax system macintosh getruntime #0_mac"
 				}
 
@@ -245,6 +299,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-18", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"order" : 0,
 					"source" : [ "obj-19", 0 ]
@@ -261,7 +336,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -292,7 +367,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-33", 0 ]
 				}
 
@@ -314,15 +389,6 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "sendR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -338,6 +404,25 @@
 
 				}
 ,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "Jamoma_highlighted_orange",
+				"default" : 				{
+					"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "STYLE1",
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "jpatcher001",
 				"parentstyle" : "",
 				"multi" : 0
 			}
