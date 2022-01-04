@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,6 +40,54 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 194.0, 33.0, 100.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"border" : 0,
+					"filename" : "jsui_toggle_svg.js",
+					"id" : "obj-7",
+					"jsarguments" : [ "hidePeers.svg", "showPeers.svg", "@offset", 4, 4 ],
+					"maxclass" : "jsui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 117.0, 295.0, 121.0, 125.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 152.0, 213.0, 93.0, 96.0 ],
+					"varname" : "toggle[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"border" : 0,
+					"filename" : "jsui_toggle_svg.js",
+					"id" : "obj-2",
+					"jsarguments" : [ "closeDrawer.svg", "openDrawer.svg", "@offset", 4, 4 ],
+					"maxclass" : "jsui",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 117.0, 160.0, 121.0, 125.5 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 152.0, 67.0, 93.0, 96.0 ],
+					"varname" : "toggle[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"border" : 0,
 					"filename" : "jsui_toggle_svg.js",
 					"id" : "obj-1",
@@ -49,7 +97,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 47.0, 67.0, 71.0, 56.5 ],
+					"patching_rect" : [ 47.0, 67.0, 80.0, 56.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 47.0, 67.0, 77.0, 52.0 ],
 					"varname" : "toggle"
@@ -77,7 +125,9 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 187.0, 74.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"toggle" : [ 0 ]
+						"toggle" : [ 0 ],
+						"toggle[1]" : [ 0 ],
+						"toggle[2]" : [ 0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -142,6 +192,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}

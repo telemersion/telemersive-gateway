@@ -12,7 +12,7 @@ var myScale = 1.
 
 var myOffset = [0., 0.];
 
-var hasResized = false;
+var hasResized = true;
 var presentation = 0;
 
 declareattribute("offset","getmyOffset","setmyOffset");
@@ -38,11 +38,14 @@ function bang()
 	outlet(0, myToggle);
 }
 
+function msg_int(value){
+	setvalueof(value);
+}
+
 // drawing function
 function paint()
 {
 	gc();
-	
  	check_mode();	
 	rescale();
 	
@@ -78,7 +81,7 @@ function rescale()
 {
 	if(hasResized){	
 		var boxRect = this.box.getattr("patching_rect");
-		if(this.patcher.getattr("presentation") == 1){
+		if(presentation){
 			boxRect = this.box.getattr("presentation_rect");
 		}
 	
