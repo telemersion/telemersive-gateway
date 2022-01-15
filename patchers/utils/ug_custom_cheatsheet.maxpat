@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 235.0, 417.0, 757.0, 202.0 ],
+		"rect" : [ 201.0, 566.0, 757.0, 262.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,127 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 785.0, 154.0, 285.0, 35.0 ],
+					"presentation_linecount" : 2,
+					"text" : "https://github.com/CESNET/UltraGrid/wiki/Syphon\\,-Spout-and-NDI"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
+					"bgcolor2" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.72156862745098, 0.517647058823529, 0.007843137254902, 1.0 ],
+					"bgfillcolor_color1" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
+					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "color",
+					"gradient" : 1,
+					"id" : "obj-30",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 785.0, 118.0, 140.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 577.0, 161.0, 158.0, 22.0 ],
+					"text" : "Syphon, -Spout and NDI",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 396.0, 230.0, 218.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 231.0, 163.0, 239.0, 20.0 ],
+					"text" : "getting available NDI sources (see monitor)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 286.5, 230.0, 101.5, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 172.0, 161.0, 51.0, 22.0 ],
+					"text" : "ndi:help"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 448.5, 197.0, 121.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 231.0, 221.0, 125.0, 20.0 ],
+					"text" : "capturing NDI source"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 286.5, 197.0, 153.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 95.0, 221.0, 128.0, 22.0 ],
+					"text" : "ndi:url=127.0.0.1:5961"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 307.0, 169.0, 218.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 231.0, 193.0, 218.0, 20.0 ],
+					"text" : "capturing first NDI source found"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 270.5, 168.0, 29.5, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 197.0, 191.0, 27.0, 22.0 ],
+					"text" : "ndi"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
 					"bgcolor2" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
@@ -92,7 +213,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 605.5, 138.0, 144.0, 22.0 ],
+					"patching_rect" : [ 605.5, 139.0, 144.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 577.0, 103.0, 158.0, 22.0 ],
 					"text" : "Device-Settings#webcam",
@@ -108,7 +229,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 139.0, 218.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 103.0, 145.0, 20.0 ],
+					"presentation_rect" : [ 231.0, 69.0, 145.0, 20.0 ],
 					"text" : "OSX: streaming webcam "
 				}
 
@@ -122,7 +243,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 177.0, 139.0, 129.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 95.0, 103.0, 129.0, 22.0 ],
+					"presentation_rect" : [ 95.0, 69.0, 129.0, 22.0 ],
 					"text" : "avfoundation:device=1"
 				}
 
@@ -146,7 +267,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 745.0, 259.0, 78.0, 35.0 ],
+					"patching_rect" : [ 745.0, 238.0, 78.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 577.0, 14.0, 158.0, 22.0 ],
 					"text" : "Ultragrid help",
@@ -228,7 +349,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -415,7 +536,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 109.0, 165.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 164.0, 165.0, 20.0 ],
+					"presentation_rect" : [ 231.0, 130.0, 165.0, 20.0 ],
 					"text" : "addressing 1. decklink device"
 				}
 
@@ -429,7 +550,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 86.0, 109.0, 214.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 164.0, 214.0, 22.0 ],
+					"presentation_rect" : [ 10.0, 130.0, 214.0, 22.0 ],
 					"text" : "decklink:0:Hi50:UYUV:connection=SDI"
 				}
 
@@ -442,7 +563,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 74.0, 218.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 134.0, 218.0, 20.0 ],
+					"presentation_rect" : [ 231.0, 100.0, 218.0, 20.0 ],
 					"text" : "addressing 1. decklink device"
 				}
 
@@ -456,7 +577,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 238.0, 74.0, 62.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 162.0, 134.0, 62.0, 22.0 ],
+					"presentation_rect" : [ 162.0, 100.0, 62.0, 22.0 ],
 					"text" : "decklink:0"
 				}
 
@@ -469,7 +590,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 9.0, 88.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 43.0, 88.0, 20.0 ],
+					"presentation_rect" : [ 231.0, 9.0, 88.0, 20.0 ],
 					"text" : "screen capture"
 				}
 
@@ -483,7 +604,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 255.0, 9.0, 45.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 179.0, 43.0, 45.0, 22.0 ],
+					"presentation_rect" : [ 179.0, 9.0, 45.0, 22.0 ],
 					"text" : "screen"
 				}
 
@@ -497,7 +618,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 40.0, 330.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 73.0, 344.0, 20.0 ],
+					"presentation_rect" : [ 231.0, 39.0, 344.0, 20.0 ],
 					"text" : "addressing  devices in a direct way,  (or screen capture for win)"
 				}
 
@@ -511,7 +632,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 247.0, 40.0, 53.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 171.0, 73.0, 53.0, 22.0 ],
+					"presentation_rect" : [ 171.0, 39.0, 53.0, 22.0 ],
 					"text" : "dshow:5"
 				}
 
@@ -644,8 +765,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
 					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -660,6 +795,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -705,16 +854,19 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "rnbodefault",
 				"default" : 				{
-					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
-					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-					"fontsize" : [ 12.0 ],
-					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -725,9 +877,13 @@
 						"autogradient" : 0.0
 					}
 ,
-					"fontname" : [ "Lato" ],
+					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
+					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ]
+					"fontsize" : [ 12.0 ],
+					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
+					"fontname" : [ "Lato" ],
+					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -736,13 +892,6 @@
 , 			{
 				"name" : "rnbohighcontrast",
 				"default" : 				{
-					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-					"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontsize" : [ 13.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -753,11 +902,18 @@
 						"autogradient" : 0.0
 					}
 ,
-					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+					"fontsize" : [ 13.0 ],
+					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
-					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ]
+					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
