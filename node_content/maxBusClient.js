@@ -176,6 +176,8 @@ try {
 
   		maxApi.setDict('internalIPs', await Client.init());
 
+  		bubbledUp("bus", ["peer", "id", Client.peerId]);
+
   		bubbledUp("bus", [ "ready"]);
 	}
 
