@@ -896,7 +896,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 100.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "unkown",
+									"text" : "195.176.29.132",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -927,7 +927,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "unkown",
+									"text" : "10.128.96.182",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1155,7 +1155,7 @@
 									"patching_rect" : [ 73.333333333333371, 225.5, 103.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.833333333333371, 65.5, 159.0, 22.0 ],
-									"text" : "unkown"
+									"text" : "Projection"
 								}
 
 							}
@@ -1186,15 +1186,14 @@
 									"hidden" : 1,
 									"id" : "obj-54",
 									"ignoreclick" : 1,
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 36.0 ],
+									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 300.0, 20.0, 198.0, 22.0 ],
-									"text" : "qwD9YQ8apRpGd4MfwBah4V",
+									"text" : "4jtwjALUEM2NeSMNJ62nNa",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -1562,7 +1561,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 50.0, 220.0, 450.0, 750.0 ],
+						"rect" : [ 0.0, 0.0, 450.0, 750.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1592,7 +1591,6 @@
 						"showrootpatcherontab" : 0,
 						"showontab" : 0,
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-23",
@@ -4656,7 +4654,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-14",
-													"items" : [ "11:07:22", "GMT+0100", "[Projection]:", ">", "has", "joined", "room" ],
+													"items" : [ "11:46:06", "GMT+0100", "[Projection]:", ">", "has", "joined", "room", ",", "11:33:19", "GMT+0100", "[Projection]:", "<", "has", "left", "room", ",", "11:28:44", "GMT+0100", "[MartinMac]:", ">", "has", "joined", "room", ",", "11:23:01", "GMT+0100", "[Projection]:", ">", "has", "joined", "room" ],
 													"maxclass" : "chooser",
 													"multiselect" : 0,
 													"numinlets" : 1,
@@ -5829,7 +5827,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 380.5, 215.0, 115.333333333333371, 22.0 ],
-													"text" : "unkown",
+													"text" : "\">not joined<\"",
 													"textjustification" : 1
 												}
 
@@ -8402,7 +8400,7 @@
 													"id" : "obj-41",
 													"lockeddragscroll" : 0,
 													"maxclass" : "bpatcher",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"offset" : [ 0.0, 0.0 ],
 													"outlettype" : [ "" ],
@@ -8417,7 +8415,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 874.0, 200.0, 746.0, 480.0 ],
+														"rect" : [ 874.0, 200.0, 895.0, 480.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -8447,12 +8445,143 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-46",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 779.0, 214.0, 103.0, 22.0 ],
+																	"text" : "print SCRIPT_RX"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"comment" : "",
+																	"id" : "obj-45",
+																	"index" : 2,
+																	"maxclass" : "inlet",
+																	"numinlets" : 0,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 806.5, 15.0, 30.0, 30.0 ]
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-44",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 779.0, 181.0, 46.5, 22.0 ],
+																	"text" : "gate"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-41",
+																	"linecount" : 2,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 779.0, 56.0, 77.0, 34.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 28.0, 88.0, 158.0, 20.0 ],
+																	"text" : "script RX to max console"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"hint" : "print the messages from the script to the console",
+																	"id" : "obj-42",
+																	"maxclass" : "toggle",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "int" ],
+																	"parameter_enable" : 0,
+																	"patching_rect" : [ 779.0, 120.0, 24.0, 24.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 2.0, 86.0, 24.0, 24.0 ],
+																	"varname" : "stdout_toConsole[2]"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-27",
+																	"linecount" : 3,
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 662.0, 56.0, 75.0, 48.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 28.0, 60.0, 151.0, 20.0 ],
+																	"text" : "script TX to max console"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"hint" : "print the messages to the script to the console",
+																	"id" : "obj-28",
+																	"maxclass" : "toggle",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "int" ],
+																	"parameter_enable" : 0,
+																	"patching_rect" : [ 662.0, 113.0, 24.0, 24.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 2.0, 58.0, 24.0, 24.0 ],
+																	"varname" : "stdout_toConsole[1]"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-38",
+																	"maxclass" : "newobj",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 662.0, 171.0, 46.5, 22.0 ],
+																	"text" : "gate"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-40",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 662.0, 214.0, 101.0, 22.0 ],
+																	"text" : "print SCRIPT_TX"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-25",
+																	"maxclass" : "newobj",
+																	"numinlets" : 0,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 689.5, 122.0, 66.0, 22.0 ],
+																	"text" : "r iBusInput"
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-19",
 																	"linecount" : 3,
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 380.0, 240.0, 75.0, 48.0 ],
+																	"patching_rect" : [ 380.0, 240.0, 77.0, 48.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 28.0, 32.0, 162.0, 20.0 ],
 																	"text" : "print external CLI commands"
@@ -8668,8 +8797,7 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 237.0, 15.0, 150.0, 34.0 ],
 																	"presentation" : 1,
-																	"presentation_linecount" : 2,
-																	"presentation_rect" : [ 214.0, 5.0, 150.0, 34.0 ],
+																	"presentation_rect" : [ 62.0, 173.0, 204.0, 20.0 ],
 																	"text" : "generate error - only for debugging!!!"
 																}
 
@@ -8683,7 +8811,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 136.0, 318.0, 36.0, 22.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 366.0, 5.0, 36.0, 22.0 ],
+																	"presentation_rect" : [ 2.0, 173.0, 36.0, 22.0 ],
 																	"text" : "error"
 																}
 
@@ -8691,13 +8819,12 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-10",
-																	"linecount" : 3,
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 454.0, 134.0, 75.0, 48.0 ],
+																	"patching_rect" : [ 397.0, 134.0, 147.0, 20.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 28.0, 116.0, 147.0, 20.0 ],
+																	"presentation_rect" : [ 236.0, 118.0, 147.0, 20.0 ],
 																	"text" : "max console to nodejs log"
 																}
 
@@ -8713,7 +8840,7 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 505.0, 168.0, 24.0, 24.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 2.0, 114.0, 24.0, 24.0 ],
+																	"presentation_rect" : [ 210.0, 116.0, 24.0, 24.0 ],
 																	"varname" : "console_status"
 																}
 
@@ -8742,6 +8869,8 @@
 																		"CLI_execute" : [ 0 ],
 																		"console_status" : [ 0 ],
 																		"stdout_toConsole" : [ 1 ],
+																		"stdout_toConsole[1]" : [ 0 ],
+																		"stdout_toConsole[2]" : [ 0 ],
 																		"verbose_in" : [ 0 ],
 																		"verbose_out" : [ 0 ]
 																	}
@@ -8821,7 +8950,7 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 102.5, 195.0, 64.0, 34.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 28.0, 88.0, 103.0, 20.0 ],
+																	"presentation_rect" : [ 236.0, 90.0, 103.0, 20.0 ],
 																	"text" : "verbose script in"
 																}
 
@@ -8840,7 +8969,7 @@
 															}
 , 															{
 																"box" : 																{
-																	"hint" : "print out all the commands that enter the script node to the console",
+																	"hint" : "verbose mqtt commands that exit the script node to the nodejs log",
 																	"id" : "obj-35",
 																	"maxclass" : "toggle",
 																	"numinlets" : 1,
@@ -8849,7 +8978,7 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 185.5, 195.0, 24.0, 24.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 2.0, 86.0, 24.0, 24.0 ],
+																	"presentation_rect" : [ 210.0, 88.0, 24.0, 24.0 ],
 																	"varname" : "verbose_in"
 																}
 
@@ -8861,9 +8990,9 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 102.5, 167.0, 75.0, 34.0 ],
+																	"patching_rect" : [ 77.0, 158.0, 75.0, 34.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 28.0, 60.0, 107.0, 20.0 ],
+																	"presentation_rect" : [ 236.0, 62.0, 107.0, 20.0 ],
 																	"text" : "verbose script out "
 																}
 
@@ -8896,7 +9025,7 @@
 															}
 , 															{
 																"box" : 																{
-																	"hint" : "print out all the commands that exit the script node to the console",
+																	"hint" : "verbose all commands that exit the script node to the nodejs log",
 																	"id" : "obj-21",
 																	"maxclass" : "toggle",
 																	"numinlets" : 1,
@@ -8905,7 +9034,7 @@
 																	"parameter_enable" : 0,
 																	"patching_rect" : [ 76.5, 195.0, 24.0, 24.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 2.0, 58.0, 24.0, 24.0 ],
+																	"presentation_rect" : [ 210.0, 60.0, 24.0, 24.0 ],
 																	"varname" : "verbose_out"
 																}
 
@@ -9013,8 +9142,22 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-38", 1 ],
+																	"source" : [ "obj-25", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-15", 1 ],
 																	"source" : [ "obj-26", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-38", 0 ],
+																	"source" : [ "obj-28", 0 ]
 																}
 
 															}
@@ -9069,6 +9212,13 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-40", 0 ],
+																	"source" : [ "obj-38", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-14", 0 ],
 																	"order" : 1,
 																	"source" : [ "obj-39", 1 ]
@@ -9108,6 +9258,27 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-37", 1 ],
 																	"source" : [ "obj-39", 4 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-44", 0 ],
+																	"source" : [ "obj-42", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-46", 0 ],
+																	"source" : [ "obj-44", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-44", 1 ],
+																	"source" : [ "obj-45", 0 ]
 																}
 
 															}
@@ -9228,9 +9399,9 @@
  ]
 													}
 ,
-													"patching_rect" : [ 37.0, 457.0, 155.0, 137.0 ],
+													"patching_rect" : [ 37.0, 457.0, 412.0, 173.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 22.0, 343.0, 199.0, 174.0 ],
+													"presentation_rect" : [ 22.0, 343.0, 400.0, 171.0 ],
 													"varname" : "debugging",
 													"viewvisibility" : 1
 												}
@@ -9631,8 +9802,6 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
-														"node_bin_path" : "",
-														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -9653,6 +9822,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-15", 0 ],
+													"order" : 1,
 													"source" : [ "obj-1", 0 ]
 												}
 
@@ -9672,6 +9842,14 @@
 													"midpoints" : [ 319.5, 198.5, 46.5, 198.5 ],
 													"order" : 1,
 													"source" : [ "obj-1", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-41", 1 ],
+													"order" : 0,
+													"source" : [ "obj-1", 0 ]
 												}
 
 											}
@@ -9713,7 +9891,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
-													"midpoints" : [ 46.5, 603.0, 16.0, 603.0, 16.0, 121.0, 52.5, 121.0 ],
+													"midpoints" : [ 46.5, 653.0, 16.0, 653.0, 16.0, 121.0, 52.5, 121.0 ],
 													"source" : [ "obj-41", 0 ]
 												}
 
@@ -12975,7 +13153,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 50.0, 246.0, 450.0, 724.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 724.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -16791,7 +16969,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 496.0, 172.5, 130.0, 22.0 ],
-													"text" : "bang"
+													"text" : "Osmosis"
 												}
 
 											}
@@ -17494,7 +17672,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-48",
-													"items" : "<empty>",
+													"items" : "Osmosis",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
