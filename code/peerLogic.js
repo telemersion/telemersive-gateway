@@ -20,7 +20,7 @@ var mySlotIndex = -1;
 var taskMover = null;
 
 function dpost(_post){
-	post("peer("+myPeerName+"): " + _post + "\n");
+	//post("peer("+myPeerName+"): " + _post + "\n");
 }
 
 function done(){
