@@ -23,7 +23,7 @@ if (jsarguments.length>1)
 	myval = jsarguments[1];
 
 function loadbang(){
-    post("gathering information on the patcher hierarchy..\n");
+    //post("gathering information on the patcher hierarchy..\n");
     if(this.patcher.box != null){
         myRootPatcher = this.patcher.box.patcher;
         myRootSize = myRootPatcher.wind.size;        
@@ -31,7 +31,7 @@ function loadbang(){
 }
 
 function dpost(_post){
-	post("peerList: " + _post + "\n");
+	//post("peerList: " + _post + "\n");
 }
 
 function expand(_flagHeight, _flagWidth){
