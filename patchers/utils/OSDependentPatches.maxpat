@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 93.0, 346.0, 804.0, 480.0 ],
+		"rect" : [ 767.0, 339.0, 804.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 404.333333333333371, 305.0, 75.0, 22.0 ],
+					"text" : "ndi_detector"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -58,7 +69,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.5, 275.0, 213.0, 35.0 ],
+					"patching_rect" : [ 23.5, 275.0, 213.0, 36.0 ],
 					"text" : "script connect texDetect 0 detector 0, script connect detector 0 texSelect 0"
 				}
 
@@ -185,7 +196,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.5, 162.0, 160.5, 62.0 ],
+					"patching_rect" : [ 23.5, 162.0, 161.0, 64.0 ],
 					"text" : "script newobject newobj @text spout_detector @varname detector @patching_position 515 305"
 				}
 
@@ -200,7 +211,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.333333333333371, 162.0, 166.0, 62.0 ],
+					"patching_rect" : [ 198.333333333333371, 162.0, 166.0, 64.0 ],
 					"text" : "script newobject newobj @text syphon_detector @varname detector @patching_position 515 305"
 				}
 
@@ -226,7 +237,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.333333333333371, 89.5, 243.0, 35.0 ],
+					"patching_rect" : [ 404.333333333333371, 89.5, 243.0, 36.0 ],
 					"text" : ";\rmax system windows getruntime #0_win"
 				}
 
@@ -251,7 +262,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 371.333333333333371, 48.5, 257.0, 35.0 ],
+					"patching_rect" : [ 371.333333333333371, 48.5, 257.0, 36.0 ],
 					"text" : ";\rmax system macintosh getruntime #0_mac"
 				}
 
@@ -389,6 +400,15 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "sendR.maxpat",
+				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
