@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 436.0, 276.0, 463.0, 123.0 ],
+		"rect" : [ 687.0, 283.0, 461.0, 175.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,6 +41,29 @@
 		"title" : "Dependencies",
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "@package", "Zero", "@version", "1.0.4" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-7",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "tg.dep.packageTest.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 32.0, 199.85714285714289, 440.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 11.0, 107.0, 440.0, 24.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "@package", "Sadam Library", "@version", "20.3.7" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -55,7 +78,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 31.0, 182.85714285714289, 440.0, 24.0 ],
+					"patching_rect" : [ 32.0, 169.85714285714289, 440.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 78.0, 440.0, 24.0 ],
 					"viewvisibility" : 1
@@ -114,7 +137,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-25",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -138,7 +161,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -167,7 +190,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 109.5, 233.5, 34.0, 22.0 ],
-					"text" : "sel 2"
+					"text" : "sel 3"
 				}
 
 			}
@@ -178,10 +201,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 8.0, 527.0, 33.0 ],
+					"patching_rect" : [ 31.0, 8.0, 527.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 11.0, 7.0, 248.0, 33.0 ],
+					"presentation_rect" : [ 11.0, 7.0, 248.0, 34.0 ],
 					"text" : "In order to run Gateway without issues, \nthe following packages need to be installed:"
 				}
 
@@ -206,7 +229,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 263.5, 83.0, 49.0 ],
+					"patching_rect" : [ 16.0, 263.5, 83.0, 50.0 ],
 					"text" : "window flags nomenu, window exec"
 				}
 
@@ -240,7 +263,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 31.0, 150.85714285714289, 440.0, 24.0 ],
+					"patching_rect" : [ 32.0, 137.85714285714289, 440.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 11.0, 50.0, 440.0, 24.0 ],
 					"viewvisibility" : 1
@@ -250,7 +273,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -348,16 +371,14 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "tg.dep.packageTest.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
 			}
  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -379,13 +400,13 @@
 , 			{
 				"name" : "BlueButton",
 				"default" : 				{
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.640617, 0.64074, 0.640596, 1.0 ],
-					"bgcolor" : [ 0.160784, 0.733333, 0.980392, 1.0 ],
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontname" : [ "Courier New" ],
 					"centerjust" : [ 2 ],
-					"accentcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"bgcolor" : [ 0.160784, 0.733333, 0.980392, 1.0 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"accentcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.640617, 0.64074, 0.640596, 1.0 ],
+					"fontname" : [ "Courier New" ]
 				}
 ,
 				"parentstyle" : "",
