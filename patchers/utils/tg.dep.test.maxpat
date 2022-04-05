@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 11,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 687.0, 283.0, 461.0, 175.0 ],
+		"rect" : [ 687.0, 283.0, 461.0, 217.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,29 @@
 		"assistshowspatchername" : 0,
 		"title" : "Dependencies",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "@package", "shell", "@version", "8.2.0", "@url", "https://github.com/jeremybernstein/shell/releases/tag/1.0b4" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-8",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "tg.dep.packageTest.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 32.0, 230.85714285714289, 440.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 11.0, 136.0, 440.0, 24.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"args" : [ "@package", "Zero", "@version", "1.0.4" ],
 					"bgmode" : 0,
@@ -93,7 +116,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 109.5, 263.0, 22.0, 22.0 ]
+					"patching_rect" : [ 109.5, 317.0, 22.0, 22.0 ]
 				}
 
 			}
@@ -137,11 +160,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-25",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.5, 298.0, 30.0, 30.0 ]
+					"patching_rect" : [ 109.5, 352.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -161,7 +184,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-22",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -177,7 +200,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 138.5, 263.0, 33.0, 22.0 ],
+					"patching_rect" : [ 138.5, 317.0, 33.0, 22.0 ],
 					"text" : "front"
 				}
 
@@ -189,8 +212,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 109.5, 233.5, 34.0, 22.0 ],
-					"text" : "sel 3"
+					"patching_rect" : [ 109.5, 287.5, 34.0, 22.0 ],
+					"text" : "sel 4"
 				}
 
 			}
@@ -216,7 +239,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 16.0, 233.5, 60.0, 22.0 ],
+					"patching_rect" : [ 16.0, 287.5, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -229,7 +252,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 263.5, 83.0, 50.0 ],
+					"patching_rect" : [ 16.0, 317.5, 83.0, 50.0 ],
 					"text" : "window flags nomenu, window exec"
 				}
 
@@ -241,7 +264,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 16.0, 334.0, 69.0, 22.0 ],
+					"patching_rect" : [ 16.0, 388.0, 69.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -373,12 +396,28 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
+					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "tg.dep.packageTest.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -402,11 +441,11 @@
 				"default" : 				{
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"centerjust" : [ 2 ],
+					"fontname" : [ "Courier New" ],
 					"bgcolor" : [ 0.160784, 0.733333, 0.980392, 1.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"accentcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.640617, 0.64074, 0.640596, 1.0 ],
-					"fontname" : [ "Courier New" ]
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.640617, 0.64074, 0.640596, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

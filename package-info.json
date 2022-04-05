@@ -1,0 +1,43 @@
+{
+	"author" : "Martin Froehlich",
+	"authors" : [  ],
+	"description" : "Telemersive Gateway is a peer application implementing the telemersive-bus protocol",
+	"displayname" : "",
+	"extends" : "",
+	"extensible" : 0,
+	"homepatcher" : "GatewayOverview.maxpat",
+	"max_version_max" : "none",
+	"max_version_min" : "8.1",
+	"name" : "TelemersiveGateway",
+	"os" : 	{
+		"macintosh" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "none"
+		}
+,
+		"windows" : 		{
+			"platform" : [ "ia32", "x64" ],
+			"min_version" : "none"
+		}
+
+	}
+,
+	"package_extra" : 	{
+		"reverse_domain" : "ch.zhdk.iaspace",
+		"copyright" : "Copyright (c) 2022 Immersive Arts Space"
+	}
+,
+	"tags" : ["framework", "network", "mapping", "OSC", "streaming", "video"],
+	"version" : "V1.0.0",
+	"website" : "https://blog.zhdk.ch/immersivearts/",
+	"filelist" : 	{
+		"examples" : [],
+		"externals" : [],
+		"patchers" : [],
+		"help" : [],
+		"docs" : [],
+		"code" : [],
+		"extras" : [ "GatewayOverview.maxpat" ]
+	}
+
+}
