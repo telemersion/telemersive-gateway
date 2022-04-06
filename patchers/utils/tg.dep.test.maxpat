@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -41,7 +41,7 @@
 		"title" : "Dependencies",
 		"boxes" : [ 			{
 				"box" : 				{
-					"args" : [ "@package", "shell", "@version", "8.2.0", "@url", "https://github.com/jeremybernstein/shell/releases/tag/1.0b4" ],
+					"args" : [ "@package", "shell", "@version", "1.0.0", "@url", "https://github.com/jeremybernstein/shell/releases/tag/1.0b4" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -49,6 +49,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-8",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "tg.dep.packageTest.maxpat",
 					"numinlets" : 1,
@@ -72,6 +73,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-7",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "tg.dep.packageTest.maxpat",
 					"numinlets" : 1,
@@ -95,6 +97,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "tg.dep.packageTest.maxpat",
 					"numinlets" : 1,
@@ -224,10 +227,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 8.0, 527.0, 34.0 ],
+					"patching_rect" : [ 31.0, 8.0, 527.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 11.0, 7.0, 248.0, 34.0 ],
+					"presentation_rect" : [ 11.0, 7.0, 248.0, 33.0 ],
 					"text" : "In order to run Gateway without issues, \nthe following packages need to be installed:"
 				}
 
@@ -252,7 +255,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 317.5, 83.0, 50.0 ],
+					"patching_rect" : [ 16.0, 317.5, 83.0, 49.0 ],
 					"text" : "window flags nomenu, window exec"
 				}
 
@@ -280,6 +283,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-12",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "tg.dep.packageTest.maxpat",
 					"numinlets" : 1,
@@ -411,7 +415,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "tg.dep.packageTest.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -439,13 +443,13 @@
 , 			{
 				"name" : "BlueButton",
 				"default" : 				{
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"centerjust" : [ 2 ],
-					"fontname" : [ "Courier New" ],
-					"bgcolor" : [ 0.160784, 0.733333, 0.980392, 1.0 ],
 					"accentcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"elementcolor" : [ 0.640617, 0.64074, 0.640596, 1.0 ]
+					"bgcolor" : [ 0.160784, 0.733333, 0.980392, 1.0 ],
+					"centerjust" : [ 2 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.640617, 0.64074, 0.640596, 1.0 ],
+					"fontname" : [ "Courier New" ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
