@@ -136,7 +136,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 27.684296000000003, 610.339539000000059, 98.0, 22.0 ],
-					"text" : "sendR ndiRange"
+					"text" : "tg.sendR ndiRange"
 				}
 
 			}
@@ -537,7 +537,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "sendR.maxpat",
+				"name" : "tg.sendR.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

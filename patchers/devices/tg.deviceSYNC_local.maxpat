@@ -113,7 +113,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 137.0, 5.5, 183.0, 22.0 ],
-					"text" : "receiveR #2_ch_fileSync_enable"
+					"text" : "tg.receiveR #2_ch_fileSync_enable"
 				}
 
 			}
@@ -125,7 +125,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 341.0, 115.0, 171.0, 22.0 ],
-					"text" : "receiveR #2_ch_fileSync_path"
+					"text" : "tg.receiveR #2_ch_fileSync_path"
 				}
 
 			}
@@ -150,7 +150,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 179.333333333333343, 71.0, 116.0, 22.0 ],
-					"text" : "receiveR roomUUID"
+					"text" : "tg.receiveR roomUUID"
 				}
 
 			}
@@ -165,7 +165,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceSYNC_button.maxpat",
+					"name" : "tg.deviceSYNC_button.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -210,7 +210,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 52.0, 191.0, 285.0, 22.0 ],
-					"text" : "deviceSYNC_view #1 #2",
+					"text" : "tg.deviceSYNC_view #1 #2",
 					"varname" : "gui"
 				}
 
@@ -304,7 +304,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "deviceSYNC_view.maxpat",
+				"name" : "tg.deviceSYNC_view.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -318,28 +318,28 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SVGButton.maxpat",
+				"name" : "tg.SVGButton.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceSYNC_button.maxpat",
+				"name" : "tg.deviceSYNC_button.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceSYNC_icon.maxpat",
+				"name" : "tg.deviceSYNC_icon.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveR.maxpat",
+				"name" : "tg.receiveR.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/TeSApp/patchers/mockup",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

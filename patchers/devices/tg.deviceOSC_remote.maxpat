@@ -49,7 +49,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceOSC_button.maxpat",
+					"name" : "tg.deviceOSC_button.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -94,7 +94,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"patching_rect" : [ 21.0, 144.0, 153.0, 22.0 ],
-					"text" : "deviceOSC_view #1 #2 0 1",
+					"text" : "tg.deviceOSC_view #1 #2 0 1",
 					"varname" : "gui"
 				}
 
@@ -124,35 +124,35 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "deviceOSC_view.maxpat",
+				"name" : "tg.deviceOSC_view.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SVGButton.maxpat",
+				"name" : "tg.SVGButton.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/MQTTQuery/patchers/mockup",
 				"patcherrelativepath" : "../../../MQTTQuery/patchers/mockup",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "restartProxy.maxpat",
+				"name" : "tg.restartProxy.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceOSC_button.maxpat",
+				"name" : "tg.deviceOSC_button.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceOSC_icon.maxpat",
+				"name" : "tg.deviceOSC_icon.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

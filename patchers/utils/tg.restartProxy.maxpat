@@ -154,7 +154,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 131.0, 292.0, 332.0, 22.0 ],
-					"text" : "restartProxy 11100 one2manyMo \"Ultragrid proxy, channel:0\""
+					"text" : "tg.restartProxy 11100 one2manyMo \"Ultragrid proxy, channel:0\""
 				}
 
 			}
@@ -216,7 +216,7 @@
 					"patching_rect" : [ 13.0, 90.0, 62.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 62.0, 20.0 ],
-					"text" : "restartProxy"
+					"text" : "tg.restartProxy"
 				}
 
 			}

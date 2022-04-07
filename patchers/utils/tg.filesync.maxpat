@@ -110,7 +110,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "SVGButton.maxpat",
+					"name" : "tg.SVGButton.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -233,7 +233,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 338.5, 91.0, 171.0, 22.0 ],
-					"text" : "sendR #1_ch_fileSync_enable"
+					"text" : "tg.sendR #1_ch_fileSync_enable"
 				}
 
 			}
@@ -262,7 +262,7 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "SVGButton.maxpat",
+					"name" : "tg.SVGButton.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -295,7 +295,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 21.0, 474.5, 158.0, 22.0 ],
-					"text" : "sendR #1_ch_fileSync_path"
+					"text" : "tg.sendR #1_ch_fileSync_path"
 				}
 
 			}
@@ -530,14 +530,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "sendR.maxpat",
+				"name" : "tg.sendR.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SVGButton.maxpat",
+				"name" : "tg.SVGButton.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

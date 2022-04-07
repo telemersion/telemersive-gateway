@@ -1494,7 +1494,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 219.050000000000011, 380.5, 219.0, 22.0 ],
-					"text" : "script sendbox rack name Rack.maxpat"
+					"text" : "script sendbox rack name tg.Rack.maxpat"
 				}
 
 			}
@@ -2438,7 +2438,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 136.0, 105.5, 91.0, 22.0 ],
-					"text" : "sendC #0_peer"
+					"text" : "tg.sendC #0_peer"
 				}
 
 			}
@@ -3667,7 +3667,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "Rack.maxpat",
+					"name" : "tg.Rack.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -3874,21 +3874,21 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "PeerBus.maxpat",
+				"name" : "tg.PeerBus.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Rack.maxpat",
+				"name" : "tg.Rack.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Slot.maxpat",
+				"name" : "tg.Slot.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -3909,14 +3909,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveR.maxpat",
+				"name" : "tg.receiveR.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sendC.maxpat",
+				"name" : "tg.sendC.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",

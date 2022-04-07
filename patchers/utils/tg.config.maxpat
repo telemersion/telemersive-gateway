@@ -4837,7 +4837,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 476.833333333333371, 143.5, 119.0, 22.0 ],
-									"text" : "receiveR roomName"
+									"text" : "tg.receiveR roomName"
 								}
 
 							}
@@ -5600,7 +5600,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 6.0, 135.0, 119.0, 22.0 ],
-									"text" : "receiveR peerJoined"
+									"text" : "tg.receiveR peerJoined"
 								}
 
 							}
@@ -6893,7 +6893,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 323.625000000000114, 200.0, 103.0, 22.0 ],
-									"text" : "sendR roomUUID"
+									"text" : "tg.sendR roomUUID"
 								}
 
 							}
@@ -6952,7 +6952,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 44.0, 209.0, 103.0, 22.0 ],
-									"text" : "sendR peerName"
+									"text" : "tg.sendR peerName"
 								}
 
 							}
@@ -6964,7 +6964,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 290.291666666666742, 250.0, 86.0, 22.0 ],
-									"text" : "sendR roomID"
+									"text" : "tg.sendR roomID"
 								}
 
 							}
@@ -6976,7 +6976,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 264.291666666666742, 224.0, 106.0, 22.0 ],
-									"text" : "sendR roomName"
+									"text" : "tg.sendR roomName"
 								}
 
 							}
@@ -6988,7 +6988,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 147.958333333333371, 250.0, 115.0, 22.0 ],
-									"text" : "sendR peerPublicIP"
+									"text" : "tg.sendR peerPublicIP"
 								}
 
 							}
@@ -7000,7 +7000,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 147.958333333333371, 224.0, 111.0, 22.0 ],
-									"text" : "sendR peerLocalIP"
+									"text" : "tg.sendR peerLocalIP"
 								}
 
 							}
@@ -7012,7 +7012,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 44.0, 181.0, 106.0, 22.0 ],
-									"text" : "sendR peerJoined"
+									"text" : "tg.sendR peerJoined"
 								}
 
 							}
@@ -7024,7 +7024,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 44.0, 238.0, 83.0, 22.0 ],
-									"text" : "sendR peerID"
+									"text" : "tg.sendR peerID"
 								}
 
 							}
@@ -7636,7 +7636,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 431.0, 348.0, 133.0, 22.0 ],
-													"text" : "sendR verboseExecute"
+													"text" : "tg.sendR verboseExecute"
 												}
 
 											}
@@ -12183,7 +12183,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 19.5, 361.5, 104.0, 22.0 ],
-													"text" : "sendR serverURL"
+													"text" : "tg.sendR serverURL"
 												}
 
 											}

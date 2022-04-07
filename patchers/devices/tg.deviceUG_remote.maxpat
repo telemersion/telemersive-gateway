@@ -49,14 +49,14 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceMC_button.maxpat",
+					"name" : "tg.deviceUG_button.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 52.0, 27.0, 69.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 100.0, 40.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 50.0, 40.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -81,7 +81,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 52.0, 102.0, 35.0, 22.0 ],
+					"patching_rect" : [ 52.0, 81.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -90,11 +90,11 @@
 				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 4,
-					"outlettype" : [ "", "int", "enable", "" ],
-					"patching_rect" : [ 52.0, 147.0, 146.0, 22.0 ],
-					"text" : "deviceMC_view #1 #2 0 1",
+					"outlettype" : [ "", "int", "", "int" ],
+					"patching_rect" : [ 52.0, 147.0, 145.0, 22.0 ],
+					"text" : "tg.deviceUG_view #1 #2 0 1",
 					"varname" : "gui"
 				}
 
@@ -124,42 +124,42 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "deviceMC_view.maxpat",
+				"name" : "tg.deviceUG_view.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SVGButton.maxpat",
+				"name" : "tg.receiveR.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/MQTTQuery/patchers/mockup",
 				"patcherrelativepath" : "../../../MQTTQuery/patchers/mockup",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceMC_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "receiveR.maxpat",
+				"name" : "tg.SVGButton.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/MQTTQuery/patchers/mockup",
 				"patcherrelativepath" : "../../../MQTTQuery/patchers/mockup",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "restartProxy.maxpat",
+				"name" : "tg.restartProxy.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceMC_button.maxpat",
+				"name" : "tg.deviceUG_button.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceUG_icon.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

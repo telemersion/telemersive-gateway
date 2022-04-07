@@ -45,7 +45,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"patching_rect" : [ 404.333333333333371, 305.0, 75.0, 22.0 ],
-					"text" : "ndi_detector"
+					"text" : "tg.ndi_detector"
 				}
 
 			}
@@ -170,7 +170,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 121.0, 131.0, 64.0, 22.0 ],
-					"text" : "sendR OS"
+					"text" : "tg.sendR OS"
 				}
 
 			}
@@ -197,7 +197,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 23.5, 162.0, 161.0, 64.0 ],
-					"text" : "script newobject newobj @text spout_detector @varname detector @patching_position 515 305"
+					"text" : "script newobject newobj @text tg.spout_detector @varname detector @patching_position 515 305"
 				}
 
 			}
@@ -212,7 +212,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 198.333333333333371, 162.0, 166.0, 64.0 ],
-					"text" : "script newobject newobj @text syphon_detector @varname detector @patching_position 515 305"
+					"text" : "script newobject newobj @text tg.syphon_detector @varname detector @patching_position 515 305"
 				}
 
 			}
@@ -401,7 +401,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "sendR.maxpat",
+				"name" : "tg.sendR.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

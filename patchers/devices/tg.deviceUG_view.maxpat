@@ -133,7 +133,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceUG_icon.maxpat",
+					"name" : "tg.deviceUG_icon.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -769,7 +769,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 579.0, 336.0, 103.0, 22.0 ],
-					"text" : "receiveC #1_peer"
+					"text" : "tg.receiveC #1_peer"
 				}
 
 			}
@@ -995,7 +995,7 @@
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
 													"maxclass" : "bpatcher",
-													"name" : "dynRangeMenu.maxpat",
+													"name" : "tg.dynRangeMenu.maxpat",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"offset" : [ 0.0, 0.0 ],
@@ -3346,7 +3346,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 313.0, 297.0, 123.0, 22.0 ],
-													"text" : "texture.selection.gate"
+													"text" : "tg.texture.selection.gate"
 												}
 
 											}
@@ -3416,7 +3416,7 @@
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
 													"maxclass" : "bpatcher",
-													"name" : "dynRangeMenu.maxpat",
+													"name" : "tg.dynRangeMenu.maxpat",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"offset" : [ 0.0, 0.0 ],
@@ -6576,7 +6576,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 367.25, 85.0, 74.0, 36.0 ],
-									"text" : "receiveR serverURL"
+									"text" : "tg.receiveR serverURL"
 								}
 
 							}
@@ -8578,7 +8578,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 29.166666666666686, 15.0, 99.0, 22.0 ],
-													"text" : "receiveR roomID"
+													"text" : "tg.receiveR roomID"
 												}
 
 											}
@@ -10341,35 +10341,35 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceUG_icon.maxpat",
+				"name" : "tg.deviceUG_icon.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "dynRangeMenu.maxpat",
+				"name" : "tg.dynRangeMenu.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveC.maxpat",
+				"name" : "tg.receiveC.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveR.maxpat",
+				"name" : "tg.receiveR.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "texture.selection.gate.maxpat",
+				"name" : "tg.texture.selection.gate.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",

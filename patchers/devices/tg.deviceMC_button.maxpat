@@ -117,7 +117,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceMC_icon.maxpat",
+					"name" : "tg.deviceMC_icon.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -162,7 +162,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 99.0, 187.0, 103.0, 22.0 ],
-					"text" : "receiveC #1_peer"
+					"text" : "tg.receiveC #1_peer"
 				}
 
 			}
@@ -299,14 +299,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "receiveC.maxpat",
+				"name" : "tg.receiveC.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceMC_icon.maxpat",
+				"name" : "tg.deviceMC_icon.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

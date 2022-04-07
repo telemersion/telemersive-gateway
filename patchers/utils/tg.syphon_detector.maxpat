@@ -861,7 +861,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 27.684296000000003, 614.339539000000059, 89.0, 22.0 ],
-					"text" : "sendR dRange"
+					"text" : "tg.sendR dRange"
 				}
 
 			}
@@ -873,7 +873,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 424.5, 166.660460999999998, 126.0, 22.0 ],
-					"text" : "sendR dname_default"
+					"text" : "tg.sendR dname_default"
 				}
 
 			}
@@ -885,7 +885,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 307.5, 166.660460999999998, 109.0, 22.0 ],
-					"text" : "sendR dflag_prefix"
+					"text" : "tg.sendR dflag_prefix"
 				}
 
 			}
@@ -945,7 +945,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 187.5, 166.660460999999998, 113.0, 22.0 ],
-					"text" : "sendR fps_attribute"
+					"text" : "tg.sendR fps_attribute"
 				}
 
 			}
@@ -1694,7 +1694,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "sendR.maxpat",
+				"name" : "tg.sendR.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

@@ -63,7 +63,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceOSC_icon.maxpat",
+					"name" : "tg.deviceOSC_icon.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -514,7 +514,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 259.0, 232.0, 103.0, 22.0 ],
-					"text" : "receiveC #1_peer"
+					"text" : "tg.receiveC #1_peer"
 				}
 
 			}
@@ -759,7 +759,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 216.5, 240.0, 87.0, 22.0 ],
-									"text" : "UDPChainTwo"
+									"text" : "tg.UDPChainTwo"
 								}
 
 							}
@@ -771,7 +771,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 121.308641975308632, 240.0, 88.0, 22.0 ],
-									"text" : "UDPChainOne"
+									"text" : "tg.UDPChainTwo"
 								}
 
 							}
@@ -1808,14 +1808,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceOSC_icon.maxpat",
+				"name" : "tg.deviceOSC_icon.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveC.maxpat",
+				"name" : "tg.receiveC.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",

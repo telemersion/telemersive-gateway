@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -57,8 +57,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 27.0, 249.0, 117.0, 22.0 ],
-					"text" : "receiveR displaySlot"
+					"patching_rect" : [ 27.0, 249.0, 131.0, 22.0 ],
+					"text" : "tg.receiveR displaySlot"
 				}
 
 			}
@@ -125,7 +125,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1", "@type", "deviceSYNC", "@model", "#2", "@count", 5, "@size", 500, "@slot", "filesync" ],
+					"args" : [ "#1", "@type", "tg.deviceSYNC", "@model", "#2", "@count", 5, "@size", 500, "@slot", "filesync" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -135,7 +135,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "Slot.maxpat",
+					"name" : "tg.Slot.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -149,7 +149,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1", "@type", "deviceMC", "@model", "#2", "@count", 10, "@size", 1000, "@slot", "mocap" ],
+					"args" : [ "#1", "@type", "tg.deviceMC", "@model", "#2", "@count", 10, "@size", 1000, "@slot", "mocap" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -159,7 +159,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "Slot.maxpat",
+					"name" : "tg.Slot.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -173,7 +173,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1", "@type", "deviceUG", "@model", "#2", "@count", 20, "@size", 1000, "@slot", "ultragrid" ],
+					"args" : [ "#1", "@type", "tg.deviceUG", "@model", "#2", "@count", 20, "@size", 1000, "@slot", "ultragrid" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -183,7 +183,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "Slot.maxpat",
+					"name" : "tg.Slot.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -236,7 +236,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "#1", "@type", "deviceOSC", "@model", "#2", "@count", 10, "@size", 1000, "@slot", "osc" ],
+					"args" : [ "#1", "@type", "tg.deviceOSC", "@model", "#2", "@count", 10, "@size", 1000, "@slot", "osc" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -246,7 +246,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "Slot.maxpat",
+					"name" : "tg.Slot.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -331,21 +331,21 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "Slot.maxpat",
+				"name" : "tg.Slot.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "channel.maxpat",
+				"name" : "tg.channel.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveR.maxpat",
+				"name" : "tg.receiveR.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
@@ -356,6 +356,7 @@
 		"styles" : [ 			{
 				"name" : "rnbodefault",
 				"default" : 				{
+					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -368,11 +369,10 @@
 					}
 ,
 					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
-					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
-					"fontsize" : [ 12.0 ],
 					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
-					"fontname" : [ "Lato" ]
+					"fontname" : [ "Lato" ],
+					"fontsize" : [ 12.0 ],
+					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -381,7 +381,7 @@
 , 			{
 				"name" : "rnbohighcontrast",
 				"default" : 				{
-					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -393,16 +393,16 @@
 						"autogradient" : 0.0
 					}
 ,
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 					"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
-					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-					"fontsize" : [ 13.0 ],
 					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ]
+					"fontsize" : [ 13.0 ],
+					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
+					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

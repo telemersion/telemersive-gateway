@@ -58,7 +58,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 190.0, 75.0, 138.0, 22.0 ],
-					"text" : "receiveR natnet_version"
+					"text" : "tg.receiveR natnet_version"
 				}
 
 			}
@@ -248,7 +248,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 23.0, 32.0, 99.0, 22.0 ],
-									"text" : "receiveR roomID"
+									"text" : "tg.receiveR roomID"
 								}
 
 							}
@@ -448,7 +448,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 570.888888888888914, 59.0, 150.0, 22.0 ],
-					"text" : "receiveR peerLocalIP"
+					"text" : "tg.receiveR peerLocalIP"
 				}
 
 			}
@@ -484,7 +484,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 225.0, 101.0, 77.0, 22.0 ],
-					"text" : "receiveR OS"
+					"text" : "tg.receiveR OS"
 				}
 
 			}
@@ -554,7 +554,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 150.333333333333371, 140.0, 145.0, 22.0 ],
-									"text" : "receiveR verboseExecute"
+									"text" : "tg.receiveR verboseExecute"
 								}
 
 							}
@@ -1355,7 +1355,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 27.0, 10.0, 123.0, 22.0 ],
-									"text" : "receiveR natnet_path"
+									"text" : "tg.receiveR natnet_path"
 								}
 
 							}
@@ -2583,7 +2583,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 276.380070546737329, 190.0, 87.0, 22.0 ],
-													"text" : "UDPChainTwo"
+													"text" : "tg.UDPChainTwo"
 												}
 
 											}
@@ -2595,7 +2595,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 217.380070546737329, 166.0, 88.0, 22.0 ],
-													"text" : "UDPChainOne"
+													"text" : "tg.UDPChainTwo"
 												}
 
 											}
@@ -3033,7 +3033,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 151.0, 129.0, 119.0, 22.0 ],
-					"text" : "receiveR serverURL"
+					"text" : "tg.receiveR serverURL"
 				}
 
 			}
@@ -3261,7 +3261,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 294.0, 15.0, 119.0, 22.0 ],
-									"text" : "receiveR peerJoined"
+									"text" : "tg.receiveR peerJoined"
 								}
 
 							}
@@ -3532,7 +3532,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceMC_button.maxpat",
+					"name" : "tg.deviceMC_button.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -3577,7 +3577,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "enable", "" ],
 					"patching_rect" : [ 52.0, 206.0, 250.0, 22.0 ],
-					"text" : "deviceMC_view #1 #2 1 0",
+					"text" : "tg.deviceMC_view #1 #2 1 0",
 					"varname" : "gui"
 				}
 
@@ -3816,21 +3816,21 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "deviceMC_view.maxpat",
+				"name" : "tg.deviceMC_view.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveC.maxpat",
+				"name" : "tg.receiveC.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveR.maxpat",
+				"name" : "tg.receiveR.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
@@ -3858,14 +3858,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceMC_icon.maxpat",
+				"name" : "tg.deviceMC_icon.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceMC_button.maxpat",
+				"name" : "tg.deviceMC_button.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

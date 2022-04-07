@@ -58,7 +58,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 465.0, 212.0, 145.0, 22.0 ],
-					"text" : "receiveR verboseExecute"
+					"text" : "tg.receiveR verboseExecute"
 				}
 
 			}
@@ -608,7 +608,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 206.583333333333314, 132.5, 133.0, 22.0 ],
-					"text" : "receiveR ultragrid_path"
+					"text" : "tg.receiveR ultragrid_path"
 				}
 
 			}
@@ -700,7 +700,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 359.0, 170.0, 111.0, 22.0 ],
-									"text" : "receiveR ndiRange"
+									"text" : "tg.receiveR ndiRange"
 								}
 
 							}
@@ -712,7 +712,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 68.0, 170.0, 101.0, 22.0 ],
-									"text" : "receiveR dRange"
+									"text" : "tg.receiveR dRange"
 								}
 
 							}
@@ -724,7 +724,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 201.0, 170.0, 139.0, 22.0 ],
-									"text" : "receiveR dname_default"
+									"text" : "tg.receiveR dname_default"
 								}
 
 							}
@@ -736,7 +736,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 219.0, 133.0, 121.0, 22.0 ],
-									"text" : "receiveR dflag_prefix"
+									"text" : "tg.receiveR dflag_prefix"
 								}
 
 							}
@@ -748,7 +748,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 217.0, 97.0, 125.0, 22.0 ],
-									"text" : "receiveR fps_attribute"
+									"text" : "tg.receiveR fps_attribute"
 								}
 
 							}
@@ -1132,7 +1132,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 205.0, 17.0, 119.0, 22.0 ],
-									"text" : "receiveR peerJoined"
+									"text" : "tg.receiveR peerJoined"
 								}
 
 							}
@@ -1348,7 +1348,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceUG_button.maxpat",
+					"name" : "tg.deviceUG_button.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -1393,7 +1393,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "int" ],
 					"patching_rect" : [ 52.0, 165.0, 328.0, 22.0 ],
-					"text" : "deviceUG_view #1 #2 1 0",
+					"text" : "tg.deviceUG_view #1 #2 1 0",
 					"varname" : "gui"
 				}
 
@@ -1542,35 +1542,35 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "deviceUG_view.maxpat",
+				"name" : "tg.deviceUG_view.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveR.maxpat",
+				"name" : "tg.receiveR.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "dynRangeMenu.maxpat",
+				"name" : "tg.dynRangeMenu.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "texture.selection.gate.maxpat",
+				"name" : "tg.texture.selection.gate.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveC.maxpat",
+				"name" : "tg.receiveC.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
@@ -1598,14 +1598,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceUG_icon.maxpat",
+				"name" : "tg.deviceUG_icon.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceUG_button.maxpat",
+				"name" : "tg.deviceUG_button.maxpat",
 				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

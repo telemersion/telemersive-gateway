@@ -200,7 +200,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 115.0, 18.0, 119.0, 22.0 ],
-									"text" : "receiveR peerJoined"
+									"text" : "tg.receiveR peerJoined"
 								}
 
 							}
@@ -441,7 +441,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 318.0, 158.0, 123.0, 22.0 ],
-					"text" : "receiveR peerLocalIP"
+					"text" : "tg.receiveR peerLocalIP"
 				}
 
 			}
@@ -501,7 +501,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 185.0, 65.0, 99.0, 22.0 ],
-					"text" : "receiveR roomID"
+					"text" : "tg.receiveR roomID"
 				}
 
 			}
@@ -513,7 +513,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 118.5, 19.5, 117.0, 22.0 ],
-					"text" : "receiveR serverURL"
+					"text" : "tg.receiveR serverURL"
 				}
 
 			}
@@ -529,7 +529,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceOSC_button.maxpat",
+					"name" : "tg.deviceOSC_button.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -574,7 +574,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"patching_rect" : [ 52.0, 191.0, 285.0, 22.0 ],
-					"text" : "deviceOSC_view #1 #2 1 0",
+					"text" : "tg.deviceOSC_view #1 #2 1 0",
 					"varname" : "gui"
 				}
 

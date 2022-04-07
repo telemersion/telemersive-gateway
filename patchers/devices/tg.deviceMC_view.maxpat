@@ -154,7 +154,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "deviceMC_icon.maxpat",
+					"name" : "tg.deviceMC_icon.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -3437,7 +3437,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 26.684296000000018, 18.0, 118.0, 22.0 ],
-													"text" : "receiveR serverURL"
+													"text" : "tg.receiveR serverURL"
 												}
 
 											}
@@ -6139,7 +6139,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 426.0, 371.0, 103.0, 22.0 ],
-					"text" : "receiveC #1_peer"
+					"text" : "tg.receiveC #1_peer"
 				}
 
 			}
@@ -6567,21 +6567,21 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "deviceMC_icon.maxpat",
+				"name" : "tg.deviceMC_icon.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveC.maxpat",
+				"name" : "tg.receiveC.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "receiveR.maxpat",
+				"name" : "tg.receiveR.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",

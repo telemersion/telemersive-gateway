@@ -238,7 +238,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 485.041666666666629, 243.0, 119.0, 22.0 ],
-					"text" : "receiveR roomName"
+					"text" : "tg.receiveR roomName"
 				}
 
 			}
@@ -338,7 +338,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 457.041666666666629, 209.0, 117.0, 22.0 ],
-					"text" : "receiveR serverURL"
+					"text" : "tg.receiveR serverURL"
 				}
 
 			}
@@ -350,7 +350,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 349.208333333333258, 271.0, 99.0, 22.0 ],
-					"text" : "receiveR roomID"
+					"text" : "tg.receiveR roomID"
 				}
 
 			}
@@ -362,7 +362,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 241.208333333333258, 205.0, 127.0, 22.0 ],
-					"text" : "receiveR peerPublicIP"
+					"text" : "tg.receiveR peerPublicIP"
 				}
 
 			}
@@ -374,7 +374,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 205.666666666666629, 179.0, 123.0, 22.0 ],
-					"text" : "receiveR peerLocalIP"
+					"text" : "tg.receiveR peerLocalIP"
 				}
 
 			}
@@ -386,7 +386,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 17.208333333333286, 17.0, 119.0, 22.0 ],
-					"text" : "receiveR peerJoined"
+					"text" : "tg.receiveR peerJoined"
 				}
 
 			}
@@ -398,7 +398,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 170.166666666666629, 155.0, 95.0, 22.0 ],
-					"text" : "receiveR peerID"
+					"text" : "tg.receiveR peerID"
 				}
 
 			}
@@ -767,7 +767,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "receiveR.maxpat",
+				"name" : "tg.receiveR.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
@@ -791,7 +791,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "sendR.maxpat",
+				"name" : "tg.sendR.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
