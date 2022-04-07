@@ -1,14 +1,14 @@
 {
 	"author" : "Martin Froehlich",
 	"authors" : [  ],
-	"description" : "Telemersive Gateway is a peer application implementing the telemersive-bus protocol",
+	"description" : "Telemersion is a peer to peer networking toolset for exchanging osx, mqtt, video and mocap data",
 	"displayname" : "",
 	"extends" : "",
 	"extensible" : 0,
-	"homepatcher" : "GatewayOverview.maxpat",
+	"homepatcher" : "TelemersionOverview.maxpat",
 	"max_version_max" : "none",
 	"max_version_min" : "8.1",
-	"name" : "TelemersiveGateway",
+	"name" : "Telemersion",
 	"os" : 	{
 		"macintosh" : 		{
 			"platform" : [ "ia32", "x64" ],
@@ -33,11 +33,11 @@
 	"filelist" : 	{
 		"examples" : [],
 		"externals" : [],
-		"patchers" : [],
-		"help" : [],
+		"patchers" : [TelemersiveGateway.maxpat],
+		"help" : [busClient.maxhelp, busManager.maxhelp],
 		"docs" : [],
 		"code" : [],
-		"extras" : [ "GatewayOverview.maxpat" ]
+		"extras" : [ "TelemersionOverview.maxpat" ]
 	}
 
 }

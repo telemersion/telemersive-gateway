@@ -87,6 +87,10 @@ const handlers = {
   speed: async () => {
     await Client.peer.speedClient.ping();
   },
+  refreshLists: async () => {
+    await Client.updateRoomListMessage();
+    await Client.peer.updatePeerListMessage();
+  },
   publish: async (_retained, _topic, ..._messages) => {
     if(verbose_in){
         console.log("PUBLISH     > " + _topic + ":" + _messages, 1);
