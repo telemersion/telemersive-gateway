@@ -8,7 +8,7 @@
 	"homepatcher" : "TelemersionOverview.maxpat",
 	"max_version_max" : "none",
 	"max_version_min" : "8.1",
-	"name" : "Telemersion",
+	"name" : "telemersive-gateway",
 	"os" : 	{
 		"macintosh" : 		{
 			"platform" : [ "ia32", "x64" ],
@@ -33,8 +33,8 @@
 	"filelist" : 	{
 		"examples" : [],
 		"externals" : [],
-		"patchers" : [TelemersiveGateway.maxpat],
-		"help" : [busClient.maxhelp, busManager.maxhelp],
+		"patchers" : ["TelemersionOverview.maxpat"],
+		"help" : ["busClient.maxhelp", "busManager.maxhelp", "busClient_Tutorial01.maxpat"],
 		"docs" : [],
 		"code" : [],
 		"extras" : [ "TelemersionOverview.maxpat" ]
