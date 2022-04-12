@@ -216,7 +216,7 @@ function makeCreationMessage(_peerID){
 	msp.push("script");
 	msp.push("newobject");
 	msp.push("bpatcher");
-    msp.push("Peer.maxpat");
+    msp.push("tg.Peer.maxpat");
     msp.push("@presentation_rect");
 	msp.push(1220);
 	msp.push(slotIndex * mySlotHeight);
