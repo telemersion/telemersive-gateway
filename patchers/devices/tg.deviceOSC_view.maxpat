@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 2,
-			"revision" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 468.0, 244.0, 410.0, 109.0 ],
+		"rect" : [ 342.0, 232.0, 410.0, 109.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -89,7 +89,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 147.0, 171.0, 59.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 26.0, 331.0, 84.0 ],
+					"presentation_rect" : [ 75.0, 26.0, 330.0, 80.0 ],
 					"proportion" : 0.5
 				}
 
@@ -253,7 +253,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2.5, 162.0, 59.0, 20.75 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 2.0, 327.0, 22.0 ],
+					"presentation_rect" : [ 75.0, 2.0, 330.0, 22.0 ],
 					"text" : "OSC",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -513,7 +513,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 259.0, 232.0, 103.0, 22.0 ],
+					"patching_rect" : [ 259.0, 232.0, 117.0, 22.0 ],
 					"text" : "tg.receiveC #1_peer"
 				}
 
@@ -587,7 +587,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 2,
-							"revision" : 2,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -632,7 +632,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 759.0, 14.0, 24.0, 24.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 238.0, 50.15625, 14.0, 14.0 ]
+									"presentation_rect" : [ 242.0, 50.15625, 14.0, 14.0 ]
 								}
 
 							}
@@ -650,7 +650,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 317.043209876543187, 240.0, 80.0, 23.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 72.0, 49.15625, 180.0, 22.0 ],
+									"presentation_rect" : [ 80.0, 49.15625, 177.0, 22.0 ],
 									"readonly" : 1,
 									"rounded" : 0.0,
 									"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ]
@@ -758,7 +758,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 216.5, 240.0, 87.0, 22.0 ],
+									"patching_rect" : [ 216.5, 240.0, 101.0, 22.0 ],
 									"text" : "tg.UDPChainTwo"
 								}
 
@@ -770,7 +770,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 121.308641975308632, 240.0, 88.0, 22.0 ],
+									"patching_rect" : [ 121.308641975308632, 240.0, 101.0, 22.0 ],
 									"text" : "tg.UDPChainTwo"
 								}
 
@@ -838,7 +838,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 621.0, 218.0, 134.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 72.0, 24.0, 180.0, 22.0 ],
+									"presentation_rect" : [ 80.0, 24.0, 177.0, 22.0 ],
 									"rounded" : 0.0,
 									"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
 									"varname" : "outputIPTwo"
@@ -859,7 +859,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 691.777777777777715, 245.0, 50.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 257.0, 24.0, 60.0, 22.0 ],
+									"presentation_rect" : [ 260.0, 24.0, 65.0, 22.0 ],
 									"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
 									"tricolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 									"varname" : "outputPortTwo"
@@ -923,7 +923,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 499.666666666666742, 189.0, 65.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 8.0, 0.0, 65.0, 20.0 ],
+									"presentation_rect" : [ 1.0, 0.0, 77.0, 20.0 ],
 									"text" : "forward to:",
 									"textjustification" : 2
 								}
@@ -938,7 +938,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 329.043209876543187, 178.0, 73.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 50.15625, 73.0, 20.0 ],
+									"presentation_rect" : [ 1.0, 50.15625, 77.0, 20.0 ],
 									"text" : "receiving at:",
 									"textjustification" : 2
 								}
@@ -958,7 +958,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 477.851851851851734, 218.0, 134.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 72.0, 0.0, 180.0, 22.0 ],
+									"presentation_rect" : [ 80.0, 0.0, 177.0, 22.0 ],
 									"rounded" : 0.0,
 									"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
 									"varname" : "outputIPOne"
@@ -978,7 +978,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 548.629629629629449, 245.0, 50.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 257.0, 0.0, 60.0, 22.0 ],
+									"presentation_rect" : [ 260.0, 0.0, 65.0, 22.0 ],
 									"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
 									"tricolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 									"varname" : "outputPortOne"
@@ -999,7 +999,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 406.543209876543187, 244.0, 50.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 257.0, 49.15625, 60.0, 22.0 ],
+									"presentation_rect" : [ 260.0, 49.15625, 65.0, 22.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"tricolor" : [ 0.741176470588235, 0.741176470588235, 0.741176470588235, 1.0 ],
 									"varname" : "inputPort"
@@ -1372,8 +1372,9 @@
 , 							{
 								"name" : "rnbodefault",
 								"default" : 								{
-									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
+									"fontname" : [ "Lato" ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -1384,11 +1385,10 @@
 										"autogradient" : 0.0
 									}
 ,
-									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-									"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
-									"fontname" : [ "Lato" ],
+									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"fontsize" : [ 12.0 ],
-									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ]
+									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
+									"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1397,8 +1397,12 @@
 , 							{
 								"name" : "rnbohighcontrast",
 								"default" : 								{
-									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+									"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -1409,16 +1413,12 @@
 										"autogradient" : 0.0
 									}
 ,
-									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-									"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
-									"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-									"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-									"fontsize" : [ 13.0 ],
-									"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-									"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
-									"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
+									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+									"fontsize" : [ 13.0 ],
+									"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
+									"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+									"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1808,13 +1808,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.deviceOSC_icon.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.receiveC.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
@@ -1825,6 +1818,13 @@
 				"name" : "tg.view.appearance.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceOSC_icon.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1870,8 +1870,9 @@
 , 			{
 				"name" : "rnbodefault",
 				"default" : 				{
-					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
+					"fontname" : [ "Lato" ],
 					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
@@ -1882,11 +1883,10 @@
 						"autogradient" : 0.0
 					}
 ,
-					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
-					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
-					"fontname" : [ "Lato" ],
+					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 					"fontsize" : [ 12.0 ],
-					"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ]
+					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
+					"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1895,8 +1895,12 @@
 , 			{
 				"name" : "rnbohighcontrast",
 				"default" : 				{
-					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -1907,16 +1911,12 @@
 						"autogradient" : 0.0
 					}
 ,
-					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
-					"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
-					"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
-					"fontsize" : [ 13.0 ],
-					"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
-					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
-					"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+					"fontsize" : [ 13.0 ],
+					"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
+					"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+					"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
