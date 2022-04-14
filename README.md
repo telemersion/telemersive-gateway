@@ -4,6 +4,18 @@ Telemersive Gateway is a peer to peer application based on MaxMSP. It allows to 
 
 ![Diagram](media/DiagramUserView.svg "Solution")
 
+## Features
+
+The gateway comes with an easy to use GUI to give an overview of all the peers participate inside the same room.
+
+For each connection type it shows a matrix of all channels available, with icon indicators in which direction the data flows and framerates if available.
+
+It is possible remote control the connections of each peer from another peer. If the connection is utilizing a CLI app like ultragrid or NatNet2OSC, it is possible to monitor the logout of these apps even from a remote peer to investigate problems.
+
+The Userinterface makes the configuration of the CLI apps very simple and user friendly.
+
+![Diagram](media/TG_device_ultragrid_2peers.png "GUI")
+
 For more information please visit  the [documentation](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/Welcome).
 
 ## Installation
@@ -12,7 +24,7 @@ For more information please visit  the [documentation](https://gitlab.zhdk.ch/te
 You need to have [MaxMSP](https://cycling74.com/) installed. There is no need for a license if you just want to work with telemersive-gateway.
 
 ### Download
-To install the Telemersive Gateway: install the [latest release](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/releases) inside the [MaxMSP package folder](https://docs.cycling74.com/max8/vignettes/packages) and call it 'telemersive-gateway'. It is not important that the directory is called this way, but otherwise the MaxProject will not work.
+To install the Telemersive Gateway: download the [latest release](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/releases) and drop the unpacked folder inside the [MaxMSP package folder](https://docs.cycling74.com/max8/vignettes/packages) and call it 'telemersive-gateway'. It is not important that the directory is called this way, but otherwise the MaxProject will not work.
 
 Restart Max. Now you should be able to find the telemersive-gateway package inside the package manager.
 
@@ -28,10 +40,10 @@ The telemersive-gateway requires additional MaxMSP packages.
 
 It also needs a local installation of
 
-* [Ultragrid](https://www.ultragrid.cz/), an opensource video networking framework with extremely low latency.
+* [Ultragrid](https://www.ultragrid.cz/), an opensource video networking framework with extremely low latency. If you want to interface it with NDI, you need also to install the [NDI libraries](https://github.com/CESNET/UltraGrid/wiki/Syphon,-Spout-and-NDI#ndi) for your system.
 * [NatNetThree2OSC](https://github.com/tecartlab/app_NatNetThree2OSC),  an opensource app to convert native [optitrack](https://optitrack.com/software/) tracking data to OSC. (windows only)
 
-Make sure MaxMSP has read-write access rights on the folders ultragrid and NatNet2OSC reside.
+Make sure MaxMSP has read-write access rights on the folders ultragrid and NatNet2OSC reside in.
 
 ## Credits
 
