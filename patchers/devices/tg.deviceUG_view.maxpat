@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 465.0, 384.0, 409.0, 298.0 ],
+		"rect" : [ 292.0, 576.0, 409.0, 298.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1526,7 +1526,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 108.0, 221.0, 103.0, 22.0 ],
-													"text" : "2152_cche"
+													"text" : "3433_cche"
 												}
 
 											}
@@ -9721,7 +9721,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 708.0, 499.0, 95.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 26.0, 325.5, 247.0 ],
+					"presentation_rect" : [ 75.0, 26.0, 330.0, 247.0 ],
 					"proportion" : 0.5
 				}
 

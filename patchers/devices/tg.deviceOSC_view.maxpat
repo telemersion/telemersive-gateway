@@ -1444,9 +1444,9 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 446.166666666666742, 330.0, 95.0, 26.0 ],
+					"patching_rect" : [ 450.166666666666742, 349.0, 95.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.0, 26.0, 327.0, 80.0 ],
+					"presentation_rect" : [ 75.0, 26.0, 330.0, 80.0 ],
 					"proportion" : 0.5
 				}
 

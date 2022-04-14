@@ -2,7 +2,7 @@
 	"name" : "telemersive-gateway",
 	"version" : 1,
 	"creationdate" : 3688306570,
-	"modificationdate" : 3724136337,
+	"modificationdate" : 3732702559,
 	"viewrect" : [ 24.0, 103.0, 300.0, 500.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
@@ -11,21 +11,6 @@
 	"contents" : 	{
 		"patchers" : 		{
 			"TelemersiveGateway.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"deviceButtonTestbed.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"colorScheme.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"usefullIcons.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -56,8 +41,6 @@
 ,
 	"searchpath" : 	{
 		"0" : 		{
-			"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/node_content",
-			"projectrelativepath" : "./node_content",
 			"label" : "NodeContent",
 			"recursive" : 1,
 			"enabled" : 1,
