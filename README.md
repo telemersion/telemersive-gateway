@@ -18,6 +18,8 @@ The Userinterface makes the configuration of the CLI apps very simple and user f
 
 For more information please visit  the [documentation](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/Welcome).
 
+For issues, please report them [here](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/issues).
+
 ## Installation
 
 ### Requirements
