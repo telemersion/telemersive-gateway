@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 817.0, 215.0, 738.0, 591.0 ],
+		"rect" : [ 668.0, 215.0, 738.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "int" ],
+					"patching_rect" : [ 198.5, 132.5, 29.5, 22.0 ],
+					"text" : "t b i"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 251.5, 153.0, 52.0, 22.0 ],
+					"patching_rect" : [ 251.5, 162.0, 52.0, 22.0 ],
 					"text" : "+ 10000"
 				}
 
@@ -97,8 +109,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -195,6 +207,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
@@ -440,7 +453,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 318.0, 158.0, 123.0, 22.0 ],
+					"patching_rect" : [ 318.0, 158.0, 137.0, 22.0 ],
 					"text" : "tg.receiveR peerLocalIP"
 				}
 
@@ -452,7 +465,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 185.0, 94.0, 43.0, 22.0 ],
+					"patching_rect" : [ 185.0, 81.0, 43.0, 22.0 ],
 					"text" : "* 1000"
 				}
 
@@ -464,7 +477,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 185.0, 153.0, 29.5, 22.0 ],
+					"patching_rect" : [ 185.0, 162.0, 29.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -476,7 +489,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 233.500000000000028, 94.0, 77.0, 22.0 ],
+					"patching_rect" : [ 233.500000000000028, 81.0, 77.0, 22.0 ],
 					"text" : "loadmess #2"
 				}
 
@@ -488,8 +501,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 233.500000000000028, 122.0, 30.0, 22.0 ],
-					"text" : "* 10"
+					"patching_rect" : [ 233.500000000000028, 105.0, 29.5, 22.0 ],
+					"text" : "* 5"
 				}
 
 			}
@@ -500,7 +513,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 185.0, 65.0, 99.0, 22.0 ],
+					"patching_rect" : [ 185.0, 52.0, 112.0, 22.0 ],
 					"text" : "tg.receiveR roomID"
 				}
 
@@ -512,7 +525,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 118.5, 19.5, 117.0, 22.0 ],
+					"patching_rect" : [ 118.5, 19.5, 130.0, 22.0 ],
 					"text" : "tg.receiveR serverURL"
 				}
 
@@ -582,16 +595,16 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
-					"order" : 1,
+					"destination" : [ "obj-20", 0 ],
+					"order" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-22", 0 ],
+					"order" : 1,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -706,6 +719,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"order" : 0,
 					"source" : [ "obj-24", 0 ]
@@ -813,7 +840,58 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "UI_Switch.png",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"patcherrelativepath" : "../../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceOSC_button.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceOSC_icon.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceOSC_view.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.receiveC.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.receiveR.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.view.appearance.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

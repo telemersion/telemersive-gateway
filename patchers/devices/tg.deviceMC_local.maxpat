@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 77.0, 362.0, 775.0, 432.0 ],
+		"rect" : [ 300.0, 211.0, 775.0, 432.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -73,8 +73,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -187,8 +187,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 131.500000000000057, 57.5, 30.0, 22.0 ],
-									"text" : "* 10"
+									"patching_rect" : [ 131.500000000000057, 57.5, 29.5, 22.0 ],
+									"text" : "* 5"
 								}
 
 							}
@@ -223,7 +223,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 131.500000000000057, 32.0, 77.0, 22.0 ],
+									"patching_rect" : [ 131.500000000000057, 16.0, 77.0, 22.0 ],
 									"text" : "loadmess #2"
 								}
 
@@ -236,7 +236,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 131.500000000000057, 82.5, 39.0, 22.0 ],
-									"text" : "+ 300"
+									"text" : "+ 200"
 								}
 
 							}
@@ -248,7 +248,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 23.0, 32.0, 99.0, 22.0 ],
+									"patching_rect" : [ 23.0, 16.0, 99.0, 35.0 ],
 									"text" : "tg.receiveR roomID"
 								}
 
@@ -500,8 +500,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -857,13 +857,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -896,13 +896,13 @@
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -921,13 +921,13 @@
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 										"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 										"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.5,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -971,8 +971,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1314,8 +1314,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1372,8 +1372,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2333,13 +2333,13 @@
 												"name" : "AudioStatus_Menu",
 												"default" : 												{
 													"bgfillcolor" : 													{
-														"type" : "color",
+														"angle" : 270.0,
+														"autogradient" : 0,
 														"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 														"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.39,
-														"autogradient" : 0
+														"type" : "color"
 													}
 
 												}
@@ -2372,13 +2372,13 @@
 													"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 													"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 													"bgfillcolor" : 													{
-														"type" : "color",
+														"angle" : 270.0,
+														"autogradient" : 0.0,
 														"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 														"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 														"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.39,
-														"autogradient" : 0.0
+														"type" : "color"
 													}
 ,
 													"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -2397,13 +2397,13 @@
 													"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 													"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"bgfillcolor" : 													{
-														"type" : "color",
+														"angle" : 270.0,
+														"autogradient" : 0.0,
 														"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 														"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 														"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-														"angle" : 270.0,
 														"proportion" : 0.5,
-														"autogradient" : 0.0
+														"type" : "color"
 													}
 ,
 													"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -2447,8 +2447,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 2,
-											"revision" : 2,
+											"minor" : 3,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2926,13 +2926,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -2965,13 +2965,13 @@
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -2990,13 +2990,13 @@
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 										"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 										"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.5,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -3052,8 +3052,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 2,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3462,13 +3462,13 @@
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -3487,13 +3487,13 @@
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 										"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 										"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.5,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -3816,68 +3816,75 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/media",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"patcherrelativepath" : "../../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "shell.mxe64",
-				"type" : "mx64"
+				"name" : "shell.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "shellHelper.js",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
+				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceMC_button.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceMC_icon.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceMC_view.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.monitor.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.shell.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3887,13 +3894,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -3926,13 +3933,13 @@
 					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0.0,
 						"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 						"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 						"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0.0
+						"type" : "color"
 					}
 ,
 					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -3951,13 +3958,13 @@
 					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0.0,
 						"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 						"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 						"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.5,
-						"autogradient" : 0.0
+						"type" : "color"
 					}
 ,
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],

@@ -1,4 +1,4 @@
-# Telemersive Gateway 1.0.0
+# Telemersive Gateway 2.0.0
 
 Telemersive Gateway is a peer to peer application based on MaxMSP. It allows to converse with multiple peers in different networks. A central server (called the [telemersive-router](https://gitlab.zhdk.ch/telemersion/telemersive-router)) allows to create virtual rooms inside which all peers can share their available resources.
 
