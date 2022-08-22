@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -123,7 +123,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 347.5, 359.5, 107.0, 34.0 ],
 									"rounded" : 10.0,
-									"text" : "SimpleRouter",
+									"text" : "simple-router",
 									"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -139,14 +139,14 @@
 									"presentation" : 1,
 									"presentation_linecount" : 3,
 									"presentation_rect" : [ 130.5, 305.5, 541.5, 47.0 ],
-									"text" : "A SimpleRouter will work, but provides only basic service: Its missing the UDPProxy scripts for streaming videos via ultragrid or streaming mocap data. For those you need access to a full installation of a Telemersive Router.",
+									"text" : "A simple-router will work, but provides only basic service: Its missing the UDPProxy scripts for streaming videos via ultragrid or streaming mocap data. For those you need access to a full installation of a telemersive-router.",
 									"textjustification" : 1
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "Telemersive-Router" ],
+									"args" : [ "telemersive-router" ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -209,7 +209,7 @@
 									"presentation" : 1,
 									"presentation_linecount" : 9,
 									"presentation_rect" : [ 130.5, 130.0, 543.0, 127.0 ],
-									"text" : "There is one caveat if you want to use all the features of the Telemersive Gateway: \n\nYou need access to a Telemersive Router\n\nThe Telemersive Router is a curated set of applications that runs on a linux server with direct access to the Internet.\n\nIf you have access to such a linux machine and some experience with administering one, you can find all the information on how to install one by pressing the button below."
+									"text" : "There is one caveat if you want to use all the features of the telemersive-gateway: \n\nYou need access to a telemersive-router\n\nThe telemersive-router is a curated set of applications that runs on a linux server with direct access to the Internet.\n\nIf you have access to such a linux machine and some experience with administering one, you can find all the information on how to install a telemersive-router by pressing the button below."
 								}
 
 							}
@@ -318,13 +318,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 756.0, 428.0 ],
+						"rect" : [ 506.0, 266.0, 756.0, 428.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -355,22 +355,53 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-19",
-									"linecount" : 19,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 316.5, 125.0, 331.0, 261.0 ],
-									"presentation" : 1,
-									"presentation_linecount" : 13,
-									"presentation_rect" : [ 131.5, 130.0, 547.0, 181.0 ],
-									"text" : "Welcome to the Telemersive Gateway for MaxMSP.\n\nThe Telemersive Gateway allows you to set up an easy connection between different machines in different networks (LAN's) and potentially protected by corporate or university firewalls.\n\nBefore we jump into the tools available with this package, a word of caution:\n\nGo step by step through the tabs and follow the instructions carefully. \n\nBeside this MaxMSP package, additional libraries and applications may need to be installed in order to get access to the full potential of the provided tools. \n\nOnly a carefull installation process can guarantee a painless experience."
+									"id" : "obj-3",
+									"linecount" : 3,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 166.5, 320.0, 386.0, 49.0 ],
+									"text" : ";\rmax launchbrowser https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/Welcome"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "Telemersive-Gateway" ],
+									"bgcolor" : [ 0.337254901960784, 0.811764705882353, 0.36078431372549, 1.0 ],
+									"id" : "obj-6",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 166.5, 265.0, 100.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 131.5, 342.0, 547.0, 34.0 ],
+									"rounded" : 10.0,
+									"text" : "online documentaion",
+									"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"linecount" : 21,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 289.5, 7.0, 331.0, 288.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 15,
+									"presentation_rect" : [ 131.5, 130.0, 547.0, 208.0 ],
+									"text" : "Welcome to the telemersive-gateway for MaxMSP.\n\nThe telemersive-gateway allows you to set up an easy connection between different machines in different networks (LAN's) that are potentially protected by corporate or university firewalls.\n\nBefore we jump into the tools available with this package, a word of caution:\n\nGo step by step through the tabs and follow the instructions carefully. \n\nBeside this MaxMSP package, additional libraries and applications may need to be installed in order to get access to the full potential of the provided tools. \n\nOnly a carefull installation process can guarantee a painless experience.\n\nFor a more detailed documentation go to the"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"args" : [ "telemersive-gateway" ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -392,7 +423,14 @@
 
 							}
  ],
-						"lines" : [  ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+ ],
 						"styles" : [ 							{
 								"name" : "rnbodefault",
 								"default" : 								{
@@ -475,13 +513,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 506.0, 266.0, 756.0, 428.0 ],
+						"rect" : [ 0.0, 26.0, 756.0, 428.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -520,8 +558,8 @@
 									"patching_rect" : [ 16.5, 383.0, 333.0, 87.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 4,
-									"presentation_rect" : [ 130.5, 136.0, 532.0, 60.0 ],
-									"text" : "To run the Telemersive Gateway, you require additional MaxMSP packages. Press the button below to check if your package collection meets the requirements. If not, you are provided with a popup window and you can press the 'install' buttons to either install the package inside the manager or jump to the website to download the package manually"
+									"presentation_rect" : [ 130.5, 136.0, 534.0, 60.0 ],
+									"text" : "To run the telemersive-gateway, you require additional MaxMSP packages. Press the button below to check if your package collection meets the requirements. If not, you are provided with a popup window and you can press the 'install' buttons to either install the package inside the manager or jump to the website to download the package manually"
 								}
 
 							}
@@ -537,7 +575,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -697,7 +735,7 @@
 							}
 , 							{
 								"box" : 								{
-									"bgcolor" : [ 0.337, 0.812, 0.361, 1.0 ],
+									"bgcolor" : [ 0.851, 0.267, 0.267, 1.0 ],
 									"id" : "obj-10",
 									"maxclass" : "textbutton",
 									"numinlets" : 1,
@@ -775,11 +813,11 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 361.5, 309.0, 330.0, 47.0 ],
+									"patching_rect" : [ 361.5, 309.0, 332.0, 47.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 130.5, 365.0, 526.0, 33.0 ],
-									"text" : "Inside the Telemersive Gateway, open the config (click on the roomName), select the 'externals' tab and follow the instructions."
+									"text" : "Inside the telemersive-gateway, open the config (click on the roomName), select the 'externals' tab and follow the instructions."
 								}
 
 							}
@@ -856,13 +894,13 @@
 									"presentation" : 1,
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 130.5, 264.0, 529.0, 33.0 ],
-									"text" : "If you want to stream video and optitrack-mocap data, you also need to install the following applications. These are CLI (Command Line Interface) apps which are managed by the Gateway."
+									"text" : "If you want to stream video and optitrack-mocap data, you also need to install the following applications. These are CLI (Command Line Interface) apps which are managed by the gateway."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "Telemersive Gateway" ],
+									"args" : [ "telemersive-gateway" ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -1002,7 +1040,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1066,14 +1104,14 @@
 									"presentation" : 1,
 									"presentation_linecount" : 9,
 									"presentation_rect" : [ 131.5, 140.0, 577.0, 127.0 ],
-									"text" : "So, you have installed all required \n\npackages, \nnodescripts,\nultragrid and optitrack tools \n\nand have access to a Telemersive Router..\n\nyou are now ready to play!",
+									"text" : "So, you have installed all required \n\npackages, \nnodescripts,\nultragrid and optitrack tools \n\nand have access to a telemersive-router..\n\nyou are now ready to play!",
 									"textjustification" : 1
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "Telemersive Gateway" ],
+									"args" : [ "telemersive-gateway" ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,

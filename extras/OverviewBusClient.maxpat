@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -51,7 +51,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -96,8 +96,8 @@
 									"patching_rect" : [ 202.0, 131.5, 150.0, 74.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 273.5, 136.472285714285704, 284.0, 33.0 ],
-									"text" : "Before you can start playing with the Telemersive Bus, you need to get a SimpleRouter running:"
+									"presentation_rect" : [ 263.5, 138.472285714285704, 312.0, 33.0 ],
+									"text" : "Before you can start playing with the telemersive-bus, you need to get a simple-router running:"
 								}
 
 							}
@@ -114,7 +114,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 376.0, 185.472285714285704, 107.0, 34.0 ],
 									"rounded" : 10.0,
-									"text" : "SimpleRouter",
+									"text" : "simple-router",
 									"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -143,7 +143,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 206.0, 261.5, 199.0, 22.0 ],
-									"presentation_linecount" : 3,
 									"text" : "load OverviewSimpleRouter.maxpat"
 								}
 
@@ -155,8 +154,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 493.0, 437.5, 187.0, 22.0 ],
-									"text" : "load busClient_Tutorial01.maxpat"
+									"patching_rect" : [ 493.0, 437.5, 193.0, 22.0 ],
+									"text" : "load busClient_Tutorial01.maxhelp"
 								}
 
 							}
@@ -284,7 +283,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "Telemersive Bus" ],
+									"args" : [ "telemersive-bus" ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,

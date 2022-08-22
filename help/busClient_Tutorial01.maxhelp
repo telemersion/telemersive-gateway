@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
+			"minor" : 3,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 122.0, 321.0, 714.0, 758.0 ],
+		"rect" : [ 100.0, 100.0, 714.0, 758.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -50,7 +50,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
+							"minor" : 3,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -109,7 +109,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 132.0, 140.0, 473.0, 20.0 ],
-									"text" : "mouse -> right-click -> Paste from > telemersion > busClientOSC.maxpat"
+									"text" : "mouse -> right-click -> Paste from > telemersive-gateway > busClientOSC.maxpat"
 								}
 
 							}
@@ -140,13 +140,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -179,13 +179,13 @@
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -204,13 +204,13 @@
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 										"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 										"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.5,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -255,7 +255,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
+							"minor" : 3,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -314,7 +314,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 132.0, 140.0, 473.0, 20.0 ],
-									"text" : "mouse -> right-click -> Paste from > telemersion > busClientMQTT.maxpat"
+									"text" : "mouse -> right-click -> Paste from > telemersive-gateway > busClientMQTT.maxpat"
 								}
 
 							}
@@ -345,13 +345,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -384,13 +384,13 @@
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -409,13 +409,13 @@
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 										"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 										"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.5,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -460,7 +460,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
+							"minor" : 3,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -519,7 +519,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 132.0, 140.0, 473.0, 20.0 ],
-									"text" : "mouse -> right-click -> Paste from > telemersion > busClientCHAT.maxpat"
+									"text" : "mouse -> right-click -> Paste from > telemersive-gateway > busClientCHAT.maxpat"
 								}
 
 							}
@@ -550,13 +550,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -589,13 +589,13 @@
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -614,13 +614,13 @@
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 										"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 										"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.5,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -665,7 +665,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
+							"minor" : 3,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -724,7 +724,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 132.0, 140.0, 473.0, 20.0 ],
-									"text" : "mouse -> right-click -> Paste from > telemersion > busClientPEERS.maxpat"
+									"text" : "mouse -> right-click -> Paste from > telemersive-gateway > busClientPEERS.maxpat"
 								}
 
 							}
@@ -755,13 +755,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -794,13 +794,13 @@
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -819,13 +819,13 @@
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 										"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 										"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.5,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -870,14 +870,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
+							"minor" : 3,
 							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 122.0, 347.0, 714.0, 732.0 ],
+						"rect" : [ 100.0, 126.0, 714.0, 732.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -915,7 +915,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 562.5, 176.0, 126.0, 20.0 ],
+									"patching_rect" : [ 564.5, 175.0, 126.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 340.5, 318.0, 219.0, 34.0 ],
 									"rounded" : 10.0,
@@ -946,7 +946,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 618.5, 215.0, 191.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"text" : "load TelemersionOverview.maxpat"
 								}
 
@@ -958,9 +957,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 132.0, 135.0, 487.0, 62.0 ],
-									"presentation_linecount" : 4,
-									"text" : "This tutorial steps you through the process of implemting a Telemersive busClient into your patch. Save it first into another folder.\n\nThis Tutorial also assumes you have access to a SimpleRouter. If not, checkout"
+									"patching_rect" : [ 132.0, 135.0, 487.0, 60.0 ],
+									"text" : "This tutorial steps you through the process of implemting a telemersive-bus busClient into your patch. Save it first into another folder.\n\nThis Tutorial also assumes you have access to a SimpleRouter. If not, checkout"
 								}
 
 							}
@@ -1014,8 +1012,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 132.0, 355.0, 474.0, 48.0 ],
-									"presentation_linecount" : 3,
+									"patching_rect" : [ 132.0, 355.0, 474.0, 47.0 ],
 									"text" : "once you have the busClient abstraction in your patch, save your patch in a new folder. The busClient abstraction will attempt to store its setting inside the same folder the main patcher resides. see [p getFilePath]"
 								}
 
@@ -1059,8 +1056,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 133.0, 416.0, 473.0, 62.0 ],
-									"presentation_linecount" : 4,
+									"patching_rect" : [ 133.0, 416.0, 473.0, 60.0 ],
 									"text" : "press the red button to open the config.\n\nEnter the MQTT brokers credential info, choose a client name, room name and room pass word and join."
 								}
 
@@ -1088,7 +1084,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 132.0, 225.0, 473.0, 20.0 ],
-									"text" : "mouse -> right-click -> Paste from > telemersion > busClient_MAIN.maxpat"
+									"text" : "mouse -> right-click -> Paste from > telemersive-gateway > busClient_MAIN.maxpat"
 								}
 
 							}
@@ -1135,13 +1131,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -1174,13 +1170,13 @@
 									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.39,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -1199,13 +1195,13 @@
 									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 										"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 										"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.5,
-										"autogradient" : 0.0
+										"type" : "color"
 									}
 ,
 									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
@@ -1244,15 +1240,9 @@
  ],
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
-				"name" : "icon.png",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway",
-				"patcherrelativepath" : "..",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.pageTitle.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/doc",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/doc",
+				"patcherrelativepath" : "../patchers/doc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1264,13 +1254,13 @@
 					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0.0,
 						"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 						"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 						"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0.0
+						"type" : "color"
 					}
 ,
 					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -1289,13 +1279,13 @@
 					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0.0,
 						"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 						"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 						"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.5,
-						"autogradient" : 0.0
+						"type" : "color"
 					}
 ,
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],

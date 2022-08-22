@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -42,6 +42,200 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 3,
+							"revision" : 2,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 0.0, 26.0, 716.0, 323.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 1,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"showontab" : 1,
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 214.5, 147.0, 330.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 133.5, 137.0, 573.0, 20.0 ],
+									"text" : "For a more detailed documentation go to the",
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 3,
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 302.5, 209.0, 386.0, 49.0 ],
+									"text" : ";\rmax launchbrowser https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/Welcome"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.337254901960784, 0.811764705882353, 0.36078431372549, 1.0 ],
+									"id" : "obj-6",
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 302.5, 154.0, 100.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 133.5, 172.0, 573.0, 34.0 ],
+									"rounded" : 10.0,
+									"text" : "online documentaion",
+									"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"args" : [ "telemersive-docs" ],
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-7",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "tg.pageTitle.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 2.0, -4.0, 619.0, 130.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 0.0, 0.0, 706.0, 128.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "rnbodefault",
+								"default" : 								{
+									"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
+									"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+									"bgfillcolor" : 									{
+										"angle" : 270.0,
+										"autogradient" : 0.0,
+										"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+										"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
+										"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
+										"proportion" : 0.39,
+										"type" : "color"
+									}
+,
+									"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
+									"elementcolor" : [ 0.357540726661682, 0.515565991401672, 0.861786782741547, 1.0 ],
+									"fontname" : [ "Lato" ],
+									"fontsize" : [ 12.0 ],
+									"stripecolor" : [ 0.258338063955307, 0.352425158023834, 0.511919498443604, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "rnbohighcontrast",
+								"default" : 								{
+									"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"bgfillcolor" : 									{
+										"angle" : 270.0,
+										"autogradient" : 0.0,
+										"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+										"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
+										"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
+										"proportion" : 0.5,
+										"type" : "color"
+									}
+,
+									"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+									"color" : [ 1.0, 0.874509803921569, 0.141176470588235, 1.0 ],
+									"editing_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"elementcolor" : [ 0.223386004567146, 0.254748553037643, 0.998085916042328, 1.0 ],
+									"fontsize" : [ 13.0 ],
+									"locked_bgcolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"selectioncolor" : [ 0.301960784313725, 0.694117647058824, 0.949019607843137, 1.0 ],
+									"stripecolor" : [ 0.258823529411765, 0.258823529411765, 0.258823529411765, 1.0 ],
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 1.0, 1.0, 1.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 229.0, 156.0, 46.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p Docs",
+					"varname" : "Basic[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -51,7 +245,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -93,11 +287,11 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 227.0, 269.0, 153.0, 87.0 ],
+									"patching_rect" : [ 227.0, 269.0, 157.0, 87.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
 									"presentation_rect" : [ 130.5, 248.0, 545.0, 33.0 ],
-									"text" : "The Telemersive-bus library is based on the MQTT-protocoll to communicate between the peers and the room manager. "
+									"text" : "The telemersive-bus library is based on the MQTT-protocoll to communicate between the peers and the room manager. "
 								}
 
 							}
@@ -113,7 +307,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -438,11 +632,11 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 316.5, 125.0, 330.0, 60.0 ],
+									"patching_rect" : [ 316.5, 125.0, 332.0, 60.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 3,
 									"presentation_rect" : [ 130.5, 130.0, 541.5, 47.0 ],
-									"text" : "At the basis of the Telemersive Gateway lies a nodejs library called 'Telemersive-bus'. \n\nThis library needs to be installed to make anything work"
+									"text" : "At the basis of the telemersive-gateway lies a nodejs library called 'telemersive-bus'. \n\nThis library needs to be installed to make anything work"
 								}
 
 							}
@@ -511,7 +705,7 @@
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "Telemersive-bus" ],
+									"args" : [ "telemersive-bus" ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -644,13 +838,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 716.0, 323.0 ],
+						"rect" : [ 362.0, 132.0, 716.0, 323.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -701,8 +895,8 @@
 									"patching_rect" : [ 463.0, 266.5, 151.0, 60.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 2,
-									"presentation_rect" : [ 435.0, 166.472285714285704, 260.5, 33.0 ],
-									"text" : "The sophisticated Gateway that requires access to a Telemersive-Router:",
+									"presentation_rect" : [ 137.5, 166.472285714285704, 270.5, 33.0 ],
+									"text" : "The sophisticated telemersive-gateway that requires access to a telemersive-router:",
 									"textjustification" : 1
 								}
 
@@ -717,8 +911,8 @@
 									"patching_rect" : [ 144.5, 266.5, 150.0, 87.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 3,
-									"presentation_rect" : [ 137.5, 166.472285714285704, 284.0, 47.0 ],
-									"text" : "The barebones busClient. You can disseminate the core functions of the telemersive-bus protocoll and setup your own SimpleRouter",
+									"presentation_rect" : [ 437.5, 166.472285714285704, 261.0, 47.0 ],
+									"text" : "The barebones busClient. You can disseminate the core functions of the telemersive-bus protocoll and setup your own simple-router",
 									"textjustification" : 1
 								}
 
@@ -734,9 +928,9 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 463.0, 345.5, 100.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 490.5, 228.472285714285704, 151.0, 34.0 ],
+									"presentation_rect" : [ 193.0, 228.472285714285704, 151.0, 34.0 ],
 									"rounded" : 10.0,
-									"text" : "Telemersive Gateway",
+									"text" : "telemersive-gateway",
 									"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -752,9 +946,9 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 148.5, 357.5, 100.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 195.75, 228.472285714285704, 168.5, 34.0 ],
+									"presentation_rect" : [ 482.25, 228.472285714285704, 168.5, 34.0 ],
 									"rounded" : 10.0,
-									"text" : "busClient + SimpleRouter",
+									"text" : "busClient + simple-router",
 									"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -770,7 +964,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 133.0, 260.5, 297.0, 129.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 133.5, 160.472285714285704, 293.0, 128.0 ],
+									"presentation_rect" : [ 429.5, 160.472285714285704, 274.0, 128.0 ],
 									"proportion" : 0.5
 								}
 
@@ -786,7 +980,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 455.5, 257.0, 250.0, 129.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 430.0, 160.472285714285704, 272.0, 128.0 ],
+									"presentation_rect" : [ 132.5, 160.472285714285704, 284.0, 128.0 ],
 									"proportion" : 0.5
 								}
 
@@ -824,14 +1018,14 @@
 									"patching_rect" : [ 199.5, 132.0, 330.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 132.5, 130.0, 573.0, 20.0 ],
-									"text" : "This package contains to flavours.",
+									"text" : "This package contains two flavours:",
 									"textjustification" : 1
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "Telemersive-Toolz" ],
+									"args" : [ "telemersive-toolz" ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -964,13 +1158,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 362.0, 132.0, 716.0, 323.0 ],
+						"rect" : [ 0.0, 26.0, 716.0, 323.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1010,13 +1204,13 @@
 									"presentation" : 1,
 									"presentation_linecount" : 13,
 									"presentation_rect" : [ 131.5, 130.0, 547.0, 181.0 ],
-									"text" : "Welcome to the Telemersive Gateway for MaxMSP.\n\nThe Telemersive Gateway allows you to set up an easy connection between different machines in different networks (LAN's) and potentially protected by corporate or university firewalls.\n\nBefore we jump into the tools available with this package, a word of caution:\n\nGo step by step through the tabs and follow the instructions carefully. \n\nBeside this MaxMSP package, additional libraries and applications may need to be installed in order to get access to the full potential of the provided tools. \n\nOnly a carefull installation process can guarantee a painless experience."
+									"text" : "Welcome to the telemersive-gateway for MaxMSP.\n\nThe telemersive-gateway allows you to set up an easy connection between different machines in different networks (LAN's) that are potentially protected by corporate or university firewalls.\n\nBefore we jump into the tools available with this package, a word of caution:\n\nGo step by step through the tabs and follow the instructions carefully. \n\nBeside this MaxMSP package, additional libraries and applications may need to be installed in order to get access to the full potential of the provided tools. \n\nOnly a carefull installation process can guarantee a painless experience."
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"args" : [ "Telemersion for MaxMSP" ],
+									"args" : [ "telemersion for MaxMSP" ],
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
