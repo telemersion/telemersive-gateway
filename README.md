@@ -10,7 +10,7 @@ The gateway comes with an easy to use GUI to give an overview of all the peers p
 
 For each connection type it shows a matrix of all channels available, with icon indicators in which direction the data flows and framerates if available.
 
-It is possible remote control the connections of each peer from another peer. If the connection is utilizing a CLI app like ultragrid or NatNet2OSC, it is possible to monitor the logout of these apps even from a remote peer to investigate problems.
+It is possible to remote control the connections of each peer from another peer. If the connection is utilizing a CLI app like ultragrid or NatNet2OSC, it is possible to monitor the logout of these apps even from a remote peer to investigate problems.
 
 The Userinterface makes the configuration of the CLI apps very simple and user friendly.
 
@@ -51,4 +51,5 @@ Make sure MaxMSP has read-write access rights on the folders ultragrid and NatNe
 
 Martin Froehlich (c) 2022 [Immersive Arts Space](http://immersive-arts.ch)
 
-This project was only realized thanks to the generous support of the swiss national science foundation and the telematic project.
+Telemersive-gateway is developed in the research project Spatial Dis-/Continuities in Telematic Performances. It is one element of our toolset to enable remote locations to create overlapping spaces on physical and virtual stages.
+
