@@ -838,7 +838,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 79.0, 190.0, 528.0, 36.0 ],
+									"patching_rect" : [ 79.0, 190.0, 528.0, 35.0 ],
 									"text" : "script newobject newobj @text $1 @varname udpchain @patching_rect 200. 280. 400. 22., script connect udpchain 0 connect 0"
 								}
 
@@ -2268,12 +2268,11 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-59",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 276.380070546737329, 190.0, 87.0, 35.0 ],
+													"patching_rect" : [ 276.380070546737329, 190.0, 101.0, 22.0 ],
 													"text" : "tg.UDPChainTwo"
 												}
 
@@ -2281,13 +2280,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-58",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 217.380070546737329, 166.0, 88.0, 35.0 ],
-													"text" : "tg.UDPChainTwo"
+													"patching_rect" : [ 217.380070546737329, 166.0, 101.0, 22.0 ],
+													"text" : "tg.UDPChainOne"
 												}
 
 											}
