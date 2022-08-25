@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 664.0, 198.0, 408.0, 415.0 ],
+		"rect" : [ 176.0, 197.0, 408.0, 415.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2458,7 +2458,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 776.0, 382.0, 567.0, 350.0 ],
+						"rect" : [ 662.0, 353.0, 567.0, 350.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2573,8 +2573,9 @@
 									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"numinlets" : 0,
-									"numoutlets" : 0,
+									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "" ],
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
@@ -2615,6 +2616,30 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-29",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 37.184296000000018, 221.0, 109.0, 22.0 ],
+													"text" : "prepend routerPort"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-1",
+													"index" : 1,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 37.184296000000018, 268.0, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-17",
 													"maxclass" : "newobj",
@@ -3019,6 +3044,14 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-29", 0 ],
+													"order" : 2,
+													"source" : [ "obj-17", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-24", 1 ],
 													"source" : [ "obj-19", 0 ]
 												}
@@ -3051,6 +3084,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-9", 0 ],
 													"source" : [ "obj-24", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-1", 0 ],
+													"source" : [ "obj-29", 0 ]
 												}
 
 											}
@@ -3877,7 +3917,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 150.0, 112.0, 299.0, 57.0 ],
+									"patching_rect" : [ 174.0, 115.0, 299.0, 57.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 0.0, 338.0, 54.0 ],
 									"varname" : "local",
@@ -3922,6 +3962,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
 									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-30", 0 ],
+									"source" : [ "obj-33", 0 ]
 								}
 
 							}
@@ -4121,18 +4168,6 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-29",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 141.234567901234527, 381.0, 109.0, 22.0 ],
-									"text" : "prepend routerPort"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"fontsize" : 9.0,
 									"hint" : "reset IP address and port numbers to default",
@@ -4974,13 +5009,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-34", 0 ],
-									"source" : [ "obj-29", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-19", 1 ],
 									"source" : [ "obj-3", 0 ]
 								}
@@ -5076,16 +5104,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"order" : 0,
-									"source" : [ "obj-6", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
-									"order" : 1,
 									"source" : [ "obj-6", 0 ]
 								}
 
