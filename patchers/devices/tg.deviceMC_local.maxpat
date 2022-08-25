@@ -1463,8 +1463,8 @@
 													"numinlets" : 24,
 													"numoutlets" : 24,
 													"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-													"patching_rect" : [ 50.0, 95.0, 1186.0, 36.0 ],
-													"text" : "route enable direction natnet_path cmdPort dataPort peerLocalIP motiveIP multicastIP serverURL gatewayPort listeningIP listeningPort outputIPOne outputPortOne oscMode frameModulo yUp2zUp verbose sendSkeletons sendMarkerInfos leftHanded invmatrix matrix"
+													"patching_rect" : [ 50.0, 95.0, 1205.0, 35.0 ],
+													"text" : "route enable direction natnet_path cmdPort dataPort peerLocalIP motiveIP multicastIP serverURL routerPort listeningIP listeningPort outputIPOne outputPortOne oscMode frameModulo yUp2zUp verbose sendSkeletons sendMarkerInfos leftHanded invmatrix matrix"
 												}
 
 											}
@@ -2322,8 +2322,8 @@
 													"numinlets" : 13,
 													"numoutlets" : 13,
 													"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-													"patching_rect" : [ 44.0, 83.0, 813.0, 22.0 ],
-													"text" : "route enable direction enableTwo serverURL peerLocalIP gatewayPort listeningIP listeningPort outputIPOne outputPortOne outputIPTwo outputPortTwo"
+													"patching_rect" : [ 44.0, 83.0, 800.0, 22.0 ],
+													"text" : "route enable direction enableTwo serverURL peerLocalIP routerPort listeningIP listeningPort outputIPOne outputPortOne outputIPTwo outputPortTwo"
 												}
 
 											}

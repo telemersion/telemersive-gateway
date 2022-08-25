@@ -4092,7 +4092,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 803.0, 221.0, 602.0, 471.0 ],
+						"rect" : [ 39.0, 252.0, 602.0, 471.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -4121,6 +4121,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 141.234567901234527, 381.0, 109.0, 22.0 ],
+									"text" : "prepend routerPort"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontsize" : 9.0,
 									"hint" : "reset IP address and port numbers to default",
@@ -4295,7 +4307,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 367.203703703703468, 164.0, 29.5, 22.0 ],
-									"text" : "+ 1"
+									"text" : "- 1"
 								}
 
 							}
@@ -4521,12 +4533,12 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 82.382716049382793, 39.0, 56.0, 22.0 ],
 									"restore" : 									{
-										"inputPort" : [ 10007 ],
+										"inputPort" : [ 10008 ],
 										"listeningIP" : [ "127.0.0.1" ],
 										"outputIPOne" : [ "127.0.0.1" ],
 										"outputIPTwo" : [ "127.0.0.1" ],
-										"outputPortOne" : [ 10008 ],
-										"outputPortTwo" : [ 10009 ]
+										"outputPortOne" : [ 10007 ],
+										"outputPortTwo" : [ 10006 ]
 									}
 ,
 									"text" : "autopattr",
@@ -4648,7 +4660,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 440.777777777777715, 164.0, 29.5, 22.0 ],
-									"text" : "+ 2"
+									"text" : "- 2"
 								}
 
 							}
@@ -4962,6 +4974,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-34", 0 ],
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-19", 1 ],
 									"source" : [ "obj-3", 0 ]
 								}
@@ -5057,7 +5076,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
+									"order" : 0,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
+									"order" : 1,
 									"source" : [ "obj-6", 0 ]
 								}
 
