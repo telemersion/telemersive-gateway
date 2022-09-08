@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 176.0, 197.0, 408.0, 415.0 ],
+		"rect" : [ 346.0, 124.0, 408.0, 415.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -187,6 +187,7 @@
 , 			{
 				"box" : 				{
 					"frames" : 1,
+					"hidden" : 1,
 					"hint" : "enable a second destination to forward the data received from the router",
 					"id" : "obj-23",
 					"inactiveimage" : 1,
@@ -926,7 +927,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-33",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -1695,6 +1695,7 @@
 							}
 , 							{
 								"box" : 								{
+									"hint" : "Local IP of machine Motive is running on.",
 									"id" : "obj-17",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -2458,7 +2459,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 662.0, 353.0, 567.0, 350.0 ],
+						"rect" : [ 662.0, 611.0, 567.0, 350.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2616,6 +2617,31 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"bgcolor" : [ 0.741176470588235, 0.741176470588235, 0.741176470588235, 1.0 ],
+													"bordercolor" : [ 0.741176470588235, 0.741176470588235, 0.741176470588235, 1.0 ],
+													"hint" : "router url or IP. Set automatically from the connection GUI",
+													"id" : "obj-3",
+													"ignoreclick" : 1,
+													"keymode" : 1,
+													"lines" : 1,
+													"maxclass" : "textedit",
+													"numinlets" : 1,
+													"numoutlets" : 4,
+													"outlettype" : [ "", "int", "", "" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 26.684296000000018, 141.0, 134.0, 22.0 ],
+													"presentation" : 1,
+													"presentation_rect" : [ 50.0, 0.0, 195.0, 22.0 ],
+													"readonly" : 1,
+													"rounded" : 0.0,
+													"text" : "router url",
+													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"varname" : "listeningIP"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-29",
 													"maxclass" : "newobj",
@@ -2920,6 +2946,7 @@
 													"bgfillcolor_proportion" : 0.5,
 													"bgfillcolor_type" : "color",
 													"gradient" : 1,
+													"hint" : "switchBoard port. clicking on the button will open a browser window to query the switchboard about this port number.",
 													"id" : "obj-11",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -2927,7 +2954,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 223.166666666666742, 149.0, 50.0, 22.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 260.0, 21.0, 65.0, 22.0 ],
+													"presentation_rect" : [ 50.0, 27.0, 51.0, 22.0 ],
 													"text" : "11000",
 													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"textjustification" : 1
@@ -2936,14 +2963,16 @@
 											}
 , 											{
 												"box" : 												{
+													"hint" : "port number. The port dedicated for this device on the routers switchboard. Set automatically. ",
 													"id" : "obj-12",
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 183.833333333333428, 149.0, 33.0, 20.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 225.0, 22.0, 33.0, 20.0 ],
-													"text" : "port:"
+													"presentation_rect" : [ 0.0, 28.0, 48.0, 20.0 ],
+													"text" : "port:",
+													"textjustification" : 0
 												}
 
 											}
@@ -2961,15 +2990,16 @@
 											}
 , 											{
 												"box" : 												{
+													"hint" : "router url or IP. Set automatically from the connection GUI",
 													"id" : "obj-8",
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 51.184296000000018, 108.0, 137.0, 20.0 ],
+													"patching_rect" : [ 51.184296000000018, 108.0, 43.0, 20.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 80.0, 0.0, 134.0, 20.0 ],
-													"text" : "router address:",
-													"textjustification" : 2
+													"presentation_rect" : [ 0.0, 1.0, 48.0, 20.0 ],
+													"text" : "router:",
+													"textjustification" : 0
 												}
 
 											}
@@ -2982,20 +3012,6 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 26.684296000000018, 65.5, 72.0, 22.0 ],
 													"text" : "prepend set"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"id" : "obj-4",
-													"maxclass" : "comment",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 26.684296000000018, 149.0, 150.0, 20.0 ],
-													"presentation" : 1,
-													"presentation_rect" : [ 37.0, 22.0, 177.0, 20.0 ],
-													"text" : "telemersion.zhdk.ch",
-													"textjustification" : 2
 												}
 
 											}
@@ -3096,7 +3112,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-4", 0 ],
+													"destination" : [ "obj-3", 0 ],
 													"source" : [ "obj-6", 0 ]
 												}
 
@@ -3779,7 +3795,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1125.0, 221.0, 206.0, 480.0 ],
+										"rect" : [ 1083.0, 281.0, 309.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -3810,13 +3826,14 @@
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-4",
+													"linecount" : 2,
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 20.184296000000018, 57.0, 178.0, 20.0 ],
+													"patching_rect" : [ 20.184296000000018, 57.0, 178.0, 33.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 80.0, 0.0, 178.0, 20.0 ],
-													"text" : "send OSC to local LAN address"
+													"presentation_rect" : [ 0.0, 1.0, 223.0, 20.0 ],
+													"text" : "send OSC directly to local LAN address."
 												}
 
 											}
@@ -4105,7 +4122,7 @@
 ,
 					"patching_rect" : [ 358.5, 80.75, 354.500000000000114, 52.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 57.0, 340.0, 52.0 ],
+					"presentation_rect" : [ 154.0, 57.0, 261.0, 52.0 ],
 					"varname" : "connection",
 					"viewvisibility" : 1
 				}
@@ -4120,6 +4137,7 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -4139,7 +4157,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 39.0, 252.0, 602.0, 471.0 ],
+						"rect" : [ 668.0, 662.0, 602.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -4398,7 +4416,7 @@
 								"box" : 								{
 									"bgcolor" : [ 0.741176470588235, 0.741176470588235, 0.741176470588235, 1.0 ],
 									"bordercolor" : [ 0.741176470588235, 0.741176470588235, 0.741176470588235, 1.0 ],
-									"hint" : "local IP - send /motive/command messages to this address and port",
+									"hint" : "local IP of this machine. Set automatically",
 									"id" : "obj-11",
 									"ignoreclick" : 1,
 									"keymode" : 1,
@@ -4657,7 +4675,7 @@
 								"box" : 								{
 									"bgcolor" : [ 0.223529411764706, 0.223529411764706, 0.223529411764706, 1.0 ],
 									"hidden" : 1,
-									"hint" : "port number",
+									"hint" : "port number. Port number the OSC stream is sent to.",
 									"id" : "obj-49",
 									"maxclass" : "number",
 									"maximum" : 60000,
@@ -4725,14 +4743,14 @@
 							}
 , 							{
 								"box" : 								{
-									"hint" : "The data the gateway has received from the router is “forwarded to” the provided IP and port.",
+									"hint" : "When 'receive from router': The data the gateway has received from the router is “forwarded to” the provided IP and port. When 'send to local': The data the locally running script is sending the OSC data to.",
 									"id" : "obj-16",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 248.666666666666742, 232.0, 67.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 2.0, 81.0, 20.0 ],
+									"presentation_rect" : [ 0.0, 2.0, 78.0, 20.0 ],
 									"text" : "forward to:",
 									"textjustification" : 2
 								}
@@ -4740,7 +4758,7 @@
 							}
 , 							{
 								"box" : 								{
-									"hint" : "The data the gateway needs to send to the router is “received at” the provided IP and port.",
+									"hint" : "The data the gateway needs to send to the router is “received at” the local IP and port. This allows a bidirectional communication with Motive and allows the receiving client to query Motive about its current status (rigidbodies and skeletons). Set automatically.",
 									"id" : "obj-15",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -4757,7 +4775,7 @@
 								"box" : 								{
 									"bgcolor" : [ 0.223529411764706, 0.223529411764706, 0.223529411764706, 1.0 ],
 									"bordercolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
-									"hint" : "output address. Send the osc messages to this address.",
+									"hint" : "output address. Forward the osc messages to this address.",
 									"id" : "obj-10",
 									"keymode" : 1,
 									"lines" : 1,
@@ -4779,7 +4797,7 @@
 , 							{
 								"box" : 								{
 									"bgcolor" : [ 0.223529411764706, 0.223529411764706, 0.223529411764706, 1.0 ],
-									"hint" : "port number",
+									"hint" : "port number. Port number the OSC stream is sent to.",
 									"id" : "obj-7",
 									"maxclass" : "number",
 									"maximum" : 60000,
@@ -4800,7 +4818,7 @@
 , 							{
 								"box" : 								{
 									"bgcolor" : [ 0.741176470588235, 0.741176470588235, 0.741176470588235, 1.0 ],
-									"hint" : "port number",
+									"hint" : "port number. Local listening port. Set automatically.",
 									"id" : "obj-6",
 									"ignoreclick" : 1,
 									"maxclass" : "number",
@@ -5548,7 +5566,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 121.0, 19.0, 56.0, 22.0 ],
 									"restore" : 									{
-										"select" : [ 0 ]
+										"select" : [ 1 ]
 									}
 ,
 									"text" : "autopattr",
