@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 47.0, 65.0, 738.0, 146.0 ],
+		"rect" : [ 50.0, 57.0, 749.0, 108.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -76,7 +76,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 120.5, 301.0, 26.0, 27.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 82.0, 34.0, 35.0 ]
+					"presentation_rect" : [ 1.0, 46.5, 46.0, 44.0 ]
 				}
 
 			}
@@ -93,7 +93,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 152.5, 301.0, 25.0, 26.75 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 716.0, 58.5, 20.0, 20.0 ]
+					"presentation_rect" : [ 725.0, 21.5, 23.0, 22.0 ]
 				}
 
 			}
@@ -117,7 +117,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 537.0, 4.0, 68.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 103.0, 1.5, 68.0, 20.0 ],
+					"presentation_rect" : [ 114.0, 1.5, 68.0, 20.0 ],
 					"text" : "roomName"
 				}
 
@@ -568,7 +568,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 537.0, 53.0, 88.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 2.0, 1.5, 34.0, 42.0 ],
+					"presentation_rect" : [ 1.0, 1.5, 46.0, 21.0 ],
 					"rounded" : 8.0,
 					"text" : "quit"
 				}
@@ -654,7 +654,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 21.0, 216.0, 721.0, 61.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.0, 82.0, 1220.0, 60.0 ],
+					"presentation_rect" : [ 49.0, 46.5, 1220.0, 60.0 ],
 					"varname" : "localPeer",
 					"viewvisibility" : 1
 				}
@@ -678,7 +678,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 88.5, 362.0, 721.0, 296.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.0, 146.0, 1220.0, 640.0 ],
+					"presentation_rect" : [ 49.0, 108.5, 1220.0, 640.0 ],
 					"varname" : "peerList",
 					"viewvisibility" : 1
 				}
@@ -696,7 +696,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 32.0, 368.0, 42.0, 296.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 146.0, 35.0, 640.0 ],
+					"presentation_rect" : [ 1.0, 108.5, 46.0, 640.0 ],
 					"size" : 800.0,
 					"style" : "chiba"
 				}
@@ -729,7 +729,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 401.0, 260.0, 704.0, 477.0 ],
+						"rect" : [ 570.0, 292.0, 704.0, 477.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1037,7 +1037,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 308.333333333333371, 27.0, 150.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 200.0, 0.0, 98.0, 20.0 ],
+									"presentation_rect" : [ 200.0, 0.0, 48.0, 20.0 ],
 									"text" : "roomID",
 									"textjustification" : 1
 								}
@@ -1052,7 +1052,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 308.333333333333371, 143.0, 150.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 300.0, 0.0, 198.0, 20.0 ],
+									"presentation_rect" : [ 250.0, 0.0, 224.0, 20.0 ],
 									"text" : "peerID",
 									"textjustification" : 1
 								}
@@ -1122,7 +1122,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 338.041666666666629, 320.5, 57.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 200.0, 20.0, 98.0, 22.0 ],
+									"presentation_rect" : [ 200.0, 20.0, 48.0, 22.0 ],
 									"text" : "0",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
@@ -1176,8 +1176,8 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 300.0, 20.0, 198.0, 22.0 ],
-									"text" : "qTN1bAqMhCP5EPd21Ax9h7",
+									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
+									"text" : "7VGweWY9bVp5LBatUpcGEu",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -1492,7 +1492,7 @@
 ,
 					"patching_rect" : [ 2.0, 3.0, 500.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 238.0, 1.5, 498.0, 53.0 ],
+					"presentation_rect" : [ 249.0, 1.5, 475.0, 42.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1521,7 +1521,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 522.5, 23.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.0, 21.5, 198.0, 22.0 ],
+					"presentation_rect" : [ 49.0, 21.5, 198.0, 22.0 ],
 					"rounded" : 8.0,
 					"text" : "disconnected. press to join room..."
 				}
@@ -1545,7 +1545,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 450.0, 750.0 ],
+						"rect" : [ 0.0, 0.0, 450.0, 700.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4456,7 +4456,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 450.0, 724.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -4647,7 +4647,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-14",
-													"items" : [ "18:03:21", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room" ],
+													"items" : [ "15:42:13", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room", ",", "15:35:26", "GMT+0200", "[MartinsMac]:", "<", "has", "left", "room", ",", "15:35:15", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room", ",", "15:30:51", "GMT+0200", "[MartinsMac]:", "<", "has", "left", "room", ",", "15:30:25", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room", ",", "15:21:34", "GMT+0200", "[MartinsMac]:", "<", "has", "left", "room", ",", "14:56:57", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room", ",", "14:56:52", "GMT+0200", "[MartinsMac]:", "<", "has", "left", "room", ",", "14:56:35", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room", ",", "14:52:31", "GMT+0200", "[Projection]:", ">", "has", "joined", "room" ],
 													"maxclass" : "chooser",
 													"numinlets" : 1,
 													"numoutlets" : 6,
@@ -4871,7 +4871,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 450.0, 724.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -5228,7 +5228,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 314.0, 141.0, 235.0, 22.0 ],
-													"text" : "window size 50 220 500 970, window exec"
+													"text" : "window size 50 180 500 880, window exec"
 												}
 
 											}
@@ -8349,7 +8349,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 450.0, 724.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -9794,8 +9794,6 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
-														"node_bin_path" : "",
-														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -10000,7 +9998,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 450.0, 724.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -13517,7 +13515,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 450.0, 724.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -13567,7 +13565,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 598.0, 532.0, 196.0, 24.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 545.0, 169.0, 24.0 ],
+													"presentation_rect" : [ 90.0, 509.25, 169.0, 24.0 ],
 													"text" : "configurations"
 												}
 
@@ -14050,7 +14048,7 @@
 ,
 													"patching_rect" : [ 373.5, 389.0, 266.0, 56.5 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 474.75, 260.0, 55.5 ],
+													"presentation_rect" : [ 90.0, 461.75, 260.0, 40.5 ],
 													"varname" : "join",
 													"viewvisibility" : 1
 												}
@@ -14610,7 +14608,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 151.5, 552.0, 119.0, 30.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 622.0, 260.0, 32.0 ],
+													"presentation_rect" : [ 90.0, 586.25, 260.0, 32.0 ],
 													"rounded" : 10.0,
 													"text" : "import..",
 													"textcolor" : [ 0.8, 0.8, 0.8, 1.0 ],
@@ -14670,7 +14668,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 286.0, 552.0, 119.0, 30.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 658.0, 260.0, 32.0 ],
+													"presentation_rect" : [ 90.0, 622.25, 260.0, 32.0 ],
 													"rounded" : 10.0,
 													"text" : "export...",
 													"textcolor" : [ 0.8, 0.8, 0.8, 1.0 ],
@@ -14694,7 +14692,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 608.5, 567.0, 119.0, 30.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 225.0, 571.0, 125.0, 47.0 ],
+													"presentation_rect" : [ 225.0, 535.25, 125.0, 47.0 ],
 													"rounded" : 10.0,
 													"text" : "close",
 													"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
@@ -14718,7 +14716,7 @@
 													"parameter_enable" : 0,
 													"patching_rect" : [ 487.5, 567.0, 119.0, 30.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 571.0, 133.0, 47.0 ],
+													"presentation_rect" : [ 90.0, 535.25, 133.0, 47.0 ],
 													"rounded" : 10.0,
 													"text" : "save",
 													"textcolor" : [ 0.2, 0.2, 0.2, 1.0 ],
@@ -16768,13 +16766,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-61",
-													"linecount" : 4,
+													"linecount" : 15,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 496.0, 172.5, 34.0, 62.0 ],
-													"text" : "ShiftingRealities"
+													"patching_rect" : [ 496.0, 172.5, 20.0, 210.0 ],
+													"text" : "ImmersiveLandscape"
 												}
 
 											}
@@ -16787,7 +16785,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 369.0, 69.0, 196.0, 24.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 324.0, 169.0, 24.0 ],
+													"presentation_rect" : [ 90.0, 311.0, 169.0, 24.0 ],
 													"text" : "create / join a room"
 												}
 
@@ -16815,7 +16813,7 @@
 													"numoutlets" : 0,
 													"patching_rect" : [ 487.5, 209.5, 67.0, 20.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 348.5, 67.0, 20.0 ],
+													"presentation_rect" : [ 90.0, 335.5, 67.0, 20.0 ],
 													"text" : "All Rooms:"
 												}
 
@@ -16909,7 +16907,7 @@
 																	"patching_rect" : [ 264.0, 26.0, 56.0, 22.0 ],
 																	"restore" : 																	{
 																		"peerName" : [ "MartinsMac" ],
-																		"roomName" : [ "ShiftingRealities" ],
+																		"roomName" : [ "ImmersiveLandscape" ],
 																		"roomPwd" : [ "2022" ]
 																	}
 ,
@@ -17260,7 +17258,7 @@
 																	"patching_rect" : [ 132.0, 149.5, 199.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 80.0, 20.0, 180.0, 20.0 ],
-																	"text" : "ShiftingRealities",
+																	"text" : "ImmersiveLandscape",
 																	"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																	"varname" : "roomName"
 																}
@@ -17433,7 +17431,7 @@
 ,
 													"patching_rect" : [ 471.0, 265.5, 246.0, 116.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 408.5, 262.0, 63.0 ],
+													"presentation_rect" : [ 90.0, 395.5, 262.0, 63.0 ],
 													"varname" : "peer",
 													"viewvisibility" : 1
 												}
@@ -17459,7 +17457,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.5, 459.0, 308.0, 22.0 ],
-													"text" : "join MartinsMac ShiftingRealities \"2022\""
+													"text" : "join MartinsMac ImmersiveLandscape \"2022\""
 												}
 
 											}
@@ -17478,7 +17476,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-48",
-													"items" : "ShiftingRealities",
+													"items" : "ImmersiveLandscape",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -17488,7 +17486,7 @@
 													"prefix" : "set",
 													"prefix_mode" : 1,
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 370.5, 257.0, 22.0 ]
+													"presentation_rect" : [ 90.0, 357.5, 257.0, 22.0 ]
 												}
 
 											}
