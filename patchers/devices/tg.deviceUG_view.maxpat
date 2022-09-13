@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 318.0, 320.0, 409.0, 298.0 ],
+		"rect" : [ 354.0, 236.0, 409.0, 298.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1549,7 +1549,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 108.0, 221.0, 103.0, 22.0 ],
-													"text" : "1642_cche"
+													"text" : "1395_cche"
 												}
 
 											}
@@ -1604,7 +1604,7 @@
 													"presentation" : 1,
 													"presentation_rect" : [ 80.0, 0.0, 245.0, 46.0 ],
 													"rounded" : 0.0,
-													"text" : "-t decklink:0",
+													"text" : "decklink:0",
 													"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
 													"varname" : "customSending",
 													"wordwrap" : 0
@@ -1656,7 +1656,7 @@
 													"outlettype" : [ "", "", "", "" ],
 													"patching_rect" : [ 73.684296000000018, 29.0, 56.0, 22.0 ],
 													"restore" : 													{
-														"customSending" : [ "-t decklink:0" ]
+														"customSending" : [ "decklink:0" ]
 													}
 ,
 													"text" : "autopattr",
@@ -4337,7 +4337,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 108.0, 221.0, 103.0, 22.0 ],
-													"text" : "1648_cche"
+													"text" : "1401_cche"
 												}
 
 											}
@@ -7238,7 +7238,7 @@
 													"presentation_rect" : [ 70.0, 0.0, 175.0, 22.0 ],
 													"readonly" : 1,
 													"rounded" : 0.0,
-													"text" : "router url",
+													"text" : "telemersion.zhdk.ch",
 													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"varname" : "listeningIP"
 												}
@@ -7509,7 +7509,7 @@
 									"patching_rect" : [ 92.166666666666686, 196.0, 299.000000000000057, 50.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.0, 0.0, 280.0, 24.0 ],
-									"varname" : "server[1]",
+									"varname" : "server",
 									"viewvisibility" : 1
 								}
 
@@ -7967,7 +7967,7 @@
 									"patching_rect" : [ 172.833333333333371, 256.0, 274.0, 57.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.0, 0.0, 280.0, 24.0 ],
-									"varname" : "local[1]",
+									"varname" : "local",
 									"viewvisibility" : 1
 								}
 
@@ -7979,7 +7979,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 253.5, 164.0, 67.0, 22.0 ],
+									"patching_rect" : [ 253.5, 172.0, 67.0, 22.0 ],
 									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
@@ -8003,7 +8003,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 591.0, 539.0, 670.0, 407.0 ],
+										"rect" : [ 816.0, 328.0, 670.0, 407.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -9084,7 +9084,7 @@
 													"patching_rect" : [ 151.125, 495.0, 50.0, 22.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 70.0, 0.0, 42.0, 22.0 ],
-													"text" : "0",
+													"text" : "11000",
 													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 												}
 
@@ -9648,7 +9648,7 @@
 									"patching_rect" : [ 192.0, 326.0, 86.0, 75.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.0, 26.0, 280.0, 23.0 ],
-									"varname" : "ports[1]",
+									"varname" : "ports",
 									"viewvisibility" : 1
 								}
 
