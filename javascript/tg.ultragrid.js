@@ -42,7 +42,7 @@ function ug_printoutCLI(){
 
 function ug_verboseExecute(_verbose){
     ugVerboseExecute = _verbose;
-	post("ugVerboseExecute: " + ugVerboseExecute + "\n");
+	//post("ugVerboseExecute: " + ugVerboseExecute + "\n");
 }
 
 function dpost(_post){
@@ -51,97 +51,97 @@ function dpost(_post){
 
 function ugf_port(_portNumber){
     ugPort = _portNumber;
-	post("ugPort: " + ugPort + "\n");
+	//post("ugPort: " + ugPort + "\n");
 }
 
 function ugf_router(_serverName){
     ugRouter = _serverName;
-	post("ugRouter: " + ugRouter + "\n");
+	//post("ugRouter: " + ugRouter + "\n");
 }
 
 function ugf_lanIP(_lanIP){
     ugLANip = _lanIP;
-	post("ugLANip: " + ugLANip + "\n");
+	//post("ugLANip: " + ugLANip + "\n");
 }
 
 function ugf_filePath(_filePath){
     ugFilePath = _filePath;
-	post("ugFilePath: " + ugFilePath + "\n");
+	//post("ugFilePath: " + ugFilePath + "\n");
 }
 
 function ug_videoCaptureMode(_videoCaptureMode){
     ugVideoCaptureMode = _videoCaptureMode;
-	post("ugVideoCaptureMode: " + ugVideoCaptureMode + "\n");
+	//post("ugVideoCaptureMode: " + ugVideoCaptureMode + "\n");
 }
 
 function ugf_fps_attribute(_fps_attribute){
     ugFPS_attribute = _fps_attribute;
-	post("ugFPS_attribute: " + ugFPS_attribute + "\n");
+	//post("ugFPS_attribute: " + ugFPS_attribute + "\n");
 }
 
 function ugf_texture_fps(_texture_fps){
     ugTexture_fps = _texture_fps;
-	post("ugTexture_fps: " + ugTexture_fps + "\n");
+	//post("ugTexture_fps: " + ugTexture_fps + "\n");
 }
 
 function ugf_texture_capture(_texture_capture){
     ugTexture_capture = _texture_capture;
-	post("ugTexture_capture: " + ugTexture_capture + "\n");
+	//post("ugTexture_capture: " + ugTexture_capture + "\n");
 }
 
 function ugf_customFlagsCapture(_customFlagsCapture){
     ugCustomFlags_capture = _customFlagsCapture;
-	post("ugCustomFlags_capture: " + ugCustomFlags_capture + "\n");
+	//post("ugCustomFlags_capture: " + ugCustomFlags_capture + "\n");
 }
 
 function ugf_customFlags_display(_customFlags_display){
     ugCustomFlags_display = _customFlags_display;
-	post("ugCustomFlags_display: " + ugCustomFlags_display + "\n");
+	//post("ugCustomFlags_display: " + ugCustomFlags_display + "\n");
 }
 
 function ugf_ndi_capture(_ndiCapture){
     ugNDI_capture = _ndiCapture;
-	post("ugNDI_capture: " + ugNDI_capture + "\n");
+	//post("ugNDI_capture: " + ugNDI_capture + "\n");
 }
 
 function ug_displayMode(_displayMode){
     ugDisplayMode = _displayMode;
-	post("ugDisplayMode: " + ugDisplayMode + "\n");
+	//post("ugDisplayMode: " + ugDisplayMode + "\n");
 }
 
 function ugf_display_flag_prefix(_display_flag_prefix){
     ugDisplay_flag_prefix = _display_flag_prefix;
-	post("ugDisplay_flag_prefix: " + ugDisplay_flag_prefix + "\n");
+	//post("ugDisplay_flag_prefix: " + ugDisplay_flag_prefix + "\n");
 }
 
 function ugf_texture_display(_texture_display){
     ugTexture_display = _texture_display;
-	post("ugTexture_display: " + ugTexture_display + "\n");
+	//post("ugTexture_display: " + ugTexture_display + "\n");
 }
 
 function ugf_ndi_display(_ndi_display){
     ugNDI_display = _ndi_display;
-	post("ugNDI_display: " + ugNDI_display + "\n");
+	//post("ugNDI_display: " + ugNDI_display + "\n");
 }
 
 function ugf_display_window_show(_display_window_show){
     ugDisplay_window_show = _display_window_show;
-	post("ugDisplay_window_show: " + ugDisplay_window_show + "\n");
+	//post("ugDisplay_window_show: " + ugDisplay_window_show + "\n");
 }
 
 function ugf_LibAv_codec(_video_codec){
     ugLibAv_codec = _video_codec;
-	post("ugLibAv_codec: " + ugLibAv_codec + "\n");
+	//post("ugLibAv_codec: " + ugLibAv_codec + "\n");
 }
 
 function ugf_LibAv_codec_bitrate(_video_codec_bitrate){
     ugLibAv_codec_bitrate = _video_codec_bitrate;
-	post("ugLibAv_codec_bitrate: " + ugLibAv_codec_bitrate + "\n");
+	//post("ugLibAv_codec_bitrate: " + ugLibAv_codec_bitrate + "\n");
 }
 
 function ug_mode(_ugMode){
     ugMode = _ugMode;
-	post("ugMode: " + ugMode + "\n");
+	//post("ugMode: " + ugMode + "\n");
 }
 
 function ug_joined(_joined){
@@ -270,13 +270,13 @@ function generate(){
         cliADD_videoCapture();
         cliADD_display();        
     }
-    ug_printoutCLI();
+    //ug_printoutCLI();
 }
 
 function anything()
 {
 	var a = arrayfromargs(messagename, arguments);
-	post("received message " + a + "\n");
+	post("tg.ultragrid.js: received an unknown message " + a + "\n");
 	//myval = a;
 	//bang();
 }
