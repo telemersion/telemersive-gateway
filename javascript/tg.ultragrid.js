@@ -170,71 +170,74 @@ function evaluate(){
 }
 
 function cliClear(){
-    ugCLIcommand = [];
+    ugCLIcommand = "";
 }
 
 function cliADD_path(){
-    ugCLIcommand.push(ugFilePath);
+    ugCLIcommand += ugFilePath;
 }
 
 function cliADD_videoCapture(){
     if(ugVideoCaptureMode == "testcard"){
-        ugCLIcommand.push("-t");
-        ugCLIcommand.push(ugTestcard);
+        ugCLIcommand += " -t ";
+        ugCLIcommand += ugTestcard;
     } else if(ugVideoCaptureMode == "texture"){
-        ugCLIcommand.push("-t");
+        ugCLIcommand += " -t ";
         if (ugTexture_fps > 0){
-            ugCLIcommand.push(ugTexture_capture+ugFPS_attribute+ugTexture_fps);
+            ugCLIcommand += ugTexture_capture+ugFPS_attribute+ugTexture_fps;
         } else {
-            ugCLIcommand.push(ugTexture_capture);                              
+            ugCLIcommand += ugTexture_capture;                              
         }
     } else if(ugVideoCaptureMode == "ndi"){
-        ugCLIcommand.push("-t");
-        ugCLIcommand.push(ugNDI_capture);
+        ugCLIcommand += " -t ";
+        ugCLIcommand += ugNDI_capture;
     } else if(ugVideoCaptureMode = "custom"){
-        ugCLIcommand.push(ugCustomFlags_capture);
+        ugCLIcommand += " " + ugCustomFlags_capture;
     }
 }
 
 function cliADD_testcard(){
-    ugCLIcommand.push("-t");
-    ugCLIcommand.push(ugTestcard);
+    ugCLIcommand += " -t ";
+    ugCLIcommand += ugTestcard;
 }
 
 function cliADD_port(_offset){
-    ugCLIcommand.push("-P" + ugPort);
+    ugCLIcommand += " -P" + ugPort;
 }
 
 function cliADD_videoCodec(){
     if(ugLibAv_codec != "NONE"){
-        ugCLIcommand.push("-c");
+        ugCLIcommand += " -c ";
         if(ugLibAv_codec != "MJPEG" && ugLibAv_codec_bitrate > 0){
-            ugCLIcommand.push("libavcodec:codec=" + ugLibAv_codec + ":bitrate=" + ugLibAv_codec_bitrate + "M");
+            ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec + ":bitrate=" + ugLibAv_codec_bitrate + "M";
         } else {
-            ugCLIcommand.push("libavcodec:codec=" + ugLibAv_codec);
+            ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec;
         }
     }
 }
 
 function cliADD_display(){
     if(ugDisplayMode != "NONE"){
-        ugCLIcommand.push("-d");
+        ugCLIcommand += " -d ";
         if(ugDisplayMode == "texture"){
-            ugCLIcommand.push(ugDisplay_flag_prefix + "'" + ugTexture_display + "'");
+            ugCLIcommand += ugDisplay_flag_prefix + "'" + ugTexture_display + "'";
         } else if(ugDisplayMode == "ndi"){
-            ugCLIcommand.push("ndi:" + "'" + ugNDI_display + "'");
+            ugCLIcommand += "ndi:name=" + "'" + ugNDI_display + "'";
         } else if(ugDisplayMode == "custom"){
-            ugCLIcommand.push(ugCustomFlags_display);
+            ugCLIcommand += ugCustomFlags_display;
         }
+    }
+    if(ugDisplay_window_show){
+        ugCLIcommand += ":hide-window";
     }
 }
 
 function cliADD_router(){
-    ugCLIcommand.push(ugRouter);
+    ugCLIcommand += " " + ugRouter;
 }
 
 function cliADD_LANip(){
-    ugCLIcommand.push(ugLANip);
+    ugCLIcommand += " " + ugLANip;
 }
 
 function generate(){

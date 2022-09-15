@@ -58,17 +58,18 @@ function notifydeleted(){
 
 function execute(){
 	//post("execute: " + myCommands + "\n");
-	if(myOS === 'windows'){
-		outlet(2, '"', myCommands, '"');
+    
+    if(myOS === 'windows'){
+        outlet(2, '"', myCommands, '"');
 	   //outlet(0, 'start', myTitle, '/min',  myCommands);
-  } else {
-		outlet(2, myCommands);
-  }
+    } else {
+        outlet(2, myCommands);
+    }
 	isRunning = true;
 }
 
-function start(){
-	myCommands = arrayfromargs(arguments);
+function start(_cli){
+	myCommands = _cli.split(" ");
 
     for(var i = 1; i < myCommands.length; i++){
         if((typeof myCommands[i]) === 'string'){
