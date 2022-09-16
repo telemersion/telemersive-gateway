@@ -704,7 +704,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 576.0, 591.0, 953.0, 493.0 ],
+						"rect" : [ 437.0, 333.0, 953.0, 493.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -786,7 +786,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 373.5, 257.0, 122.0, 24.0 ],
-													"presentation_linecount" : 2,
 													"text" : ".. unretaines them"
 												}
 
@@ -811,7 +810,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 367.5, 222.0, 216.25, 24.0 ],
-													"presentation_linecount" : 4,
 													"text" : "finds all parameter to a channel..."
 												}
 
@@ -824,7 +822,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 124.0, 158.5, 90.25, 38.0 ],
+													"patching_rect" : [ 124.0, 158.5, 90.25, 37.0 ],
 													"text" : "changed parameter"
 												}
 
@@ -947,8 +945,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 304.5, 147.0, 243.0, 22.0 ],
-													"text" : "sprintf re (rack/page_0/)(%s)([A-Za-z0-1.:/]*)"
+													"patching_rect" : [ 304.5, 147.0, 177.0, 22.0 ],
+													"text" : "sprintf re (%s)([A-Za-z0-1.:/_-]*)"
 												}
 
 											}
@@ -1192,7 +1190,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 354.0, 434.0, 120.0, 38.0 ],
+									"patching_rect" : [ 354.0, 434.0, 120.0, 37.0 ],
 									"text" : "parameter will be published"
 								}
 
@@ -1206,7 +1204,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 638.0, 220.0, 117.0, 53.0 ],
+									"patching_rect" : [ 638.0, 220.0, 117.0, 52.0 ],
 									"text" : "happens only for local devices"
 								}
 
@@ -1220,7 +1218,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 528.0, 423.0, 115.0, 52.0 ],
+									"patching_rect" : [ 528.0, 423.0, 115.0, 51.0 ],
 									"text" : "parameter will be unretained if peer is local"
 								}
 
@@ -1233,7 +1231,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 477.25, 153.0, 90.25, 38.0 ],
+									"patching_rect" : [ 477.25, 153.0, 90.25, 37.0 ],
 									"text" : "changed parameter"
 								}
 
@@ -1708,7 +1706,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 403.5, 153.0, 82.0, 36.0 ],
+									"patching_rect" : [ 403.5, 153.0, 82.0, 35.0 ],
 									"text" : "regexp :: @substitute /"
 								}
 
