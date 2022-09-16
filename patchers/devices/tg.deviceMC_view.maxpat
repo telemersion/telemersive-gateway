@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 346.0, 124.0, 408.0, 415.0 ],
+		"rect" : [ 531.0, 554.0, 408.0, 415.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -89,7 +89,7 @@
 					"patching_rect" : [ 5.5, 304.0, 76.0, 28.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 415.0, 403.0, 200.0 ],
-					"varname" : "monitor[1]",
+					"varname" : "monitor",
 					"viewvisibility" : 1
 				}
 
@@ -2635,7 +2635,7 @@
 													"presentation_rect" : [ 50.0, 0.0, 195.0, 22.0 ],
 													"readonly" : 1,
 													"rounded" : 0.0,
-													"text" : "router url",
+													"text" : "telemersion.zhdk.ch",
 													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"varname" : "listeningIP"
 												}
@@ -2929,8 +2929,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 223.166666666666742, 268.0, 136.0, 35.0 ],
-													"text" : ";\rmax launch_browser $1"
+													"patching_rect" : [ 223.166666666666742, 268.0, 136.0, 36.0 ],
+													"text" : ";\r\nmax launch_browser $1"
 												}
 
 											}
@@ -3828,7 +3828,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 20.184296000000018, 57.0, 178.0, 33.0 ],
+													"patching_rect" : [ 20.184296000000018, 57.0, 178.0, 34.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 0.0, 1.0, 223.0, 20.0 ],
 													"text" : "send OSC directly to local LAN address."
@@ -5223,7 +5223,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 949.0, 427.0, 382.0, 382.0 ],
+						"rect" : [ 1044.0, 491.0, 382.0, 382.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -5282,18 +5282,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 183.0, 113.0, 58.0, 22.0 ],
-									"text" : "loadbang"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-27",
 									"maxclass" : "newobj",
 									"numinlets" : 3,
@@ -5332,7 +5320,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 100.0, 179.0, 186.0, 23.0 ],
+									"patching_rect" : [ 96.5, 181.0, 186.0, 23.0 ],
 									"text" : "enableitem 1 1, enableitem 2 1"
 								}
 
@@ -5637,13 +5625,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"source" : [ "obj-7", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-16", 0 ],
-									"source" : [ "obj-8", 0 ]
 								}
 
 							}
@@ -6137,42 +6118,42 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/media",
 				"patcherrelativepath" : "../../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceMC_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.monitor.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
