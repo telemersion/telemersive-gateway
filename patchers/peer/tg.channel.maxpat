@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 555.0, 179.0, 834.0, 617.0 ],
+		"rect" : [ 1016.0, 266.0, 834.0, 617.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -424,7 +424,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 54.0, 34.0, 102.0, 53.0 ],
+					"patching_rect" : [ 54.0, 34.0, 102.0, 54.0 ],
 					"text" : "clear, append add..., append osc device, append ultragrid device, append natnet2OSC device"
 				}
 
@@ -448,9 +448,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 54.0, 107.0, 37.0, 17.0 ],
+					"patching_rect" : [ 54.0, 107.0, 37.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, -2.0, 16.0, 17.0 ]
+					"presentation_rect" : [ 1.0, -2.0, 16.0, 18.0 ]
 				}
 
 			}
@@ -489,7 +489,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 200.0, 429.0, 112.0, 102.0 ],
+					"patching_rect" : [ 200.0, 429.0, 114.0, 105.0 ],
 					"text" : "script newobject bpatcher $1 @size #4 40 @args #1 #2 @presentation_rect 0 0 #4 40 @varname device @presentation 1"
 				}
 
@@ -814,6 +814,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
+					"order" : 1,
+					"source" : [ "obj-77", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"order" : 0,
 					"source" : [ "obj-77", 3 ]
 				}
 
