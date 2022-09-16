@@ -92,7 +92,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 664.5, 29.0, 90.25, 52.0 ],
-									"presentation_linecount" : 3,
 									"text" : "unretain\npublished parameter"
 								}
 
@@ -106,7 +105,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 463.5, 29.0, 90.25, 52.0 ],
-									"presentation_linecount" : 3,
 									"text" : "publish retained parameter"
 								}
 
@@ -742,7 +740,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 106.5, 438.0, 174.0, 24.0 ],
-									"presentation_linecount" : 2,
 									"text" : "send directly to pattrstorage"
 								}
 
@@ -755,8 +752,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 354.0, 434.0, 117.0, 38.0 ],
-									"presentation_linecount" : 2,
+									"patching_rect" : [ 354.0, 434.0, 120.0, 38.0 ],
 									"text" : "parameter will be published"
 								}
 
@@ -770,7 +766,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 763.0, 301.0, 117.0, 38.0 ],
-									"presentation_linecount" : 2,
 									"text" : "only executed when unjoined"
 								}
 
@@ -785,7 +780,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 673.0, 218.0, 117.0, 53.0 ],
-									"presentation_linecount" : 2,
 									"text" : "happens only for local devices"
 								}
 
@@ -800,7 +794,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 627.0, 425.0, 115.0, 52.0 ],
-									"presentation_linecount" : 3,
 									"text" : "parameter will be unretained if peer is local"
 								}
 
@@ -814,7 +807,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 584.75, 126.0, 90.25, 38.0 ],
-									"presentation_linecount" : 2,
 									"text" : "changed parameter"
 								}
 
@@ -824,12 +816,12 @@
 									"bubble" : 1,
 									"bubbleside" : 3,
 									"id" : "obj-10",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 282.5, 126.0, 115.0, 38.0 ],
-									"text" : "parameter of removed device"
+									"patching_rect" : [ 261.5, 122.0, 134.0, 52.0 ],
+									"text" : "parameter of removed device\n(currently broken)"
 								}
 
 							}
@@ -1492,13 +1484,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"source" : [ "obj-23", 4 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-23", 2 ]
 								}
 
 							}
