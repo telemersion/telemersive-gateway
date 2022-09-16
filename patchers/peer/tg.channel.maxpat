@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 993.0, 377.0, 834.0, 617.0 ],
+		"rect" : [ 573.0, 190.0, 516.0, 617.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -449,7 +449,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 54.0, 34.0, 102.0, 54.0 ],
+					"patching_rect" : [ 54.0, 34.0, 102.0, 53.0 ],
 					"text" : "clear, append add..., append osc device, append ultragrid device, append natnet2OSC device"
 				}
 
@@ -465,7 +465,7 @@
 					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "color",
-					"fontsize" : 8.0,
+					"fontsize" : 10.0,
 					"id" : "obj-9",
 					"items" : [ "add...", ",", "osc", "device", ",", "ultragrid", "device", ",", "natnet2OSC", "device" ],
 					"maxclass" : "umenu",
@@ -473,9 +473,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 54.0, 107.0, 37.0, 18.0 ],
+					"patching_rect" : [ 54.0, 107.0, 37.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, -2.0, 16.0, 18.0 ]
+					"presentation_rect" : [ 1.0, -4.0, 16.0, 20.0 ]
 				}
 
 			}
@@ -514,7 +514,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 200.0, 429.0, 117.0, 105.0 ],
+					"patching_rect" : [ 200.0, 429.0, 117.0, 102.0 ],
 					"text" : "script newobject bpatcher $1 @size #4 40 @args #1 #2 @presentation_rect 0 0 #4 40 @varname device @presentation 1"
 				}
 
@@ -542,7 +542,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.5, 107.0, 19.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 5.0, 18.0, 19.0 ],
+					"presentation_rect" : [ -1.0, 3.0, 18.0, 19.0 ],
 					"text" : "+",
 					"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ]
 				}
