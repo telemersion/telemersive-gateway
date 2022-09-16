@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 378.0, 682.0, 410.0, 109.0 ],
+		"rect" : [ 403.0, 230.0, 410.0, 109.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -593,7 +593,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 762.0, 709.0, 858.0, 201.0 ],
+						"rect" : [ 550.0, 243.0, 858.0, 374.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -622,6 +622,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 312.0, 107.0, 75.0, 22.0 ],
+									"text" : "set <empty>"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontsize" : 9.0,
 									"hint" : "reset IP address and port numbers to default",
@@ -655,7 +667,8 @@
 									"presentation_rect" : [ 80.0, 49.15625, 177.0, 22.0 ],
 									"readonly" : 1,
 									"rounded" : 0.0,
-									"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
+									"text" : "<empty>",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"varname" : "inputIP"
 								}
 
@@ -718,7 +731,7 @@
 									"patching_rect" : [ 610.0, 43.0, 56.0, 22.0 ],
 									"restore" : 									{
 										"enableTwo" : [ 0 ],
-										"inputIP" : [ "" ],
+										"inputIP" : [ "<empty>" ],
 										"inputPort" : [ 10000 ],
 										"outputIPOne" : [ "<empty>" ],
 										"outputIPTwo" : [ "<empty>" ],
@@ -1158,6 +1171,13 @@
 									"destination" : [ "obj-48", 0 ],
 									"order" : 0,
 									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -1810,28 +1830,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/media",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
 				"patcherrelativepath" : "../../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceOSC_icon.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
