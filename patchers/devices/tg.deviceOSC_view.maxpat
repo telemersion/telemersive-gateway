@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 342.0, 232.0, 410.0, 109.0 ],
+		"rect" : [ 378.0, 682.0, 410.0, 109.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -581,7 +581,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "bang" ],
+					"outlettype" : [ "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -593,7 +593,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 453.0, 433.0, 858.0, 378.0 ],
+						"rect" : [ 762.0, 709.0, 858.0, 201.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -623,16 +623,18 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontsize" : 9.0,
 									"hint" : "reset IP address and port numbers to default",
-									"id" : "obj-5",
-									"maxclass" : "button",
+									"id" : "obj-31",
+									"maxclass" : "textbutton",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 759.0, 14.0, 24.0, 24.0 ],
+									"patching_rect" : [ 759.0, 14.0, 42.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 242.0, 50.15625, 14.0, 14.0 ]
+									"presentation_rect" : [ 226.0, 49.0, 31.0, 14.0 ],
+									"text" : "reset"
 								}
 
 							}
@@ -653,7 +655,8 @@
 									"presentation_rect" : [ 80.0, 49.15625, 177.0, 22.0 ],
 									"readonly" : 1,
 									"rounded" : 0.0,
-									"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ]
+									"textcolor" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
+									"varname" : "inputIP"
 								}
 
 							}
@@ -715,6 +718,7 @@
 									"patching_rect" : [ 610.0, 43.0, 56.0, 22.0 ],
 									"restore" : 									{
 										"enableTwo" : [ 0 ],
+										"inputIP" : [ "" ],
 										"inputPort" : [ 10000 ],
 										"outputIPOne" : [ "<empty>" ],
 										"outputIPTwo" : [ "<empty>" ],
@@ -1159,6 +1163,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-35", 0 ]
 								}
@@ -1189,13 +1200,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-40", 9 ],
 									"source" : [ "obj-49", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -1806,28 +1810,28 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/media",
 				"patcherrelativepath" : "../../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceOSC_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
