@@ -187,7 +187,6 @@
 , 			{
 				"box" : 				{
 					"frames" : 1,
-					"hidden" : 1,
 					"hint" : "enable a second destination to forward the data received from the router",
 					"id" : "obj-23",
 					"inactiveimage" : 1,
@@ -927,6 +926,7 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-33",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -2459,7 +2459,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 662.0, 611.0, 567.0, 350.0 ],
+						"rect" : [ 815.0, 341.0, 567.0, 350.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2683,7 +2683,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 669.0, 198.0, 252.0, 293.0 ],
+														"rect" : [ 1021.0, 201.0, 252.0, 293.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -2779,7 +2779,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "int" ],
 																	"patching_rect" : [ 131.500000000000057, 82.5, 29.5, 22.0 ],
-																	"text" : "+ 8"
+																	"text" : "+ 0"
 																}
 
 															}
@@ -2971,8 +2971,7 @@
 													"patching_rect" : [ 183.833333333333428, 149.0, 33.0, 20.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 0.0, 28.0, 48.0, 20.0 ],
-													"text" : "port:",
-													"textjustification" : 0
+													"text" : "port:"
 												}
 
 											}
@@ -2998,8 +2997,7 @@
 													"patching_rect" : [ 51.184296000000018, 108.0, 43.0, 20.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 0.0, 1.0, 48.0, 20.0 ],
-													"text" : "router:",
-													"textjustification" : 0
+													"text" : "router:"
 												}
 
 											}
@@ -4137,7 +4135,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -4157,7 +4154,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 668.0, 662.0, 602.0, 151.0 ],
+						"rect" : [ 824.0, 318.0, 602.0, 405.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -4360,7 +4357,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 367.203703703703468, 164.0, 29.5, 22.0 ],
-									"text" : "- 1"
+									"text" : "+ 1"
 								}
 
 							}
@@ -4713,7 +4710,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 440.777777777777715, 164.0, 29.5, 22.0 ],
-									"text" : "- 2"
+									"text" : "+ 2"
 								}
 
 							}
@@ -5566,7 +5563,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 121.0, 19.0, 56.0, 22.0 ],
 									"restore" : 									{
-										"select" : [ 1 ]
+										"select" : [ 0 ]
 									}
 ,
 									"text" : "autopattr",

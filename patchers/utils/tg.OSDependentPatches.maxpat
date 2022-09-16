@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 3,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 767.0, 339.0, 804.0, 480.0 ],
+		"rect" : [ 517.0, 295.0, 804.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,22 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 369.0, 366.0, 121.0, 22.0 ],
+					"text" : "tg.ug_audio_detector"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 404.333333333333371, 305.0, 75.0, 22.0 ],
+					"patching_rect" : [ 404.333333333333371, 305.0, 88.0, 22.0 ],
 					"text" : "tg.ndi_detector"
 				}
 
@@ -69,7 +80,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.5, 275.0, 213.0, 36.0 ],
+					"patching_rect" : [ 23.5, 275.0, 213.0, 35.0 ],
 					"text" : "script connect texDetect 0 detector 0, script connect detector 0 texSelect 0"
 				}
 
@@ -169,7 +180,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 121.0, 131.0, 64.0, 22.0 ],
+					"patching_rect" : [ 121.0, 131.0, 77.0, 22.0 ],
 					"text" : "tg.sendR OS"
 				}
 
@@ -196,7 +207,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.5, 162.0, 161.0, 64.0 ],
+					"patching_rect" : [ 23.5, 162.0, 161.0, 62.0 ],
 					"text" : "script newobject newobj @text tg.spout_detector @varname detector @patching_position 515 305"
 				}
 
@@ -211,7 +222,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.333333333333371, 162.0, 166.0, 64.0 ],
+					"patching_rect" : [ 198.333333333333371, 162.0, 166.0, 62.0 ],
 					"text" : "script newobject newobj @text tg.syphon_detector @varname detector @patching_position 515 305"
 				}
 
@@ -237,7 +248,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.333333333333371, 89.5, 243.0, 36.0 ],
+					"patching_rect" : [ 404.333333333333371, 89.5, 243.0, 35.0 ],
 					"text" : ";\rmax system windows getruntime #0_win"
 				}
 
@@ -262,7 +273,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 371.333333333333371, 48.5, 257.0, 36.0 ],
+					"patching_rect" : [ 371.333333333333371, 48.5, 257.0, 35.0 ],
 					"text" : ";\rmax system macintosh getruntime #0_mac"
 				}
 
@@ -279,6 +290,19 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 515.0, 305.0, 111.0, 22.0 ],
+					"text" : "tg.syphon_detector",
+					"varname" : "detector"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -291,6 +315,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -399,11 +430,65 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "tg.sendR.maxpat",
-				"bootpath" : "D:/03_personal/MartinFroehlich/telemersive-gateway/patchers/utils",
+				"name" : "jit.gl.syphonclient.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "tg.ndi_detector.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.receiveR.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.sendR.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.syphon_detector.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.ug_audio_detector.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zero.browse.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "zero.menu.format.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/zero/patchers",
+				"patcherrelativepath" : "../../../../../../../../../Documents/Max 8/Packages/zero/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -413,13 +498,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}

@@ -40,13 +40,25 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 233.500000000000028, 114.0, 29.5, 22.0 ],
+					"text" : "+ 9"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 198.5, 132.5, 29.5, 22.0 ],
-					"text" : "t b i"
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 185.0, 143.0, 40.0, 22.0 ],
+					"text" : "pak i i"
 				}
 
 			}
@@ -453,7 +465,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 318.0, 158.0, 137.0, 22.0 ],
+					"patching_rect" : [ 318.0, 162.0, 137.0, 22.0 ],
 					"text" : "tg.receiveR peerLocalIP"
 				}
 
@@ -465,7 +477,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 185.0, 81.0, 43.0, 22.0 ],
+					"patching_rect" : [ 185.0, 63.0, 43.0, 22.0 ],
 					"text" : "* 1000"
 				}
 
@@ -477,7 +489,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 185.0, 162.0, 29.5, 22.0 ],
+					"patching_rect" : [ 185.0, 167.0, 29.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -489,7 +501,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 233.500000000000028, 81.0, 77.0, 22.0 ],
+					"patching_rect" : [ 233.500000000000028, 63.0, 77.0, 22.0 ],
 					"text" : "loadmess #2"
 				}
 
@@ -501,7 +513,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 233.500000000000028, 105.0, 30.0, 22.0 ],
+					"patching_rect" : [ 233.500000000000028, 87.0, 30.0, 22.0 ],
 					"text" : "* 10"
 				}
 
@@ -513,7 +525,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 185.0, 52.0, 112.0, 22.0 ],
+					"patching_rect" : [ 185.0, 34.0, 112.0, 22.0 ],
 					"text" : "tg.receiveR roomID"
 				}
 
@@ -525,7 +537,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 118.5, 19.5, 130.0, 22.0 ],
+					"patching_rect" : [ 118.5, 4.5, 130.0, 22.0 ],
 					"text" : "tg.receiveR serverURL"
 				}
 
@@ -595,16 +607,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"order" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-22", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -625,7 +628,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
+					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -719,15 +722,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 1 ],
-					"source" : [ "obj-22", 1 ]
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-22", 0 ]
+					"destination" : [ "obj-20", 0 ],
+					"order" : 0,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 1 ],
+					"order" : 1,
+					"source" : [ "obj-23", 0 ]
 				}
 
 			}
