@@ -4,28 +4,61 @@ outlets = 2;
 
 var myval=0;
 
+// network
+var ugNetworkMode = "none";
 var ugPort = 5004;
 var ugRouter = "gitlab.zhdk.ch/telemersion";
 var ugLANip = "1.0.0.127";
 var ugFilePath = "ug.exe";
+var ugHolePuncherURL = "gitlab.zdhk.ch/telemersion";
+var ugHolePuncherPort = 12558;
+
+// avio
+var ugAV_mode = 0;
+var ugConnection_mode = 0;
+
+// video capture
+var ugVideoCaptureMode = "texture";
 var ugFPS_attribute = "fps";
 var ugTexture_capture = "texture";
 var ugTexture_fps = 60;
-var ugCustomFlags_capture = "empty";
-var ugCustomFlags_display = "empty";
-var ugTestcard = "testcard:80:60:1:UYVY";
+var ugCustomFlagsVideo_capture = "empty";
+var ugVideoTestcard = "testcard:80:60:1:UYVY";
 var ugNDI_capture = "ndi";
-var ugDisplay_flag_prefix = "syphon";
-var ugDisplayMode = 0;
-var ugVideoCaptureMode = "testcard";
 var ugLibAv_codec = "NONE";
 var ugLibAv_codec_bitrate = 10;
-var ugMode = "none";
+
+// audio capture
+var ugAudioCaptureMode = "portaudio";
+var ugCustomFlagsAudio_capture = "empty";
+var ugAudio_testcard_capture = [-18, 440];
+var ugAudio_codec = "OPUS";
+var ugAudio_codec_bitrate = 64000;
+var ugAudio_channels = 0; // 0 = all
+var ugAudio_channel_mapping = "";
+var ugAudioTestcard = "testcard:frequency=440";
+var ugAudio_codec_sample_rate = 0;
+var ugPortaudio_capture = "-none-";
+var ugCoreaudio_capture = "-none-";
+var ugWasapi_capture = "-none-";
+
+// video receive
+var ugVideoReceiverMode = "texture";
+var ugCustomFlagsVideo_receive = "empty";
+var ugDisplay_flag_prefix = "syphon";
+var ugNDI_display = "NDIChannel";
+var ugDisplay_window_show = 0;
+
+// audio receive
+var ugAudioReceiverMode = "portaudio";
+var ugCustomFlagsAudio_receive = "empty";
+
+// other
 var ugJoined = false;
 var ugEnabled = false;
 var isRunning = false;
 var ugVerboseExecute = false;
-var ugNDI_display = "NDIChannel";
+
 
 var ugCLIcommand = "";
 
@@ -33,116 +66,226 @@ if (jsarguments.length>1)
 	myval = jsarguments[1];
 
 function loadbang(){
-    //post("gathering information on the patcher hierarchy..\n");
+    dpost("gathering information on the patcher hierarchy..\n");
 }
 
 function ug_printoutCLI(){
+    generate();
 	post("ultragrid CLI: " + ugCLIcommand.toString() + "\n");
 }
 
 function ug_verboseExecute(_verbose){
     ugVerboseExecute = _verbose;
-	//post("ugVerboseExecute: " + ugVerboseExecute + "\n");
+	dpost("ugVerboseExecute: " + ugVerboseExecute + "\n");
 }
 
 function dpost(_post){
-	//post("peerList: " + _post + "\n");
+	//post("ultragrid: " + _post);
+}
+
+/************* NETWORK ***************/
+
+// send to router, receive from router, peer to peer (internet), peer to peer (LAN), capture to local
+function ug_networkMode(_ugNetworkMode){
+    ugNetworkMode = _ugNetworkMode;
+	dpost("ugNetworkMode: " + ugNetworkMode + "\n");
 }
 
 function ugf_port(_portNumber){
     ugPort = _portNumber;
-	//post("ugPort: " + ugPort + "\n");
+	dpost("ugPort: " + ugPort + "\n");
 }
 
 function ugf_router(_serverName){
     ugRouter = _serverName;
-	//post("ugRouter: " + ugRouter + "\n");
+	dpost("ugRouter: " + ugRouter + "\n");
 }
 
 function ugf_lanIP(_lanIP){
     ugLANip = _lanIP;
-	//post("ugLANip: " + ugLANip + "\n");
+	dpost("ugLANip: " + ugLANip + "\n");
 }
 
 function ugf_filePath(_filePath){
     ugFilePath = _filePath;
-	//post("ugFilePath: " + ugFilePath + "\n");
+	dpost("ugFilePath: " + ugFilePath + "\n");
 }
 
+function ugf_holePuncherURL(_puncher_url){
+    ugHolePuncherURL = _puncher_url;
+	dpost("ugFilePath: " + ugFilePath + "\n");
+}
+
+function ugf_holePuncherPort(_puncher_port){
+    ugHolePuncherPort = _puncher_port;
+	dpost("ugFilePath: " + ugFilePath + "\n");
+}
+
+/************* AV & Connection ***************/
+
+// 0=video, 1=audio, 2=video & audio
+function ug_av_mode(_mode){
+    ugAV_mode = _mode;
+	dpost("ugAV_mode: " + ugAV_mode + "\n");
+}
+
+// 0= send (TX) >>, 1= >> receive (RX), 2= >> both (RX+TX) >>
+function ug_connection_mode(_mode){
+    ugConnection_mode = _mode;
+	dpost("ugConnection_mode: " + ugConnection_mode + "\n");
+}
+
+
+/************* VIDEO CAPTURE ***************/
+
+// texture, spout, syphon, ndi, custom
 function ug_videoCaptureMode(_videoCaptureMode){
     ugVideoCaptureMode = _videoCaptureMode;
-	//post("ugVideoCaptureMode: " + ugVideoCaptureMode + "\n");
+	dpost("ugVideoCaptureMode: " + ugVideoCaptureMode + "\n");
 }
 
 function ugf_fps_attribute(_fps_attribute){
     ugFPS_attribute = _fps_attribute;
-	//post("ugFPS_attribute: " + ugFPS_attribute + "\n");
+	dpost("ugFPS_attribute: " + ugFPS_attribute + "\n");
 }
 
 function ugf_texture_fps(_texture_fps){
     ugTexture_fps = _texture_fps;
-	//post("ugTexture_fps: " + ugTexture_fps + "\n");
+	dpost("ugTexture_fps: " + ugTexture_fps + "\n");
 }
 
 function ugf_texture_capture(_texture_capture){
     ugTexture_capture = _texture_capture;
-	//post("ugTexture_capture: " + ugTexture_capture + "\n");
+	dpost("ugTexture_capture: " + ugTexture_capture + "\n");
 }
 
-function ugf_customFlagsCapture(_customFlagsCapture){
-    ugCustomFlags_capture = _customFlagsCapture;
-	//post("ugCustomFlags_capture: " + ugCustomFlags_capture + "\n");
-}
-
-function ugf_customFlags_display(_customFlags_display){
-    ugCustomFlags_display = _customFlags_display;
-	//post("ugCustomFlags_display: " + ugCustomFlags_display + "\n");
+function ugf_customFlagsVideoCapture(_customFlags){
+    ugCustomFlagsVideo_capture = _customFlags;
+	dpost("ugCustomFlagsVideo_capture: " + ugCustomFlagsVideo_capture + "\n");
 }
 
 function ugf_ndi_capture(_ndiCapture){
     ugNDI_capture = _ndiCapture;
-	//post("ugNDI_capture: " + ugNDI_capture + "\n");
-}
-
-function ug_displayMode(_displayMode){
-    ugDisplayMode = _displayMode;
-	//post("ugDisplayMode: " + ugDisplayMode + "\n");
-}
-
-function ugf_display_flag_prefix(_display_flag_prefix){
-    ugDisplay_flag_prefix = _display_flag_prefix;
-	//post("ugDisplay_flag_prefix: " + ugDisplay_flag_prefix + "\n");
-}
-
-function ugf_texture_display(_texture_display){
-    ugTexture_display = _texture_display;
-	//post("ugTexture_display: " + ugTexture_display + "\n");
-}
-
-function ugf_ndi_display(_ndi_display){
-    ugNDI_display = _ndi_display;
-	//post("ugNDI_display: " + ugNDI_display + "\n");
-}
-
-function ugf_display_window_show(_display_window_show){
-    ugDisplay_window_show = _display_window_show;
-	//post("ugDisplay_window_show: " + ugDisplay_window_show + "\n");
+	dpost("ugNDI_capture: " + ugNDI_capture + "\n");
 }
 
 function ugf_LibAv_codec(_video_codec){
     ugLibAv_codec = _video_codec;
-	//post("ugLibAv_codec: " + ugLibAv_codec + "\n");
+	dpost("ugLibAv_codec: " + ugLibAv_codec + "\n");
 }
 
 function ugf_LibAv_codec_bitrate(_video_codec_bitrate){
     ugLibAv_codec_bitrate = _video_codec_bitrate;
-	//post("ugLibAv_codec_bitrate: " + ugLibAv_codec_bitrate + "\n");
+	dpost("ugLibAv_codec_bitrate: " + ugLibAv_codec_bitrate + "\n");
 }
 
-function ug_mode(_ugMode){
-    ugMode = _ugMode;
-	//post("ugMode: " + ugMode + "\n");
+
+/************* AUDIO CAPTURE ***************/
+
+// portaudio, jack, coreaudio, wasapi, embedded, analog, AESEBU, custom, testcard
+function ugf_audioCaptureMode(_audioCaptureMode){
+    ugAudioCaptureMode = _audioCaptureMode;
+	dpost("ugAudioCaptureMode: " + ugAudioCaptureMode + "\n");
 }
+
+function ugf_customFlagsAudioCapture(_customFlags){
+    ugCustomFlagsAudio_capture = _customFlags;
+	dpost("ugCustomVideo_capture: " + ugCustomVideo_capture + "\n");
+}
+
+// 2 values: volume, frequency
+// testcard[:volume=<vol>][:frequency=<f>]
+function ugf_audio_testcard_capture(){
+    ugAudio_testcard_capture = arrayfromargs(arguments);
+	dpost("ugAudio_testcard_capture: " + ugAudio_testcard_capture + "\n");
+}
+
+function ugf_portaudio_capture(_portaudio_capture){
+    ugPortaudio_capture = _portaudio_capture;
+	dpost("ugPortaudio_capture: " + ugPortaudio_capture + "\n");
+}
+
+function ugf_coreaudio_capture(_coreaudio_capture){
+    ugCoreaudio_capture = _coreaudio_capture;
+	dpost("ugCoreaudio_capture: " + ugCoreaudio_capture + "\n");
+}
+
+function ugf_wasapi_capture(_wasapi_capture){
+    ugWasapi_capture = _wasapi_capture;
+	dpost("ugWasapi_capture: " + ugWasapi_capture + "\n");
+}
+
+// NONE, OPUS, speex, FLAC, AAC, MP3, G.722, u-law, A-law, PCM
+function ugf_audio_codec(_codec){
+    ugAudio_codec = _codec;
+	dpost("ugAudio_codec: " + ugAudio_codec + "\n");
+}
+
+function ugf_audio_codec_bitrate(_bitrate){
+    ugAudio_codec_bitrate = _bitrate;
+	dpost("ugAudio_codec_bitrate: " + ugAudio_codec_bitrate + "\n");
+}
+
+function ugf_audio_channels(_channels){ // 0 = all
+    ugAudio_channels = _channels;
+	dpost("ugAudio_channels: " + ugAudio_channels + "\n");
+}
+
+function ugf_audio_channel_mapping(_mapping){
+    ugAudio_channel_mapping = _mapping;
+	dpost("ugAudio_channel_mapping: " + ugAudio_channel_mapping + "\n");
+}
+
+function ugf_audio_codec_sample_rate(_sample_rate){
+    ugAudio_codec_sample_rate = _sample_rate;
+	dpost("ugAudio_codec_sample_rate: " + ugAudio_codec_sample_rate + "\n");
+}
+
+/************* VIDEO RECEIVE ***************/
+
+function ug_videoReceiveMode(_videoReceiveMode){
+    ugVideoReceiverMode = _videoReceiveMode;
+	dpost("ugVideoReceiverMode: " + ugVideoReceiverMode + "\n");
+}
+
+function ug_displayMode(_displayMode){
+    ugDisplayMode = _displayMode;
+	dpost("ugDisplayMode: " + ugDisplayMode + "\n");
+}
+
+function ugf_customFlagsVideoReceive(_customFlags){
+    ugCustomFlagsVideo_receive = _customFlags;
+	dpost("ugCustomFlagsVideo_receive: " + ugCustomFlagsVideo_receive + "\n");
+}
+
+function ugf_display_flag_prefix(_display_flag_prefix){
+    ugDisplay_flag_prefix = _display_flag_prefix;
+	dpost("ugDisplay_flag_prefix: " + ugDisplay_flag_prefix + "\n");
+}
+
+function ugf_texture_display(_texture_display){
+    ugTexture_display = _texture_display;
+	dpost("ugTexture_display: " + ugTexture_display + "\n");
+}
+
+function ugf_ndi_display(_ndi_display){
+    ugNDI_display = _ndi_display;
+	dpost("ugNDI_display: " + ugNDI_display + "\n");
+}
+
+function ugf_display_window_show(_display_window_show){
+    ugDisplay_window_show = _display_window_show;
+	dpost("ugDisplay_window_show: " + ugDisplay_window_show + "\n");
+}
+
+
+/************* AUDIO RECEIVE ***************/
+
+function ugf_customFlagsAudioReceive(_customFlags){
+    ugCustomFlagsAudio_receive = _customFlags;
+	dpost("ugCustomFlags_display: " + ugCustomFlags_display + "\n");
+}
+
 
 function ug_joined(_joined){
     ugJoined = _joined;
@@ -178,58 +321,147 @@ function cliADD_path(){
 }
 
 function cliADD_videoCapture(){
-    if(ugVideoCaptureMode == "testcard"){
-        ugCLIcommand += " -t ";
-        ugCLIcommand += ugTestcard;
-    } else if(ugVideoCaptureMode == "texture"){
-        ugCLIcommand += " -t ";
-        if (ugTexture_fps > 0){
-            ugCLIcommand += ugTexture_capture+ugFPS_attribute+ugTexture_fps;
-        } else {
-            ugCLIcommand += ugTexture_capture;                              
-        }
+    if(ugVideoCaptureMode == "custom"){
+        ugCLIcommand += " " + ugCustomFlagsVideo_capture;
     } else if(ugVideoCaptureMode == "ndi"){
         ugCLIcommand += " -t ";
-        ugCLIcommand += ugNDI_capture;
-    } else if(ugVideoCaptureMode = "custom"){
-        ugCLIcommand += " " + ugCustomFlags_capture;
+        if(ugTexture_capture == "-none-"){
+            ugCLIcommand += "ndi";
+        } else {
+            ugCLIcommand += ugNDI_capture;
+        }
+    } else {
+        ugCLIcommand += " -t ";
+        if(ugTexture_capture == "-none-"){
+            ugCLIcommand += ugVideoCaptureMode;
+        } else {
+            ugCLIcommand += ugTexture_capture;
+        }
+    } 
+    // adding fps attribute
+    if (ugTexture_fps > 0){
+        if(ugVideoCaptureMode == "texture"){
+            ugCLIcommand += ugFPS_attribute+ugTexture_fps;
+        } else if(ugVideoCaptureMode == "spout"){
+            ugCLIcommand += ":fps=" + gTexture_fps;            
+        } else if(ugVideoCaptureMode == "syphon"){
+            ugCLIcommand += ":override_fps=" + ugTexture_fps;
+        }
     }
 }
 
-function cliADD_testcard(){
+// portaudio, jack, coreaudio, wasapi, embedded, analog, AESEBU, custom, testcard
+function cliADD_audioCapture(){
+    if(ugAudioCaptureMode == "custom"){
+        ugCLIcommand += " " + ugCustomFlagsAudio_capture;
+    } else {
+        ugCLIcommand += " -s";
+        if(ugAudioCaptureMode == "portaudio"){
+            ugCLIcommand += " portaudio";
+            if(ugPortaudio_capture != "-none-"){
+                ugCLIcommand += ":" + ugPortaudio_capture;
+            }
+        } else if(ugAudioCaptureMode == "coreaudio"){
+            ugCLIcommand += " coreaudio";
+            if(ugCoreaudio_capture != "-none-"){
+                ugCLIcommand += ":" + ugCoreaudio_capture;
+            }
+        } else if(ugAudioCaptureMode == "wasapi"){
+            ugCLIcommand += " wasapi";
+            if(ugWasapi_capture != "-none-"){
+                ugCLIcommand += ":" + ugWasapi_capture;
+            }
+        } else if(ugAudioCaptureMode == "jack"){
+            ugCLIcommand += " jack";
+
+        } else if(ugAudioCaptureMode == "embedded"){
+            ugCLIcommand += " embedded";
+
+        } else if(ugAudioCaptureMode == "analog"){
+            ugCLIcommand += " analog";
+
+        } else if(ugAudioCaptureMode == "AESEBU"){
+            ugCLIcommand += " AESEBU";
+
+        } else if(ugAudioCaptureMode == "testcard"){
+            ugCLIcommand += " testcard:volume=" + ugAudio_testcard_capture [0] + ":frequency=" + ugAudio_testcard_capture[1];
+        }
+    }
+}
+
+function cliADD_videoCodec(){
+    if(ugVideoCaptureMode != "custom"){
+        if(ugLibAv_codec != "-none-"){
+            ugCLIcommand += " -c ";
+            if(ugLibAv_codec != "MJPEG" && ugLibAv_codec_bitrate > 0){
+                ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec + ":bitrate=" + ugLibAv_codec_bitrate + "M";
+            } else {
+                ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec;
+            }
+        }
+    }
+}
+
+// NONE, OPUS, speex, FLAC, AAC, MP3, G.722, u-law, A-law, PCM
+
+function cliADD_audioCodec(){
+    if(ugAudioCaptureMode != "custom" && ugAudioCaptureMode != "testcard"){
+        // codecs
+        if(ugAudio_codec != "-none-"){
+            ugCLIcommand += " --audio-codec ";
+            ugCLIcommand += ugAudio_codec;  
+            if(ugAudio_codec == "OPUS"){
+                if(ugf_audio_codec_bitrate > 0){
+                    ugCLIcommand += ":bitrate=" + ugf_audio_codec_bitrate;
+                }
+            } else {
+                if(ugAudio_codec_sample_rate > 0){
+                    ugCLIcommand += ":sample_rate=" + ugAudio_codec_sample_rate;
+                }
+            }
+        }   
+        // audio mapping
+        if(ugAudio_channels > 0){
+            ugCLIcommand += " --audio-capture-format channels=" + ugAudio_channels;
+        }
+        if(ugAudio_channel_mapping != "bang" && ugAudio_channel_mapping.length > 2){
+            ugCLIcommand += " --audio-channel-map " + ugAudio_channel_mapping;
+        }
+    }
+}
+        
+function cliADD_videoTestcard(){
     ugCLIcommand += " -t ";
-    ugCLIcommand += ugTestcard;
+    ugCLIcommand += ugVideoTestcard;
+}
+
+function cliADD_audioTestcard(){
+    ugCLIcommand += " -s ";
+    ugCLIcommand += ugAudioTestcard;
 }
 
 function cliADD_port(_offset){
     ugCLIcommand += " -P" + ugPort;
 }
 
-function cliADD_videoCodec(){
-    if(ugLibAv_codec != "NONE"){
-        ugCLIcommand += " -c ";
-        if(ugLibAv_codec != "MJPEG" && ugLibAv_codec_bitrate > 0){
-            ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec + ":bitrate=" + ugLibAv_codec_bitrate + "M";
-        } else {
-            ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec;
-        }
+function cliADD_videoReceive(){
+    if(ugVideoReceiverMode == "custom"){
+        ugCLIcommand += " " + ugCustomFlagsVideo_receive;
+    } else {
+        ugCLIcommand += " -d ";
+        if(ugVideoReceiverMode == "texture" || ugVideoReceiverMode == "spout" || ugVideoReceiverMode == "syphon"){
+            ugCLIcommand += ugDisplay_flag_prefix + "'" + ugTexture_display + "'";
+            if(ugDisplay_window_show){
+                ugCLIcommand += ":hide-window";
+            }
+        } else if(ugVideoReceiverMode == "ndi"){
+            ugCLIcommand += "ndi:name=" + "'" + ugNDI_display + "'";
+        }        
     }
 }
 
-function cliADD_display(){
-    if(ugDisplayMode != "NONE"){
-        ugCLIcommand += " -d ";
-        if(ugDisplayMode == "texture"){
-            ugCLIcommand += ugDisplay_flag_prefix + "'" + ugTexture_display + "'";
-        } else if(ugDisplayMode == "ndi"){
-            ugCLIcommand += "ndi:name=" + "'" + ugNDI_display + "'";
-        } else if(ugDisplayMode == "custom"){
-            ugCLIcommand += ugCustomFlags_display;
-        }
-    }
-    if(ugDisplay_window_show){
-        ugCLIcommand += ":hide-window";
-    }
+function cliADD_audioReceive(){
+    ugCLIcommand += " audio receive not implemented yet";
 }
 
 function cliADD_router(){
@@ -240,35 +472,87 @@ function cliADD_LANip(){
     ugCLIcommand += " " + ugLANip;
 }
 
+function cliADD_holePunching(){
+    ugCLIcommand += " -Nholepunch";
+    ugCLIcommand += ":room=roomname_channel_nr";
+    ugCLIcommand += ":server=" + ugHolePuncherURL;
+//    ugCLIcommand += ":coord_srv='" + ugHolePuncherURL + ":" + ugHolePuncherPort + "'";
+//    ugCLIcommand += ":stun_srv='" + ugHolePuncherURL + ":3478'";
+}
+
 function generate(){
     cliClear();
-    if(ugMode == "send to router"){
+    if(ugNetworkMode == "send to router"){
         cliADD_path();
-        cliADD_videoCapture();
-        cliADD_videoCodec();
+        if(ugAV_mode != 1){
+            cliADD_videoCapture();
+            cliADD_videoCodec();            
+        }
+        if(ugAV_mode != 0){
+            cliADD_audioCapture();
+            cliADD_audioCodec();            
+        }
         cliADD_port(0);
         cliADD_router();
-    } else if(ugMode == "receive from router"){
+    } else if(ugNetworkMode == "receive from router"){
         cliADD_path();
-        cliADD_testcard(); // to open proxy
-        cliADD_display();
+        if(ugAV_mode != 1){
+            cliADD_videoTestcard(); // to open proxy
+            cliADD_videoReceive();
+        }
+        if(ugAV_mode != 0){
+            cliADD_audioTestcard(); // to open proxy
+            cliADD_audioReceive();
+        }
         cliADD_port(1);
         cliADD_router();
-    }else if(ugMode == "send to LAN IP"){
+    }else if(ugNetworkMode == "peer to peer (LAN)"){
         cliADD_path();
-        cliADD_videoCapture();
-        cliADD_videoCodec();
+        if(ugConnection_mode != 1){
+            if(ugAV_mode != 1){
+                cliADD_videoCapture();
+                cliADD_videoCodec();            
+            }
+            if(ugAV_mode != 0){
+                cliADD_audioCapture();
+                cliADD_audioCodec();            
+            }
+        }
+        if(ugConnection_mode != 0){
+            if(ugAV_mode != 1){
+                cliADD_videoReceive();
+            }
+            if(ugAV_mode != 0){
+                cliADD_audioReceive();
+            }
+        }
         cliADD_port(0);
         cliADD_LANip();
-    }else if(ugMode == "receive from LAN"){
+    }else if(ugNetworkMode == "peer to peer (internet)"){
         cliADD_path();
-        cliADD_display();
-        cliADD_port(1);
-        cliADD_LANip();        
-    }else if(ugMode == "capture to local texture"){
+        if(ugConnection_mode != 1){
+            if(ugAV_mode != 1){
+                cliADD_videoCapture();
+                cliADD_videoCodec();            
+            }
+            if(ugAV_mode != 0){
+                cliADD_audioCapture();
+                cliADD_audioCodec();            
+            }
+        }
+        if(ugConnection_mode != 0){
+            if(ugAV_mode != 1){
+                cliADD_videoReceive();
+            }
+            if(ugAV_mode != 0){
+                cliADD_audioReceive();
+            }
+        }        
+        cliADD_holePunching()
+    }else if(ugNetworkMode == "capture to local"){
         cliADD_path();
         cliADD_videoCapture();
-        cliADD_display();        
+        cliADD_videoReceive();        
     }
     //ug_printoutCLI();
 }

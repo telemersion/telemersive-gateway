@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 316.0, 330.0, 757.0, 368.0 ],
+		"rect" : [ 314.0, 340.0, 741.0, 80.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,209 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 453.5, 330.5, 271.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 314.0, 293.0, 20.0 ],
-					"text" : "receiving audio on portaudio "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.0, 330.5, 137.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 84.0, 312.0, 140.0, 22.0 ],
-					"text" : "-r portaudio -s portaudio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-34",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 453.5, 296.0, 271.0, 33.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 281.0, 293.0, 20.0 ],
-					"text" : "sending coreaudio source=48 (see available sources)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.0, 296.0, 205.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 13.0, 281.0, 211.0, 22.0 ],
-					"text" : "-s coreaudio:48 --audio-codec OPUS"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 448.5, 265.0, 271.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 252.0, 271.0, 20.0 ],
-					"text" : "getting available coreaudio sources (see monitor)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 286.5, 265.0, 153.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 122.0, 251.0, 101.0, 22.0 ],
-					"text" : "-s coreaudio:help"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-32",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 785.0, 154.0, 285.0, 35.0 ],
-					"text" : "https://github.com/CESNET/UltraGrid/wiki/Syphon\\,-Spout-and-NDI"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
-					"bgcolor2" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.72156862745098, 0.517647058823529, 0.007843137254902, 1.0 ],
-					"bgfillcolor_color1" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
-					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"bgfillcolor_proportion" : 0.5,
-					"bgfillcolor_type" : "color",
-					"gradient" : 1,
-					"id" : "obj-30",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 785.0, 118.0, 140.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 577.0, 161.0, 158.0, 22.0 ],
-					"text" : "Syphon, -Spout and NDI",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-29",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 396.0, 230.0, 218.0, 33.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 163.0, 239.0, 20.0 ],
-					"text" : "getting available NDI sources (see monitor)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 286.5, 230.0, 101.5, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 162.0, 161.0, 61.0, 22.0 ],
-					"text" : "-t ndi:help"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 448.5, 197.0, 121.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 221.0, 125.0, 20.0 ],
-					"text" : "capturing NDI source"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-24",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 286.5, 197.0, 153.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 84.0, 221.0, 139.0, 22.0 ],
-					"text" : "-t ndi:url=127.0.0.1:5961"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 307.0, 169.0, 218.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 193.0, 218.0, 20.0 ],
-					"text" : "capturing first NDI source found"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-9",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 270.5, 168.0, 29.5, 35.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 188.0, 192.0, 35.0, 22.0 ],
-					"text" : "-t ndi"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
 					"bgcolor2" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
@@ -258,9 +55,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 605.5, 79.0, 144.0, 22.0 ],
+					"patching_rect" : [ 644.0, 116.0, 144.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 577.0, 132.0, 158.0, 22.0 ],
+					"presentation_rect" : [ 577.0, 44.0, 158.0, 22.0 ],
 					"text" : "Device-Settings#decklink",
 					"textjustification" : 1
 				}
@@ -275,59 +72,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 644.0, 209.0, 286.0, 22.0 ],
 					"text" : "sprintf https://github.com/CESNET/UltraGrid/wiki/%s"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
-					"bgcolor2" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.72156862745098, 0.517647058823529, 0.007843137254902, 1.0 ],
-					"bgfillcolor_color1" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
-					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"bgfillcolor_proportion" : 0.5,
-					"bgfillcolor_type" : "color",
-					"gradient" : 1,
-					"id" : "obj-25",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 605.5, 139.0, 144.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 577.0, 103.0, 158.0, 22.0 ],
-					"text" : "Device-Settings#webcam",
-					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 307.0, 139.0, 218.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 69.0, 145.0, 20.0 ],
-					"text" : "OSX: streaming webcam "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 177.0, 139.0, 129.0, 35.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 89.0, 69.0, 140.0, 22.0 ],
-					"text" : "-t avfoundation:device=1"
 				}
 
 			}
@@ -380,31 +124,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 644.0, 317.5, 129.0, 35.0 ],
 					"text" : ";\rmax launchbrowser $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
-					"bgcolor2" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
-					"bgfillcolor_angle" : 270.0,
-					"bgfillcolor_autogradient" : 0.0,
-					"bgfillcolor_color" : [ 0.72156862745098, 0.517647058823529, 0.007843137254902, 1.0 ],
-					"bgfillcolor_color1" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
-					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
-					"bgfillcolor_proportion" : 0.5,
-					"bgfillcolor_type" : "color",
-					"gradient" : 1,
-					"id" : "obj-14",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 609.0, 9.0, 93.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 577.0, 43.0, 158.0, 22.0 ],
-					"text" : "Screen-Capture",
-					"textjustification" : 1
 				}
 
 			}
@@ -619,7 +338,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 109.0, 165.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 130.0, 165.0, 20.0 ],
+					"presentation_rect" : [ 230.0, 44.0, 165.0, 20.0 ],
 					"text" : "addressing 1. decklink device"
 				}
 
@@ -627,15 +346,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.0, 109.0, 214.0, 35.0 ],
+					"patching_rect" : [ 86.0, 109.0, 206.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -1.0, 130.0, 225.0, 22.0 ],
-					"text" : "-t decklink:0:Hi50:UYUV:connection=SDI"
+					"presentation_rect" : [ 14.0, 44.0, 209.0, 22.0 ],
+					"text" : "-d decklink:0:Use1080pNotPsF=false"
 				}
 
 			}
@@ -645,9 +363,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 307.0, 74.0, 218.0, 20.0 ],
+					"patching_rect" : [ 320.0, 74.0, 218.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 100.0, 218.0, 20.0 ],
+					"presentation_rect" : [ 230.0, 14.0, 218.0, 20.0 ],
 					"text" : "addressing 1. decklink device"
 				}
 
@@ -655,72 +373,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 238.0, 74.0, 62.0, 35.0 ],
+					"patching_rect" : [ 238.0, 74.0, 76.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 151.0, 100.0, 73.0, 22.0 ],
-					"text" : "-t decklink:0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 307.0, 9.0, 88.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 9.0, 88.0, 20.0 ],
-					"text" : "screen capture"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 255.0, 9.0, 45.0, 35.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 171.0, 9.0, 55.0, 22.0 ],
-					"text" : "-t screen"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 307.0, 40.0, 330.0, 33.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 231.0, 39.0, 344.0, 20.0 ],
-					"text" : "addressing  devices in a direct way,  (or screen capture for win)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-7",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 247.0, 40.0, 53.0, 35.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 162.0, 39.0, 64.0, 22.0 ],
-					"text" : "-t dshow:5"
+					"presentation_rect" : [ 144.0, 14.0, 79.0, 22.0 ],
+					"text" : "-d decklink:0"
 				}
 
 			}
@@ -779,8 +439,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 73.0, 224.0, 179.0, 22.0 ],
-					"text" : "r help_ultragrid_custom_receive"
+					"patching_rect" : [ 73.0, 224.0, 185.0, 22.0 ],
+					"text" : "r help_cheatsheet_video_receive"
 				}
 
 			}
@@ -804,20 +464,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -826,13 +472,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -852,27 +491,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-25", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-26", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-27", 0 ]
 				}
@@ -880,43 +498,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -950,22 +540,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-8", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-9", 0 ]
 				}
 
 			}

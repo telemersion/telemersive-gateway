@@ -41,13 +41,46 @@
 		"title" : "TelemersiveGateway",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2.0, 162.0, 167.0, 22.0 ],
+					"text" : "ug_cheatsheet_AudioCapture"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2.0, 138.0, 168.0, 22.0 ],
+					"text" : "ug_cheatsheet_AudioReceive"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2.0, 114.0, 165.0, 22.0 ],
+					"text" : "ug_cheatsheet_videoCapture"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "tab",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 153.5, 91.0, 200.0, 24.0 ]
+					"patching_rect" : [ 202.5, 90.0, 200.0, 24.0 ]
 				}
 
 			}
@@ -295,7 +328,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 2.0, 137.0, 75.0, 22.0 ],
+					"patching_rect" : [ 150.0, 64.0, 75.0, 22.0 ],
 					"text" : "tg.dep.test 1"
 				}
 
@@ -580,8 +613,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2.0, 97.0, 133.0, 22.0 ],
-					"text" : "ug_custom_cheatsheet"
+					"patching_rect" : [ 2.0, 90.0, 166.0, 22.0 ],
+					"text" : "ug_cheatsheet_videoReceive"
 				}
 
 			}
@@ -607,7 +640,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 153.5, 137.0, 118.0, 22.0 ],
+					"patching_rect" : [ 202.5, 122.0, 118.0, 22.0 ],
 					"text" : "tg.sendR displaySlot"
 				}
 
@@ -880,7 +913,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 100.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "195.176.29.132",
+									"text" : "unkown",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -911,7 +944,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "10.128.131.111",
+									"text" : "unkown",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1139,7 +1172,7 @@
 									"patching_rect" : [ 73.333333333333371, 225.5, 103.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.833333333333371, 65.5, 159.0, 22.0 ],
-									"text" : "MartinsMac"
+									"text" : "unkown"
 								}
 
 							}
@@ -1170,14 +1203,15 @@
 									"hidden" : 1,
 									"id" : "obj-54",
 									"ignoreclick" : 1,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
+									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 35.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "7VGweWY9bVp5LBatUpcGEu",
+									"text" : "h8zVMGeYNKVmVzuwoQgNq5",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -5816,7 +5850,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 380.5, 215.0, 115.333333333333371, 22.0 ],
-													"text" : "\">not joined<\"",
+													"text" : "unkown",
 													"textjustification" : 1
 												}
 
@@ -8860,10 +8894,10 @@
 																		"CLI_execute" : [ 0 ],
 																		"console_status" : [ 1 ],
 																		"stdout_toConsole" : [ 1 ],
-																		"stdout_toConsole[1]" : [ 0 ],
-																		"stdout_toConsole[2]" : [ 0 ],
-																		"verbose_in" : [ 0 ],
-																		"verbose_out" : [ 0 ]
+																		"stdout_toConsole[1]" : [ 1 ],
+																		"stdout_toConsole[2]" : [ 1 ],
+																		"verbose_in" : [ 1 ],
+																		"verbose_out" : [ 1 ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -9794,6 +9828,8 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
+														"node_bin_path" : "",
+														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -12412,7 +12448,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "/Applications/_Video/uv-qt.app" ]
+																		"filepath" : [ "> locate uv-qt.app" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -12969,7 +13005,7 @@
 																	"patching_rect" : [ 50.0, 283.0, 311.0, 20.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 37.5, 30.0, 361.0, 22.0 ],
-																	"text" : "/Applications/_Video/uv-qt.app",
+																	"text" : "> locate uv-qt.app",
 																	"varname" : "filepath"
 																}
 
@@ -16766,13 +16802,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-61",
-													"linecount" : 15,
+													"linecount" : 4,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 496.0, 172.5, 20.0, 210.0 ],
-													"text" : "ImmersiveLandscape"
+													"patching_rect" : [ 496.0, 172.5, 20.0, 62.0 ],
+													"text" : "bang"
 												}
 
 											}
@@ -16907,7 +16943,7 @@
 																	"patching_rect" : [ 264.0, 26.0, 56.0, 22.0 ],
 																	"restore" : 																	{
 																		"peerName" : [ "MartinsMac" ],
-																		"roomName" : [ "ImmersiveLandscape" ],
+																		"roomName" : [ "MyTest" ],
 																		"roomPwd" : [ "2022" ]
 																	}
 ,
@@ -17258,7 +17294,7 @@
 																	"patching_rect" : [ 132.0, 149.5, 199.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 80.0, 20.0, 180.0, 20.0 ],
-																	"text" : "ImmersiveLandscape",
+																	"text" : "MyTest",
 																	"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																	"varname" : "roomName"
 																}
@@ -17457,7 +17493,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.5, 459.0, 308.0, 22.0 ],
-													"text" : "join MartinsMac ImmersiveLandscape \"2022\""
+													"text" : "join MartinsMac MyTest \"2022\""
 												}
 
 											}
@@ -17476,7 +17512,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-48",
-													"items" : "ImmersiveLandscape",
+													"items" : "<empty>",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -18497,6 +18533,10 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "tg.OSDependentPatches.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
@@ -18609,7 +18649,35 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ug_custom_cheatsheet.maxpat",
+				"name" : "tg.ug_audio_detector.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "./utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ug_cheatsheet_AudioCapture.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "./utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ug_cheatsheet_AudioReceive.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "./utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ug_cheatsheet_videoCapture.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "./utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ug_cheatsheet_videoReceive.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",

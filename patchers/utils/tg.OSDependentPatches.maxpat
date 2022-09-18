@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 517.0, 295.0, 804.0, 480.0 ],
+		"rect" : [ 409.0, 479.0, 804.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,47 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-16",
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 296.0, 107.5, 226.0, 22.0 ],
+					"text" : "texture, ndi, audioCapture, audioReceive"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 341.684296000000018, 332.0, 97.0, 22.0 ],
+					"text" : "r updateSources"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 341.684296000000018, 250.0, 97.0, 22.0 ],
+					"text" : "r updateSources"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 369.0, 366.0, 121.0, 22.0 ],
+					"patching_rect" : [ 341.684296000000018, 366.0, 121.0, 22.0 ],
 					"text" : "tg.ug_audio_detector"
 				}
 
@@ -53,9 +89,9 @@
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 404.333333333333371, 305.0, 88.0, 22.0 ],
+					"patching_rect" : [ 341.684296000000018, 281.5, 88.0, 22.0 ],
 					"text" : "tg.ndi_detector"
 				}
 
@@ -121,7 +157,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 296.0, 75.5, 54.0, 22.0 ],
+					"patching_rect" : [ 296.0, 50.5, 54.0, 22.0 ],
 					"text" : "deferlow"
 				}
 
@@ -133,7 +169,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 296.0, 102.5, 67.0, 22.0 ],
+					"patching_rect" : [ 296.0, 77.5, 67.0, 22.0 ],
 					"text" : "delay 2000"
 				}
 
@@ -144,8 +180,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 296.0, 131.5, 138.0, 22.0 ],
-					"text" : "s updateTextureSources"
+					"patching_rect" : [ 296.0, 135.5, 99.0, 22.0 ],
+					"text" : "s updateSources"
 				}
 
 			}
@@ -192,7 +228,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 371.333333333333371, 3.5, 58.0, 22.0 ],
+					"patching_rect" : [ 296.0, 8.5, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -248,7 +284,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 404.333333333333371, 89.5, 243.0, 35.0 ],
+					"patching_rect" : [ 485.333333333333371, 67.0, 243.0, 35.0 ],
 					"text" : ";\rmax system windows getruntime #0_win"
 				}
 
@@ -273,7 +309,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 371.333333333333371, 48.5, 257.0, 35.0 ],
+					"patching_rect" : [ 452.333333333333371, 26.0, 257.0, 35.0 ],
 					"text" : ";\rmax system macintosh getruntime #0_mac"
 				}
 
@@ -293,7 +329,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -365,6 +401,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"order" : 2,
 					"source" : [ "obj-3", 0 ]
@@ -411,6 +468,51 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "tg.ndi_detector.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.receiveR.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.sendR.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.ug_audio_detector.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zero.browse.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "zero.menu.format.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/zero/patchers",
+				"patcherrelativepath" : "../../../../../../../../../Documents/Max 8/Packages/zero/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
