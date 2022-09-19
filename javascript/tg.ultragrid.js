@@ -14,6 +14,8 @@ var ugLANip = "1.0.0.127";
 var ugFilePath = "ug.exe";
 var ugHolePuncherURL = "gitlab.zdhk.ch/telemersion";
 var ugHolePuncherPort = 12558;
+var ugRoomName = "unkonwn";
+var ugChannelNr = 11;
 
 // avio
 var ugAV_mode = 0;
@@ -43,6 +45,7 @@ var ugAudio_codec_sample_rate = 0;
 var ugPortaudio_capture = DEFAULT;
 var ugCoreaudio_capture = DEFAULT;
 var ugWasapi_capture = DEFAULT;
+var ugJack_capture = DEFAULT;
 
 // video receive
 var ugVideoReceiverMode = "texture";
@@ -52,8 +55,12 @@ var ugNDI_display = "NDIChannel";
 var ugDisplay_window_show = 0;
 
 // audio receive
-var ugAudioReceiverMode = "portaudio";
+var ugAudioReceiveMode = "portaudio";
 var ugCustomFlagsAudio_receive = "empty";
+var ugPortaudio_receive = DEFAULT;
+var ugCoreaudio_receive = DEFAULT;
+var ugWasapi_receive = DEFAULT;
+var ugJack_receive = DEFAULT;
 
 // other
 var ugJoined = false;
@@ -65,7 +72,7 @@ var ugVerboseExecute = false;
 var ugCLIcommand = "";
 
 if (jsarguments.length>1)
-	myval = jsarguments[1];
+	ugChannelNr = jsarguments[1];
 
 function loadbang(){
     dpost("gathering information on the patcher hierarchy..\n");
@@ -82,10 +89,15 @@ function ug_verboseExecute(_verbose){
 }
 
 function dpost(_post){
-	post("ultragrid: " + _post);
+	//post("ultragrid: " + _post);
 }
 
 /************* NETWORK ***************/
+
+function ug_roomName(_roomName){
+    ugRoomName = _roomName;
+	dpost("ugRoomName: " + ugRoomName + "\n");
+}
 
 // send to router, receive from router, peer to peer (internet), peer to peer (LAN), capture to local
 function ug_networkMode(_ugNetworkMode){
@@ -217,6 +229,11 @@ function ugf_wasapi_capture(_wasapi_capture){
 	dpost("ugWasapi_capture: " + ugWasapi_capture + "\n");
 }
 
+function ugf_jack_capture(_jack_capture){
+    ugJack_capture = _jack_capture;
+	dpost("ugJack_capture: " + ugJack_capture + "\n");
+}
+
 // NONE, OPUS, speex, FLAC, AAC, MP3, G.722, u-law, A-law, PCM
 function ugf_audio_codec(_codec){
     ugAudio_codec = _codec;
@@ -282,6 +299,32 @@ function ugf_display_window_show(_display_window_show){
 
 
 /************* AUDIO RECEIVE ***************/
+
+// portaudio, jack, coreaudio, wasapi, embedded, analog, AESEBU, custom, testcard
+function ugf_audioReceiveMode(_audioReceiveMode){
+    ugAudioReceiveMode = _audioReceiveMode;
+	dpost("ugAudioReceiveMode: " + ugAudioReceiveMode + "\n");
+}
+
+function ugf_portaudio_receive(_portaudio_receive){
+    ugPortaudio_receive = _portaudio_receive;
+	dpost("ugPortaudio_receive: " + ugPortaudio_receive + "\n");
+}
+
+function ugf_coreaudio_receive(_coreaudio_receive){
+    ugCoreaudio_receive = _coreaudio_receive;
+	dpost("ugCoreaudio_receive: " + ugCoreaudio_receive + "\n");
+}
+
+function ugf_wasapi_receive(_wasapi_receive){
+    ugWasapi_receive = _wasapi_receive;
+	dpost("ugWasapi_receive: " + ugWasapi_receive + "\n");
+}
+
+function ugf_jack_receive(_jack_receive){
+    ugJack_receive = _jack_receive;
+	dpost("ugJack_receive: " + ugJack_receive + "\n");
+}
 
 function ugf_customFlagsAudioReceive(_customFlags){
     ugCustomFlagsAudio_receive = _customFlags;
@@ -375,6 +418,9 @@ function cliADD_audioCapture(){
             }
         } else if(ugAudioCaptureMode == "jack"){
             ugCLIcommand += " jack";
+            if(ugJack_capture != DEFAULT){
+                ugCLIcommand += ":" + ugJack_capture;
+            }
 
         } else if(ugAudioCaptureMode == "embedded"){
             ugCLIcommand += " embedded";
@@ -466,6 +512,46 @@ function cliADD_audioReceive(){
     ugCLIcommand += " audio receive not implemented yet";
 }
 
+// portaudio, jack, coreaudio, wasapi, embedded, analog, AESEBU, custom, testcard
+function cliADD_audioReceive(){
+    if(ugAudioReceiveMode == "custom"){
+        ugCLIcommand += " " + ugCustomFlagsAudio_receive;
+    } else {
+        ugCLIcommand += " -r";
+        if(ugAudioReceiveMode == "portaudio"){
+            ugCLIcommand += " portaudio";
+            if(ugPortaudio_receive != DEFAULT){
+                ugCLIcommand += ":" + ugPortaudio_receive;
+            }
+        } else if(ugAudioReceiveMode == "coreaudio"){
+            ugCLIcommand += " coreaudio";
+            if(ugCoreaudio_receive != DEFAULT){
+                ugCLIcommand += ":" + ugCoreaudio_receive;
+            }
+        } else if(ugAudioReceiveMode == "wasapi"){
+            ugCLIcommand += " wasapi";
+            if(ugWasapi_receive != DEFAULT){
+                ugCLIcommand += ":" + ugWasapi_receive;
+            }
+        } else if(ugAudioReceiveMode == "jack"){
+            ugCLIcommand += " jack";
+            if(ugJack_receive != DEFAULT){
+                ugCLIcommand += ":" + ugJack_receive;
+            }
+
+        } else if(ugAudioReceiveMode == "embedded"){
+            ugCLIcommand += " embedded";
+
+        } else if(ugAudioReceiveMode == "analog"){
+            ugCLIcommand += " analog";
+
+        } else if(ugAudioReceiveMode == "AESEBU"){
+            ugCLIcommand += " AESEBU";
+
+        } 
+    }
+}
+
 function cliADD_router(){
     ugCLIcommand += " " + ugRouter;
 }
@@ -476,10 +562,10 @@ function cliADD_LANip(){
 
 function cliADD_holePunching(){
     ugCLIcommand += " -Nholepunch";
-    ugCLIcommand += ":room=roomname_channel_nr";
-    ugCLIcommand += ":server=" + ugHolePuncherURL;
-//    ugCLIcommand += ":coord_srv='" + ugHolePuncherURL + ":" + ugHolePuncherPort + "'";
-//    ugCLIcommand += ":stun_srv='" + ugHolePuncherURL + ":3478'";
+    ugCLIcommand += ":room=" + ugRoomName +"_channel_" + ugChannelNr;
+//    ugCLIcommand += ":server=" + ugHolePuncherURL;
+    ugCLIcommand += ":coord_srv='" + ugHolePuncherURL + ":" + ugHolePuncherPort + "'";
+    ugCLIcommand += ":stun_srv='" + ugHolePuncherURL + ":3478'";
 }
 
 function generate(){

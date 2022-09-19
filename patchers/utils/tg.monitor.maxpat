@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
+			"minor" : 3,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 103.0, 651.0, 464.0, 457.0 ],
+		"rect" : [ 889.0, 311.0, 464.0, 457.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -184,7 +184,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 235.0, 115.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 360.0, 176.0, 40.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 176.0, 35.0, 22.0 ],
 					"triangle" : 0
 				}
 
@@ -259,7 +259,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 115.799999999999997, 412.0, 171.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.0, 176.0, 321.0, 22.0 ],
+					"presentation_rect" : [ 37.0, 151.0, 367.0, 47.0 ],
 					"readonly" : 1
 				}
 
@@ -335,7 +335,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 332.0, 115.0, 35.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 176.0, 35.0, 22.0 ],
+					"presentation_rect" : [ 0.0, 151.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -348,14 +348,13 @@
 					"id" : "obj-9",
 					"items" : "<empty>",
 					"maxclass" : "chooser",
-					"multiselect" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 6,
 					"outlettype" : [ "", "", "", "", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 73.0, 225.0, 233.0, 122.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 400.0, 175.0 ]
+					"presentation_rect" : [ 0.0, 0.0, 404.0, 149.0 ]
 				}
 
 			}
@@ -574,13 +573,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
@@ -613,13 +612,13 @@
 					"accentcolor" : [ 0.343034118413925, 0.506230533123016, 0.86220508813858, 1.0 ],
 					"bgcolor" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0.0,
 						"color" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 						"color1" : [ 0.031372549019608, 0.125490196078431, 0.211764705882353, 1.0 ],
 						"color2" : [ 0.263682, 0.004541, 0.038797, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0.0
+						"type" : "color"
 					}
 ,
 					"color" : [ 0.929412, 0.929412, 0.352941, 1.0 ],
@@ -638,13 +637,13 @@
 					"accentcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
 					"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0.0,
 						"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 						"color1" : [ 0.090196078431373, 0.090196078431373, 0.090196078431373, 1.0 ],
 						"color2" : [ 0.156862745098039, 0.168627450980392, 0.164705882352941, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.5,
-						"autogradient" : 0.0
+						"type" : "color"
 					}
 ,
 					"clearcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
