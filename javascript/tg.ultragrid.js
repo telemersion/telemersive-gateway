@@ -36,7 +36,8 @@ var ugCapture_filter = NONE;
 // audio capture
 var ugAudioCaptureMode = "portaudio";
 var ugCustomFlagsAudio_capture = NONE;
-var ugAudio_testcard_capture = [-18, 440];
+var ugf_audio_testcard_capture_vol = -18;
+var ugf_audio_testcard_capture_freq = 440;
 var ugAudio_codec = "OPUS";
 var ugAudio_codec_bitrate = 64000;
 var ugAudio_channels = 0; // 0 = all
@@ -214,11 +215,14 @@ function ugf_customFlagsAudioCapture(_customFlags){
 	dpost("ugCustomFlagsAudio_capture: " + ugCustomFlagsAudio_capture + "\n");
 }
 
-// 2 values: volume, frequency
-// testcard[:volume=<vol>][:frequency=<f>]
-function ugf_audio_testcard_capture(){
-    ugAudio_testcard_capture = arrayfromargs(arguments);
-	dpost("ugAudio_testcard_capture: " + ugAudio_testcard_capture + "\n");
+function ugf_audio_testcard_capture_vol(_capture_vol){
+    ugAudio_testcard_capture_vol = _capture_vol;
+	dpost("ugAudio_testcard_capture_vol: " + ugAudio_testcard_capture_vol + "\n");
+}
+
+function ugf_audio_testcard_capture_freq(_capture_freq){
+    ugAudio_testcard_capture_freq = _capture_freq;
+	dpost("ugAudio_testcard_capture_freq: " + ugAudio_testcard_capture_freq + "\n");
 }
 
 function ugf_portaudio_capture(_portaudio_capture){
@@ -444,7 +448,7 @@ function cliADD_audioCapture(){
             ugCLIcommand += " AESEBU";
 
         } else if(ugAudioCaptureMode == "testcard"){
-            ugCLIcommand += " testcard:volume=" + ugAudio_testcard_capture [0] + ":frequency=" + ugAudio_testcard_capture[1];
+            ugCLIcommand += " testcard:volume=" + ugAudio_testcard_capture_vol + ":frequency=" + ugAudio_testcard_capture_freq;
         }
     }
 }
