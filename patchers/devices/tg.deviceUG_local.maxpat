@@ -365,7 +365,7 @@
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "js tg.ultragrid.js #2"
+					"text" : "js tg.ultragrid.js #3"
 				}
 
 			}
@@ -960,7 +960,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 206.5, 243.0, 301.0, 22.0 ],
-					"text" : "tg.shell #1 #2 \"telemersive gateway - ultragrid channel\""
+					"text" : "tg.shell #2 #3 \"telemersive gateway - ultragrid channel\""
 				}
 
 			}
