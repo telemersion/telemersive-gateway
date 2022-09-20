@@ -31,6 +31,7 @@ var ugVideoTestcard = "testcard:80:60:1:UYVY";
 var ugNDI_capture = DEFAULT;
 var ugLibAv_codec = NONE;
 var ugLibAv_codec_bitrate = 10;
+var ugCapture_filter = NONE;
 
 // audio capture
 var ugAudioCaptureMode = "portaudio";
@@ -53,6 +54,7 @@ var ugCustomFlagsVideo_receive = "empty";
 var ugDisplay_flag_prefix = "syphon";
 var ugNDI_display = "NDIChannel";
 var ugDisplay_window_show = 0;
+var ugReceive_postprocessor = NONE;
 
 // audio receive
 var ugAudioReceiveMode = "portaudio";
@@ -193,6 +195,11 @@ function ugf_LibAv_codec_bitrate(_video_codec_bitrate){
 	dpost("ugLibAv_codec_bitrate: " + ugLibAv_codec_bitrate + "\n");
 }
 
+function ugf_capture_filter(_capture_filter){
+    ugCapture_filter = _capture_filter;
+	dpost("ugCapture_filter: " + ugCapture_filter + "\n");
+}
+
 
 /************* AUDIO CAPTURE ***************/
 
@@ -295,6 +302,11 @@ function ugf_ndi_display(_ndi_display){
 function ugf_display_window_show(_display_window_show){
     ugDisplay_window_show = _display_window_show;
 	dpost("ugDisplay_window_show: " + ugDisplay_window_show + "\n");
+}
+
+function ugf_receive_postprocessor(_receive_postprocessor){
+    ugReceive_postprocessor = _receive_postprocessor;
+	dpost("ugReceive_postprocessor: " + ugReceive_postprocessor + "\n");
 }
 
 
@@ -568,11 +580,25 @@ function cliADD_holePunching(){
     ugCLIcommand += ":stun_srv='" + ugHolePuncherURL + ":3478'";
 }
 
+function cliADD_captureFilter(){
+    if(ugCapture_filter != NONE){
+        ugCLIcommand += " --capture-filter " + ugCapture_filter;
+    }
+}
+
+function cliADD_postprocessing(){
+    if(ugReceive_postprocessor != NONE){
+        ugCLIcommand += " -p " + ugReceive_postprocessor;
+    }
+}
+
+
 function generate(){
     cliClear();
     if(ugNetworkMode == "send to router"){
         cliADD_path();
         if(ugAV_mode != 1){
+            cliADD_captureFilter();
             cliADD_videoCapture();
             cliADD_videoCodec();            
         }
@@ -586,6 +612,7 @@ function generate(){
         cliADD_path();
         if(ugAV_mode != 1){
             cliADD_videoTestcard(); // to open proxy
+            cliADD_postprocessing();
             cliADD_videoReceive();
         }
         if(ugAV_mode != 0){
@@ -598,6 +625,7 @@ function generate(){
         cliADD_path();
         if(ugConnection_mode != 1){
             if(ugAV_mode != 1){
+                cliADD_captureFilter();
                 cliADD_videoCapture();
                 cliADD_videoCodec();            
             }
@@ -608,6 +636,7 @@ function generate(){
         }
         if(ugConnection_mode != 0){
             if(ugAV_mode != 1){
+                cliADD_postprocessing();
                 cliADD_videoReceive();
             }
             if(ugAV_mode != 0){
@@ -620,6 +649,7 @@ function generate(){
         cliADD_path();
         if(ugConnection_mode != 1){
             if(ugAV_mode != 1){
+                cliADD_captureFilter();
                 cliADD_videoCapture();
                 cliADD_videoCodec();            
             }
@@ -630,6 +660,7 @@ function generate(){
         }
         if(ugConnection_mode != 0){
             if(ugAV_mode != 1){
+                cliADD_postprocessing();
                 cliADD_videoReceive();
             }
             if(ugAV_mode != 0){
@@ -639,7 +670,9 @@ function generate(){
         cliADD_holePunching()
     }else if(ugNetworkMode == "capture to local"){
         cliADD_path();
+        cliADD_captureFilter();
         cliADD_videoCapture();
+        cliADD_postprocessing();
         cliADD_videoReceive();        
     }
     //ug_printoutCLI();
