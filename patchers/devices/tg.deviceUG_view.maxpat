@@ -3789,7 +3789,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 170.25, 13.0, 56.0, 22.0 ],
+									"patching_rect" : [ 167.25, 12.75, 56.0, 22.0 ],
 									"restore" : 									{
 										"mode" : [ 1 ]
 									}
@@ -4108,6 +4108,24 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 333.5, 9.0, 56.0, 22.0 ],
+									"restore" : 									{
+										"connection" : [ 0 ],
+										"mode" : [ 0 ]
+									}
+,
+									"text" : "autopattr",
+									"varname" : "u680040268"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-14",
@@ -6666,7 +6684,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "63854_cshac"
+																	"text" : "63942_cshac"
 																}
 
 															}
@@ -12133,7 +12151,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "63868_cshac"
+																	"text" : "63956_cshac"
 																}
 
 															}
@@ -16533,7 +16551,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 169.0, 101.0, 103.0, 22.0 ],
-																	"text" : "63873_cshvr"
+																	"text" : "63961_cshvr"
 																}
 
 															}
@@ -20304,7 +20322,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "63883_cshvc"
+																	"text" : "63971_cshvc"
 																}
 
 															}
