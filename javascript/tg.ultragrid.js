@@ -363,7 +363,7 @@ function evaluate(){
         if(!isRunning){
             isRunning = true;
             generate();
-            outlet(0, "start", ugCLIcommand);
+            outlet(0, "start", get_path(), ugCLIcommand);
         }
     } else {
         if(isRunning){
@@ -377,8 +377,8 @@ function cliClear(){
     ugCLIcommand = "";
 }
 
-function cliADD_path(){
-    ugCLIcommand += ugFilePath;
+function get_path(){
+    return ugFilePath;
 }
 
 function cliADD_videoCapture(){
@@ -600,7 +600,6 @@ function cliADD_postprocessing(){
 function generate(){
     cliClear();
     if(ugNetworkMode == "send to router"){
-        cliADD_path();
         if(ugAV_mode != 1){
             cliADD_captureFilter();
             cliADD_videoCapture();
@@ -613,7 +612,6 @@ function generate(){
         cliADD_port(0);
         cliADD_router();
     } else if(ugNetworkMode == "receive from router"){
-        cliADD_path();
         if(ugAV_mode != 1){
             cliADD_videoTestcard(); // to open proxy
             cliADD_postprocessing();
@@ -626,7 +624,6 @@ function generate(){
         cliADD_port(1);
         cliADD_router();
     }else if(ugNetworkMode == "peer to peer (LAN)"){
-        cliADD_path();
         if(ugConnection_mode != 1){
             if(ugAV_mode != 1){
                 cliADD_captureFilter();
@@ -650,7 +647,6 @@ function generate(){
         cliADD_port(0);
         cliADD_LANip();
     }else if(ugNetworkMode == "peer to peer (internet)"){
-        cliADD_path();
         if(ugConnection_mode != 1){
             if(ugAV_mode != 1){
                 cliADD_captureFilter();
@@ -673,7 +669,6 @@ function generate(){
         }        
         cliADD_holePunching()
     }else if(ugNetworkMode == "capture to local"){
-        cliADD_path();
         cliADD_captureFilter();
         cliADD_videoCapture();
         cliADD_postprocessing();

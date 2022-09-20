@@ -60,15 +60,15 @@ function execute(){
 	//post("execute: " + myCommands + "\n");
     
     if(myOS === 'windows'){
-        outlet(2, '"', myCommands, '"');
+        outlet(2, '"', myPath, myCommands, '"');
 	   //outlet(0, 'start', myTitle, '/min',  myCommands);
     } else {
-        outlet(2, myCommands);
+        outlet(2, myPath, myCommands);
     }
 	isRunning = true;
 }
 
-function start(_cli){
+function start(_path, _cli){
 	myCommands = _cli.split(" ");
 
     for(var i = 1; i < myCommands.length; i++){
@@ -79,20 +79,24 @@ function start(_cli){
         }
     }
 
-	myPath = myCommands[0];
+	myPath = _path;
 
 	if(myOS === 'windows'){
+		//post("myPath = " + myPath + "\n");
 		myWinPath = myPath.replace(/\//g, '\\\\');
+		//post("myWinPath = " + myWinPath + "\n");
 		myNewPath = myWinPath.replace('.exe', '_tb' + myIndex + '.exe');
-		myCommands[0] = myPath.replace('.exe', '_tb' + myIndex + '.exe');
-		myWinTask = myCommands[0].substring(myCommands[0].lastIndexOf('/') + 1);
+		//post("myNewPath = " + myNewPath + "\n");
+		myPath = myPath.replace('.exe', '_tb' + myIndex + '.exe');
+		//post("myPath.replace = " + myPath + "\n");
+		myWinTask = myPath.substring(myPath.lastIndexOf('/') + 1);
 		// on windows we have to replace apostrophes with quotation marks:
-		for(var i = 1; i < myCommands.length; i++){
+		for(var i = 0; i < myCommands.length; i++){
             if((typeof myCommands[i]) === 'string'){
                 myCommands[i] = myCommands[i].replace(/'/g, '"');
             }
 		}
-		//post("myWinTask = " + myWinTask);
+		// post("myWinTask = " + myWinTask);
 		testRunning();
 	} else {
 		execute();
