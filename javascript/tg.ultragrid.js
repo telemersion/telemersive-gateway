@@ -26,7 +26,7 @@ var ugVideoCaptureMode = "texture";
 var ugFPS_attribute = "fps";
 var ugTexture_capture = DEFAULT;
 var ugTexture_fps = 60;
-var ugCustomFlagsVideo_capture = "empty";
+var ugCustomFlagsVideo_capture = NONE;
 var ugVideoTestcard = "testcard:80:60:1:UYVY";
 var ugNDI_capture = DEFAULT;
 var ugLibAv_codec = NONE;
@@ -35,7 +35,7 @@ var ugCapture_filter = NONE;
 
 // audio capture
 var ugAudioCaptureMode = "portaudio";
-var ugCustomFlagsAudio_capture = "empty";
+var ugCustomFlagsAudio_capture = NONE;
 var ugAudio_testcard_capture = [-18, 440];
 var ugAudio_codec = "OPUS";
 var ugAudio_codec_bitrate = 64000;
@@ -50,7 +50,7 @@ var ugJack_capture = DEFAULT;
 
 // video receive
 var ugVideoReceiverMode = "texture";
-var ugCustomFlagsVideo_receive = "empty";
+var ugCustomFlagsVideo_receive = NONE;
 var ugDisplay_flag_prefix = "syphon";
 var ugNDI_display = "NDIChannel";
 var ugDisplay_window_show = 0;
@@ -58,7 +58,7 @@ var ugReceive_postprocessor = NONE;
 
 // audio receive
 var ugAudioReceiveMode = "portaudio";
-var ugCustomFlagsAudio_receive = "empty";
+var ugCustomFlagsAudio_receive = NONE;
 var ugPortaudio_receive = DEFAULT;
 var ugCoreaudio_receive = DEFAULT;
 var ugWasapi_receive = DEFAULT;
@@ -91,7 +91,7 @@ function ug_verboseExecute(_verbose){
 }
 
 function dpost(_post){
-	//post("ultragrid: " + _post);
+	post("ultragrid: " + _post);
 }
 
 /************* NETWORK ***************/
@@ -211,7 +211,7 @@ function ugf_audioCaptureMode(_audioCaptureMode){
 
 function ugf_customFlagsAudioCapture(_customFlags){
     ugCustomFlagsAudio_capture = _customFlags;
-	dpost("ugCustomVideo_capture: " + ugCustomVideo_capture + "\n");
+	dpost("ugCustomFlagsAudio_capture: " + ugCustomFlagsAudio_capture + "\n");
 }
 
 // 2 values: volume, frequency

@@ -1225,7 +1225,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 62.833333333333371, 338.0, 81.0, 35.0 ],
+									"patching_rect" : [ 62.833333333333371, 338.0, 81.0, 36.0 ],
 									"text" : "prepend networkMode"
 								}
 
@@ -1709,7 +1709,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 314.166666666666686, 100.0, 74.0, 35.0 ],
+									"patching_rect" : [ 314.166666666666686, 100.0, 74.0, 36.0 ],
 									"text" : "tg.receiveR serverURL"
 								}
 
@@ -1723,7 +1723,6 @@
 									"embed" : 1,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
-									"hidden" : 1,
 									"id" : "obj-13",
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
@@ -2022,6 +2021,7 @@
 									"embed" : 1,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
+									"hidden" : 1,
 									"id" : "obj-14",
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
@@ -3154,8 +3154,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 151.125, 593.0, 136.0, 35.0 ],
-													"text" : ";\rmax launch_browser $1"
+													"patching_rect" : [ 151.125, 593.0, 136.0, 36.0 ],
+													"text" : ";\r\nmax launch_browser $1"
 												}
 
 											}
@@ -3791,7 +3791,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 170.25, 13.0, 56.0, 22.0 ],
 									"restore" : 									{
-										"mode" : [ 5 ]
+										"mode" : [ 1 ]
 									}
 ,
 									"text" : "autopattr",
@@ -4127,6 +4127,7 @@
 									"embed" : 1,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
+									"hidden" : 1,
 									"id" : "obj-8",
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
@@ -6526,7 +6527,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 384.0, 411.0, 416.0, 339.0 ],
+														"rect" : [ 689.0, 430.0, 416.0, 339.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -6665,7 +6666,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "25550_cshac"
+																	"text" : "2072_cshac"
 																}
 
 															}
@@ -8547,7 +8548,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 736.0, 172.0, 622.0, 664.0 ],
+										"rect" : [ 958.0, 290.0, 622.0, 664.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -8961,7 +8962,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 210.0, 657.0, 252.0, 140.0 ],
+														"rect" : [ 201.0, 657.0, 252.0, 140.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -9383,7 +9384,7 @@
 																					"numinlets" : 1,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 520.0, 81.0, 173.0, 35.0 ],
+																					"patching_rect" : [ 520.0, 81.0, 173.0, 36.0 ],
 																					"text" : "prepend ugf_audio_codec_sample_rate"
 																				}
 
@@ -10947,7 +10948,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 157.5, 106.0, 58.0, 33.0 ],
+																	"patching_rect" : [ 157.5, 106.0, 58.0, 34.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 119.0, 1.0, 74.0, 20.0 ],
 																	"text" : "frequency:",
@@ -11992,7 +11993,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 384.0, 411.0, 416.0, 339.0 ],
+														"rect" : [ 695.0, 482.0, 416.0, 339.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -12070,8 +12071,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 20.184296000000018, 257.0, 220.0, 22.0 ],
-																	"text" : "prepend ugf_customFlagsVideoCapture"
+																	"patching_rect" : [ 20.184296000000018, 257.0, 221.0, 22.0 ],
+																	"text" : "prepend ugf_customFlagsAudioCapture"
 																}
 
 															}
@@ -12131,7 +12132,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "25564_cshac"
+																	"text" : "2086_cshac"
 																}
 
 															}
@@ -14713,7 +14714,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 86.0, 22.0, 54.0, 33.0 ],
+									"patching_rect" : [ 86.0, 22.0, 54.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ -0.5, 0.0, 78.5, 20.0 ],
 									"text" : "connection:",
@@ -14795,6 +14796,7 @@
 									"embed" : 1,
 									"enablehscroll" : 0,
 									"enablevscroll" : 0,
+									"hidden" : 1,
 									"id" : "obj-15",
 									"lockeddragscroll" : 0,
 									"lockedsize" : 0,
@@ -14814,7 +14816,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 780.0, 249.0, 207.0, 550.0 ],
+										"rect" : [ 780.0, 249.0, 504.0, 550.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -16530,7 +16532,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 169.0, 101.0, 103.0, 22.0 ],
-																	"text" : "25569_cshvr"
+																	"text" : "2091_cshvr"
 																}
 
 															}
@@ -17875,7 +17877,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 618.0, 169.0, 415.0, 672.0 ],
+										"rect" : [ 618.0, 169.0, 729.0, 672.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -17940,7 +17942,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 218.0, 597.0, 253.0, 222.0 ],
+														"rect" : [ 218.0, 592.0, 253.0, 222.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -18043,7 +18045,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 133.0, 291.0, 50.0, 62.0 ],
+																					"patching_rect" : [ 133.0, 291.0, 50.0, 64.0 ],
 																					"text" : "ugf_capture_filter -none-"
 																				}
 
@@ -18088,9 +18090,9 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 1,
 																					"outlettype" : [ "" ],
-																					"patching_rect" : [ 76.0, 55.0, 31.0, 17.0 ],
+																					"patching_rect" : [ 76.0, 55.0, 31.0, 18.0 ],
 																					"presentation" : 1,
-																					"presentation_rect" : [ 221.0, 24.0, 26.0, 17.0 ],
+																					"presentation_rect" : [ 221.0, 24.0, 26.0, 18.0 ],
 																					"text" : "clear"
 																				}
 
@@ -18102,9 +18104,9 @@
 																					"maxclass" : "comment",
 																					"numinlets" : 1,
 																					"numoutlets" : 0,
-																					"patching_rect" : [ 306.25, 22.0, 108.0, 15.0 ],
+																					"patching_rect" : [ 306.25, 22.0, 108.0, 16.0 ],
 																					"presentation" : 1,
-																					"presentation_rect" : [ 80.0, 24.0, 47.0, 15.0 ],
+																					"presentation_rect" : [ 80.0, 24.0, 47.0, 16.0 ],
 																					"text" : "examples:"
 																				}
 
@@ -18940,7 +18942,7 @@
 																					"maxclass" : "comment",
 																					"numinlets" : 1,
 																					"numoutlets" : 0,
-																					"patching_rect" : [ 113.0, 154.0, 49.0, 33.0 ],
+																					"patching_rect" : [ 113.0, 154.0, 49.0, 34.0 ],
 																					"presentation" : 1,
 																					"presentation_rect" : [ 162.0, 26.0, 60.0, 20.0 ],
 																					"text" : "[Mbit/sec]",
@@ -20301,7 +20303,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "25579_cshvc"
+																	"text" : "2101_cshvc"
 																}
 
 															}
@@ -22342,64 +22344,56 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
-				"patcherrelativepath" : "../../media",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dynRangeMenu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.monitor.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.texture.selection.gate.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.simplewin.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
