@@ -36,8 +36,8 @@ var ugCapture_filter = NONE;
 // audio capture
 var ugAudioCaptureMode = "portaudio";
 var ugCustomFlagsAudio_capture = NONE;
-var ugf_audio_testcard_capture_vol = -18;
-var ugf_audio_testcard_capture_freq = 440;
+var ugAudio_testcard_capture_vol = -18;
+var ugAudio_testcard_capture_freq = 440;
 var ugAudio_codec = "OPUS";
 var ugAudio_codec_bitrate = 64000;
 var ugAudio_channels = 0; // 0 = all
@@ -684,8 +684,8 @@ function generate(){
 
 function anything()
 {
-	var a = arrayfromargs(messagename, arguments);
-	post("tg.ultragrid.js: received an unknown message " + a + "\n");
+	var a = arrayfromargs(arguments);
+	post("tg.ultragrid.js: received an unknown message " + messagename + " -> "+ a + "\n");
 	//myval = a;
 	//bang();
 }
