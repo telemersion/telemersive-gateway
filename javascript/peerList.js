@@ -23,8 +23,8 @@ if (jsarguments.length>1)
 	myval = jsarguments[1];
 
 function loadbang(){
-    //post("gathering information on the patcher hierarchy..\n");
     if(this.patcher.box != null){
+    	//post("gathering information on the patcher hierarchy..\n");
         myRootPatcher = this.patcher.box.patcher;
         myRootSize = myRootPatcher.wind.size;        
     }
@@ -46,7 +46,12 @@ function resizeWinHeight(_height){
 }
 
 function applyWindowSize(){
-    myRootPatcher.wind.size = [(myFlagWidth)?myRootSize[0] + myExpandWidth: myRootSize[0], (myFlagHeight)?myRootSize[1] + myListHeight:myRootSize[1]];
+	// a circumvental way to set the new size, since to set the size directly causes errors..
+	var loc = myRootPatcher.wind.location;
+    var newsize = [(myFlagWidth)?myRootSize[0] + myExpandWidth: myRootSize[0], (myFlagHeight)?myRootSize[1] + myListHeight:myRootSize[1]];
+   	myRootPatcher.wind.setlocation(loc[0, loc[1], loc[2] + newsize[0], loc[3] + newsize[1]]);
+	//myRootPatcher.wind.size = [(myFlagWidth)?myRootSize[0] + myExpandWidth: myRootSize[0], (myFlagHeight)?myRootSize[1] + myListHeight:myRootSize[1]];
+	//post("done: applyWindowSize\n");
 }
 
 function slotResize(_indxStart, _indxTarget, _maxStep)
