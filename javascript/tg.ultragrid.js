@@ -41,7 +41,7 @@ var ugAudio_testcard_capture_freq = 440;
 var ugAudio_codec = "OPUS";
 var ugAudio_codec_bitrate = 64000;
 var ugAudio_channels = 0; // 0 = all
-var ugAudio_channel_mapping = "";
+var ugAudio_channel_mapping = NONE;
 var ugAudioTestcard = "testcard:frequency=440";
 var ugAudio_codec_sample_rate = 0;
 var ugPortaudio_capture = DEFAULT;
@@ -488,7 +488,7 @@ function cliADD_audioCodec(){
         if(ugAudio_channels > 0){
             ugCLIcommand += " --audio-capture-format channels=" + ugAudio_channels;
         }
-        if(ugAudio_channel_mapping != "bang" && ugAudio_channel_mapping.length > 2){
+        if(ugAudio_channel_mapping != NONE && ugAudio_channel_mapping != "bang" && ugAudio_channel_mapping.length > 2){
             ugCLIcommand += " --audio-channel-map " + ugAudio_channel_mapping;
         }
     }
