@@ -46,11 +46,7 @@ function resizeWinHeight(_height){
 }
 
 function applyWindowSize(){
-	// a circumvental way to set the new size, since to set the size directly causes errors..
-	var loc = myRootPatcher.wind.location;
-    var newsize = [(myFlagWidth)?myRootSize[0] + myExpandWidth: myRootSize[0], (myFlagHeight)?myRootSize[1] + myListHeight:myRootSize[1]];
-   	myRootPatcher.wind.setlocation(loc[0, loc[1], loc[2] + newsize[0], loc[3] + newsize[1]]);
-	//myRootPatcher.wind.size = [(myFlagWidth)?myRootSize[0] + myExpandWidth: myRootSize[0], (myFlagHeight)?myRootSize[1] + myListHeight:myRootSize[1]];
+	myRootPatcher.wind.size = [(myFlagWidth)?myRootSize[0] + myExpandWidth: myRootSize[0], (myFlagHeight)?myRootSize[1] + myListHeight:myRootSize[1]];
 	//post("done: applyWindowSize\n");
 }
 
