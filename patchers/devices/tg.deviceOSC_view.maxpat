@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 69.0, 199.0, 411.0, 112.0 ],
+		"rect" : [ 68.0, 200.0, 411.0, 112.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"title" : "s > OSC > channel 0",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "@helpurl", "https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/OSC_GUI", "@hint", "menu" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"hint" : "menu",
+					"id" : "obj-29",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "tg.device.menu.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 261.5, 23.0, 26.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 382.0, 3.0, 22.0, 22.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "newobj",
@@ -191,7 +215,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2.5, 162.0, 59.0, 20.75 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 2.0, 330.0, 22.0 ],
+					"presentation_rect" : [ 75.0, 2.0, 305.0, 22.0 ],
 					"text" : "OSC",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -2018,10 +2042,24 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.device.menu.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.deviceOSC_icon.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.gui.button.menu.png",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"patcherrelativepath" : "../../media",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{

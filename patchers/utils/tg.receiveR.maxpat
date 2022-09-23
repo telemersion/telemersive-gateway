@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 78.0, 50.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "button",
@@ -84,18 +96,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 233.0, 164.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 82.0, 50.0, 58.0, 22.0 ],
-					"text" : "loadbang"
 				}
 
 			}

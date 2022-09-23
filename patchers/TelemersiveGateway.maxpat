@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 57.0, 749.0, 108.0 ],
+		"rect" : [ 50.0, 65.0, 749.0, 108.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,31 @@
 		"assistshowspatchername" : 0,
 		"title" : "TelemersiveGateway",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "@helpurl", "https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/MainGui", "@hint", "menu" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"hint" : "menu",
+					"id" : "obj-29",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "tg.main.menu.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 555.5, 49.0, 26.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.0, 1.5, 46.0, 42.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
@@ -591,24 +616,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.5, 0.5, 1.0 ],
-					"hint" : "save and close app",
-					"id" : "obj-4",
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 537.0, 53.0, 88.0, 19.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1.0, 1.5, 46.0, 21.0 ],
-					"rounded" : 8.0,
-					"text" : "quit"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -913,7 +920,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 100.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "213.55.243.205",
+									"text" : "unkown",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -944,7 +951,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "192.168.1.101",
+									"text" : "unkown",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1172,7 +1179,7 @@
 									"patching_rect" : [ 73.333333333333371, 225.5, 103.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.833333333333371, 65.5, 159.0, 22.0 ],
-									"text" : "MartinsMac"
+									"text" : "unkown"
 								}
 
 							}
@@ -1210,7 +1217,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "aX6SZPfMD9ECjVTQ4gCVPF",
+									"text" : "8V6H9vBBtHP6hQ77fQsKYx",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -1552,7 +1559,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 522.5, 23.5, 100.0, 20.0 ],
+					"patching_rect" : [ 522.5, 23.5, 87.0, 21.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 49.0, 21.5, 198.0, 22.0 ],
 					"rounded" : 8.0,
@@ -4680,7 +4687,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-14",
-													"items" : [ "12:19:44", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room" ],
+													"items" : [ "12:09:23", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room" ],
 													"maxclass" : "chooser",
 													"numinlets" : 1,
 													"numoutlets" : 6,
@@ -5849,7 +5856,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 380.5, 215.0, 115.333333333333371, 22.0 ],
-													"text" : "\">not joined<\"",
+													"text" : "unkown",
 													"textjustification" : 1
 												}
 
@@ -10130,47 +10137,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"id" : "obj-29",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 208.5, 290.0, 97.0, 22.0 ],
-																	"text" : "loadmess 12558"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-28",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 208.5, 355.0, 153.0, 22.0 ],
-																	"text" : "tg.sendR holepuncher_port"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"hidden" : 1,
-																	"hint" : "default port = 12558",
-																	"id" : "obj-24",
-																	"maxclass" : "number",
-																	"numinlets" : 1,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "bang" ],
-																	"parameter_enable" : 0,
-																	"patching_rect" : [ 208.5, 322.0, 78.0, 22.0 ],
-																	"presentation" : 1,
-																	"presentation_rect" : [ 320.5, 131.0, 78.0, 22.0 ],
-																	"varname" : "port"
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"id" : "obj-17",
 																	"linecount" : 11,
 																	"maxclass" : "comment",
@@ -10237,18 +10203,6 @@
 																	"presentation_rect" : [ 40.0, 109.0, 290.0, 20.0 ],
 																	"text" : "- > Point to a server with a running net-helper service",
 																	"varname" : "info01"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-32",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 50.0, 320.0, 57.0, 22.0 ],
-																	"text" : "tosymbol"
 																}
 
 															}
@@ -10401,24 +10355,6 @@
 															}
 , 															{
 																"box" : 																{
-																	"id" : "obj-4",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 4,
-																	"outlettype" : [ "", "", "", "" ],
-																	"patching_rect" : [ 121.5, 40.0, 56.0, 22.0 ],
-																	"restore" : 																	{
-																		"port" : [ 12558 ],
-																		"url" : [ "tpf-server.zhdk.ch" ]
-																	}
-,
-																	"text" : "autopattr",
-																	"varname" : "u910005336"
-																}
-
-															}
-, 															{
-																"box" : 																{
 																	"id" : "obj-14",
 																	"maxclass" : "message",
 																	"numinlets" : 2,
@@ -10455,30 +10391,6 @@
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 4.5, 104.0, 20.0 ],
 																	"text" : "Holepuncher"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-74",
-																	"maxclass" : "newobj",
-																	"numinlets" : 2,
-																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 50.0, 290.0, 59.0, 22.0 ],
-																	"text" : "route text"
-																}
-
-															}
-, 															{
-																"box" : 																{
-																	"id" : "obj-75",
-																	"maxclass" : "newobj",
-																	"numinlets" : 1,
-																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 50.0, 352.0, 146.0, 22.0 ],
-																	"text" : "tg.sendR holepuncher_url"
 																}
 
 															}
@@ -10621,13 +10533,6 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-28", 0 ],
-																	"source" : [ "obj-24", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
 																	"destination" : [ "obj-26", 0 ],
 																	"source" : [ "obj-25", 0 ]
 																}
@@ -10642,29 +10547,8 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-24", 0 ],
-																	"source" : [ "obj-29", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
 																	"destination" : [ "obj-26", 0 ],
 																	"source" : [ "obj-31", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-75", 0 ],
-																	"source" : [ "obj-32", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-74", 0 ],
-																	"source" : [ "obj-53", 0 ]
 																}
 
 															}
@@ -10688,13 +10572,6 @@
 																	"destination" : [ "obj-30", 0 ],
 																	"order" : 0,
 																	"source" : [ "obj-7", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-32", 0 ],
-																	"source" : [ "obj-74", 0 ]
 																}
 
 															}
@@ -10808,10 +10685,8 @@
  ]
 													}
 ,
-													"patching_rect" : [ 10.5, 254.0, 405.5, 61.0 ],
-													"presentation" : 1,
-													"presentation_rect" : [ 8.5, 183.0, 406.5, 158.0 ],
-													"varname" : "holepuncher",
+													"patching_rect" : [ 10.5, 255.0, 405.5, 61.0 ],
+													"varname" : "bpatcher",
 													"viewvisibility" : 1
 												}
 
@@ -12898,7 +12773,7 @@
 ,
 													"patching_rect" : [ 10.5, 121.0, 405.5, 61.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 8.5, 347.0, 406.5, 88.0 ],
+													"presentation_rect" : [ 8.5, 206.0, 406.5, 88.0 ],
 													"varname" : "natnet",
 													"viewvisibility" : 1
 												}
@@ -12930,7 +12805,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 557.0, 220.0, 965.0, 480.0 ],
+														"rect" : [ 557.0, 100.0, 965.0, 600.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -12959,6 +12834,108 @@
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
+																"box" : 																{
+																	"id" : "obj-30",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "" ],
+																	"patching_rect" : [ 49.5, 501.0, 140.0, 22.0 ],
+																	"text" : "tg.receiveR serverURL"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-34",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 456.0, 398.0, 145.0, 22.0 ],
+																	"text" : "script $1 holepuncherPort"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-31",
+																	"maxclass" : "message",
+																	"numinlets" : 2,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 446.0, 366.0, 143.0, 22.0 ],
+																	"text" : "script $1 holepuncherInfo"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-13",
+																	"maxclass" : "comment",
+																	"numinlets" : 1,
+																	"numoutlets" : 0,
+																	"patching_rect" : [ 292.5, 502.0, 155.0, 20.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 228.0, 82.0, 104.0, 20.0 ],
+																	"text" : "Holepuncher port",
+																	"varname" : "holepuncherInfo"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-29",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 208.0, 469.0, 90.0, 22.0 ],
+																	"text" : "loadmess 9418"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-28",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 208.0, 534.0, 153.0, 22.0 ],
+																	"text" : "tg.sendR holepuncher_port"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"hint" : "default port = 9418",
+																	"id" : "obj-24",
+																	"maxclass" : "number",
+																	"numinlets" : 1,
+																	"numoutlets" : 2,
+																	"outlettype" : [ "", "bang" ],
+																	"parameter_enable" : 0,
+																	"patching_rect" : [ 208.0, 501.0, 78.0, 22.0 ],
+																	"presentation" : 1,
+																	"presentation_rect" : [ 336.0, 81.0, 54.0, 22.0 ],
+																	"varname" : "holepuncherPort"
+																}
+
+															}
+, 															{
+																"box" : 																{
+																	"id" : "obj-75",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 49.5, 534.0, 146.0, 22.0 ],
+																	"text" : "tg.sendR holepuncher_url"
+																}
+
+															}
+, 															{
 																"box" : 																{
 																	"id" : "obj-10",
 																	"maxclass" : "message",
@@ -13085,7 +13062,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 399.0, 386.0, 67.0, 22.0 ],
+																	"patching_rect" : [ 400.5, 439.0, 67.0, 22.0 ],
 																	"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 																	"text" : "thispatcher"
 																}
@@ -13233,7 +13210,8 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "/Applications/_Video/uv-qt.app" ]
+																		"filepath" : [ "/Applications/_Video/uv-qt.app" ],
+																		"holepuncherPort" : [ 9418 ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -13358,8 +13336,7 @@
 																					"parameter_enable" : 0,
 																					"patching_rect" : [ 33.25, 63.0, 20.0, 20.0 ],
 																					"presentation" : 1,
-																					"presentation_rect" : [ 0.0, 0.0, 20.0, 20.0 ],
-																					"varname" : "button"
+																					"presentation_rect" : [ 0.0, 0.0, 20.0, 20.0 ]
 																				}
 
 																			}
@@ -13892,14 +13869,6 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-10", 0 ],
-																	"order" : 0,
-																	"source" : [ "obj-22", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-25", 0 ],
 																	"order" : 2,
 																	"source" : [ "obj-22", 0 ]
 																}
@@ -13907,8 +13876,32 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-25", 0 ],
+																	"order" : 4,
+																	"source" : [ "obj-22", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-27", 0 ],
+																	"order" : 3,
+																	"source" : [ "obj-22", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-31", 0 ],
 																	"order" : 1,
+																	"source" : [ "obj-22", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-34", 0 ],
+																	"order" : 0,
 																	"source" : [ "obj-22", 0 ]
 																}
 
@@ -13916,14 +13909,6 @@
 , 															{
 																"patchline" : 																{
 																	"destination" : [ "obj-10", 0 ],
-																	"order" : 0,
-																	"source" : [ "obj-23", 0 ]
-																}
-
-															}
-, 															{
-																"patchline" : 																{
-																	"destination" : [ "obj-25", 0 ],
 																	"order" : 2,
 																	"source" : [ "obj-23", 0 ]
 																}
@@ -13931,9 +13916,40 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-25", 0 ],
+																	"order" : 4,
+																	"source" : [ "obj-23", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-27", 0 ],
+																	"order" : 3,
+																	"source" : [ "obj-23", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-31", 0 ],
 																	"order" : 1,
 																	"source" : [ "obj-23", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-34", 0 ],
+																	"order" : 0,
+																	"source" : [ "obj-23", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-28", 0 ],
+																	"source" : [ "obj-24", 0 ]
 																}
 
 															}
@@ -13960,6 +13976,13 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-24", 0 ],
+																	"source" : [ "obj-29", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-11", 0 ],
 																	"source" : [ "obj-3", 1 ]
 																}
@@ -13969,6 +13992,27 @@
 																"patchline" : 																{
 																	"destination" : [ "obj-7", 0 ],
 																	"source" : [ "obj-3", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-75", 0 ],
+																	"source" : [ "obj-30", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-14", 0 ],
+																	"source" : [ "obj-31", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
+																	"destination" : [ "obj-14", 0 ],
+																	"source" : [ "obj-34", 0 ]
 																}
 
 															}
@@ -14134,7 +14178,7 @@
 ,
 													"patching_rect" : [ 10.5, 56.0, 405.5, 59.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 8.5, 92.0, 406.5, 85.0 ],
+													"presentation_rect" : [ 8.5, 95.0, 406.5, 107.0 ],
 													"varname" : "ultragrid",
 													"viewvisibility" : 1
 												}
@@ -17617,7 +17661,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 496.0, 172.5, 20.0, 62.0 ],
-													"text" : "MyTest"
+													"text" : "bang"
 												}
 
 											}
@@ -18321,7 +18365,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-48",
-													"items" : "MyTest",
+													"items" : "<empty>",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -19205,7 +19249,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-4", 0 ]
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-76", 0 ],
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -19278,13 +19329,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "UI_Switch.png",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "config.json",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers",
 				"patcherrelativepath" : ".",
@@ -19351,13 +19395,6 @@
 , 			{
 				"name" : "shell.mxo",
 				"type" : "iLaX"
-			}
-, 			{
-				"name" : "shellHelper.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.OSDependentPatches.maxpat",
@@ -19430,41 +19467,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.deviceUG_button.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
-				"patcherrelativepath" : "./devices",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.deviceUG_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
-				"patcherrelativepath" : "./devices",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.deviceUG_local.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
-				"patcherrelativepath" : "./devices",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.deviceUG_view.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
-				"patcherrelativepath" : "./devices",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.dynRangeMenu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.filesync.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
@@ -19479,7 +19481,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.monitor.maxpat",
+				"name" : "tg.gui.button.menu.png",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.main.menu.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
@@ -19487,13 +19496,6 @@
 			}
 , 			{
 				"name" : "tg.ndi_detector.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.receiveC.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
@@ -19521,13 +19523,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.shell.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.syphon_detector.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
@@ -19535,35 +19530,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.texture.selection.gate.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.ug_audio_detector.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.ultragrid.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.view.simplewin.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",

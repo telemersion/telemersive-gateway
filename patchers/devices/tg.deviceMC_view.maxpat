@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 531.0, 554.0, 408.0, 415.0 ],
+		"rect" : [ 348.0, 277.0, 408.0, 415.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"title" : "s > MoCap > channel 0",
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "@helpurl", "https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/MoCap_GUI", "@hint", "menu" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"hint" : "menu",
+					"id" : "obj-37",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "tg.device.menu.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 261.5, 23.0, 26.0, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 381.0, 3.0, 22.0, 22.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "message",
@@ -696,7 +720,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 76.5, 339.0, 104.0, 22.75 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 2.0, 330.0, 22.0 ],
+					"presentation_rect" : [ 75.0, 2.0, 302.0, 22.0 ],
 					"text" : "MoCap",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -2929,8 +2953,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 223.166666666666742, 268.0, 136.0, 36.0 ],
-													"text" : ";\r\nmax launch_browser $1"
+													"patching_rect" : [ 223.166666666666742, 268.0, 136.0, 35.0 ],
+													"text" : ";\rmax launch_browser $1"
 												}
 
 											}
@@ -3828,7 +3852,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 20.184296000000018, 57.0, 178.0, 34.0 ],
+													"patching_rect" : [ 20.184296000000018, 57.0, 178.0, 33.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 0.0, 1.0, 223.0, 20.0 ],
 													"text" : "send OSC directly to local LAN address."
@@ -4120,7 +4144,7 @@
 ,
 					"patching_rect" : [ 358.5, 80.75, 354.500000000000114, 52.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 154.0, 57.0, 261.0, 52.0 ],
+					"presentation_rect" : [ 154.0, 54.0, 261.0, 52.0 ],
 					"varname" : "connection",
 					"viewvisibility" : 1
 				}
@@ -5262,7 +5286,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 78.0, 248.0, 100.0, 22.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 80.0, 2.0, 245.0, 22.0 ],
+									"presentation_rect" : [ 80.0, 0.0, 245.0, 22.0 ],
 									"varname" : "select"
 								}
 
@@ -5270,13 +5294,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-3",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 22.0, 248.0, 42.0, 20.0 ],
+									"patching_rect" : [ 22.0, 248.0, 42.0, 33.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 37.0, 2.0, 42.0, 20.0 ],
-									"text" : "mode:"
+									"presentation_rect" : [ 24.0, 1.0, 54.0, 20.0 ],
+									"text" : "network:"
 								}
 
 							}
@@ -6118,42 +6143,56 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/media",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
 				"patcherrelativepath" : "../../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.device.menu.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "../utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.deviceMC_icon.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.gui.button.menu.png",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"patcherrelativepath" : "../../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.monitor.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1

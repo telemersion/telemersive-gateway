@@ -3,17 +3,19 @@ autowatch = 1;
 outlets = 2;
 
 var myval=0;
-
-var NONE = "-none-";
 var DEFAULT = "-default-";
+var NONE = "-none-";
 // network
 var ugNetworkMode = "none";
 var ugPort = 5004;
 var ugRouter = "gitlab.zhdk.ch/telemersion";
 var ugLANip = "1.0.0.127";
+var ugLANport = "10000";
 var ugFilePath = "ug.exe";
 var ugHolePuncherURL = "gitlab.zdhk.ch/telemersion";
-var ugHolePuncherPort = 12558;
+var ugHolePuncherPort = 9418;
+var ugStunServerURL = "gitlab.zdhk.ch/telemersion";
+var ugStunServerPort = 3478;
 var ugRoomName = "unkonwn";
 var ugChannelNr = 11;
 
@@ -123,19 +125,34 @@ function ugf_lanIP(_lanIP){
 	dpost("ugLANip: " + ugLANip + "\n");
 }
 
+function ugf_lanPort(_lanPort){
+    ugLanPort = _lanPort;
+	dpost("ugLanPort: " + ugLanPort + "\n");
+}
+
 function ugf_filePath(_filePath){
     ugFilePath = _filePath;
 	dpost("ugFilePath: " + ugFilePath + "\n");
 }
 
-function ugf_holePuncherURL(_puncher_url){
-    ugHolePuncherURL = _puncher_url;
-	dpost("ugFilePath: " + ugFilePath + "\n");
+function ugf_holePuncherURL(_holePuncher){
+    ugHolePuncherURL = _holePuncher;
+	dpost("ugHolePuncherURL: " + ugHolePuncherURL + "\n");
 }
 
-function ugf_holePuncherPort(_puncher_port){
-    ugHolePuncherPort = _puncher_port;
-	dpost("ugFilePath: " + ugFilePath + "\n");
+function ugf_holePuncherPort(_holePuncher){
+    ugHolePuncherPort = _holePuncher;
+	dpost("ugHolePuncherPort: " + ugHolePuncherPort + "\n");
+}
+
+function ugf_stunServerURL(_stun_url){
+    ugStunServerURL = _stun_url;
+	dpost("ugStunServerURL: " + ugStunServerURL + "\n");
+}
+
+function ugf_stunServerPort(_stun_port){
+    ugStunServerPort = _stun_port;
+	dpost("ugStunServerPort: " + ugStunServerPort + "\n");
 }
 
 /************* AV & Connection ***************/
@@ -504,8 +521,12 @@ function cliADD_audioTestcard(){
     ugCLIcommand += ugAudioTestcard;
 }
 
-function cliADD_port(_offset){
-    ugCLIcommand += " -P" + ugPort;
+function cliADD_port(_port){
+    if(ugAV_mode != 2){
+        ugCLIcommand += " -P" + _port;
+    } else {
+        ugCLIcommand += " -P" + _port + ":" + _port + ":" + (_port+2) + ":" + (_port+2);
+    }
 }
 
 function cliADD_videoReceive(){
@@ -578,10 +599,9 @@ function cliADD_LANip(){
 
 function cliADD_holePunching(){
     ugCLIcommand += " -Nholepunch";
-    ugCLIcommand += ":room=" + ugRoomName +"_channel_" + ugChannelNr;
-//    ugCLIcommand += ":server=" + ugHolePuncherURL;
+    ugCLIcommand += ":room=" + ugRoomName +"_ch_" + ugChannelNr;
     ugCLIcommand += ":coord_srv='" + ugHolePuncherURL + ":" + ugHolePuncherPort + "'";
-    ugCLIcommand += ":stun_srv='" + ugHolePuncherURL + ":3478'";
+    ugCLIcommand += ":stun_srv='" + ugStunServerURL + ":" + ugStunServerPort + "'";
 }
 
 function cliADD_captureFilter(){
@@ -609,7 +629,7 @@ function generate(){
             cliADD_audioCapture();
             cliADD_audioCodec();            
         }
-        cliADD_port(0);
+        cliADD_port(ugPort);
         cliADD_router();
     } else if(ugNetworkMode == "receive from router"){
         if(ugAV_mode != 1){
@@ -621,9 +641,19 @@ function generate(){
             cliADD_audioTestcard(); // to open proxy
             cliADD_audioReceive();
         }
-        cliADD_port(1);
+        cliADD_port(ugPort);
         cliADD_router();
-    }else if(ugNetworkMode == "peer to peer (LAN)"){
+    }else if(ugNetworkMode == "peer to peer (manual)"){
+        cliADD_port(ugLANport);
+        if(ugConnection_mode != 0){
+            if(ugAV_mode != 1){
+                cliADD_postprocessing();
+                cliADD_videoReceive();
+            }
+            if(ugAV_mode != 0){
+                cliADD_audioReceive();
+            }
+        }
         if(ugConnection_mode != 1){
             if(ugAV_mode != 1){
                 cliADD_captureFilter();
@@ -634,19 +664,9 @@ function generate(){
                 cliADD_audioCapture();
                 cliADD_audioCodec();            
             }
+            cliADD_LANip();
         }
-        if(ugConnection_mode != 0){
-            if(ugAV_mode != 1){
-                cliADD_postprocessing();
-                cliADD_videoReceive();
-            }
-            if(ugAV_mode != 0){
-                cliADD_audioReceive();
-            }
-        }
-        cliADD_port(0);
-        cliADD_LANip();
-    }else if(ugNetworkMode == "peer to peer (internet)"){
+    }else if(ugNetworkMode == "peer to peer (automatic)"){
         if(ugConnection_mode != 1){
             if(ugAV_mode != 1){
                 cliADD_captureFilter();
