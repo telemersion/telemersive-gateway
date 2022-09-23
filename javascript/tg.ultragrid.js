@@ -17,7 +17,7 @@ var ugHolePuncherPort = 9418;
 var ugStunServerURL = "gitlab.zdhk.ch/telemersion";
 var ugStunServerPort = 3478;
 var ugRoomName = "unkonwn";
-var ugChannelNr = 11;
+var ugChannelNr = 0;
 
 // avio
 var ugAV_mode = 0;
@@ -71,7 +71,7 @@ var ugJack_receive = DEFAULT;
 var ugJoined = false;
 var ugEnabled = false;
 var isRunning = false;
-var ugVerboseExecute = false;
+var ugVerbose = false;
 
 
 var ugCLIcommand = "";
@@ -89,12 +89,14 @@ function ug_printoutCLI(){
 }
 
 function ug_verboseExecute(_verbose){
-    ugVerboseExecute = _verbose;
-	dpost("ugVerboseExecute: " + ugVerboseExecute + "\n");
+    ugVerbose = _verbose;
+	dpost("ugVerbose: " + ugVerbose + "\n");
 }
 
 function dpost(_post){
-	post("ultragrid: " + _post);
+    if(ugVerbose){
+        post("ultragrid - channel# " + ugChannelNr + ": " + _post);
+    }
 }
 
 /************* NETWORK ***************/
