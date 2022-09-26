@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 412.0, 294.0, 804.0, 480.0 ],
+		"rect" : [ 726.0, 405.0, 804.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,8 +45,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 296.0, 107.5, 226.0, 22.0 ],
-					"text" : "texture, ndi, audioCapture, audioReceive"
+					"patching_rect" : [ 296.0, 107.5, 68.0, 22.0 ],
+					"text" : "texture, ndi"
 				}
 
 			}
@@ -116,7 +116,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.5, 275.0, 213.0, 35.0 ],
+					"patching_rect" : [ 23.5, 275.0, 213.0, 36.0 ],
 					"text" : "script connect texDetect 0 detector 0, script connect detector 0 texSelect 0"
 				}
 
@@ -243,7 +243,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 23.5, 162.0, 161.0, 62.0 ],
+					"patching_rect" : [ 23.5, 162.0, 161.0, 64.0 ],
 					"text" : "script newobject newobj @text tg.spout_detector @varname detector @patching_position 515 305"
 				}
 
@@ -258,7 +258,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.333333333333371, 162.0, 166.0, 62.0 ],
+					"patching_rect" : [ 198.333333333333371, 162.0, 166.0, 64.0 ],
 					"text" : "script newobject newobj @text tg.syphon_detector @varname detector @patching_position 515 305"
 				}
 
@@ -284,7 +284,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 485.333333333333371, 67.0, 243.0, 35.0 ],
+					"patching_rect" : [ 485.333333333333371, 67.0, 243.0, 36.0 ],
 					"text" : ";\rmax system windows getruntime #0_win"
 				}
 
@@ -309,7 +309,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.333333333333371, 26.0, 257.0, 35.0 ],
+					"patching_rect" : [ 452.333333333333371, 26.0, 257.0, 36.0 ],
 					"text" : ";\rmax system macintosh getruntime #0_mac"
 				}
 
@@ -469,52 +469,51 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
+				"name" : "shell.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ndi_detector.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.sendR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ug_audio_detector.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "zero.browse.mxo",
-				"type" : "iLaX"
+				"name" : "zero.browse.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "zero.menu.format.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/zero/patchers",
-				"patcherrelativepath" : "../../../../../../../../../Documents/Max 8/Packages/zero/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
