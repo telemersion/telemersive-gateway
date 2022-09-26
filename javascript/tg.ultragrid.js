@@ -365,7 +365,7 @@ function ugf_jack_receive(_jack_receive){
 
 function ugf_customFlagsAudioReceive(_customFlags){
     ugCustomFlagsAudio_receive = _customFlags;
-	dpost("ugCustomFlags_display: " + ugCustomFlags_display + "\n");
+	dpost("ugCustomFlagsAudio_receive: " + ugCustomFlagsAudio_receive + "\n");
 }
 
 
