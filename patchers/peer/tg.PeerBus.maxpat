@@ -666,7 +666,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 393.0, 245.0, 953.0, 493.0 ],
+						"rect" : [ 121.0, 637.0, 953.0, 493.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -696,13 +696,37 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 441.0, 200.0, 185.0, 22.0 ],
+									"text" : "join 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 441.0, 117.0, 185.0, 22.0 ],
+									"text" : "zl.slice 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bubble" : 1,
 									"id" : "obj-30",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 173.375, 189.0, 195.0, 37.0 ],
+									"patching_rect" : [ 173.375, 189.0, 198.0, 38.0 ],
 									"text" : "received parameter changes on this peer from room"
 								}
 
@@ -885,7 +909,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 448.375, 323.0, 199.0, 78.0 ],
+									"patching_rect" : [ 448.375, 323.0, 199.0, 79.0 ],
 									"text" : "for remote peer, parameter will only be updated once the parameter has been received (ensures remotes don't override locals) "
 								}
 
@@ -1303,7 +1327,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 379.5, 434.0, 120.0, 37.0 ],
+									"patching_rect" : [ 379.5, 434.0, 120.0, 38.0 ],
 									"text" : "parameter will be published"
 								}
 
@@ -1316,7 +1340,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 776.0, 345.0, 117.0, 37.0 ],
+									"patching_rect" : [ 776.0, 345.0, 118.0, 38.0 ],
 									"text" : "happens only for local devices"
 								}
 
@@ -1330,7 +1354,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 569.0, 421.0, 115.0, 51.0 ],
+									"patching_rect" : [ 569.0, 421.0, 115.0, 52.0 ],
 									"text" : "parameter will be unretained if peer is local"
 								}
 
@@ -1343,7 +1367,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 514.75, 124.0, 90.25, 37.0 ],
+									"patching_rect" : [ 516.75, 153.0, 90.25, 38.0 ],
 									"text" : "changed parameter"
 								}
 
@@ -1709,7 +1733,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 428.0, 189.0, 32.0, 22.0 ],
+									"patching_rect" : [ 428.0, 235.0, 32.0, 22.0 ],
 									"text" : "gate"
 								}
 
@@ -1770,7 +1794,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 441.0, 124.0, 82.0, 35.0 ],
+									"patching_rect" : [ 441.0, 153.0, 82.0, 36.0 ],
 									"text" : "regexp :: @substitute /"
 								}
 
@@ -1847,6 +1871,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-54", 1 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-22", 0 ],
 									"source" : [ "obj-12", 0 ]
 								}
@@ -1875,7 +1906,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-41", 0 ],
+									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-23", 3 ]
 								}
 
@@ -1966,7 +1997,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-54", 1 ],
+									"destination" : [ "obj-10", 0 ],
 									"source" : [ "obj-41", 0 ]
 								}
 
@@ -2012,6 +2043,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-45", 0 ],
 									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-10", 1 ],
+									"source" : [ "obj-7", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}

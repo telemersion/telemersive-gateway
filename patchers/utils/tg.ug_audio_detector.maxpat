@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 172.0, 359.0, 1689.0, 589.0 ],
+		"rect" : [ 97.0, 412.0, 1689.0, 589.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -792,7 +792,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 414.0, 692.0, 346.0, 301.0 ],
+						"rect" : [ 264.0, 639.0, 346.0, 301.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -821,6 +821,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 50.0, 132.0, 247.0, 22.0 ],
+									"text" : "regexp (\\\\(ID:\\\\s{[{}a-z0-9.-]*) @substitute %0"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
@@ -851,7 +863,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 167.5, 134.839539000000059, 111.0, 22.0 ],
+									"patching_rect" : [ 167.5, 169.839539000000059, 111.0, 22.0 ],
 									"text" : "route UltraGrid Exit"
 								}
 
@@ -863,7 +875,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 129.839539000000059, 57.0, 22.0 ],
+									"patching_rect" : [ 50.0, 164.839539000000059, 57.0, 22.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -908,7 +920,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -940,6 +952,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -1248,7 +1267,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 746.0, 287.0, 355.0, 346.0 ],
+						"rect" : [ 746.0, 287.0, 355.0, 421.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1278,13 +1297,37 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 51.0, 237.0, 214.0, 22.0 ],
+									"text" : "regexp \"input channels\" @substitute in"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 51.0, 205.0, 229.0, 22.0 ],
+									"text" : "regexp \"output channels\" @substitute out"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
 									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 3.0, 279.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 3.0, 353.839538999999945, 30.0, 30.0 ]
 								}
 
 							}
@@ -1296,7 +1339,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 264.0, 279.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 241.0, 348.839538999999945, 30.0, 30.0 ]
 								}
 
 							}
@@ -1307,7 +1350,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 195.0, 197.839539000000059, 111.0, 22.0 ],
+									"patching_rect" : [ 195.0, 271.839539000000059, 111.0, 22.0 ],
 									"text" : "route UltraGrid Exit"
 								}
 
@@ -1319,7 +1362,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 51.0, 197.839539000000059, 57.0, 22.0 ],
+									"patching_rect" : [ 51.0, 271.839539000000059, 57.0, 22.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -1343,7 +1386,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 50.0, 168.0, 140.0, 22.0 ],
+									"patching_rect" : [ 50.0, 172.0, 140.0, 22.0 ],
 									"text" : "regexp - @substitute %0"
 								}
 
@@ -1381,7 +1424,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 279.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 51.0, 353.839538999999945, 30.0, 30.0 ]
 								}
 
 							}
@@ -1395,7 +1438,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -1441,6 +1484,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -1709,7 +1766,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 110.0, 659.0, 346.0, 348.0 ],
+						"rect" : [ 430.0, 628.0, 364.0, 361.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1739,13 +1796,25 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 50.0, 144.0, 247.0, 22.0 ],
+									"text" : "regexp (\\\\(ID:\\\\s{[{}a-z0-9.-]*) @substitute %0"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
 									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 11.0, 217.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 12.0, 278.839538999999945, 30.0, 30.0 ]
 								}
 
 							}
@@ -1757,7 +1826,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 219.0, 217.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 220.0, 278.839538999999945, 30.0, 30.0 ]
 								}
 
 							}
@@ -1768,7 +1837,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 167.5, 140.839539000000059, 111.0, 22.0 ],
+									"patching_rect" : [ 168.5, 201.839539000000059, 111.0, 22.0 ],
 									"text" : "route UltraGrid Exit"
 								}
 
@@ -1780,7 +1849,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 135.839539000000059, 57.0, 22.0 ],
+									"patching_rect" : [ 51.0, 196.839539000000059, 57.0, 22.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -1818,14 +1887,14 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 217.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 51.0, 278.839538999999945, 30.0, 30.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-11", 0 ]
 								}
 
@@ -1857,6 +1926,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -2165,7 +2241,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 899.0, 156.0, 559.0, 346.0 ],
+						"rect" : [ 522.0, 593.0, 559.0, 442.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2195,13 +2271,37 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 50.0, 233.0, 214.0, 22.0 ],
+									"text" : "regexp \"input channels\" @substitute in"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 50.0, 201.0, 229.0, 22.0 ],
+									"text" : "regexp \"output channels\" @substitute out"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
 									"index" : 1,
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 3.0, 279.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 2.0, 345.839538999999945, 30.0, 30.0 ]
 								}
 
 							}
@@ -2213,7 +2313,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 264.0, 279.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 263.0, 345.839538999999945, 30.0, 30.0 ]
 								}
 
 							}
@@ -2224,7 +2324,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 195.0, 197.839539000000059, 111.0, 22.0 ],
+									"patching_rect" : [ 194.0, 263.839539000000059, 111.0, 22.0 ],
 									"text" : "route UltraGrid Exit"
 								}
 
@@ -2236,7 +2336,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 51.0, 197.839539000000059, 57.0, 22.0 ],
+									"patching_rect" : [ 50.0, 263.839539000000059, 57.0, 22.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -2298,7 +2398,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 279.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 50.0, 345.839538999999945, 30.0, 30.0 ]
 								}
 
 							}
@@ -2312,7 +2412,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-9", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-12", 0 ]
 								}
 
@@ -2358,6 +2458,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -2447,7 +2561,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-45",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3179,34 +3293,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "shell.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.sendR.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
