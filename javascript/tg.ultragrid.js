@@ -128,8 +128,8 @@ function ugf_lanIP(_lanIP){
 }
 
 function ugf_lanPort(_lanPort){
-    ugLanPort = _lanPort;
-	dpost("ugLanPort: " + ugLanPort + "\n");
+    ugLANPort = _lanPort;
+	dpost("ugLANPort: " + ugLANPort + "\n");
 }
 
 function ugf_filePath(_filePath){
@@ -646,7 +646,7 @@ function generate(){
         cliADD_port(ugPort);
         cliADD_router();
     }else if(ugNetworkMode == "peer to peer (manual)"){
-        cliADD_port(ugLANport);
+        cliADD_port(ugLANPort);
         if(ugConnection_mode != 0){
             if(ugAV_mode != 1){
                 cliADD_postprocessing();
