@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 316.0, 330.0, 759.0, 189.0 ],
+		"rect" : [ 325.0, 196.0, 759.0, 212.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,40 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 170.0, 9.0, 88.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 237.0, 4.0, 88.0, 20.0 ],
+					"text" : "ignore"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 118.0, 9.0, 45.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 187.0, 4.0, 43.0, 22.0 ],
+					"text" : "-none-"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 328.0, 179.0, 224.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.0, 157.0, 224.0, 20.0 ],
+					"presentation_rect" : [ 237.0, 186.0, 224.0, 20.0 ],
 					"text" : "sending test image size 80x60 with 1 fps"
 				}
 
@@ -60,7 +87,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 177.0, 179.0, 141.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 83.0, 155.0, 147.0, 22.0 ],
+					"presentation_rect" : [ 83.0, 184.0, 147.0, 22.0 ],
 					"text" : "-t testcard:80:60:1:UYVY"
 				}
 
@@ -173,7 +200,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 139.0, 218.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.0, 64.0, 145.0, 20.0 ],
+					"presentation_rect" : [ 237.0, 93.0, 145.0, 20.0 ],
 					"text" : "OSX: streaming webcam "
 				}
 
@@ -188,7 +215,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 177.0, 139.0, 129.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 95.0, 64.0, 140.0, 22.0 ],
+					"presentation_rect" : [ 90.0, 93.0, 140.0, 22.0 ],
 					"text" : "-t avfoundation:device=1"
 				}
 
@@ -481,7 +508,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 109.0, 165.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.0, 125.0, 165.0, 20.0 ],
+					"presentation_rect" : [ 237.0, 154.0, 165.0, 20.0 ],
 					"text" : "addressing 1. decklink device"
 				}
 
@@ -496,7 +523,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 86.0, 109.0, 214.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 125.0, 225.0, 22.0 ],
+					"presentation_rect" : [ 5.0, 154.0, 225.0, 22.0 ],
 					"text" : "-t decklink:0:Hi50:UYUV:connection=SDI"
 				}
 
@@ -509,7 +536,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 74.0, 218.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.0, 95.0, 218.0, 20.0 ],
+					"presentation_rect" : [ 237.0, 124.0, 218.0, 20.0 ],
 					"text" : "addressing 1. decklink device"
 				}
 
@@ -524,7 +551,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 238.0, 74.0, 62.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 157.0, 95.0, 73.0, 22.0 ],
+					"presentation_rect" : [ 157.0, 124.0, 73.0, 22.0 ],
 					"text" : "-t decklink:0"
 				}
 
@@ -537,7 +564,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 9.0, 88.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.0, 4.0, 88.0, 20.0 ],
+					"presentation_rect" : [ 237.0, 33.0, 88.0, 20.0 ],
 					"text" : "screen capture"
 				}
 
@@ -552,7 +579,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 255.0, 9.0, 45.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 177.0, 4.0, 55.0, 22.0 ],
+					"presentation_rect" : [ 175.0, 33.0, 55.0, 22.0 ],
 					"text" : "-t screen"
 				}
 
@@ -566,7 +593,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 307.0, 40.0, 330.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 237.0, 34.0, 344.0, 20.0 ],
+					"presentation_rect" : [ 237.0, 63.0, 344.0, 20.0 ],
 					"text" : "addressing  devices in a direct way,  (or screen capture for win)"
 				}
 
@@ -581,7 +608,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 247.0, 40.0, 53.0, 35.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 168.0, 34.0, 64.0, 22.0 ],
+					"presentation_rect" : [ 166.0, 63.0, 64.0, 22.0 ],
 					"text" : "-t dshow:5"
 				}
 
@@ -709,6 +736,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}

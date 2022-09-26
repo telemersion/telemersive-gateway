@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 257.0, 298.0, 746.0, 83.0 ],
+		"rect" : [ 325.0, 190.0, 746.0, 83.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,40 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 170.0, 9.0, 88.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 262.0, 14.0, 88.0, 20.0 ],
+					"text" : "ignore"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 118.0, 9.0, 45.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 212.0, 14.0, 43.0, 22.0 ],
+					"text" : "-none-"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 317.5, 118.5, 271.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 228.0, 16.0, 293.0, 20.0 ],
+					"presentation_rect" : [ 262.0, 43.0, 293.0, 20.0 ],
 					"text" : "receiving audio on portaudio "
 				}
 
@@ -60,7 +87,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 111.0, 118.5, 70.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 81.0, 14.0, 140.0, 22.0 ],
+					"presentation_rect" : [ 115.0, 41.0, 140.0, 22.0 ],
 					"text" : "-r portaudio"
 				}
 
@@ -353,7 +380,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 19.5, 107.0, 24.0, 24.0 ]
+					"patching_rect" : [ 24.5, 24.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -452,6 +479,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}

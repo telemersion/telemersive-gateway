@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 314.0, 340.0, 741.0, 80.0 ],
+		"rect" : [ 325.0, 196.0, 741.0, 96.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,33 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 306.0, 13.0, 88.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 230.0, 7.0, 88.0, 20.0 ],
+					"text" : "ignore"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 254.0, 13.0, 45.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 7.0, 43.0, 22.0 ],
+					"text" : "-none-"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
 					"bgcolor2" : [ 0.850980392156863, 0.694117647058824, 0.298039215686275, 1.0 ],
@@ -326,7 +353,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 19.5, 107.0, 24.0, 24.0 ]
+					"patching_rect" : [ 38.5, 22.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -336,9 +363,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 307.0, 109.0, 165.0, 20.0 ],
+					"patching_rect" : [ 286.0, 84.0, 165.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 230.0, 44.0, 165.0, 20.0 ],
+					"presentation_rect" : [ 230.0, 67.0, 165.0, 20.0 ],
 					"text" : "addressing 1. decklink device"
 				}
 
@@ -350,9 +377,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 86.0, 109.0, 206.0, 22.0 ],
+					"patching_rect" : [ 65.0, 84.0, 206.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.0, 44.0, 209.0, 22.0 ],
+					"presentation_rect" : [ 14.0, 67.0, 209.0, 22.0 ],
 					"text" : "-d decklink:0:Use1080pNotPsF=false"
 				}
 
@@ -363,9 +390,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 320.0, 74.0, 218.0, 20.0 ],
+					"patching_rect" : [ 299.0, 49.0, 218.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 230.0, 14.0, 218.0, 20.0 ],
+					"presentation_rect" : [ 230.0, 37.0, 218.0, 20.0 ],
 					"text" : "addressing 1. decklink device"
 				}
 
@@ -377,9 +404,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 238.0, 74.0, 76.0, 22.0 ],
+					"patching_rect" : [ 217.0, 49.0, 76.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 144.0, 14.0, 79.0, 22.0 ],
+					"presentation_rect" : [ 144.0, 37.0, 79.0, 22.0 ],
 					"text" : "-d decklink:0"
 				}
 
@@ -486,6 +513,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}

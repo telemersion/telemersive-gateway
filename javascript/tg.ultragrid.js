@@ -402,7 +402,9 @@ function get_path(){
 
 function cliADD_videoCapture(){
     if(ugVideoCaptureMode == "custom"){
-        ugCLIcommand += " " + ugCustomFlagsVideo_capture;
+        if(ugCustomFlagsVideo_capture != NONE){
+            ugCLIcommand += " " + ugCustomFlagsVideo_capture;
+        }
     } else {
         ugCLIcommand += " -t";
         if(ugVideoCaptureMode == "ndi"){
@@ -433,7 +435,9 @@ function cliADD_videoCapture(){
 // portaudio, jack, coreaudio, wasapi, embedded, analog, AESEBU, custom, testcard
 function cliADD_audioCapture(){
     if(ugAudioCaptureMode == "custom"){
-        ugCLIcommand += " " + ugCustomFlagsAudio_capture;
+        if(ugCustomFlagsAudio_capture != NONE){
+            ugCLIcommand += " " + ugCustomFlagsAudio_capture;
+        }
     } else {
         ugCLIcommand += " -s";
         if(ugAudioCaptureMode == "portaudio"){
@@ -533,7 +537,9 @@ function cliADD_port(_port){
 
 function cliADD_videoReceive(){
     if(ugVideoReceiverMode == "custom"){
-        ugCLIcommand += " " + ugCustomFlagsVideo_receive;
+        if(ugCustomFlagsVideo_receive != NONE){
+            ugCLIcommand += " " + ugCustomFlagsVideo_receive;
+        }
     } else {
         ugCLIcommand += " -d ";
         if(ugVideoReceiverMode == "texture" || ugVideoReceiverMode == "spout" || ugVideoReceiverMode == "syphon"){
@@ -554,7 +560,9 @@ function cliADD_audioReceive(){
 // portaudio, jack, coreaudio, wasapi, embedded, analog, AESEBU, custom, testcard
 function cliADD_audioReceive(){
     if(ugAudioReceiveMode == "custom"){
-        ugCLIcommand += " " + ugCustomFlagsAudio_receive;
+        if(ugCustomFlagsAudio_receive != NONE){
+            ugCLIcommand += " " + ugCustomFlagsAudio_receive;
+        }
     } else {
         ugCLIcommand += " -r";
         if(ugAudioReceiveMode == "portaudio"){

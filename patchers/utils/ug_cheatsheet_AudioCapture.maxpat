@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 316.0, 330.0, 748.0, 84.0 ],
+		"rect" : [ 325.0, 297.0, 748.0, 98.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,33 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 320.0, 6.0, 88.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 238.0, 7.0, 88.0, 20.0 ],
+					"text" : "ignore"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 268.0, 6.0, 45.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 187.0, 6.0, 43.0, 22.0 ],
+					"text" : "-none-"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "newobj",
@@ -82,9 +109,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 325.0, 60.0, 271.0, 33.0 ],
+					"patching_rect" : [ 325.0, 68.0, 271.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 233.0, 44.0, 293.0, 20.0 ],
+					"presentation_rect" : [ 238.0, 66.0, 293.0, 20.0 ],
 					"text" : "sending coreaudio source=48 (see available sources)"
 				}
 
@@ -96,9 +123,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 118.5, 60.0, 205.0, 22.0 ],
+					"patching_rect" : [ 118.5, 68.0, 205.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 44.0, 211.0, 22.0 ],
+					"presentation_rect" : [ 20.0, 66.0, 211.0, 22.0 ],
 					"text" : "-s coreaudio:48 --audio-codec OPUS"
 				}
 
@@ -109,9 +136,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 320.0, 29.0, 271.0, 20.0 ],
+					"patching_rect" : [ 320.0, 37.0, 271.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 233.0, 15.0, 271.0, 20.0 ],
+					"presentation_rect" : [ 238.0, 37.0, 271.0, 20.0 ],
 					"text" : "getting available coreaudio sources (see monitor)"
 				}
 
@@ -123,9 +150,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 158.0, 29.0, 153.0, 22.0 ],
+					"patching_rect" : [ 158.0, 37.0, 153.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.0, 14.0, 101.0, 22.0 ],
+					"presentation_rect" : [ 129.0, 36.0, 101.0, 22.0 ],
 					"text" : "-s coreaudio:help"
 				}
 
@@ -381,7 +408,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 19.5, 107.0, 24.0, 24.0 ]
+					"patching_rect" : [ 19.5, 2.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -480,6 +507,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
