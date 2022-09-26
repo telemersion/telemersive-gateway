@@ -1,0 +1,1 @@
+var tgGlobals = new Global("tg_globals");

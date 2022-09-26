@@ -71,8 +71,9 @@ var ugJack_receive = DEFAULT;
 var ugJoined = false;
 var ugEnabled = false;
 var isRunning = false;
-var ugVerbose = false;
 
+var tgGlobals = new Global("tg_globals");
+var ugVerbose =false;
 
 var ugCLIcommand = "";
 
@@ -80,6 +81,7 @@ if (jsarguments.length>1)
 	ugChannelNr = jsarguments[1];
 
 function loadbang(){
+    ugVerbose = tgGlobals.verboseExecute;
     dpost("gathering information on the patcher hierarchy..\n");
 }
 
