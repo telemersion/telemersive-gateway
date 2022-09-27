@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 83.0, 253.0, 406.0, 358.0 ],
+		"rect" : [ 141.0, 339.0, 406.0, 358.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -384,7 +384,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 125.541666666666629, 459.0, 46.083333333333258, 44.0 ],
+					"patching_rect" : [ 131.041666666666629, 452.0, 46.083333333333258, 44.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 7.0, 42.3125, 60.0, 60.0 ],
 					"varname" : "direction",
@@ -478,18 +478,6 @@
 ,
 					"text" : "pattr indicators",
 					"varname" : "indicators"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-56",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "int", "int", "float", "float" ],
-					"patching_rect" : [ 110.583333333333258, 354.0, 73.0, 22.0 ],
-					"text" : "unpack i i f f"
 				}
 
 			}
@@ -690,12 +678,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-30",
+					"linecount" : 2,
 					"maxclass" : "newobj",
-					"numinlets" : 8,
+					"numinlets" : 5,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 94.083333333333258, 425.0, 92.5, 22.0 ],
-					"text" : "pak s i i i i i f f"
+					"patching_rect" : [ 94.083333333333258, 401.0, 91.0, 35.0 ],
+					"text" : "join 5 @triggers 0 1 4"
 				}
 
 			}
@@ -817,8 +806,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 636.541666666666515, 13.75, 56.0, 22.0 ],
 					"restore" : 					{
-						"description" : [ "ultragrid" ],
-						"enable" : [ 0 ]
+						"description" : [ "ultragrid" ]
 					}
 ,
 					"text" : "autopattr",
@@ -1009,7 +997,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 407.0, 70.0, 63.0, 36.0 ],
+													"patching_rect" : [ 407.0, 70.0, 63.0, 35.0 ],
 													"text" : "route channelNr"
 												}
 
@@ -1222,8 +1210,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 151.125, 593.0, 136.0, 36.0 ],
-													"text" : ";\r\nmax launch_browser $1"
+													"patching_rect" : [ 151.125, 593.0, 136.0, 35.0 ],
+													"text" : ";\rmax launch_browser $1"
 												}
 
 											}
@@ -1834,7 +1822,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 63.833333333333371, 403.0, 81.0, 36.0 ],
+									"patching_rect" : [ 63.833333333333371, 403.0, 81.0, 35.0 ],
 									"text" : "prepend networkMode"
 								}
 
@@ -1909,7 +1897,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 90.166666666666629, 36.75, 113.0, 53.0 ],
+									"patching_rect" : [ 90.166666666666629, 36.75, 113.0, 52.0 ],
 									"text" : "enableitem 0 0, enableitem 3 0, enableitem 6 0, 1"
 								}
 
@@ -1953,7 +1941,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 315.166666666666686, 165.0, 74.0, 36.0 ],
+									"patching_rect" : [ 315.166666666666686, 165.0, 74.0, 35.0 ],
 									"text" : "tg.receiveR serverURL"
 								}
 
@@ -4083,7 +4071,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 125.541666666666629, 509.75, 59.0, 26.0 ],
+					"patching_rect" : [ 131.041666666666629, 502.75, 59.0, 26.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 2.0, 70.0, 331.0 ],
 					"rounded" : 8.0,
@@ -4773,13 +4761,13 @@
 																		"boxes" : [ 																			{
 																				"box" : 																				{
 																					"id" : "obj-3",
-																					"linecount" : 18,
+																					"linecount" : 15,
 																					"maxclass" : "comment",
 																					"numinlets" : 1,
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 92.0, 118.0, 150.0, 208.0 ],
 																					"presentation" : 1,
-																					"presentation_linecount" : 11,
+																					"presentation_linecount" : 8,
 																					"presentation_rect" : [ 80.0, 24.0, 265.0, 114.0 ],
 																					"text" : "mapping of input audio channels to output audio channels comma-separated list of channel mapping\neg. 0:0,1:0 - mixes first 2 channels\n\t      0:0    - play only first channel\n\t      0:0,:1 - sets second channel to a silence, \n                  first one is left as is\n\t      0:0,0:1 - splits mono into 2 channels"
 																				}
@@ -6873,7 +6861,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 126.5, 19.0, 87.0, 22.0 ],
+																	"patching_rect" : [ 126.5, 19.0, 94.0, 22.0 ],
 																	"text" : "r #0_cshac"
 																}
 
@@ -6886,7 +6874,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "10630_cshac"
+																	"text" : "161232_cshac"
 																}
 
 															}
@@ -6908,7 +6896,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.0, 50.0, 135.0, 22.0 ],
+																	"patching_rect" : [ 262.0, 50.0, 141.0, 22.0 ],
 																	"text" : "loadmess #0_cshac"
 																}
 
@@ -12415,7 +12403,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 126.5, 19.0, 87.0, 22.0 ],
+																	"patching_rect" : [ 126.5, 19.0, 94.0, 22.0 ],
 																	"text" : "r #0_cshac"
 																}
 
@@ -12428,7 +12416,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "10644_cshac"
+																	"text" : "161246_cshac"
 																}
 
 															}
@@ -12450,7 +12438,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.0, 50.0, 135.0, 22.0 ],
+																	"patching_rect" : [ 262.0, 50.0, 141.0, 22.0 ],
 																	"text" : "loadmess #0_cshac"
 																}
 
@@ -15010,7 +14998,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 86.0, 22.0, 54.0, 34.0 ],
+									"patching_rect" : [ 86.0, 22.0, 54.0, 33.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ -0.5, 0.0, 78.5, 20.0 ],
 									"text" : "connection:",
@@ -16835,7 +16823,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 127.0, 19.0, 85.0, 22.0 ],
+																	"patching_rect" : [ 127.0, 19.0, 91.0, 22.0 ],
 																	"text" : "r #0_cshvr"
 																}
 
@@ -16848,7 +16836,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 169.0, 101.0, 103.0, 22.0 ],
-																	"text" : "10649_cshvr"
+																	"text" : "161251_cshvr"
 																}
 
 															}
@@ -16870,7 +16858,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 253.0, 61.0, 132.0, 22.0 ],
+																	"patching_rect" : [ 253.0, 61.0, 139.0, 22.0 ],
 																	"text" : "loadmess #0_cshvr"
 																}
 
@@ -20643,7 +20631,7 @@
 																	"numinlets" : 0,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 126.5, 19.0, 87.0, 22.0 ],
+																	"patching_rect" : [ 126.5, 19.0, 93.0, 22.0 ],
 																	"text" : "r #0_cshvc"
 																}
 
@@ -20656,7 +20644,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "10659_cshvc"
+																	"text" : "161261_cshvc"
 																}
 
 															}
@@ -20678,7 +20666,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 262.0, 50.0, 134.0, 22.0 ],
+																	"patching_rect" : [ 262.0, 50.0, 141.0, 22.0 ],
 																	"text" : "loadmess #0_cshvc"
 																}
 
@@ -22608,35 +22596,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 7 ],
-					"source" : [ "obj-56", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 6 ],
-					"source" : [ "obj-56", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-30", 5 ],
-					"source" : [ "obj-56", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-30", 4 ],
-					"source" : [ "obj-56", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -22707,70 +22667,70 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/media",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
 				"patcherrelativepath" : "../../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.device.menu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_icon.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dynRangeMenu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.monitor.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.texture.selection.gate.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.simplewin.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
