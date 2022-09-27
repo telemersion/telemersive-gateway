@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 176.0, 158.0, 518.0, 445.0 ],
+		"rect" : [ 203.0, 430.0, 518.0, 445.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -171,7 +171,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 74.5, 410.339539000000002, 106.0, 35.0 ],
+					"patching_rect" : [ 74.5, 410.339539000000002, 106.0, 36.0 ],
 					"text" : "loadmess name gatewayPreview"
 				}
 
@@ -477,9 +477,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.5, 262.0, 356.0, 40.0 ],
+					"patching_rect" : [ 169.5, 262.0, 356.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.999999999999986, 6.0, 225.0, 40.0 ],
+					"presentation_rect" : [ 8.999999999999986, 6.0, 225.0, 41.0 ],
 					"text" : "Spout Preview"
 				}
 
@@ -776,7 +776,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 53.749999999999986, 331.339539000000002, 124.000000000000014, 76.0 ],
+					"patching_rect" : [ 53.749999999999986, 331.339539000000002, 124.000000000000014, 77.0 ],
 					"text" : "jit.gl.videoplane gatewayPreview @blend_enable 1 @color 1 1 1 1 @transform_reset 2"
 				}
 
@@ -897,8 +897,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.684296000000003, 577.339539000000059, 167.0, 35.0 ],
-					"text" : "prepend manu_textureCaptureRange"
+					"patching_rect" : [ 27.684296000000003, 577.339539000000059, 168.0, 36.0 ],
+					"text" : "prepend menu_textureCaptureRange"
 				}
 
 			}
@@ -906,7 +906,7 @@
 				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 424.5, 166.660460999999998, 139.0, 22.0 ],
@@ -918,7 +918,7 @@
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 307.5, 166.660460999999998, 122.0, 22.0 ],
@@ -978,7 +978,7 @@
 				"box" : 				{
 					"id" : "obj-72",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 187.5, 166.660460999999998, 126.0, 22.0 ],
@@ -1060,8 +1060,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 53.749999999999986, 259.0, 110.000000000000014, 35.0 ],
+					"outlettype" : [ "jit_gl_texture", "" ],
+					"patching_rect" : [ 53.749999999999986, 259.0, 110.000000000000014, 36.0 ],
 					"text" : "jit.gl.spoutreceiver gatewayPreview"
 				}
 
@@ -1456,15 +1456,19 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "jit.gl.spoutreceiver.mxe64",
+				"type" : "mx64"
+			}
+, 			{
 				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.sendR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
