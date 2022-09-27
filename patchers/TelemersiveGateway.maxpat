@@ -46,7 +46,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 278.0, 70.0, 67.0, 22.0 ],
+					"patching_rect" : [ 87.0, 64.0, 67.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "tg.root.js",
 						"parameter_enable" : 0
@@ -74,7 +74,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 555.5, 49.0, 26.0, 23.0 ],
+					"patching_rect" : [ 518.5, 49.0, 33.0, 27.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1.0, 1.5, 46.0, 42.0 ],
 					"viewvisibility" : 1
@@ -122,7 +122,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 202.5, 90.0, 200.0, 24.0 ]
+					"patching_rect" : [ 216.5, 150.0, 200.0, 24.0 ]
 				}
 
 			}
@@ -190,7 +190,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 537.0, 4.0, 68.0, 20.0 ],
+					"patching_rect" : [ 507.0, 4.0, 68.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 114.0, 1.5, 68.0, 20.0 ],
 					"text" : "roomName"
@@ -358,7 +358,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 425.0, 64.0, 77.0, 22.0 ],
+					"patching_rect" : [ 560.0, 54.0, 77.0, 22.0 ],
 					"text" : "r openConfig"
 				}
 
@@ -370,7 +370,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 150.0, 64.0, 75.0, 22.0 ],
+					"patching_rect" : [ 2.0, 64.0, 75.0, 22.0 ],
 					"text" : "tg.dep.test 1"
 				}
 
@@ -626,7 +626,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 562.5, 85.0, 37.0, 22.0 ],
+					"patching_rect" : [ 532.5, 85.0, 37.0, 22.0 ],
 					"text" : "close"
 				}
 
@@ -651,7 +651,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 644.5, 85.0, 69.0, 22.0 ],
+					"patching_rect" : [ 644.5, 85.0, 69.0, 21.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -661,10 +661,10 @@
 				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 202.5, 122.0, 118.0, 22.0 ],
+					"patching_rect" : [ 216.5, 182.0, 118.0, 22.0 ],
 					"text" : "tg.sendR displaySlot"
 				}
 
@@ -674,8 +674,9 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2.0, 64.0, 141.0, 22.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 202.5, 64.0, 141.0, 22.0 ],
 					"text" : "tg.OSDependentPatches"
 				}
 
@@ -687,7 +688,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 637.0, 175.0, 101.0, 22.0 ],
+					"patching_rect" : [ 372.0, 182.0, 101.0, 22.0 ],
 					"text" : "receive localPeer"
 				}
 
@@ -705,7 +706,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "tg.Peer.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
@@ -870,8 +871,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 338.041666666666629, 417.0, 136.0, 36.0 ],
-									"text" : ";\r\nmax launch_browser $1"
+									"patching_rect" : [ 338.041666666666629, 417.0, 136.0, 35.0 ],
+									"text" : ";\rmax launch_browser $1"
 								}
 
 							}
@@ -937,7 +938,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 100.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "195.176.29.132",
+									"text" : "213.55.243.205",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -968,7 +969,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "10.128.96.107",
+									"text" : "192.168.1.101",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1196,7 +1197,7 @@
 									"patching_rect" : [ 73.333333333333371, 225.5, 103.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.833333333333371, 65.5, 159.0, 22.0 ],
-									"text" : "Projection"
+									"text" : "MartinsMac"
 								}
 
 							}
@@ -1234,7 +1235,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "u2ZLxuoQJ45oHy4o6rYwoG",
+									"text" : "tznZx6Bw7kquXri5JEP3a8",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -1547,7 +1548,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 2.0, 3.0, 500.0, 53.0 ],
+					"patching_rect" : [ 2.0, 3.0, 476.0, 53.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 249.0, 1.5, 475.0, 42.0 ],
 					"viewvisibility" : 1
@@ -1561,7 +1562,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 522.5, 85.0, 35.0, 22.0 ],
+					"patching_rect" : [ 492.5, 85.0, 35.0, 22.0 ],
 					"text" : "open"
 				}
 
@@ -1576,7 +1577,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 522.5, 23.5, 87.0, 21.5 ],
+					"patching_rect" : [ 492.5, 23.5, 87.0, 21.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 49.0, 21.5, 198.0, 22.0 ],
 					"rounded" : 8.0,
@@ -1602,7 +1603,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 441.0, 700.0 ],
+						"rect" : [ 0.0, 0.0, 450.0, 700.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1675,9 +1676,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 168.5, 376.0, 95.0, 50.0 ],
+									"patching_rect" : [ 168.5, 376.0, 95.0, 49.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 4, 79, 358, 207 ],
+										"client_rect" : [ 779, 198, 1133, 856 ],
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0,
 										"storage_rect" : [ 583, 69, 1034, 197 ]
@@ -1754,10 +1755,10 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 292.0, 245.0, 119.0, 89.0 ],
+													"patching_rect" : [ 292.0, 245.0, 119.0, 87.0 ],
 													"presentation" : 1,
 													"presentation_linecount" : 4,
-													"presentation_rect" : [ 10.5, 71.5, 296.5, 62.0 ],
+													"presentation_rect" : [ 10.5, 71.5, 296.5, 60.0 ],
 													"text" : "then\n1. open debug tab\n2. install libraries > wait until \"debug tool\" turns green\n3. start script"
 												}
 
@@ -1770,7 +1771,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 368.0, 147.0, 77.0, 64.0 ],
+													"patching_rect" : [ 368.0, 147.0, 77.0, 62.0 ],
 													"text" : "set \"Ups, something went wrong, Please...\""
 												}
 
@@ -1783,7 +1784,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 317.0, 19.0, 122.0, 64.0 ],
+													"patching_rect" : [ 317.0, 19.0, 122.0, 62.0 ],
 													"text" : "set \"please wait, app is preparing preliminary configurations....\""
 												}
 
@@ -1897,7 +1898,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 89.0, 63.0, 91.0, 75.0 ],
+													"patching_rect" : [ 89.0, 63.0, 91.0, 73.0 ],
 													"text" : "window flags menu, window flags nofloat, window title, window exec"
 												}
 
@@ -1912,7 +1913,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 189.0, 76.0, 132.0, 62.0 ],
+													"patching_rect" : [ 189.0, 76.0, 132.0, 60.0 ],
 													"text" : "window flags nomenu, window flags float, window notitle, window exec, front"
 												}
 
@@ -1950,10 +1951,10 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 49.0, 254.0, 165.0, 34.0 ],
+													"patching_rect" : [ 49.0, 254.0, 165.0, 33.0 ],
 													"presentation" : 1,
 													"presentation_linecount" : 2,
-													"presentation_rect" : [ 69.0, 15.0, 171.0, 34.0 ],
+													"presentation_rect" : [ 69.0, 15.0, 171.0, 33.0 ],
 													"text" : "Ups, something went wrong, Please..."
 												}
 
@@ -3639,7 +3640,6 @@
 													"clickthrough" : 0,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
-													"hidden" : 1,
 													"id" : "obj-11",
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
@@ -3664,7 +3664,6 @@
 													"clickthrough" : 0,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
-													"hidden" : 1,
 													"id" : "obj-10",
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
@@ -3689,7 +3688,6 @@
 													"clickthrough" : 0,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
-													"hidden" : 1,
 													"id" : "obj-9",
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
@@ -3714,7 +3712,6 @@
 													"clickthrough" : 0,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
-													"hidden" : 1,
 													"id" : "obj-8",
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
@@ -3739,6 +3736,7 @@
 													"embed" : 1,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
+													"hidden" : 1,
 													"id" : "obj-7",
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
@@ -4334,7 +4332,6 @@
 													"clickthrough" : 0,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
-													"hidden" : 1,
 													"id" : "obj-22",
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
@@ -4498,7 +4495,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 441.0, 674.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -4558,9 +4555,9 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 50.0, 20.0, 550.0, 41.0 ],
+													"patching_rect" : [ 50.0, 20.0, 550.0, 40.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 184.0, 12.0, 72.0, 41.0 ],
+													"presentation_rect" : [ 184.0, 12.0, 72.0, 40.0 ],
 													"text" : "Chat"
 												}
 
@@ -4689,7 +4686,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-14",
-													"items" : [ "18:03:18", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "18:01:25", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "18:00:28", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "18:00:05", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "17:14:32", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "17:07:37", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "17:06:31", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "16:52:33", "GMT+0200", "[MartinsMac]:", "<", "has", "left", "room", ",", "16:52:05", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "16:51:39", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "16:50:50", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "16:43:25", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room", ",", "16:42:55", "GMT+0200", "[MartinsMac]:", "<", "has", "left", "room", ",", "16:27:51", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room", ",", "16:27:34", "GMT+0200", "[MartinsMac]:", "<", "has", "left", "room", ",", "16:10:13", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "16:09:51", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "16:02:21", "GMT+0200", "[Krypton]:", ">", "has", "joined", "room", ",", "15:49:49", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "15:33:22", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "15:31:48", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "15:30:46", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room" ],
+													"items" : [ "11:37:12", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room" ],
 													"maxclass" : "chooser",
 													"numinlets" : 1,
 													"numoutlets" : 6,
@@ -4913,7 +4910,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 441.0, 674.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -4949,7 +4946,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 133.0, 72.0, 374.0, 34.0 ],
+													"patching_rect" : [ 133.0, 72.0, 374.0, 33.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 13.0, 32.0, 415.0, 20.0 ],
 													"text" : "Test the (two way) connection latency between this peer and all other peers"
@@ -7898,7 +7895,7 @@
 												"box" : 												{
 													"id" : "obj-10",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 323.625000000000114, 200.0, 117.0, 22.0 ],
@@ -7957,7 +7954,7 @@
 												"box" : 												{
 													"id" : "obj-6",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 44.0, 209.0, 116.0, 22.0 ],
@@ -7969,7 +7966,7 @@
 												"box" : 												{
 													"id" : "obj-1",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 290.291666666666742, 250.0, 99.0, 22.0 ],
@@ -7981,7 +7978,7 @@
 												"box" : 												{
 													"id" : "obj-22",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 264.291666666666742, 224.0, 119.0, 22.0 ],
@@ -7993,7 +7990,7 @@
 												"box" : 												{
 													"id" : "obj-19",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 147.958333333333371, 250.0, 128.0, 22.0 ],
@@ -8005,7 +8002,7 @@
 												"box" : 												{
 													"id" : "obj-18",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 147.958333333333371, 224.0, 124.0, 22.0 ],
@@ -8017,7 +8014,7 @@
 												"box" : 												{
 													"id" : "obj-16",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 44.0, 181.0, 119.0, 22.0 ],
@@ -8029,7 +8026,7 @@
 												"box" : 												{
 													"id" : "obj-15",
 													"maxclass" : "newobj",
-													"numinlets" : 1,
+													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 44.0, 238.0, 96.0, 22.0 ],
@@ -8391,7 +8388,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 441.0, 674.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -8484,8 +8481,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 431.0, 383.0, 97.0, 36.0 ],
-																	"text" : ";\r\ntg_globals $1 $2"
+																	"patching_rect" : [ 431.0, 383.0, 97.0, 35.0 ],
+																	"text" : ";\rtg_globals $1 $2"
 																}
 
 															}
@@ -8569,7 +8566,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 779.0, 56.0, 77.0, 34.0 ],
+																	"patching_rect" : [ 779.0, 56.0, 77.0, 33.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 28.0, 88.0, 158.0, 20.0 ],
 																	"text" : "script RX to max console"
@@ -8599,7 +8596,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 662.0, 56.0, 75.0, 48.0 ],
+																	"patching_rect" : [ 662.0, 56.0, 75.0, 47.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 28.0, 60.0, 151.0, 20.0 ],
 																	"text" : "script TX to max console"
@@ -8652,7 +8649,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 380.0, 240.0, 77.0, 48.0 ],
+																	"patching_rect" : [ 380.0, 240.0, 77.0, 47.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 28.0, 32.0, 183.0, 20.0 ],
 																	"text" : "print CLI commands of Externals"
@@ -8679,7 +8676,7 @@
 																"box" : 																{
 																	"id" : "obj-18",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 431.0, 348.0, 146.0, 22.0 ],
@@ -8694,7 +8691,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 380.0, 63.0, 75.0, 48.0 ],
+																	"patching_rect" : [ 380.0, 63.0, 75.0, 47.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 28.0, 4.0, 125.0, 20.0 ],
 																	"text" : "stdout to max console"
@@ -8866,7 +8863,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 237.0, 15.0, 150.0, 34.0 ],
+																	"patching_rect" : [ 237.0, 15.0, 150.0, 33.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 62.0, 173.0, 204.0, 20.0 ],
 																	"text" : "generate error - only for debugging!!!"
@@ -8938,12 +8935,12 @@
 																	"patching_rect" : [ 389.0, 29.0, 56.0, 22.0 ],
 																	"restore" : 																	{
 																		"CLI_execute" : [ 0 ],
-																		"console_status" : [ 0 ],
+																		"console_status" : [ 1 ],
 																		"stdout_toConsole" : [ 1 ],
 																		"stdout_toConsole[1]" : [ 1 ],
 																		"stdout_toConsole[2]" : [ 1 ],
-																		"verbose_in" : [ 0 ],
-																		"verbose_out" : [ 0 ]
+																		"verbose_in" : [ 1 ],
+																		"verbose_out" : [ 1 ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -9019,7 +9016,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 102.5, 195.0, 64.0, 34.0 ],
+																	"patching_rect" : [ 102.5, 195.0, 64.0, 33.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 236.0, 90.0, 103.0, 20.0 ],
 																	"text" : "verbose script in"
@@ -9061,7 +9058,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 77.0, 158.0, 75.0, 34.0 ],
+																	"patching_rect" : [ 77.0, 158.0, 75.0, 33.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 236.0, 62.0, 107.0, 20.0 ],
 																	"text" : "verbose script out "
@@ -9521,7 +9518,7 @@
 													"patching_rect" : [ 333.0, 14.0, 260.0, 22.0 ],
 													"presentation" : 1,
 													"presentation_linecount" : 2,
-													"presentation_rect" : [ 225.0, 49.0, 117.0, 36.0 ],
+													"presentation_rect" : [ 225.0, 49.0, 117.0, 35.0 ],
 													"text" : "script npm uninstall telemersive-bus"
 												}
 
@@ -9548,7 +9545,7 @@
 													"patching_rect" : [ 142.0, 14.0, 186.0, 22.0 ],
 													"presentation" : 1,
 													"presentation_linecount" : 2,
-													"presentation_rect" : [ 116.0, 49.0, 101.0, 36.0 ],
+													"presentation_rect" : [ 116.0, 49.0, 101.0, 35.0 ],
 													"text" : "script npm install telemersive-bus"
 												}
 
@@ -9837,7 +9834,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 362.0, 60.0, 83.0, 72.0 ],
+													"patching_rect" : [ 362.0, 60.0, 83.0, 70.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 208.0, 17.0, 174.0, 30.0 ],
 													"text" : "install  libraries (only once)"
@@ -10142,7 +10139,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 441.0, 674.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -10244,10 +10241,10 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 378.5, 286.0, 155.0, 158.0 ],
+																	"patching_rect" : [ 378.5, 286.0, 155.0, 154.0 ],
 																	"presentation" : 1,
 																	"presentation_linecount" : 5,
-																	"presentation_rect" : [ 40.0, 33.0, 361.0, 75.0 ],
+																	"presentation_rect" : [ 40.0, 33.0, 361.0, 74.0 ],
 																	"text" : "If you desire to create true peer to peer connections for sending/receiving video and audio between machines hidden behind firewalls (which applies to most of our consumer devices), you need access to a holepuncher (or how ultragrid calls it: a nat-helper) - service."
 																}
 
@@ -10287,8 +10284,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 378.5, 169.0, 426.0, 64.0 ],
-																	"text" : ";\r\nmax launchbrowser https://github.com/CESNET/UltraGrid/wiki/NAT-traversal#both-hosts-private-address"
+																	"patching_rect" : [ 378.5, 169.0, 426.0, 62.0 ],
+																	"text" : ";\rmax launchbrowser https://github.com/CESNET/UltraGrid/wiki/NAT-traversal#both-hosts-private-address"
 																}
 
 															}
@@ -10300,7 +10297,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 48.0, 401.0, 152.0, 34.0 ],
+																	"patching_rect" : [ 48.0, 401.0, 152.0, 33.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 109.0, 290.0, 20.0 ],
 																	"text" : "- > Point to a server with a running net-helper service",
@@ -10337,7 +10334,7 @@
 																"box" : 																{
 																	"id" : "obj-30",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 272.5, 90.0, 169.0, 22.0 ],
@@ -10478,8 +10475,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 476.0, 65.0, 328.0, 50.0 ],
-																	"text" : ";\r\nmax launchbrowser https://github.com/CESNET/UltraGrid/tree/master/nat-helper"
+																	"patching_rect" : [ 476.0, 65.0, 328.0, 49.0 ],
+																	"text" : ";\rmax launchbrowser https://github.com/CESNET/UltraGrid/tree/master/nat-helper"
 																}
 
 															}
@@ -10796,15 +10793,16 @@
 , 											{
 												"box" : 												{
 													"bgcolor" : [ 1.0, 0.968627450980392, 0.0, 1.0 ],
+													"hidden" : 1,
 													"id" : "obj-6",
 													"linecount" : 11,
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 15.0, 352.0, 151.0, 158.0 ],
+													"patching_rect" : [ 15.0, 352.0, 151.0, 154.0 ],
 													"presentation" : 1,
 													"presentation_linecount" : 4,
-													"presentation_rect" : [ 8.5, 13.0, 406.5, 62.0 ],
+													"presentation_rect" : [ 8.5, 13.0, 406.5, 60.0 ],
 													"text" : "IMPORTANT: Only on windows: Make sure the user of this machine has write access in the folder where ultragrid and NatNet2OSC is located. TelemersiveGateway needs to dynamically create copies of the exe's to reliably start and stop these apps.",
 													"varname" : "ImportantNotice"
 												}
@@ -10818,6 +10816,7 @@
 													"embed" : 1,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
+													"hidden" : 1,
 													"id" : "obj-1",
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
@@ -10929,7 +10928,7 @@
 																"box" : 																{
 																	"id" : "obj-30",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 276.0, 344.0, 131.0, 22.0 ],
@@ -11110,8 +11109,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 328.0, 173.0, 247.0, 36.0 ],
-																	"text" : ";\r\nmax launchbrowser https://www.cygwin.com/"
+																	"patching_rect" : [ 328.0, 173.0, 247.0, 35.0 ],
+																	"text" : ";\rmax launchbrowser https://www.cygwin.com/"
 																}
 
 															}
@@ -11182,7 +11181,7 @@
 																"box" : 																{
 																	"id" : "obj-75",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 50.0, 352.0, 119.0, 22.0 ],
@@ -11856,6 +11855,7 @@
 													"embed" : 1,
 													"enablehscroll" : 0,
 													"enablevscroll" : 0,
+													"hidden" : 1,
 													"id" : "obj-22",
 													"lockeddragscroll" : 0,
 													"lockedsize" : 0,
@@ -11926,12 +11926,13 @@
 															}
 , 															{
 																"box" : 																{
+																	"hidden" : 1,
 																	"id" : "obj-18",
 																	"linecount" : 2,
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 61.0, 431.0, 150.0, 34.0 ],
+																	"patching_rect" : [ 61.0, 431.0, 150.0, 33.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 32.0, 268.0, 20.0 ],
 																	"text" : "- > Point to the file called NatNetThree2OSC.exe",
@@ -11948,6 +11949,7 @@
 																	"embed" : 1,
 																	"enablehscroll" : 0,
 																	"enablevscroll" : 0,
+																	"hidden" : 1,
 																	"id" : "obj-11",
 																	"lockeddragscroll" : 0,
 																	"lockedsize" : 0,
@@ -12231,7 +12233,7 @@
 																"box" : 																{
 																	"id" : "obj-30",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 387.5, 303.0, 136.0, 22.0 ],
@@ -12382,7 +12384,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 121.5, 40.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "D:/00_core/NatNet2OSC/Motive3.x/NatNetThree2OSC.exe" ]
+																		"filepath" : [ "<empty>" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -12413,8 +12415,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 454.0, 159.5, 191.0, 64.0 ],
-																	"text" : ";\r\nmax launchbrowser https://github.com/tecartlab/app_NatNetThree2OSC"
+																	"patching_rect" : [ 454.0, 159.5, 191.0, 62.0 ],
+																	"text" : ";\rmax launchbrowser https://github.com/tecartlab/app_NatNetThree2OSC"
 																}
 
 															}
@@ -12447,7 +12449,7 @@
 																"box" : 																{
 																	"id" : "obj-75",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 56.0, 300.0, 123.0, 22.0 ],
@@ -12499,9 +12501,9 @@
 																"box" : 																{
 																	"fontface" : 0,
 																	"fontsize" : 13.0,
+																	"hidden" : 1,
 																	"id" : "obj-53",
 																	"keymode" : 1,
-																	"linecount" : 2,
 																	"lines" : 1,
 																	"maxclass" : "textedit",
 																	"numinlets" : 1,
@@ -12511,7 +12513,7 @@
 																	"patching_rect" : [ 56.0, 200.0, 213.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 350.0, 22.0 ],
-																	"text" : "D:/00_core/NatNet2OSC/Motive3.x/NatNetThree2OSC.exe",
+																	"text" : "<empty>",
 																	"varname" : "filepath"
 																}
 
@@ -12996,7 +12998,7 @@
 																"box" : 																{
 																	"id" : "obj-28",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 208.0, 534.0, 153.0, 22.0 ],
@@ -13024,7 +13026,7 @@
 																"box" : 																{
 																	"id" : "obj-75",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 49.5, 534.0, 146.0, 22.0 ],
@@ -13051,7 +13053,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 211.0, 181.0, 150.0, 48.0 ],
+																	"patching_rect" : [ 211.0, 181.0, 150.0, 47.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 31.0, 323.0, 20.0 ],
 																	"text" : "- > Point to the file called uv.exe (Win) rsp. uv-qt.app (OSX)",
@@ -13082,8 +13084,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 598.0, 86.0, 281.0, 64.0 ],
-																	"text" : ";\r\nmax launchbrowser https://github.com/CESNET/UltraGrid/wiki/Syphon\\,-Spout-and-NDI"
+																	"patching_rect" : [ 598.0, 86.0, 281.0, 62.0 ],
+																	"text" : ";\rmax launchbrowser https://github.com/CESNET/UltraGrid/wiki/Syphon\\,-Spout-and-NDI"
 																}
 
 															}
@@ -13110,8 +13112,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 393.0, 86.0, 184.0, 50.0 ],
-																	"text" : ";\r\nmax launchbrowser http://www.ultragrid.cz/download/"
+																	"patching_rect" : [ 393.0, 86.0, 184.0, 49.0 ],
+																	"text" : ";\rmax launchbrowser http://www.ultragrid.cz/download/"
 																}
 
 															}
@@ -13217,7 +13219,7 @@
 																"box" : 																{
 																	"id" : "obj-16",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 451.5, 201.0, 146.0, 22.0 ],
@@ -13307,7 +13309,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "\"C:/Program Files/UltraGrid/uv.exe\"" ],
+																		"filepath" : [ "/Applications/_Video/uv-qt.app" ],
 																		"holepuncherPort" : [ 9418 ]
 																	}
 ,
@@ -13802,7 +13804,7 @@
 																"box" : 																{
 																	"id" : "obj-72",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 50.0, 406.0, 133.0, 22.0 ],
@@ -13865,7 +13867,7 @@
 																	"patching_rect" : [ 50.0, 283.0, 311.0, 20.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 350.0, 22.0 ],
-																	"text" : "\"C:/Program Files/UltraGrid/uv.exe\"",
+																	"text" : "/Applications/_Video/uv-qt.app",
 																	"varname" : "filepath"
 																}
 
@@ -14501,7 +14503,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 441.0, 674.0 ],
+										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -14549,9 +14551,9 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 598.0, 532.0, 196.0, 25.0 ],
+													"patching_rect" : [ 598.0, 532.0, 196.0, 24.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 509.25, 169.0, 25.0 ],
+													"presentation_rect" : [ 90.0, 509.25, 169.0, 24.0 ],
 													"text" : "configurations"
 												}
 
@@ -15939,7 +15941,7 @@
 																					"outlettype" : [ "", "", "", "" ],
 																					"patching_rect" : [ 85.0, 12.0, 56.0, 22.0 ],
 																					"restore" : 																					{
-																						"card" : [ "Ethernet 2" ]
+																						"card" : [ "en0" ]
 																					}
 ,
 																					"text" : "autopattr",
@@ -16399,7 +16401,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 3,
 																					"outlettype" : [ "", "bang", "bang" ],
-																					"patching_rect" : [ 473.416662931442261, 540.583353757858276, 290.0, 50.0 ],
+																					"patching_rect" : [ 473.416662931442261, 540.583353757858276, 290.0, 49.0 ],
 																					"text" : "dialog You have NO active network card in your system. Please check your networksettings. @mode 1"
 																				}
 
@@ -16460,7 +16462,7 @@
 																					"presentation_rect" : [ 0.0, -0.0, 180.0, 20.0 ],
 																					"readonly" : 1,
 																					"rounded" : 0.0,
-																					"text" : "Ethernet 2",
+																					"text" : "en0",
 																					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 																					"varname" : "card"
 																				}
@@ -16559,7 +16561,7 @@
 																					"numinlets" : 2,
 																					"numoutlets" : 3,
 																					"outlettype" : [ "", "bang", "bang" ],
-																					"patching_rect" : [ 508.416662931442261, 466.833312511444092, 247.0, 50.0 ],
+																					"patching_rect" : [ 508.416662931442261, 466.833312511444092, 247.0, 49.0 ],
 																					"text" : "dialog You have more than one active network card in your system. Please choose the one you want to use. @mode 1"
 																				}
 
@@ -17084,7 +17086,7 @@
 																"box" : 																{
 																	"id" : "obj-21",
 																	"maxclass" : "newobj",
-																	"numinlets" : 1,
+																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 19.5, 361.5, 117.0, 22.0 ],
@@ -17155,7 +17157,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 22.0, 221.5, 69.0, 34.0 ],
+																	"patching_rect" : [ 22.0, 221.5, 69.0, 33.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 0.0, 40.0, 70.0, 20.0 ],
 																	"text" : "RouterUser"
@@ -17182,7 +17184,7 @@
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
 																	"numoutlets" : 0,
-																	"patching_rect" : [ 22.0, 165.0, 68.0, 34.0 ],
+																	"patching_rect" : [ 22.0, 165.0, 68.0, 33.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 0.0, 0.0, 69.0, 20.0 ],
 																	"text" : "RouterURL"
@@ -17757,7 +17759,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 496.0, 172.5, 20.0, 64.0 ],
+													"patching_rect" : [ 496.0, 172.5, 20.0, 62.0 ],
 													"text" : "MyTest"
 												}
 
@@ -17769,9 +17771,9 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 369.0, 69.0, 196.0, 25.0 ],
+													"patching_rect" : [ 369.0, 69.0, 196.0, 24.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 311.0, 169.0, 25.0 ],
+													"presentation_rect" : [ 90.0, 311.0, 169.0, 24.0 ],
 													"text" : "create / join a room"
 												}
 
@@ -17784,9 +17786,9 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 131.0, 45.0, 208.0, 43.0 ],
+													"patching_rect" : [ 131.0, 45.0, 208.0, 42.0 ],
 													"presentation" : 1,
-													"presentation_rect" : [ 90.0, 12.0, 245.0, 25.0 ],
+													"presentation_rect" : [ 90.0, 12.0, 245.0, 24.0 ],
 													"text" : "connect to the telemersive-router"
 												}
 
@@ -17892,7 +17894,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 264.0, 26.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"peerName" : [ "Projection" ],
+																		"peerName" : [ "MartinsMac" ],
 																		"roomName" : [ "MyTest" ],
 																		"roomPwd" : [ "2022" ]
 																	}
@@ -18199,7 +18201,7 @@
 																	"patching_rect" : [ 107.5, 121.0, 201.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 80.0, 0.0, 180.0, 20.0 ],
-																	"text" : "Projection",
+																	"text" : "MartinsMac",
 																	"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																	"varname" : "peerName"
 																}
@@ -18443,7 +18445,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.5, 459.0, 308.0, 22.0 ],
-													"text" : "join Projection MyTest \"2022\""
+													"text" : "join MartinsMac MyTest \"2022\""
 												}
 
 											}
@@ -19252,7 +19254,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 522.5, 114.0, 191.0, 22.0 ],
+					"patching_rect" : [ 459.5, 114.0, 221.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -19267,6 +19269,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 2 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-10", 0 ]
@@ -19374,7 +19383,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
-					"midpoints" : [ 704.0, 146.0, 720.5, 146.0, 720.5, 75.0, 654.0, 75.0 ],
+					"midpoints" : [ 671.0, 146.0, 720.5, 146.0, 720.5, 75.0, 654.0, 75.0 ],
 					"source" : [ "obj-60", 2 ]
 				}
 
@@ -19382,7 +19391,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-74", 0 ],
-					"midpoints" : [ 532.0, 146.0, 515.0, 146.0, 515.0, 10.5, 532.0, 10.5 ],
+					"midpoints" : [ 469.0, 146.0, 485.0, 146.0, 485.0, 10.5, 502.0, 10.5 ],
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -19427,21 +19436,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/media",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "config.json",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "config_peer.json",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -19453,19 +19462,19 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.gl.spoutreceiver.mxe64",
-				"type" : "mx64"
+				"name" : "jit.gl.syphonclient.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "jsui_toggle_svg.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "maxBusClient.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript/node_content",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript/node_content",
 				"patcherrelativepath" : "../javascript/node_content",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -19478,14 +19487,14 @@
 			}
 , 			{
 				"name" : "peerList.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "peerLogic.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -19497,288 +19506,283 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "shell.mxe64",
-				"type" : "mx64"
+				"name" : "shell.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "shellHelper.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.OSDependentPatches.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Page.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Peer.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.PeerBus.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.PeerList.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Rack.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.SVGButton.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.channel.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dep.packageTest.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dep.test.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.device.menu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_button.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_icon.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_local.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_view.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dynRangeMenu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.filesync.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.gui.button.menu.png",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/media",
-				"patcherrelativepath" : "../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.main.menu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.monitor.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ndi_detector.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.root.js",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
+				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.sendC.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.sendR.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.shell.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.spout_detector.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"name" : "tg.syphon_detector.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.texture.selection.gate.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ug_audio_detector.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ultragrid.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.simplewin.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_AudioCapture.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_AudioReceive.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_videoCapture.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_videoReceive.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "zero.browse.mxe64",
-				"type" : "mx64"
+				"name" : "zero.browse.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "zero.menu.format.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/zero/patchers",
+				"patcherrelativepath" : "../../../../../../../../Documents/Max 8/Packages/zero/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

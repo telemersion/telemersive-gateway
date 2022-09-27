@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 97.0, 412.0, 1689.0, 589.0 ],
+		"rect" : [ 145.0, 128.0, 1178.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-43",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 738.0, 622.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-42",
 					"maxclass" : "newobj",
@@ -395,12 +407,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1013.0, 531.339539000000059, 160.0, 22.0 ],
-					"text" : "tg.sendR jackReceiveRange"
+					"patching_rect" : [ 1013.0, 531.339539000000059, 147.0, 35.0 ],
+					"text" : "prepend menu_jackReceiveRange"
 				}
 
 			}
@@ -660,12 +673,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 531.339539000000059, 159.0, 22.0 ],
-					"text" : "tg.sendR jackCaptureRange"
+					"patching_rect" : [ 210.0, 531.339539000000059, 147.0, 35.0 ],
+					"text" : "prepend menu_jackCaptureRange"
 				}
 
 			}
@@ -987,12 +1001,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-66",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1390.0, 531.339539000000059, 176.0, 22.0 ],
-					"text" : "tg.sendR wasapiReceiveRange"
+					"patching_rect" : [ 1390.0, 531.339539000000059, 164.0, 35.0 ],
+					"text" : "prepend menu_wasapiReceiveRange"
 				}
 
 			}
@@ -1526,12 +1541,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-71",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 808.0, 531.339539000000059, 189.0, 22.0 ],
-					"text" : "tg.sendR portaudioReceiveRange"
+					"patching_rect" : [ 808.0, 531.339539000000059, 174.0, 35.0 ],
+					"text" : "prepend menu_portaudioReceiveRange"
 				}
 
 			}
@@ -1550,12 +1566,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-74",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1185.0, 531.339539000000059, 191.0, 22.0 ],
-					"text" : "tg.sendR coreaudioReceiveRange"
+					"patching_rect" : [ 1185.0, 531.339539000000059, 177.0, 35.0 ],
+					"text" : "prepend menu_coreaudioReceiveRange"
 				}
 
 			}
@@ -1961,12 +1978,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-40",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 615.0, 531.339539000000059, 175.0, 22.0 ],
-					"text" : "tg.sendR wasapiCaptureRange"
+					"patching_rect" : [ 615.0, 531.339539000000059, 163.0, 35.0 ],
+					"text" : "prepend menu_wasapiCaptureRange"
 				}
 
 			}
@@ -2500,12 +2518,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 531.339539000000059, 188.0, 22.0 ],
-					"text" : "tg.sendR portaudioCaptureRange"
+					"patching_rect" : [ 19.0, 531.339539000000059, 176.0, 35.0 ],
+					"text" : "prepend menu_portaudioCaptureRange"
 				}
 
 			}
@@ -2561,7 +2580,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-45",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2573,12 +2592,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-38",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 410.0, 531.339539000000059, 191.0, 22.0 ],
-					"text" : "tg.sendR coreaudioCaptureRange"
+					"patching_rect" : [ 410.0, 531.339539000000059, 177.0, 35.0 ],
+					"text" : "prepend menu_coreaudioCaptureRange"
 				}
 
 			}
@@ -2747,6 +2767,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
@@ -2756,6 +2783,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -2938,6 +2972,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-41", 2 ],
 					"source" : [ "obj-39", 2 ]
 				}
@@ -2961,6 +3002,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-40", 0 ]
 				}
 
 			}
@@ -3010,6 +3058,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-37", 0 ],
 					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -3156,6 +3211,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"source" : [ "obj-67", 0 ]
 				}
@@ -3219,6 +3281,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-71", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-72", 0 ]
 				}
@@ -3228,6 +3297,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
 					"source" : [ "obj-73", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-43", 0 ],
+					"source" : [ "obj-74", 0 ]
 				}
 
 			}
@@ -3293,7 +3369,27 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "tg.generateMenu.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.receiveR.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

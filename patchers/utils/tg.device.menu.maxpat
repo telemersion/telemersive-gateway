@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 511.0, 270.0, 368.0, 249.0 ],
+		"rect" : [ 611.0, 304.0, 368.0, 249.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -101,22 +101,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-39",
-					"ignoreclick" : 1,
-					"maxclass" : "pictctrl",
-					"name" : "tg.gui.button.menu.png",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 69.5, 90.833251999999973, 20.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"allowdrag" : 0,
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
@@ -149,6 +133,24 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 37.5, 121.0, 62.0, 22.0 ],
 					"text" : "route help"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"dataindex" : 0,
+					"dataname" : "",
+					"draggable" : 1,
+					"filename" : "related.svg",
+					"id" : "obj-40",
+					"ignoreclick" : 1,
+					"maxclass" : "svgcolor",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 101.5, 90.833251999999973, 38.0, 37.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 21.0, 21.0 ],
+					"togglemode" : 1
 				}
 
 			}
@@ -198,28 +200,12 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"order" : 1,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "tg.gui.button.menu.png",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 

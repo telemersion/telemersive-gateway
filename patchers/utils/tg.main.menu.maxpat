@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 511.0, 270.0, 368.0, 352.0 ],
+		"rect" : [ 785.0, 458.0, 368.0, 352.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,9 +40,27 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"dataindex" : 0,
+					"dataname" : "",
+					"draggable" : 1,
+					"filename" : "related.svg",
+					"id" : "obj-40",
+					"ignoreclick" : 1,
+					"maxclass" : "svgcolor",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 173.0, 94.0, 38.0, 37.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 43.0, 42.0 ],
+					"togglemode" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "quit bang",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -54,7 +72,7 @@
 				"box" : 				{
 					"comment" : "config bang",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -150,22 +168,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-39",
-					"ignoreclick" : 1,
-					"maxclass" : "pictctrl",
-					"name" : "tg.gui.button.menu.png",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 69.5, 90.833251999999973, 20.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"allowdrag" : 0,
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
@@ -174,6 +176,7 @@
 					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 0.0 ],
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "gradient",
+					"hint" : "menu",
 					"id" : "obj-23",
 					"items" : [ "config", ",", "----", ",", "help", ",", "----", ",", "quit" ],
 					"maxclass" : "umenu",
@@ -261,15 +264,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"order" : 1,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -288,16 +282,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "tg.gui.button.menu.png",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

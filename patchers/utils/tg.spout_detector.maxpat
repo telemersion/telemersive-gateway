@@ -57,7 +57,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.684296000000003, 575.0, 147.0, 22.0 ],
+					"patching_rect" : [ 27.684296000000003, 543.0, 147.0, 22.0 ],
 					"text" : "tg.generateMenu -default-"
 				}
 
@@ -134,7 +134,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 220.0, 613.339539000000059, 30.0, 30.0 ]
+					"patching_rect" : [ 220.0, 629.339539000000059, 30.0, 30.0 ]
 				}
 
 			}
@@ -171,7 +171,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 74.5, 410.339539000000002, 106.0, 36.0 ],
+					"patching_rect" : [ 74.5, 410.339539000000002, 106.0, 35.0 ],
 					"text" : "loadmess name gatewayPreview"
 				}
 
@@ -477,9 +477,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 169.5, 262.0, 356.0, 41.0 ],
+					"patching_rect" : [ 169.5, 262.0, 356.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.999999999999986, 6.0, 225.0, 41.0 ],
+					"presentation_rect" : [ 8.999999999999986, 6.0, 225.0, 40.0 ],
 					"text" : "Spout Preview"
 				}
 
@@ -776,7 +776,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 53.749999999999986, 331.339539000000002, 124.000000000000014, 77.0 ],
+					"patching_rect" : [ 53.749999999999986, 331.339539000000002, 124.000000000000014, 76.0 ],
 					"text" : "jit.gl.videoplane gatewayPreview @blend_enable 1 @color 1 1 1 1 @transform_reset 2"
 				}
 
@@ -878,7 +878,7 @@
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "jit.pwindow",
-					"name" : "u532010918",
+					"name" : "u286001677",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
@@ -892,12 +892,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.684296000000003, 609.339539000000059, 175.0, 22.0 ],
-					"text" : "tg.sendR textureCaptureRange"
+					"patching_rect" : [ 27.684296000000003, 577.339539000000059, 167.0, 35.0 ],
+					"text" : "prepend manu_textureCaptureRange"
 				}
 
 			}
@@ -1059,8 +1060,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 53.749999999999986, 259.0, 110.000000000000014, 36.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 53.749999999999986, 259.0, 110.000000000000014, 35.0 ],
 					"text" : "jit.gl.spoutreceiver gatewayPreview"
 				}
 
@@ -1224,6 +1225,13 @@
 					"destination" : [ "obj-35", 0 ],
 					"order" : 1,
 					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -1448,19 +1456,15 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "jit.gl.spoutreceiver.mxe64",
-				"type" : "mx64"
-			}
-, 			{
 				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.sendR.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

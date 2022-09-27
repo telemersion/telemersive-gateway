@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 197.0, 392.0, 516.0, 446.0 ],
+		"rect" : [ 79.0, 261.0, 516.0, 446.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -146,7 +146,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 210.5, 607.339539000000059, 30.0, 30.0 ]
+					"patching_rect" : [ 210.5, 640.339539000000059, 30.0, 30.0 ]
 				}
 
 			}
@@ -866,7 +866,7 @@
 				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "jit.pwindow",
-					"name" : "u445005923",
+					"name" : "u221024670",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
@@ -884,8 +884,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 27.684296000000003, 614.339539000000059, 175.0, 22.0 ],
-					"text" : "tg.sendR textureCaptureRange"
+					"patching_rect" : [ 27.684296000000003, 601.339539000000059, 207.0, 22.0 ],
+					"text" : "prepend menu_textureCaptureRange"
 				}
 
 			}
@@ -1292,6 +1292,13 @@
 					"destination" : [ "obj-41", 0 ],
 					"order" : 2,
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
