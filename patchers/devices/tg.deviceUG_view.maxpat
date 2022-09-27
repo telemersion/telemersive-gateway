@@ -1009,7 +1009,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 407.0, 70.0, 63.0, 35.0 ],
+													"patching_rect" : [ 407.0, 70.0, 63.0, 36.0 ],
 													"text" : "route channelNr"
 												}
 
@@ -1222,8 +1222,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 151.125, 593.0, 136.0, 35.0 ],
-													"text" : ";\rmax launch_browser $1"
+													"patching_rect" : [ 151.125, 593.0, 136.0, 36.0 ],
+													"text" : ";\r\nmax launch_browser $1"
 												}
 
 											}
@@ -1834,7 +1834,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 63.833333333333371, 403.0, 81.0, 35.0 ],
+									"patching_rect" : [ 63.833333333333371, 403.0, 81.0, 36.0 ],
 									"text" : "prepend networkMode"
 								}
 
@@ -1909,7 +1909,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 90.166666666666629, 36.75, 113.0, 52.0 ],
+									"patching_rect" : [ 90.166666666666629, 36.75, 113.0, 53.0 ],
 									"text" : "enableitem 0 0, enableitem 3 0, enableitem 6 0, 1"
 								}
 
@@ -1953,7 +1953,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 315.166666666666686, 165.0, 74.0, 35.0 ],
+									"patching_rect" : [ 315.166666666666686, 165.0, 74.0, 36.0 ],
 									"text" : "tg.receiveR serverURL"
 								}
 
@@ -4384,7 +4384,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 85.184296000000018, 116.0, 226.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 222.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -4773,13 +4773,13 @@
 																		"boxes" : [ 																			{
 																				"box" : 																				{
 																					"id" : "obj-3",
-																					"linecount" : 15,
+																					"linecount" : 18,
 																					"maxclass" : "comment",
 																					"numinlets" : 1,
 																					"numoutlets" : 0,
 																					"patching_rect" : [ 92.0, 118.0, 150.0, 208.0 ],
 																					"presentation" : 1,
-																					"presentation_linecount" : 8,
+																					"presentation_linecount" : 11,
 																					"presentation_rect" : [ 80.0, 24.0, 265.0, 114.0 ],
 																					"text" : "mapping of input audio channels to output audio channels comma-separated list of channel mapping\neg. 0:0,1:0 - mixes first 2 channels\n\t      0:0    - play only first channel\n\t      0:0,:1 - sets second channel to a silence, \n                  first one is left as is\n\t      0:0,0:1 - splits mono into 2 channels"
 																				}
@@ -5337,7 +5337,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 85.184296000000018, 116.0, 226.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 222.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -5715,7 +5715,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 85.184296000000018, 116.0, 226.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 222.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -6465,7 +6465,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 85.184296000000018, 116.0, 226.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 222.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -6886,7 +6886,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "54612_cshac"
+																	"text" : "10630_cshac"
 																}
 
 															}
@@ -8935,7 +8935,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 85.184296000000018, 116.0, 226.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 222.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -10520,7 +10520,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 85.184296000000018, 116.0, 226.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 222.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -10898,7 +10898,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 85.184296000000018, 116.0, 226.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 222.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -12007,7 +12007,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 85.184296000000018, 116.0, 226.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 222.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -12428,7 +12428,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "54626_cshac"
+																	"text" : "10644_cshac"
 																}
 
 															}
@@ -15010,7 +15010,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 86.0, 22.0, 54.0, 33.0 ],
+									"patching_rect" : [ 86.0, 22.0, 54.0, 34.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ -0.5, 0.0, 78.5, 20.0 ],
 									"text" : "connection:",
@@ -16848,7 +16848,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 169.0, 101.0, 103.0, 22.0 ],
-																	"text" : "54631_cshvr"
+																	"text" : "10649_cshvr"
 																}
 
 															}
@@ -20241,7 +20241,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 85.184296000000018, 116.0, 226.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 222.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -20656,7 +20656,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "54641_cshvc"
+																	"text" : "10659_cshvc"
 																}
 
 															}
@@ -21561,7 +21561,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 20.184296000000018, 163.0, 203.0, 25.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 0.0, 0.0, 221.0, 25.0 ],
+																	"presentation_rect" : [ 0.0, 0.0, 220.0, 25.0 ],
 																	"varname" : "menu",
 																	"viewvisibility" : 1
 																}
@@ -22707,77 +22707,70 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/media",
 				"patcherrelativepath" : "../../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.device.menu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dynRangeMenu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.gui.button.menu.png",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.monitor.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.texture.selection.gate.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.simplewin.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
