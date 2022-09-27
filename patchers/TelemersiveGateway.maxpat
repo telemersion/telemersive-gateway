@@ -1235,7 +1235,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "vWJHsj4zozjKz24HNwtoh4",
+									"text" : "ax9JVg47C6Y8hV7pq5BRPU",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -4690,7 +4690,7 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-14",
-													"items" : [ "15:36:44", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "15:34:33", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "14:46:59", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room", ",", "14:38:38", "GMT+0200", "[Projection]:", ">", "has", "joined", "room" ],
+													"items" : [ "16:27:28", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "16:27:00", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "15:36:44", "GMT+0200", "[Projection]:", ">", "has", "joined", "room", ",", "15:34:33", "GMT+0200", "[Projection]:", "<", "has", "left", "room", ",", "14:46:59", "GMT+0200", "[MartinsMac]:", ">", "has", "joined", "room", ",", "14:38:38", "GMT+0200", "[Projection]:", ">", "has", "joined", "room" ],
 													"maxclass" : "chooser",
 													"numinlets" : 1,
 													"numoutlets" : 6,
@@ -8938,7 +8938,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 389.0, 29.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"CLI_execute" : [ 1 ],
+																		"CLI_execute" : [ 0 ],
 																		"console_status" : [ 0 ],
 																		"stdout_toConsole" : [ 1 ],
 																		"stdout_toConsole[1]" : [ 0 ],
@@ -9934,8 +9934,6 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
-														"node_bin_path" : "",
-														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -10175,6 +10173,60 @@
 										"showontab" : 1,
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"bgcolor" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
+													"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
+													"bgfillcolor_angle" : 270.0,
+													"bgfillcolor_autogradient" : 0.0,
+													"bgfillcolor_color" : [ 1.0, 0.933333333333333, 0.0, 1.0 ],
+													"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
+													"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+													"bgfillcolor_proportion" : 0.5,
+													"bgfillcolor_type" : "color",
+													"gradient" : 1,
+													"id" : "obj-9",
+													"linecount" : 7,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 63.0, 427.0, 253.0, 105.0 ],
+													"presentation" : 1,
+													"presentation_linecount" : 4,
+													"presentation_rect" : [ 8.5, 10.0, 400.0, 64.0 ],
+													"text" : "IMPORTANT: Only on windows: Make sure the user of this machine has write access in the folder where ultragrid and NatNet2OSC is located. TelemersiveGateway needs to dynamically create copies of the exe's to reliably start and stop these apps. (click here to get a tutorial on how to)",
+													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+													"varname" : "ImportantNotice"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-15",
+													"linecount" : 2,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 63.0, 610.0, 129.0, 36.0 ],
+													"text" : ";\r\nmax launchbrowser $1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-7",
+													"linecount" : 2,
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 63.0, 556.0, 285.0, 36.0 ],
+													"text" : "https://v2cloud.com/tutorials/how-to-change-folder-permissions-on-windows"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"bgmode" : 0,
 													"border" : 0,
@@ -10793,23 +10845,6 @@
 													"patching_rect" : [ 10.5, 255.0, 405.5, 61.0 ],
 													"varname" : "bpatcher",
 													"viewvisibility" : 1
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"bgcolor" : [ 1.0, 0.968627450980392, 0.0, 1.0 ],
-													"id" : "obj-6",
-													"linecount" : 11,
-													"maxclass" : "comment",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 15.0, 352.0, 151.0, 158.0 ],
-													"presentation" : 1,
-													"presentation_linecount" : 4,
-													"presentation_rect" : [ 8.5, 13.0, 406.5, 62.0 ],
-													"text" : "IMPORTANT: Only on windows: Make sure the user of this machine has write access in the folder where ultragrid and NatNet2OSC is located. TelemersiveGateway needs to dynamically create copies of the exe's to reliably start and stop these apps.",
-													"varname" : "ImportantNotice"
 												}
 
 											}
@@ -11907,6 +11942,18 @@
 														"assistshowspatchername" : 0,
 														"boxes" : [ 															{
 																"box" : 																{
+																	"id" : "obj-35",
+																	"maxclass" : "newobj",
+																	"numinlets" : 1,
+																	"numoutlets" : 1,
+																	"outlettype" : [ "" ],
+																	"patching_rect" : [ 56.0, 142.0, 71.0, 22.0 ],
+																	"text" : "fromsymbol"
+																}
+
+															}
+, 															{
+																"box" : 																{
 																	"id" : "obj-20",
 																	"maxclass" : "comment",
 																	"numinlets" : 1,
@@ -12200,7 +12247,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 56.0, 268.0, 57.0, 22.0 ],
+																	"patching_rect" : [ 56.0, 313.5, 57.0, 22.0 ],
 																	"text" : "tosymbol"
 																}
 
@@ -12334,7 +12381,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "bang", "" ],
-																	"patching_rect" : [ 56.0, 166.0, 31.0, 22.0 ],
+																	"patching_rect" : [ 56.0, 211.5, 31.0, 22.0 ],
 																	"text" : "t b s"
 																}
 
@@ -12441,7 +12488,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 56.0, 238.0, 59.0, 22.0 ],
+																	"patching_rect" : [ 56.0, 283.5, 59.0, 22.0 ],
 																	"text" : "route text"
 																}
 
@@ -12453,7 +12500,7 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 56.0, 300.0, 123.0, 22.0 ],
+																	"patching_rect" : [ 56.0, 345.5, 123.0, 22.0 ],
 																	"text" : "tg.sendR natnet_path"
 																}
 
@@ -12465,7 +12512,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 56.0, 135.0, 72.0, 22.0 ],
+																	"patching_rect" : [ 56.0, 180.5, 72.0, 22.0 ],
 																	"text" : "prepend set"
 																}
 
@@ -12511,7 +12558,7 @@
 																	"numoutlets" : 4,
 																	"outlettype" : [ "", "int", "", "" ],
 																	"parameter_enable" : 0,
-																	"patching_rect" : [ 56.0, 200.0, 213.0, 22.0 ],
+																	"patching_rect" : [ 56.0, 245.5, 213.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 350.0, 22.0 ],
 																	"text" : "D:/00_core/NatNet2OSC/Motive3.x/NatNetThree2OSC.exe",
@@ -12704,6 +12751,13 @@
 															}
 , 															{
 																"patchline" : 																{
+																	"destination" : [ "obj-67", 0 ],
+																	"source" : [ "obj-35", 0 ]
+																}
+
+															}
+, 															{
+																"patchline" : 																{
 																	"destination" : [ "obj-3", 0 ],
 																	"source" : [ "obj-5", 0 ]
 																}
@@ -12749,7 +12803,7 @@
 															}
 , 															{
 																"patchline" : 																{
-																	"destination" : [ "obj-67", 0 ],
+																	"destination" : [ "obj-35", 0 ],
 																	"source" : [ "obj-70", 0 ]
 																}
 
@@ -14393,6 +14447,20 @@
 												"patchline" : 												{
 													"destination" : [ "obj-26", 0 ],
 													"source" : [ "obj-51", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-15", 0 ],
+													"source" : [ "obj-7", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-7", 0 ],
+													"source" : [ "obj-9", 0 ]
 												}
 
 											}
