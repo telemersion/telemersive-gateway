@@ -427,7 +427,7 @@ function cliADD_videoCapture(){
                 ugCLIcommand += ":" + ugTexture_capture;
             }
             if (ugTexture_fps > 0){
-                ugCLIcommand += ":fps=" + gTexture_fps;            
+                ugCLIcommand += ":fps=" + ugTexture_fps;            
             }
         }    
     }
