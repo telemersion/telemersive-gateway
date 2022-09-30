@@ -10,6 +10,7 @@ var myRoomID = 0;
 
 var slotResizer = null;
 var mySlotHeight = 45;
+var myLocalPeerSlotHeight = 60;
 var myRootPatcher = null;
 
 var myRootSize = null;
@@ -27,11 +28,19 @@ function loadbang(){
     	//post("gathering information on the patcher hierarchy..\n");
         myRootPatcher = this.patcher.box.patcher;
         myRootSize = myRootPatcher.wind.size;        
+    	//post("..myRootSize: " + myRootSize + "\n");
     }
 }
 
 function dpost(_post){
 	//post("peerList: " + _post + "\n");
+}
+
+// my rootheight depending on beeing joined or not
+function getMyRootHeight(){
+	//post("getMyRootHeight: isJoined " + isJoined + "\n");
+	var joinedHeight = (isJoined)?myLocalPeerSlotHeight:0;
+	return myRootSize[1] + joinedHeight;
 }
 
 function expand(_flagHeight, _flagWidth){
@@ -46,8 +55,8 @@ function resizeWinHeight(_height){
 }
 
 function applyWindowSize(){
-	myRootPatcher.wind.size = [(myFlagWidth)?myRootSize[0] + myExpandWidth: myRootSize[0], (myFlagHeight)?myRootSize[1] + myListHeight:myRootSize[1]];
-	//post("done: applyWindowSize\n");
+	myRootPatcher.wind.size = [(myFlagWidth)?myRootSize[0] + myExpandWidth: myRootSize[0], (myFlagHeight)?getMyRootHeight() + myListHeight:getMyRootHeight()];
+	//post("done: applyWindowSize " + getMyRootHeight() + "\n");
 }
 
 function slotResize(_indxStart, _indxTarget, _maxStep)
@@ -72,6 +81,7 @@ function joined(_joined){
 			//done();
 		}
 	}
+	applyWindowSize();
 }
 
 function roomName(_roomName){
