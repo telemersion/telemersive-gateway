@@ -1347,7 +1347,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "pKqcvA7CWu2vD8ghfmnNMH",
+									"text" : "26kbeHBHRk1hPwhGmrRVe6",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -10042,6 +10042,8 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
+														"node_bin_path" : "",
+														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -13178,7 +13180,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 208.0, 469.0, 90.0, 22.0 ],
-																	"text" : "loadmess 3478"
+																	"text" : "loadmess 9418"
 																}
 
 															}
@@ -13203,8 +13205,7 @@
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "bang" ],
 																	"parameter_enable" : 0,
-																	"patching_rect" : [ 208.0, 501.0, 78.0, 22.0 ],
-																	"varname" : "holepuncherPort"
+																	"patching_rect" : [ 208.0, 501.0, 78.0, 22.0 ]
 																}
 
 															}
@@ -13495,8 +13496,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "/Applications/_Video/uv-qt_1.7.6.app" ],
-																		"holepuncherPort" : [ 9418 ]
+																		"filepath" : [ "/Applications/_Video/uv-qt_1.7.6.app" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -18103,7 +18103,7 @@
 																	"patching_rect" : [ 264.0, 26.0, 56.0, 22.0 ],
 																	"restore" : 																	{
 																		"peerName" : [ "MartinsMac" ],
-																		"roomName" : [ "MyTest" ],
+																		"roomName" : [ "VbeeR" ],
 																		"roomPwd" : [ "2022" ]
 																	}
 ,
@@ -18454,7 +18454,7 @@
 																	"patching_rect" : [ 132.0, 149.5, 199.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 80.0, 20.0, 180.0, 20.0 ],
-																	"text" : "MyTest",
+																	"text" : "VbeeR",
 																	"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																	"varname" : "roomName"
 																}
@@ -18653,7 +18653,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.5, 459.0, 308.0, 22.0 ],
-													"text" : "join MartinsMac MyTest \"2022\""
+													"text" : "join MartinsMac VbeeR \"2022\""
 												}
 
 											}
