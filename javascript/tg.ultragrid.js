@@ -19,6 +19,8 @@ var ugStunServerPort = 3478;
 var ugRoomName = "unkonwn";
 var ugChannelNr = 0;
 
+var ugParams = NONE;
+var ugCustomFlagsAdvanced = NONE;
 // avio
 var ugAV_mode = 0;
 var ugConnection_mode = 0;
@@ -98,6 +100,16 @@ function dpost(_post){
     if(ugVerbose){
         post("ultragrid - channel# " + ugChannelNr + ": " + _post);
     }
+}
+
+function ugf_adv_params(_params){
+    ugParams = _params;
+	dpost("ugParams: " + ugParams + "\n");
+}
+
+function ugf_customFlagsAdvanced(_adv_flags){
+    ugCustomFlagsAdvanced = _adv_flags;
+	dpost("ugCustomFlagsAdvanced: " + ugCustomFlagsAdvanced + "\n");
 }
 
 /************* NETWORK ***************/
@@ -401,6 +413,18 @@ function get_path(){
     return ugFilePath;
 }
 
+function cliADD_params(){
+    if(ugParams != NONE){
+        ugCLIcommand += " --param " + ugParams;
+    }
+}
+
+function cliADD_advancedFlags(){
+    if(ugCustomFlagsAdvanced != NONE){
+        ugCLIcommand += " " + ugCustomFlagsAdvanced;
+    }
+}
+
 function cliADD_videoCapture(){
     if(ugVideoCaptureMode == "custom"){
         if(ugCustomFlagsVideo_capture != NONE){
@@ -630,6 +654,8 @@ function cliADD_postprocessing(){
 
 function generate(){
     cliClear();
+    cliADD_params();
+    cliADD_advancedFlags();
     if(ugNetworkMode == "send to router"){
         if(ugAV_mode != 1){
             cliADD_captureFilter();

@@ -41,6 +41,17 @@
 		"title" : "TelemersiveGateway",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2.0, 186.0, 147.0, 22.0 ],
+					"text" : "ug_cheatsheet_Advanced"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -1347,7 +1358,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "26kbeHBHRk1hPwhGmrRVe6",
+									"text" : "jswjnvc6yQ5c2q7KAYMQPg",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -10042,8 +10053,6 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
-														"node_bin_path" : "",
-														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -13496,7 +13505,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "/Applications/_Video/uv-qt_1.7.6.app" ]
+																		"filepath" : [ "/Applications/_Video/uv-qt_continous.app" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -14053,7 +14062,7 @@
 																	"patching_rect" : [ 50.0, 314.0, 311.0, 20.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 364.0, 22.0 ],
-																	"text" : "/Applications/_Video/uv-qt_1.7.6.app",
+																	"text" : "/Applications/_Video/uv-qt_continous.app",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -19985,6 +19994,13 @@
 			}
 , 			{
 				"name" : "ug_cheatsheet_AudioReceive.maxpat",
+				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "./utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ug_cheatsheet_advanced.maxpat",
 				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
