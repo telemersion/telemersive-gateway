@@ -21,6 +21,8 @@ var ugChannelNr = 0;
 
 var ugParams = NONE;
 var ugCustomFlagsAdvanced = NONE;
+var ugAdv_encryption = NONE;
+
 // avio
 var ugAV_mode = 0;
 var ugConnection_mode = 0;
@@ -110,6 +112,12 @@ function ugf_adv_params(_params){
 function ugf_customFlagsAdvanced(_adv_flags){
     ugCustomFlagsAdvanced = _adv_flags;
 	dpost("ugCustomFlagsAdvanced: " + ugCustomFlagsAdvanced + "\n");
+}
+
+function ugf_adv_encryption(_encryption){
+    ugAdv_encryption = _encryption;
+	dpost("ugAdv_encryption: " + ugAdv_encryption + "\n");
+    
 }
 
 /************* NETWORK ***************/
@@ -425,6 +433,12 @@ function cliADD_advancedFlags(){
     }
 }
 
+function cliADD_encryption(){
+    if(ugAdv_encryption != NONE){
+        ugCLIcommand += " --encryption " + ugAdv_encryption;
+    }
+}
+
 function cliADD_videoCapture(){
     if(ugVideoCaptureMode == "custom"){
         if(ugCustomFlagsVideo_capture != NONE){
@@ -656,6 +670,7 @@ function generate(){
     cliClear();
     cliADD_params();
     cliADD_advancedFlags();
+    cliADD_encryption();
     if(ugNetworkMode == "send to router"){
         if(ugAV_mode != 1){
             cliADD_captureFilter();

@@ -1358,7 +1358,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "jswjnvc6yQ5c2q7KAYMQPg",
+									"text" : "9rG6BSDFWBqyhmYEXpPZtg",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -10053,6 +10053,8 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
+														"node_bin_path" : "",
+														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -18112,7 +18114,7 @@
 																	"patching_rect" : [ 264.0, 26.0, 56.0, 22.0 ],
 																	"restore" : 																	{
 																		"peerName" : [ "MartinsMac" ],
-																		"roomName" : [ "VbeeR" ],
+																		"roomName" : [ "Test" ],
 																		"roomPwd" : [ "2022" ]
 																	}
 ,
@@ -18463,7 +18465,7 @@
 																	"patching_rect" : [ 132.0, 149.5, 199.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 80.0, 20.0, 180.0, 20.0 ],
-																	"text" : "VbeeR",
+																	"text" : "Test",
 																	"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																	"varname" : "roomName"
 																}
@@ -18662,7 +18664,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.5, 459.0, 308.0, 22.0 ],
-													"text" : "join MartinsMac VbeeR \"2022\""
+													"text" : "join MartinsMac Test \"2022\""
 												}
 
 											}
