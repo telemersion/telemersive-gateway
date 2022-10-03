@@ -16,7 +16,7 @@ The Userinterface makes the configuration of the CLI apps very simple and user f
 
 ![Diagram](media/TG_device_ultragrid_2peers.png "GUI")
 
-For more information please visit  the [documentation](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/Welcome).
+For more information please visit  the [documentation](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/home).
 
 For issues, please report them [here](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/issues).
 
