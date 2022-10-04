@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 47.0, 334.0, 406.0, 392.0 ],
+		"rect" : [ 109.0, 268.0, 406.0, 392.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -4187,13 +4187,14 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 276.0, 124.0, 171.0, 22.0 ],
-									"text" : "prepend ug_connection_mode"
+									"patching_rect" : [ 333.5, 124.0, 163.0, 22.0 ],
+									"text" : "prepend ug_connection_type"
 								}
 
 							}
 , 							{
 								"box" : 								{
+									"hint" : "connection type",
 									"id" : "obj-23",
 									"items" : [ "send", "(TX)", ">>", ",", ">>", "receive", "(RX)", ",", ">>", "both", "(RX+TX)", ">>" ],
 									"maxclass" : "umenu",
@@ -4201,7 +4202,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 276.0, 85.0, 99.0, 22.0 ],
+									"patching_rect" : [ 333.5, 85.0, 99.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.0, 0.0, 135.0, 22.0 ],
 									"varname" : "connection"
@@ -6049,7 +6050,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 87.0, 22.0 ],
-																	"text" : "2863_cshadv"
+																	"text" : "2239_cshadv"
 																}
 
 															}
@@ -6424,7 +6425,7 @@
 									"patching_rect" : [ 333.5, 9.0, 56.0, 22.0 ],
 									"restore" : 									{
 										"connection" : [ 2 ],
-										"mode" : [ 2 ]
+										"transmission" : [ 2 ]
 									}
 ,
 									"text" : "autopattr",
@@ -9277,7 +9278,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "2875_cshac"
+																	"text" : "2251_cshac"
 																}
 
 															}
@@ -14824,7 +14825,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "2889_cshac"
+																	"text" : "2265_cshac"
 																}
 
 															}
@@ -17384,8 +17385,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 147.0, 124.0, 125.0, 22.0 ],
-									"text" : "prepend ug_av_mode"
+									"patching_rect" : [ 147.0, 124.0, 180.0, 22.0 ],
+									"text" : "prepend ug_transmission_mode"
 								}
 
 							}
@@ -17405,6 +17406,7 @@
 							}
 , 							{
 								"box" : 								{
+									"hint" : "transmission mode",
 									"id" : "obj-7",
 									"items" : [ "video", ",", "audio", ",", "video", "&", "audio" ],
 									"maxclass" : "umenu",
@@ -17415,7 +17417,7 @@
 									"patching_rect" : [ 147.0, 85.0, 99.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 217.0, 0.0, 107.0, 22.0 ],
-									"varname" : "mode"
+									"varname" : "transmission"
 								}
 
 							}
@@ -19221,7 +19223,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 169.0, 101.0, 103.0, 22.0 ],
-																	"text" : "2894_cshvr"
+																	"text" : "2270_cshvr"
 																}
 
 															}
@@ -23443,7 +23445,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "2904_cshvc"
+																	"text" : "2280_cshvc"
 																}
 
 															}
@@ -24886,8 +24888,8 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-13", 2 ],
-									"midpoints" : [ 285.5, 117.0, 303.5, 117.0, 303.5, 38.0, 285.5, 38.0 ],
-									"order" : 1,
+									"midpoints" : [ 343.0, 117.0, 303.5, 117.0, 303.5, 38.0, 285.5, 38.0 ],
+									"order" : 2,
 									"source" : [ "obj-23", 0 ]
 								}
 
@@ -24903,7 +24905,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
-									"order" : 2,
+									"order" : 1,
 									"source" : [ "obj-23", 0 ]
 								}
 

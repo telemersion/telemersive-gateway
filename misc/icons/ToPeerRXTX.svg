@@ -12,9 +12,9 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <svg:g inkscape:groupmode="layer" id="layer3" inkscape:label="FromLocal" style="display:inline" sodipodi:insensitive="true">
-    <svg:path style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 10,140 v 50 h 180 v -50 h -20 v 30 H 30 v -30 z" id="path887" sodipodi:nodetypes="ccccccccc"/>
-    <svg:path style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 144.15955,60.595724 v 49.999996 h 20 l -30,39.94015 -30,-39.94015 h 20 V 80.595724 l -51.997483,0.393303 0.0838,70.085463 -22.350659,0.20395 0.09425,-90.602178 z" id="path889" sodipodi:nodetypes="cccccccccccc"/>
-    <svg:rect style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5.29167;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect1772" width="199.29001" height="199.29001" x="0.57103157" y="0.57103157"/>
+  <svg:g inkscape:groupmode="layer" id="g16170" inkscape:label="ToPeerRXTX" style="display:inline" sodipodi:insensitive="true">
+    <svg:path style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 10,140 v 50 h 180 v -50 h -20 v 30 H 30 v -30 z" id="path16164" sodipodi:nodetypes="ccccccccc"/>
+    <svg:path id="path16166" style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 564.92969,118.93359 v 76.55274 L 338.1582,194.52344 v 226.53515 l 75.58985,-0.52539 V 270.11328 l 151.18164,0.96289 v 74.62891 L 716.10938,232.31836 Z M 338.1582,421.05859 H 261.60352 L 374.99023,572.24023 488.375,421.05859 h -74.62695 z" transform="scale(0.26458333)" sodipodi:nodetypes="cccccccccccccccc"/>
+    <svg:rect style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5.29167;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect16168" width="199.29001" height="199.29001" x="0.57103157" y="0.57103157"/>
   </svg:g>
   </svg>

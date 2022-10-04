@@ -271,11 +271,11 @@
 				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 460.66666666666697, 156.0, 220.0, 22.0 ],
-					"text" : "route sender] capture] display] decoder]"
+					"numinlets" : 6,
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"patching_rect" : [ 460.66666666666697, 156.0, 252.0, 22.0 ],
+					"text" : "route sender] capture] display] decoder] disp.]"
 				}
 
 			}
@@ -647,6 +647,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"source" : [ "obj-22", 4 ]
 				}
 
 			}

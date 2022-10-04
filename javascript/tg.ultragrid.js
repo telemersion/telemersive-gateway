@@ -24,8 +24,8 @@ var ugCustomFlagsAdvanced = NONE;
 var ugAdv_encryption = NONE;
 
 // avio
-var ugAV_mode = 0;
-var ugConnection_mode = 0;
+var ugTransmission_mode = 0;
+var ugConnection_type = 0;
 
 // video capture
 var ugVideoCaptureMode = "texture";
@@ -181,15 +181,15 @@ function ugf_stunServerPort(_stun_port){
 /************* AV & Connection ***************/
 
 // 0=video, 1=audio, 2=video & audio
-function ug_av_mode(_mode){
-    ugAV_mode = _mode;
-	dpost("ugAV_mode: " + ugAV_mode + "\n");
+function ug_transmission_mode(_mode){
+    ugTransmission_mode = _mode;
+	dpost("ugTransmission_mode: " + ugTransmission_mode + "\n");
 }
 
 // 0= send (TX) >>, 1= >> receive (RX), 2= >> both (RX+TX) >>
-function ug_connection_mode(_mode){
-    ugConnection_mode = _mode;
-	dpost("ugConnection_mode: " + ugConnection_mode + "\n");
+function ug_connection_type(_mode){
+    ugConnection_type = _mode;
+	dpost("ugConnection_type: " + ugConnection_type + "\n");
 }
 
 
@@ -567,7 +567,7 @@ function cliADD_audioTestcard(){
 }
 
 function cliADD_port(_port){
-    if(ugAV_mode != 2){
+    if(ugTransmission_mode != 2){
         ugCLIcommand += " -P" + _port;
     } else {
         ugCLIcommand += " -P" + _port + ":" + _port + ":" + (_port+2) + ":" + (_port+2);
@@ -672,24 +672,24 @@ function generate(){
     cliADD_advancedFlags();
     cliADD_encryption();
     if(ugNetworkMode == "send to router"){
-        if(ugAV_mode != 1){
+        if(ugTransmission_mode != 1){
             cliADD_captureFilter();
             cliADD_videoCapture();
             cliADD_videoCodec();            
         }
-        if(ugAV_mode != 0){
+        if(ugTransmission_mode != 0){
             cliADD_audioCapture();
             cliADD_audioCodec();            
         }
         cliADD_port(ugPort);
         cliADD_router();
     } else if(ugNetworkMode == "receive from router"){
-        if(ugAV_mode != 1){
+        if(ugTransmission_mode != 1){
             cliADD_videoTestcard(); // to open proxy
             cliADD_postprocessing();
             cliADD_videoReceive();
         }
-        if(ugAV_mode != 0){
+        if(ugTransmission_mode != 0){
             cliADD_audioTestcard(); // to open proxy
             cliADD_audioReceive();
         }
@@ -697,45 +697,45 @@ function generate(){
         cliADD_router();
     }else if(ugNetworkMode == "peer to peer (manual)"){
         cliADD_port(ugLANPort);
-        if(ugConnection_mode != 0){
-            if(ugAV_mode != 1){
+        if(ugConnection_type != 0){
+            if(ugTransmission_mode != 1){
                 cliADD_postprocessing();
                 cliADD_videoReceive();
             }
-            if(ugAV_mode != 0){
+            if(ugTransmission_mode != 0){
                 cliADD_audioReceive();
             }
         }
-        if(ugConnection_mode != 1){
-            if(ugAV_mode != 1){
+        if(ugConnection_type != 1){
+            if(ugTransmission_mode != 1){
                 cliADD_captureFilter();
                 cliADD_videoCapture();
                 cliADD_videoCodec();            
             }
-            if(ugAV_mode != 0){
+            if(ugTransmission_mode != 0){
                 cliADD_audioCapture();
                 cliADD_audioCodec();            
             }
             cliADD_LANip();
         }
     }else if(ugNetworkMode == "peer to peer (automatic)"){
-        if(ugConnection_mode != 1){
-            if(ugAV_mode != 1){
+        if(ugConnection_type != 1){
+            if(ugTransmission_mode != 1){
                 cliADD_captureFilter();
                 cliADD_videoCapture();
                 cliADD_videoCodec();            
             }
-            if(ugAV_mode != 0){
+            if(ugTransmission_mode != 0){
                 cliADD_audioCapture();
                 cliADD_audioCodec();            
             }
         }
-        if(ugConnection_mode != 0){
-            if(ugAV_mode != 1){
+        if(ugConnection_type != 0){
+            if(ugTransmission_mode != 1){
                 cliADD_postprocessing();
                 cliADD_videoReceive();
             }
-            if(ugAV_mode != 0){
+            if(ugTransmission_mode != 0){
                 cliADD_audioReceive();
             }
         }        

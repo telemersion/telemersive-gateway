@@ -12,9 +12,9 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <svg:g inkscape:groupmode="layer" id="layer3" inkscape:label="FromLocal" style="display:inline" sodipodi:insensitive="true">
-    <svg:path style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 10,140 v 50 h 180 v -50 h -20 v 30 H 30 v -30 z" id="path887" sodipodi:nodetypes="ccccccccc"/>
-    <svg:path style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 144.15955,60.595724 v 49.999996 h 20 l -30,39.94015 -30,-39.94015 h 20 V 80.595724 l -51.997483,0.393303 0.0838,70.085463 -22.350659,0.20395 0.09425,-90.602178 z" id="path889" sodipodi:nodetypes="cccccccccccc"/>
-    <svg:rect style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5.29167;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect1772" width="199.29001" height="199.29001" x="0.57103157" y="0.57103157"/>
+  <svg:g inkscape:groupmode="layer" id="layer4" inkscape:label="ToPeerRX" style="display:inline" sodipodi:insensitive="true">
+    <svg:path style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 10,140 v 50 h 180 v -50 h -20 v 30 H 30 v -30 z" id="path894" sodipodi:nodetypes="ccccccccc"/>
+    <svg:path style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 90.045214,51.309795 0.25488,59.999995 H 70.045216 l 29.999984,40 30,-40 H 110.30008 L 110.0452,71.309795 h 69.93036 l 0.13928,-20 z" id="path896" sodipodi:nodetypes="cccccccccc"/>
+    <svg:rect style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5.29167;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect1770" width="199.29001" height="199.29001" x="0.57103157" y="0.57103157"/>
   </svg:g>
   </svg>
