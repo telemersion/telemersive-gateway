@@ -448,7 +448,7 @@ function cliADD_videoCapture(){
         ugCLIcommand += " -t";
         if(ugVideoCaptureMode == "ndi"){
             ugCLIcommand += " ndi";
-            if(ugTexture_capture != DEFAULT){
+            if(ugNDI_capture != DEFAULT){
                 ugCLIcommand += ":" + ugNDI_capture;
             }
         } else if(ugVideoCaptureMode == "syphon"){
