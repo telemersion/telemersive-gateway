@@ -516,14 +516,12 @@ function cliADD_audioCapture(){
 }
 
 function cliADD_videoCodec(){
-    if(ugVideoCaptureMode != "custom"){
-        if(ugLibAv_codec != NONE){
-            ugCLIcommand += " -c ";
-            if(ugLibAv_codec != "MJPEG" && ugLibAv_codec_bitrate > 0){
-                ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec + ":bitrate=" + ugLibAv_codec_bitrate + "M";
-            } else {
-                ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec;
-            }
+	if(ugLibAv_codec != NONE){
+        ugCLIcommand += " -c ";
+        if(ugLibAv_codec != "MJPEG" && ugLibAv_codec_bitrate > 0){
+        	ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec + ":bitrate=" + ugLibAv_codec_bitrate + "M";
+        } else {
+        	ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec;
         }
     }
 }
@@ -531,7 +529,7 @@ function cliADD_videoCodec(){
 // NONE, OPUS, speex, FLAC, AAC, MP3, G.722, u-law, A-law, PCM
 
 function cliADD_audioCodec(){
-    if(ugAudioCaptureMode != "custom" && ugAudioCaptureMode != "testcard"){
+    if(ugAudioCaptureMode != "testcard"){
         // codecs
         if(ugAudio_codec != NONE){
             ugCLIcommand += " --audio-codec ";
