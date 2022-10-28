@@ -30,6 +30,7 @@ var ugConnection_type = 0;
 // video capture
 var ugVideoCaptureMode = "texture";
 var ugFPS_attribute = "fps";
+var ugTexture_display = NONE;
 var ugTexture_capture = DEFAULT;
 var ugTexture_fps = 60;
 var ugCustomFlagsVideo_capture = NONE;
@@ -58,6 +59,7 @@ var ugJack_capture = DEFAULT;
 // video receive
 var ugVideoReceiverMode = "texture";
 var ugCustomFlagsVideo_receive = NONE;
+var ugDisplayMode = 0;
 var ugDisplay_flag_prefix = "syphon";
 var ugNDI_display = "NDIChannel";
 var ugDisplay_window_show = 0;
@@ -90,7 +92,8 @@ function loadbang(){
 
 function ug_printoutCLI(){
     generate();
-	post("ultragrid CLI: " + ugCLIcommand.toString() + "\n");
+	post("ultragrid - channel# " + ugChannelNr + ": CLI: " + ugCLIcommand.toString() + "\n");
+	outlet(1, "cli_command", ugCLIcommand.toString());
 }
 
 function ug_verboseExecute(_verbose){
