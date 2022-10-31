@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 2,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 994.0, 55.0, 408.0, 415.0 ],
+		"rect" : [ 116.0, 271.0, 408.0, 415.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,193 @@
 		"assistshowspatchername" : 0,
 		"title" : "s > MoCap > channel 0",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 3,
+							"revision" : 0,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 639.0, 144.0, 366.0, 345.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 192.0, 93.0, 135.0, 22.0 ],
+									"text" : "loadmess channelNr #2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 76.0, 158.0, 100.0, 22.0 ],
+									"text" : "prepend local_os"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 76.0, 126.0, 80.0, 22.0 ],
+									"restore" : [ 0 ],
+									"saved_object_attributes" : 									{
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0
+									}
+,
+									"text" : "pattr local_os",
+									"varname" : "local_os"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 76.0, 93.0, 57.0, 22.0 ],
+									"text" : "route OS"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 34.0, 260.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 34.0, 30.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"order" : 1,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"order" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 286.5, 43.75, 79.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p localValues",
+					"varname" : "remoteValues"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"args" : [ "@helpurl", "https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/MoCap_GUI", "@hint", "menu" ],
 					"bgmode" : 0,
@@ -320,7 +507,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -952,7 +1139,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2435,7 +2622,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 361.833333333333371, 266.0, 349.083333333333258, 100.0 ],
+					"patching_rect" : [ 365.833333333333371, 310.0, 349.083333333333258, 100.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 75.0, 190.0, 340.0, 194.0 ],
 					"varname" : "natnet",
@@ -2465,7 +2652,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2594,7 +2781,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 2,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2689,7 +2876,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 3,
-															"revision" : 2,
+															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3263,7 +3450,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 2,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3799,7 +3986,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 2,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4130,7 +4317,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 358.5, 92.75, 354.500000000000114, 52.0 ],
+					"patching_rect" : [ 362.5, 136.75, 354.500000000000114, 52.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 154.0, 54.0, 261.0, 52.0 ],
 					"varname" : "connection",
@@ -4160,7 +4347,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5096,7 +5283,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 361.833333333333371, 177.5, 351.166666666666742, 77.0 ],
+					"patching_rect" : [ 365.833333333333371, 221.5, 351.166666666666742, 77.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 75.0, 111.0, 340.0, 77.0 ],
 					"varname" : "localudp",
@@ -5125,7 +5312,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 2,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5261,7 +5448,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 2,
+											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -5338,8 +5525,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 50.0, 100.0, 57.0, 22.0 ],
-													"text" : "route OS"
+													"patching_rect" : [ 50.0, 100.0, 83.0, 22.0 ],
+													"text" : "route local_os"
 												}
 
 											}
@@ -5548,7 +5735,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 358.5, 44.75, 332.166666666666629, 30.0 ],
+					"patching_rect" : [ 362.5, 88.75, 332.166666666666629, 30.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 75.0, 27.0, 340.0, 26.0 ],
 					"varname" : "direction",
@@ -5635,32 +5822,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"order" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"order" : 3,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"order" : 2,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"order" : 1,
+					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -5758,6 +5920,38 @@
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"order" : 1,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"order" : 3,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 2,
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -6021,15 +6215,13 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/media",
-				"patcherrelativepath" : "../../media",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.device.menu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -6041,37 +6233,26 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.gui.button.menu.png",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/media",
-				"patcherrelativepath" : "../../media",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.monitor.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
