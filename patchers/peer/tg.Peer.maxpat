@@ -5015,9 +5015,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 210.399999999999977, 338.5, 520.0, 42.0 ],
+					"patching_rect" : [ 210.0, 338.0, 520.0, 42.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 200.0, 2.0, 1000.0, 60.0 ],
+					"presentation_rect" : [ 200.0, 3.0, 1000.0, 60.0 ],
 					"varname" : "rack",
 					"viewvisibility" : 1
 				}

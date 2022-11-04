@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -46,7 +46,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 536.0, 42.0, 150.0, 87.0 ],
-					"presentation_linecount" : 6,
 					"text" : "input args:\n#1 = unique number\ntype: local/remote\ncount: channel count\nsize: total pixel with\npage: page name"
 				}
 
@@ -99,7 +98,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 57.0, 430.0, 754.0, 22.0 ],
-					"text" : "script newobject bpatcher tg.Channel @size $5 40 @args #1 $1 $4 $5 $6 $3 @presentation_rect $2 0 $5 40 @varname $3 @presentation 1"
+					"text" : "script newobject bpatcher tg.Channel @size $5 38 @args #1 $1 $4 $5 $6 $3 @presentation_rect $2 0 $5 38 @varname $3 @presentation 1"
 				}
 
 			}
@@ -110,7 +109,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.5, 214.0, 40.0, 22.0 ],
+					"patching_rect" : [ 346.5, 203.0, 77.899999999999977, 22.0 ],
 					"text" : "pak i i"
 				}
 
@@ -258,8 +257,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 224.0, 380.0, 538.0, 35.0 ],
-					"text" : "script newobject bpatcher $4 @size $5 40 @args #1 $1 @presentation_rect $2 0 $5 40 @varname $3 @presentation 1"
+					"patching_rect" : [ 224.0, 380.0, 554.0, 35.0 ],
+					"text" : "script newobject bpatcher $4 @size $5 38 @args #1 $1 @presentation_rect $2 0 $5 38 @varname $3 @presentation 1"
 				}
 
 			}

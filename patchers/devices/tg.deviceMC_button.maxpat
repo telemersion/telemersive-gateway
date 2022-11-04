@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -218,7 +218,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 24.0, 130.0, 66.0, 44.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 48.0, 40.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 48.0, 38.0 ],
 					"rounded" : 8.0,
 					"text" : "MC",
 					"texton" : "",

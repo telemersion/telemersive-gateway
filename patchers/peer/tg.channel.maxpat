@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -85,8 +85,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -957,13 +957,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-44",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 458.999999999999886, 458.0, 170.0, 76.0 ],
-					"text" : "script newobject bpatcher $1 @size #4 40 @args $2 #1 #2 @presentation_rect 0 0 #4 40 @varname device @presentation 1"
+					"patching_rect" : [ 458.999999999999886, 458.0, 197.0, 62.0 ],
+					"text" : "script newobject bpatcher $1 @size #4 38 @args $2 #1 #2 @presentation_rect 0 0 #4 38 @varname device @presentation 1"
 				}
 
 			}
@@ -976,7 +976,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 336.5, 356.5, 105.0, 35.0 ],
-					"text" : "presentation_rect 0 0 $1 40"
+					"text" : "presentation_rect 0 0 $1 38"
 				}
 
 			}
@@ -1001,7 +1001,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"background" : 1,
-					"bgcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
+					"bgcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 0.8 ],
 					"hint" : "press triangle above the plus sign to add device",
 					"id" : "obj-26",
 					"maxclass" : "panel",
@@ -1010,7 +1010,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 336.5, 404.0, 91.0, 16.25 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 4.0, 40.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 4.0, 38.0 ],
 					"proportion" : 0.5,
 					"rounded" : 0
 				}
