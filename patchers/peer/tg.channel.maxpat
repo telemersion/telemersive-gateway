@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 616.0, 182.0, 677.0, 627.0 ],
+		"rect" : [ 306.0, 203.0, 725.0, 627.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 459.0, 429.0, 99.999999999999886, 22.0 ],
+					"patching_rect" : [ 503.0, 429.0, 99.999999999999886, 22.0 ],
 					"text" : "pack s s"
 				}
 
@@ -69,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 458.999999999999886, 345.0, 100.0, 22.0 ],
+					"patching_rect" : [ 502.999999999999886, 345.0, 100.0, 22.0 ],
 					"text" : "unpack s s"
 				}
 
@@ -652,7 +652,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 458.999999999999886, 312.5, 100.0, 22.0 ]
+					"patching_rect" : [ 502.999999999999886, 312.5, 100.0, 22.0 ]
 				}
 
 			}
@@ -687,7 +687,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 458.999999999999886, 398.25, 85.0, 22.0 ],
+					"patching_rect" : [ 502.999999999999886, 398.25, 85.0, 22.0 ],
 					"text" : "sprintf %s_%s"
 				}
 
@@ -699,7 +699,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 458.999999999999886, 372.0, 54.0, 22.0 ],
+					"patching_rect" : [ 502.999999999999886, 372.0, 54.0, 22.0 ],
 					"text" : "pak s #3"
 				}
 
@@ -831,7 +831,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "bang", "int", "int", "int", "bang" ],
-					"patching_rect" : [ 416.0, 270.5, 104.999999999999773, 22.0 ],
+					"patching_rect" : [ 460.0, 270.5, 104.999999999999773, 22.0 ],
 					"text" : "t b 1 i 1 b"
 				}
 
@@ -884,7 +884,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 32.0, 237.75, 403.0, 22.0 ],
+					"patching_rect" : [ 32.0, 237.75, 447.0, 22.0 ],
 					"text" : "route 0"
 				}
 
@@ -962,7 +962,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 458.999999999999886, 458.0, 197.0, 62.0 ],
+					"patching_rect" : [ 502.999999999999886, 458.0, 197.0, 62.0 ],
 					"text" : "script newobject bpatcher $1 @size #4 38 @args $2 #1 #2 @presentation_rect 0 0 #4 38 @varname device @presentation 1"
 				}
 
