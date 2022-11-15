@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -138,8 +138,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -175,25 +175,37 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "message",
-									"numinlets" : 2,
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 81.0, 183.0, 35.0, 22.0 ],
-									"text" : "done"
+									"patching_rect" : [ 77.0, 197.0, 139.0, 22.0 ],
+									"text" : "prepend remotePeerLeft"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-2",
+									"id" : "obj-14",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 81.0, 146.0, 61.0, 22.0 ],
-									"text" : "delay 100"
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 41.0, 171.0, 154.0, 22.0 ],
+									"text" : "prepend remotePeerJoined"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 41.0, 137.0, 91.0, 22.0 ],
+									"text" : "route joined left"
 								}
 
 							}
@@ -204,7 +216,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 302.0, 259.0, 87.0, 22.0 ],
+									"patching_rect" : [ 228.5, 241.0, 87.0, 22.0 ],
 									"text" : "r peerManager"
 								}
 
@@ -216,7 +228,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 189.0, 160.0, 95.0, 22.0 ],
+									"patching_rect" : [ 260.0, 165.0, 95.0, 22.0 ],
 									"text" : "prepend roomID"
 								}
 
@@ -228,7 +240,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 157.5, 187.0, 115.0, 22.0 ],
+									"patching_rect" : [ 228.5, 192.0, 115.0, 22.0 ],
 									"text" : "prepend roomName"
 								}
 
@@ -240,7 +252,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 157.5, 132.0, 82.0, 22.0 ],
+									"patching_rect" : [ 228.5, 137.0, 82.0, 22.0 ],
 									"text" : "route name id"
 								}
 
@@ -252,7 +264,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 157.5, 105.0, 67.0, 22.0 ],
+									"patching_rect" : [ 228.5, 110.0, 67.0, 22.0 ],
 									"text" : "route room"
 								}
 
@@ -261,11 +273,11 @@
 								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 41.0, 105.0, 99.0, 22.0 ],
-									"text" : "route menu done"
+									"numinlets" : 4,
+									"numoutlets" : 4,
+									"outlettype" : [ "", "", "", "" ],
+									"patching_rect" : [ 41.0, 110.0, 140.0, 22.0 ],
+									"text" : "route remote menu done"
 								}
 
 							}
@@ -276,7 +288,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 41.0, 74.0, 168.0, 22.0 ],
+									"patching_rect" : [ 41.0, 74.0, 394.0, 22.0 ],
 									"text" : "route peers peer"
 								}
 
@@ -350,15 +362,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-2", 0 ]
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-14", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-4", 0 ]
+									"source" : [ "obj-15", 0 ]
 								}
 
 							}
@@ -385,6 +397,20 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-7", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-7", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-8", 0 ]
 								}
@@ -392,15 +418,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
+									"destination" : [ "obj-7", 0 ],
 									"source" : [ "obj-9", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"source" : [ "obj-9", 1 ]
 								}
 
 							}

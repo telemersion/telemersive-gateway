@@ -140,7 +140,7 @@ function creaMover(_indxStart, _indxTarget, _maxStep)
         arguments.callee.task.cancel();
     	dpost("... creation animation done.");
     	outlet(0, "peerJoined", 1);
-		messnamed("peerManager", "done");
+		messnamed("peerManager", "update");
     }
 }
 
@@ -153,7 +153,7 @@ function reMover(_indxStart, _indxTarget, _maxStep)
         arguments.callee.task.cancel();
         arguments.callee.task.freepeer();
     	dpost("... remove animation done.");
-		messnamed("peerManager", "done");
+		messnamed("peerManager", "update");
         myUberPatcher.remove(myUberPatcher.getnamed(myPeerID));
     }
 }
