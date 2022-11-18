@@ -13,7 +13,7 @@ they are done with their job.
 
 var myval=0;
 var myPeerList = new Dict("remotePeerList");;
-var myPeerCount = 0;
+var myPeerCount = -1;
 var slots = [];
 var isJoined = 0;
 
@@ -107,7 +107,7 @@ function slotResize(_indxStart, _indxTarget, _maxStep)
 
 function joined(_joined){
 	if(isJoined !== _joined){
-		isJoined = _joined;
+  		isJoined = _joined;
 		if(_joined == 0){
 			dpost("local peer left room. cleaning up list of remote peers..");
             var keys = myPeerList.getkeys();
@@ -121,8 +121,9 @@ function joined(_joined){
                     myPeerListToRemove.set(keys[i], localPeer);  
                 }
             }
-            startPrepareUpdateTask();
-		}
+		} 
+        myPeerCount = -1;
+        startPrepareUpdateTask();
 	}
 }
 
@@ -178,7 +179,11 @@ function update(){
     if(slotResizer == null || (slotResizer != null && !slotResizer.running)){
         if(myPeerCount != currentPeerCount){
             dpost("   ... start slot-resize animation ("+myPeerCount+" / " + currentPeerCount + ") ...\n");
-            slotResizer = new Task(slotResize, this, myPeerCount, (currentPeerCount - myPeerCount), 10);
+            if(isJoined){
+                slotResizer = new Task(slotResize, this, myPeerCount, (currentPeerCount - myPeerCount), 10);
+            } else {
+                slotResizer = new Task(slotResize, this, (currentPeerCount - myPeerCount), myPeerCount, 10);
+            }
             slotResizer.interval = 33; // 30fps
             slotResizer.repeat(11);
             myPeerCount =  currentPeerCount;
@@ -284,7 +289,7 @@ function removePeer(_peerID){
 
 // my rootheight depending on beeing joined or not
 function getMyRootHeight(){
-	//post("getMyRootHeight: isJoined " + isJoined + "\n");
+	dpost("getMyRootHeight: isJoined " + isJoined + "\n");
 	var joinedHeight = (isJoined)?myLocalPeerSlotHeight:0;
 	return myRootSize[1] + joinedHeight;
 }
