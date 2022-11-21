@@ -1037,6 +1037,18 @@
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
 												"box" : 												{
+													"id" : "obj-9",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 989.666666666666856, 343.0, 245.0, 22.0 ],
+													"text" : "if $i1 == 1 then --sendOtherMarkerInfo else -"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-27",
 													"maxclass" : "newobj",
 													"numinlets" : 3,
@@ -1090,7 +1102,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1108.508771929824434, 263.0, 213.0, 22.0 ],
+													"patching_rect" : [ 1270.508771929824434, 272.0, 213.0, 22.0 ],
 													"text" : "if $i1 == 1 then --autoReconnect else -"
 												}
 
@@ -1207,11 +1219,11 @@
 												"box" : 												{
 													"id" : "obj-35",
 													"maxclass" : "newobj",
-													"numinlets" : 19,
+													"numinlets" : 20,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 236.926816239316139, 521.0, 1049.0, 22.0 ],
-													"text" : "join 19 @triggers -1"
+													"patching_rect" : [ 236.926816239316139, 521.0, 1070.448572954823248, 22.0 ],
+													"text" : "join 20 @triggers -1"
 												}
 
 											}
@@ -1255,11 +1267,11 @@
 												"box" : 												{
 													"id" : "obj-33",
 													"maxclass" : "newobj",
-													"numinlets" : 19,
+													"numinlets" : 20,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 193.926816239316167, 393.0, 1014.750000000000455, 22.0 ],
-													"text" : "join 19 @triggers -1"
+													"patching_rect" : [ 193.926816239316167, 393.0, 1113.448572954823248, 22.0 ],
+													"text" : "join 20 @triggers -1"
 												}
 
 											}
@@ -1270,7 +1282,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1054.834586466165547, 233.0, 172.157894736842195, 22.0 ],
+													"patching_rect" : [ 1216.834586466165547, 242.0, 172.157894736842195, 22.0 ],
 													"text" : "if $i1 == 1 then --matrix else -"
 												}
 
@@ -1282,7 +1294,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 1016.027568922303999, 201.0, 180.0, 22.0 ],
+													"patching_rect" : [ 1178.027568922303999, 210.0, 180.0, 22.0 ],
 													"text" : "if $i1 == 1 then --invMatrix else -"
 												}
 
@@ -1294,7 +1306,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 984.834586466165433, 170.0, 190.0, 22.0 ],
+													"patching_rect" : [ 1146.834586466165547, 179.0, 190.0, 22.0 ],
 													"text" : "if $i1 == 1 then --leftHanded else -"
 												}
 
@@ -1436,11 +1448,11 @@
 													"id" : "obj-1",
 													"linecount" : 2,
 													"maxclass" : "newobj",
-													"numinlets" : 25,
-													"numoutlets" : 25,
-													"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-													"patching_rect" : [ 50.0, 95.0, 1172.0, 35.0 ],
-													"text" : "route enable direction natnet_path cmdPort dataPort peerLocalIP motiveIP multicastIP serverURL routerPort listeningIP listeningPort outputIPOne outputPortOne oscMode frameModulo yUp2zUp verbose sendSkeletons sendMarkerInfos leftHanded invmatrix matrix autoReconnect"
+													"numinlets" : 26,
+													"numoutlets" : 26,
+													"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
+													"patching_rect" : [ 50.0, 95.0, 1265.0, 36.0 ],
+													"text" : "route enable direction natnet_path cmdPort dataPort peerLocalIP motiveIP multicastIP serverURL routerPort listeningIP listeningPort outputIPOne outputPortOne oscMode frameModulo yUp2zUp verbose sendSkeletons sendMarkerInfos sendOtherMarkerInfos leftHanded invmatrix matrix autoReconnect"
 												}
 
 											}
@@ -1519,7 +1531,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-20", 0 ],
-													"source" : [ "obj-1", 23 ]
+													"source" : [ "obj-1", 24 ]
 												}
 
 											}
@@ -1563,7 +1575,7 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-28", 0 ],
-													"source" : [ "obj-1", 20 ]
+													"source" : [ "obj-1", 21 ]
 												}
 
 											}
@@ -1577,14 +1589,14 @@
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-30", 0 ],
-													"source" : [ "obj-1", 21 ]
+													"source" : [ "obj-1", 22 ]
 												}
 
 											}
 , 											{
 												"patchline" : 												{
 													"destination" : [ "obj-32", 0 ],
-													"source" : [ "obj-1", 22 ]
+													"source" : [ "obj-1", 23 ]
 												}
 
 											}
@@ -1643,6 +1655,13 @@
 													"destination" : [ "obj-7", 0 ],
 													"order" : 0,
 													"source" : [ "obj-1", 9 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-9", 0 ],
+													"source" : [ "obj-1", 20 ]
 												}
 
 											}
@@ -1781,7 +1800,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-33", 18 ],
+													"destination" : [ "obj-33", 19 ],
 													"order" : 1,
 													"source" : [ "obj-20", 0 ]
 												}
@@ -1789,7 +1808,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-35", 18 ],
+													"destination" : [ "obj-35", 19 ],
 													"order" : 0,
 													"source" : [ "obj-20", 0 ]
 												}
@@ -1873,7 +1892,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-33", 15 ],
+													"destination" : [ "obj-33", 16 ],
 													"order" : 1,
 													"source" : [ "obj-28", 0 ]
 												}
@@ -1881,7 +1900,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-35", 15 ],
+													"destination" : [ "obj-35", 16 ],
 													"order" : 0,
 													"source" : [ "obj-28", 0 ]
 												}
@@ -1905,7 +1924,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-33", 16 ],
+													"destination" : [ "obj-33", 17 ],
 													"order" : 1,
 													"source" : [ "obj-30", 0 ]
 												}
@@ -1913,7 +1932,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-35", 16 ],
+													"destination" : [ "obj-35", 17 ],
 													"order" : 0,
 													"source" : [ "obj-30", 0 ]
 												}
@@ -1921,7 +1940,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-33", 17 ],
+													"destination" : [ "obj-33", 18 ],
 													"order" : 1,
 													"source" : [ "obj-32", 0 ]
 												}
@@ -1929,7 +1948,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-35", 17 ],
+													"destination" : [ "obj-35", 18 ],
 													"order" : 0,
 													"source" : [ "obj-32", 0 ]
 												}
@@ -2027,6 +2046,22 @@
 												"patchline" : 												{
 													"destination" : [ "obj-1", 0 ],
 													"source" : [ "obj-8", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-33", 15 ],
+													"order" : 1,
+													"source" : [ "obj-9", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-35", 15 ],
+													"order" : 0,
+													"source" : [ "obj-9", 0 ]
 												}
 
 											}
@@ -3398,47 +3433,47 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
+				"name" : "shell.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "shellHelper.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceMC_button.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceMC_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.shell.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "../utils",
 				"type" : "JSON",
 				"implicit" : 1
