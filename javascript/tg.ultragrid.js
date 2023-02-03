@@ -305,8 +305,8 @@ function ugf_audio_channels(_channels){ // 0 = all
 }
 
 function ugf_audio_channel_mapping(_mapping){
-    ugAudio_channel_mapping = _mapping;
-	dpost("ugAudio_channel_mapping: " + ugAudio_channel_mapping + "\n");
+    ugAudio_channel_mapping = _mapping.replace(/\s/g, ""); // removing white spaces
+	dpost("ugAudio_channel_mapping:  fff" + ugAudio_channel_mapping + "\n");
 }
 
 function ugf_audio_codec_sample_rate(_sample_rate){
@@ -551,9 +551,13 @@ function cliADD_audioCodec(){
         if(ugAudio_channels > 0){
             ugCLIcommand += " --audio-capture-format channels=" + ugAudio_channels;
         }
-        if(ugAudio_channel_mapping != NONE && ugAudio_channel_mapping != "bang" && ugAudio_channel_mapping.length > 2){
-            ugCLIcommand += " --audio-channel-map " + ugAudio_channel_mapping;
-        }
+    }
+}
+
+function cliADD_audioMapping(){
+    // audio mapping
+    if(ugAudio_channel_mapping != NONE && ugAudio_channel_mapping != "bang" && ugAudio_channel_mapping.length > 2){
+        ugCLIcommand += " --audio-channel-map " + ugAudio_channel_mapping;
     }
 }
         
@@ -693,6 +697,7 @@ function generate(){
         if(ugTransmission_mode != 0){
             cliADD_audioTestcard(); // to open proxy
             cliADD_audioReceive();
+            cliADD_audioMapping();
         }
         cliADD_port(ugPort);
         cliADD_router();
@@ -705,6 +710,7 @@ function generate(){
             }
             if(ugTransmission_mode != 0){
                 cliADD_audioReceive();
+                cliADD_audioMapping();
             }
         }
         if(ugConnection_type != 1){
@@ -738,6 +744,7 @@ function generate(){
             }
             if(ugTransmission_mode != 0){
                 cliADD_audioReceive();
+                cliADD_audioMapping();
             }
         }        
         cliADD_holePunching()
