@@ -108,7 +108,7 @@ function dpost(_post){
 }
 
 function ugf_adv_params(_params){
-    ugParams = _params;
+    ugParams = _params.replace(/\s/g, ""); // removing white spaces;
 	dpost("ugParams: " + ugParams + "\n");
 }
 
@@ -425,8 +425,9 @@ function get_path(){
 }
 
 function cliADD_params(){
+    ugCLIcommand += " --param log-nocolor";
     if(ugParams != NONE){
-        ugCLIcommand += " --param " + ugParams;
+        ugCLIcommand += "," + ugParams;
     }
 }
 

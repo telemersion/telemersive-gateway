@@ -4313,7 +4313,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 167.0, 678.0, 376.0, 288.0 ],
+														"rect" : [ 142.0, 728.0, 376.0, 288.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 1,
 														"default_fontsize" : 12.0,
@@ -5351,7 +5351,7 @@
 																			}
 , 																			{
 																				"box" : 																				{
-																					"hint" : "audio channel mapping. When receiving multiple channels it allows to map the incomming channels to the device channels. syntax: source1_chan:dest1_chan[,source2_chan:dest2_chan...]. eg.: '4:0,5:1' Plays only channel 4 and 5 (indexed from zero) as channel 0 and 1. All other received channels are dropped.",
+																					"hint" : "Params can be one or more (separated by comma) of following:",
 																					"id" : "obj-9",
 																					"maxclass" : "comment",
 																					"numinlets" : 1,
@@ -6087,7 +6087,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 87.0, 22.0 ],
-																	"text" : "1019_cshadv"
+																	"text" : "10915_cshadv"
 																}
 
 															}
@@ -9362,7 +9362,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "1033_cshac"
+																	"text" : "10929_cshac"
 																}
 
 															}
@@ -14944,7 +14944,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "1049_cshac"
+																	"text" : "10945_cshac"
 																}
 
 															}
@@ -19427,7 +19427,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 169.0, 101.0, 103.0, 22.0 ],
-																	"text" : "1056_cshvr"
+																	"text" : "10952_cshvr"
 																}
 
 															}
@@ -23717,7 +23717,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 178.0, 80.0, 103.0, 22.0 ],
-																	"text" : "1068_cshvc"
+																	"text" : "10964_cshvc"
 																}
 
 															}
