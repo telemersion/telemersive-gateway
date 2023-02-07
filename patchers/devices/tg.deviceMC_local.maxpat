@@ -1007,7 +1007,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 55.0, 115.0, 1351.0, 771.0 ],
+										"rect" : [ 55.0, 115.0, 1745.0, 771.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1036,6 +1036,18 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-15",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 1342.508771929824434, 319.0, 175.0, 22.0 ],
+													"text" : "if $i1 == 1 then --bundled else -"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-9",
 													"maxclass" : "newobj",
@@ -1219,11 +1231,11 @@
 												"box" : 												{
 													"id" : "obj-35",
 													"maxclass" : "newobj",
-													"numinlets" : 20,
+													"numinlets" : 21,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 236.926816239316139, 521.0, 1070.448572954823248, 22.0 ],
-													"text" : "join 20 @triggers -1"
+													"patching_rect" : [ 236.926816239316139, 521.0, 1212.0, 22.0 ],
+													"text" : "join 21 @triggers -1"
 												}
 
 											}
@@ -1267,11 +1279,11 @@
 												"box" : 												{
 													"id" : "obj-33",
 													"maxclass" : "newobj",
-													"numinlets" : 20,
+													"numinlets" : 21,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 193.926816239316167, 393.0, 1113.448572954823248, 22.0 ],
-													"text" : "join 20 @triggers -1"
+													"patching_rect" : [ 193.926816239316167, 393.0, 1195.0, 22.0 ],
+													"text" : "join 21 @triggers -1"
 												}
 
 											}
@@ -1446,13 +1458,12 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-1",
-													"linecount" : 2,
 													"maxclass" : "newobj",
-													"numinlets" : 26,
-													"numoutlets" : 26,
-													"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-													"patching_rect" : [ 50.0, 95.0, 1265.0, 36.0 ],
-													"text" : "route enable direction natnet_path cmdPort dataPort peerLocalIP motiveIP multicastIP serverURL routerPort listeningIP listeningPort outputIPOne outputPortOne oscMode frameModulo yUp2zUp verbose sendSkeletons sendMarkerInfos sendOtherMarkerInfos leftHanded invmatrix matrix autoReconnect"
+													"numinlets" : 27,
+													"numoutlets" : 27,
+													"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
+													"patching_rect" : [ 50.0, 95.0, 1663.0, 22.0 ],
+													"text" : "route enable direction natnet_path cmdPort dataPort peerLocalIP motiveIP multicastIP serverURL routerPort listeningIP listeningPort outputIPOne outputPortOne oscMode frameModulo yUp2zUp verbose sendSkeletons sendMarkerInfos sendOtherMarkerInfos leftHanded invmatrix matrix autoReconnect bundled"
 												}
 
 											}
@@ -1496,6 +1507,13 @@
 												"patchline" : 												{
 													"destination" : [ "obj-14", 0 ],
 													"source" : [ "obj-1", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-15", 0 ],
+													"source" : [ "obj-1", 25 ]
 												}
 
 											}
@@ -1724,6 +1742,22 @@
 												"patchline" : 												{
 													"destination" : [ "obj-34", 0 ],
 													"source" : [ "obj-14", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-33", 20 ],
+													"order" : 1,
+													"source" : [ "obj-15", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-35", 20 ],
+													"order" : 0,
+													"source" : [ "obj-15", 0 ]
 												}
 
 											}
@@ -3277,7 +3311,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 196.0, 14.0, 56.0, 22.0 ],
+					"patching_rect" : [ 197.0, 21.0, 56.0, 22.0 ],
 					"text" : "autopattr",
 					"varname" : "u528003619"
 				}
@@ -3438,8 +3472,7 @@
 			}
 , 			{
 				"name" : "shellHelper.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
-				"patcherrelativepath" : "../../javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -3459,22 +3492,19 @@
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.shell.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}

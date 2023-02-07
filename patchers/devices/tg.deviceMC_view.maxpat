@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 116.0, 271.0, 406.0, 436.0 ],
+		"rect" : [ 362.0, 409.0, 406.0, 436.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -398,6 +398,7 @@
 , 			{
 				"box" : 				{
 					"frames" : 1,
+					"hidden" : 1,
 					"hint" : "enable a second destination to forward the data received from the router",
 					"id" : "obj-23",
 					"inactiveimage" : 1,
@@ -1125,7 +1126,6 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"hidden" : 1,
 					"id" : "obj-33",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -1145,7 +1145,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 880.0, 85.0, 446.0, 763.0 ],
+						"rect" : [ 671.0, 93.0, 670.0, 763.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1174,6 +1174,49 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-73",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 410.0, 719.0, 75.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 19.0, 121.0, 59.0, 20.0 ],
+									"text" : "bundled:",
+									"textjustification" : 2,
+									"varname" : "bundled_text"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-74",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 490.0, 747.0, 99.0, 22.0 ],
+									"text" : "prepend bundled"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"hint" : "put all frame messages into one osc-bundle",
+									"id" : "obj-75",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 490.0, 715.0, 24.0, 24.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 80.0, 120.0, 22.0, 22.0 ],
+									"varname" : "bundled"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-1",
 									"maxclass" : "newobj",
@@ -2172,6 +2215,7 @@
 									"patching_rect" : [ 232.5, 29.0, 56.0, 22.0 ],
 									"restore" : 									{
 										"autoReconnect" : [ 0 ],
+										"bundled" : [ 0 ],
 										"cmdPort" : [ 1510 ],
 										"codec" : [ 3 ],
 										"dataPort" : [ 1511 ],
@@ -2593,6 +2637,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-25", 0 ],
 									"source" : [ "obj-72", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"source" : [ "obj-74", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-74", 0 ],
+									"source" : [ "obj-75", 0 ]
 								}
 
 							}
@@ -3231,7 +3289,7 @@
 													"patching_rect" : [ 223.166666666666742, 149.0, 50.0, 22.0 ],
 													"presentation" : 1,
 													"presentation_rect" : [ 50.0, 27.0, 51.0, 22.0 ],
-													"text" : "11000",
+													"text" : "0",
 													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"textjustification" : 1
 												}
@@ -4411,6 +4469,7 @@
 					"embed" : 1,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-6",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -5725,7 +5784,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 121.0, 19.0, 56.0, 22.0 ],
 									"restore" : 									{
-										"select" : [ 2 ]
+										"select" : [ 1 ]
 									}
 ,
 									"text" : "autopattr",
