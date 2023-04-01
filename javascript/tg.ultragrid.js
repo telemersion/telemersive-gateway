@@ -82,6 +82,8 @@ var tgGlobals = new Global("tg_globals");
 var ugVerbose = tgGlobals.verboseExecute;
 
 var ugCLIcommand = "";
+var ugCLIargs = [];
+var ugCLIarg = "";
 
 if (jsarguments.length>1)
 	ugChannelNr = jsarguments[1];
@@ -406,18 +408,19 @@ function evaluate(){
         if(!isRunning){
             isRunning = true;
             generate();
-            outlet(0, "start", get_path(), ugCLIcommand);
+            outlet(0, "start", get_path(), ugCLIargs);
         }
     } else {
         if(isRunning){
             isRunning = false;
-            outlet(0, "pkill");
+            outlet(0, "stop");
         }
     }   
 }
 
 function cliClear(){
     ugCLIcommand = "";
+	ugCLIargs = [];
 }
 
 function get_path(){
@@ -425,21 +428,31 @@ function get_path(){
 }
 
 function cliADD_params(){
-    ugCLIcommand += " --param log-nocolor";
+    ugCLIcommand += " --param ";
+	ugCLIarg = "log-nocolor"
     if(ugParams != NONE){
-        ugCLIcommand += "," + ugParams;
+        ugCLIarg += "," + ugParams;
     }
+	ugCLIcommand += ugCLIarg;
+	
+	ugCLIargs.push("--param");
+	ugCLIargs.push(ugCLIarg);
 }
 
 function cliADD_advancedFlags(){
     if(ugCustomFlagsAdvanced != NONE){
         ugCLIcommand += " " + ugCustomFlagsAdvanced;
+
+		ugCLIargs.push.apply(ugCustomFlagsAdvanced.split(" "));
     }
 }
 
 function cliADD_encryption(){
     if(ugAdv_encryption != NONE){
         ugCLIcommand += " --encryption " + ugAdv_encryption;
+
+		ugCLIargs.push("--encryption");
+		ugCLIargs.push(ugAdv_encryption);
     }
 }
 
@@ -447,31 +460,35 @@ function cliADD_videoCapture(){
     if(ugVideoCaptureMode == "custom"){
         if(ugCustomFlagsVideo_capture != NONE){
             ugCLIcommand += " " + ugCustomFlagsVideo_capture;
+			ugCLIargs.push.apply(ugCustomFlagsVideo_capture.split(" "));
         }
     } else {
         ugCLIcommand += " -t";
+		ugCLIargs.push("-t");
         if(ugVideoCaptureMode == "ndi"){
-            ugCLIcommand += " ndi";
+			ugCLIarg = "ndi"
             if(ugNDI_capture != DEFAULT){
-                ugCLIcommand += ":" + ugNDI_capture;
+                ugCLIarg += ":" + ugNDI_capture;
             }
         } else if(ugVideoCaptureMode == "syphon"){
-            ugCLIcommand += " syphon";
+            ugCLIarg = "syphon";
             if(ugTexture_capture != DEFAULT){
-                ugCLIcommand += ":" + ugTexture_capture;
+                ugCLIarg += ":" + ugTexture_capture;
             }
             if (ugTexture_fps > 0){
-                ugCLIcommand += ":override_fps=" + ugTexture_fps;
+                ugCLIarg += ":override_fps=" + ugTexture_fps;
             }
         } else if(ugVideoCaptureMode == "spout"){
-            ugCLIcommand += " spout";
+            ugCLIarg = " spout";
             if(ugTexture_capture != DEFAULT){
-                ugCLIcommand += ":" + ugTexture_capture;
+                ugCLIarg += ":" + ugTexture_capture;
             }
             if (ugTexture_fps > 0){
-                ugCLIcommand += ":fps=" + ugTexture_fps;            
+                ugCLIarg += ":fps=" + ugTexture_fps;            
             }
         }    
+        ugCLIcommand += " " + ugCLIarg;
+		ugCLIargs.push(ugCLIarg);
     }
  }
 
@@ -480,53 +497,61 @@ function cliADD_audioCapture(){
     if(ugAudioCaptureMode == "custom"){
         if(ugCustomFlagsAudio_capture != NONE){
             ugCLIcommand += " " + ugCustomFlagsAudio_capture;
+			ugCLIargs.push.apply(ugCustomFlagsAudio_capture.split(" "));
         }
     } else {
         ugCLIcommand += " -s";
+		ugCLIargs.push("-s");
         if(ugAudioCaptureMode == "portaudio"){
-            ugCLIcommand += " portaudio";
+            ugCLIarg = "portaudio";
             if(ugPortaudio_capture != DEFAULT){
-                ugCLIcommand += ":" + ugPortaudio_capture;
+                ugCLIarg += ":" + ugPortaudio_capture;
             }
         } else if(ugAudioCaptureMode == "coreaudio"){
-            ugCLIcommand += " coreaudio";
+            ugCLIarg = "coreaudio";
             if(ugCoreaudio_capture != DEFAULT){
-                ugCLIcommand += ":" + ugCoreaudio_capture;
+                ugCLIarg += ":" + ugCoreaudio_capture;
             }
         } else if(ugAudioCaptureMode == "wasapi"){
-            ugCLIcommand += " wasapi";
+            ugCLIarg = "wasapi";
             if(ugWasapi_capture != DEFAULT){
-                ugCLIcommand += ":" + ugWasapi_capture;
+                ugCLIarg += ":" + ugWasapi_capture;
             }
         } else if(ugAudioCaptureMode == "jack"){
-            ugCLIcommand += " jack";
+            ugCLIarg = "jack";
             if(ugJack_capture != DEFAULT){
-                ugCLIcommand += ":" + ugJack_capture;
+                ugCLIarg += ":" + ugJack_capture;
             }
 
         } else if(ugAudioCaptureMode == "embedded"){
-            ugCLIcommand += " embedded";
+            ugCLIarg = "embedded";
 
         } else if(ugAudioCaptureMode == "analog"){
-            ugCLIcommand += " analog";
+            ugCLIarg = "analog";
 
         } else if(ugAudioCaptureMode == "AESEBU"){
-            ugCLIcommand += " AESEBU";
+            ugCLIarg = "AESEBU";
 
         } else if(ugAudioCaptureMode == "testcard"){
-            ugCLIcommand += " testcard:volume=" + ugAudio_testcard_capture_vol + ":frequency=" + ugAudio_testcard_capture_freq;
+            ugCLIarg = "testcard:volume=" + ugAudio_testcard_capture_vol + ":frequency=" + ugAudio_testcard_capture_freq;
         }
+        ugCLIcommand += " " + ugCLIarg;
+		ugCLIargs.push(ugCLIarg);
+
     }
 }
 
 function cliADD_videoCodec(){
 	if(ugLibAv_codec != NONE){
-        ugCLIcommand += " -c ";
-        if(ugLibAv_codec != "MJPEG" && ugLibAv_codec_bitrate > 0){
-        	ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec + ":bitrate=" + ugLibAv_codec_bitrate + "M";
+        ugCLIcommand += " -c";
+		ugCLIargs.push("-c");
+         if(ugLibAv_codec != "MJPEG" && ugLibAv_codec_bitrate > 0){
+        	ugCLIarg = "libavcodec:codec=" + ugLibAv_codec + ":bitrate=" + ugLibAv_codec_bitrate + "M";
         } else {
-        	ugCLIcommand += "libavcodec:codec=" + ugLibAv_codec;
+        	ugCLIarg = "libavcodec:codec=" + ugLibAv_codec;
         }
+        ugCLIcommand += " " + ugCLIarg;
+		ugCLIargs.push(ugCLIarg);
     }
 }
 
@@ -536,21 +561,30 @@ function cliADD_audioCodec(){
     if(ugAudioCaptureMode != "testcard"){
         // codecs
         if(ugAudio_codec != NONE){
-            ugCLIcommand += " --audio-codec ";
-            ugCLIcommand += ugAudio_codec;  
+            ugCLIcommand += " --audio-codec";
+			ugCLIargs.push("--audio-codec");
+            ugCLIarg = ugAudio_codec;  
             if(ugAudio_codec == "OPUS"){
                 if(ugAudio_codec_bitrate > 0){
-                    ugCLIcommand += ":bitrate=" + ugAudio_codec_bitrate;
+                    ugCLIarg += ":bitrate=" + ugAudio_codec_bitrate;
                 }
             } else {
                 if(ugAudio_codec_sample_rate > 0){
-                    ugCLIcommand += ":sample_rate=" + ugAudio_codec_sample_rate;
+                    ugCLIarg += ":sample_rate=" + ugAudio_codec_sample_rate;
                 }
             }
+        	ugCLIcommand += " " + ugCLIarg;
+			ugCLIargs.push(ugCLIarg);
         }   
         // audio mapping
         if(ugAudio_channels > 0){
-            ugCLIcommand += " --audio-capture-format channels=" + ugAudio_channels;
+            ugCLIcommand += " --audio-capture-format";
+			ugCLIargs.push("--audio-capture-format");
+
+            ugCLIarg = "channels=" + ugAudio_channels;
+			
+			ugCLIcommand += " " + ugCLIarg;
+			ugCLIargs.push(ugCLIarg);
         }
     }
 }
@@ -559,47 +593,57 @@ function cliADD_audioMapping(){
     // audio mapping
     if(ugAudio_channel_mapping != NONE && ugAudio_channel_mapping != "bang" && ugAudio_channel_mapping.length > 2){
         ugCLIcommand += " --audio-channel-map " + ugAudio_channel_mapping;
+		ugCLIargs.push("--audio-channel-map");
+		ugCLIargs.push(ugAudio_channel_mapping);
     }
 }
         
 function cliADD_videoTestcard(){
     ugCLIcommand += " -t ";
     ugCLIcommand += ugVideoTestcard;
+	ugCLIargs.push("-t");
+	ugCLIargs.push(ugVideoTestcard);
 }
 
 function cliADD_audioTestcard(){
     ugCLIcommand += " -s ";
     ugCLIcommand += ugAudioTestcard;
+	ugCLIargs.push("-s");
+	ugCLIargs.push(ugAudioTestcard);
 }
 
 function cliADD_port(_port){
     if(ugTransmission_mode != 2){
-        ugCLIcommand += " -P" + _port;
+		ugCLIarg = "-P" + _port;
     } else {
-        ugCLIcommand += " -P" + _port + ":" + _port + ":" + (_port+2) + ":" + (_port+2);
+        ugCLIarg = "-P" + _port + ":" + _port + ":" + (_port+2) + ":" + (_port+2);
     }
+
+    ugCLIcommand += " " + ugCLIarg;
+	ugCLIargs.push(ugCLIarg);
 }
 
 function cliADD_videoReceive(){
     if(ugVideoReceiverMode == "custom"){
         if(ugCustomFlagsVideo_receive != NONE){
             ugCLIcommand += " " + ugCustomFlagsVideo_receive;
+			ugCLIargs.push.apply(ugCustomFlagsVideo_receive.split(" "));
         }
     } else {
         ugCLIcommand += " -d ";
+		ugCLIargs.push("-d");
         if(ugVideoReceiverMode == "texture" || ugVideoReceiverMode == "spout" || ugVideoReceiverMode == "syphon"){
-            ugCLIcommand += ugDisplay_flag_prefix + "'" + ugTexture_display + "'";
+            ugCLIarg = ugDisplay_flag_prefix + "'" + ugTexture_display + "'";
             if(ugDisplay_window_show){
-                ugCLIcommand += ":hide-window";
+                ugCLIarg += ":hide-window";
             }
         } else if(ugVideoReceiverMode == "ndi"){
-            ugCLIcommand += "ndi:name=" + "'" + ugNDI_display + "'";
-        }        
-    }
-}
+            ugCLIarg = "ndi:name=" + "'" + ugNDI_display + "'";
+        }
 
-function cliADD_audioReceive(){
-    ugCLIcommand += " audio receive not implemented yet";
+        ugCLIcommand += " " + ugCLIarg;
+		ugCLIargs.push(ugCLIarg);      
+    }
 }
 
 // portaudio, jack, coreaudio, wasapi, embedded, analog, AESEBU, custom, testcard
@@ -607,67 +651,80 @@ function cliADD_audioReceive(){
     if(ugAudioReceiveMode == "custom"){
         if(ugCustomFlagsAudio_receive != NONE){
             ugCLIcommand += " " + ugCustomFlagsAudio_receive;
+			ugCLIargs.push.apply(ugCustomFlagsAudio_receive.split(" "));
         }
     } else {
         ugCLIcommand += " -r";
-        if(ugAudioReceiveMode == "portaudio"){
-            ugCLIcommand += " portaudio";
+ 		ugCLIargs.push("-r");
+       	if(ugAudioReceiveMode == "portaudio"){
+            ugCLIarg = " portaudio";
             if(ugPortaudio_receive != DEFAULT){
-                ugCLIcommand += ":" + ugPortaudio_receive;
+                ugCLIarg += ":" + ugPortaudio_receive;
             }
         } else if(ugAudioReceiveMode == "coreaudio"){
-            ugCLIcommand += " coreaudio";
+            ugCLIarg = "coreaudio";
             if(ugCoreaudio_receive != DEFAULT){
-                ugCLIcommand += ":" + ugCoreaudio_receive;
+                ugCLIarg += ":" + ugCoreaudio_receive;
             }
         } else if(ugAudioReceiveMode == "wasapi"){
-            ugCLIcommand += " wasapi";
+            ugCLIarg = "wasapi";
             if(ugWasapi_receive != DEFAULT){
-                ugCLIcommand += ":" + ugWasapi_receive;
+                ugCLIarg += ":" + ugWasapi_receive;
             }
         } else if(ugAudioReceiveMode == "jack"){
-            ugCLIcommand += " jack";
+            ugCLIarg = "jack";
             if(ugJack_receive != DEFAULT){
-                ugCLIcommand += ":" + ugJack_receive;
+                ugCLIarg += ":" + ugJack_receive;
             }
 
         } else if(ugAudioReceiveMode == "embedded"){
-            ugCLIcommand += " embedded";
+            ugCLIarg = "embedded";
 
         } else if(ugAudioReceiveMode == "analog"){
-            ugCLIcommand += " analog";
+            ugCLIarg = "analog";
 
         } else if(ugAudioReceiveMode == "AESEBU"){
-            ugCLIcommand += " AESEBU";
+            ugCLIarg = "AESEBU";
 
         } 
+        ugCLIcommand += " " + ugCLIarg;
+		ugCLIargs.push(ugCLIarg);      
     }
 }
 
 function cliADD_router(){
     ugCLIcommand += " " + ugRouter;
+	ugCLIargs.push(ugRouter);      
 }
 
 function cliADD_LANip(){
     ugCLIcommand += " " + ugLANip;
+	ugCLIargs.push(ugLANip);      
 }
 
 function cliADD_holePunching(){
-    ugCLIcommand += " -Nholepunch";
-    ugCLIcommand += ":room=" + ugRoomName +"_ch_" + ugChannelNr;
-    ugCLIcommand += ":coord_srv='" + ugHolePuncherURL + ":" + ugHolePuncherPort + "'";
-    ugCLIcommand += ":stun_srv='" + ugStunServerURL + ":" + ugStunServerPort + "'";
+    ugCLIarg = "-Nholepunch";
+    ugCLIarg += ":room=" + ugRoomName +"_ch_" + ugChannelNr;
+    ugCLIarg += ":coord_srv='" + ugHolePuncherURL + ":" + ugHolePuncherPort + "'";
+    ugCLIarg += ":stun_srv='" + ugStunServerURL + ":" + ugStunServerPort + "'";
+
+    ugCLIcommand += " " + ugLANip;
+	ugCLIargs.push(ugLANip);      
 }
 
 function cliADD_captureFilter(){
     if(ugCapture_filter != NONE){
         ugCLIcommand += " --capture-filter " + ugCapture_filter;
+		ugCLIargs.push("--capture-filter");      
+		ugCLIargs.push(ugCapture_filter);      
     }
 }
 
 function cliADD_postprocessing(){
     if(ugReceive_postprocessor != NONE){
         ugCLIcommand += " -p " + ugReceive_postprocessor;
+		ugCLIargs.push("-p");
+		ugCLIargs.push(ugReceive_postprocessor);
     }
 }
 

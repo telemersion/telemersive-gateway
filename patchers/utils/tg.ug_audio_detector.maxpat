@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 145.0, 128.0, 1178.0, 673.0 ],
+		"rect" : [ 585.0, 246.0, 1178.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -189,8 +189,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1013.0, 359.0, 84.0, 22.0 ],
-					"text" : "$1 -r jack:help"
+					"patching_rect" : [ 1013.0, 359.0, 141.0, 22.0 ],
+					"text" : "args $1 -r jack:help, start"
 				}
 
 			}
@@ -205,8 +205,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -436,15 +436,10 @@
 					"id" : "obj-26",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 1013.0, 394.5, 100.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"shell" : "(default)",
-						"stderr" : 1
-					}
-,
-					"text" : "shell @stderr 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "bang" ],
+					"patching_rect" : [ 1013.0, 394.5, 52.0, 23.0 ],
+					"text" : "syscmd"
 				}
 
 			}
@@ -455,8 +450,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 359.0, 86.0, 22.0 ],
-					"text" : "$1 -s jack:help"
+					"patching_rect" : [ 210.0, 359.0, 143.0, 22.0 ],
+					"text" : "args $1 -s jack:help, start"
 				}
 
 			}
@@ -471,8 +466,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -702,15 +697,10 @@
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 210.0, 394.5, 100.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"shell" : "(default)",
-						"stderr" : 1
-					}
-,
-					"text" : "shell @stderr 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "bang" ],
+					"patching_rect" : [ 210.0, 394.5, 52.0, 23.0 ],
+					"text" : "syscmd"
 				}
 
 			}
@@ -771,8 +761,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 808.0, 359.0, 113.0, 22.0 ],
-					"text" : "$1 -r portaudio:help"
+					"patching_rect" : [ 808.0, 359.0, 169.0, 22.0 ],
+					"text" : "args $1 -r portaudio:help, start"
 				}
 
 			}
@@ -799,8 +789,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1034,8 +1024,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1275,8 +1265,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1583,15 +1573,10 @@
 					"id" : "obj-75",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 808.0, 394.5, 100.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"shell" : "(default)",
-						"stderr" : 1
-					}
-,
-					"text" : "shell @stderr 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "bang" ],
+					"patching_rect" : [ 808.0, 394.5, 52.0, 23.0 ],
+					"text" : "syscmd"
 				}
 
 			}
@@ -1638,15 +1623,10 @@
 					"id" : "obj-50",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 615.0, 394.5, 100.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"shell" : "(default)",
-						"stderr" : 1
-					}
-,
-					"text" : "shell @stderr 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "bang" ],
+					"patching_rect" : [ 615.0, 394.5, 52.0, 23.0 ],
+					"text" : "syscmd"
 				}
 
 			}
@@ -1657,15 +1637,10 @@
 					"id" : "obj-49",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 410.0, 394.5, 100.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"shell" : "(default)",
-						"stderr" : 1
-					}
-,
-					"text" : "shell @stderr 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "bang" ],
+					"patching_rect" : [ 410.0, 394.5, 52.0, 23.0 ],
+					"text" : "syscmd"
 				}
 
 			}
@@ -1700,8 +1675,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 615.0, 359.0, 102.0, 22.0 ],
-					"text" : "$1 -s wasapi:help"
+					"patching_rect" : [ 615.0, 359.0, 159.0, 22.0 ],
+					"text" : "args $1 -s wasapi:help, start"
 				}
 
 			}
@@ -1712,8 +1687,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 359.0, 115.0, 22.0 ],
-					"text" : "$1 -s portaudio:help"
+					"patching_rect" : [ 19.0, 359.0, 171.0, 22.0 ],
+					"text" : "args $1 -s portaudio:help, start"
 				}
 
 			}
@@ -1724,8 +1699,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 410.0, 359.0, 117.0, 22.0 ],
-					"text" : "$1 -s coreaudio:help"
+					"patching_rect" : [ 410.0, 359.0, 174.0, 22.0 ],
+					"text" : "args $1 -s coreaudio:help, start"
 				}
 
 			}
@@ -1776,8 +1751,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2011,8 +1986,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2252,14 +2227,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 2,
+							"minor" : 5,
+							"revision" : 3,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 522.0, 593.0, 559.0, 442.0 ],
+						"rect" : [ 872.0, 598.0, 559.0, 442.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2645,15 +2620,10 @@
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 19.0, 394.5, 100.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"shell" : "(default)",
-						"stderr" : 1
-					}
-,
-					"text" : "shell @stderr 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "bang" ],
+					"patching_rect" : [ 19.0, 394.5, 52.0, 23.0 ],
+					"text" : "syscmd"
 				}
 
 			}
@@ -3375,15 +3345,19 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "syscmd.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
