@@ -479,7 +479,7 @@ function cliADD_videoCapture(){
                 ugCLIarg += ":override_fps=" + ugTexture_fps;
             }
         } else if(ugVideoCaptureMode == "spout"){
-            ugCLIarg = " spout";
+            ugCLIarg =  "spout";
             if(ugTexture_capture != DEFAULT){
                 ugCLIarg += ":" + ugTexture_capture;
             }
@@ -657,7 +657,7 @@ function cliADD_audioReceive(){
         ugCLIcommand += " -r";
  		ugCLIargs.push("-r");
        	if(ugAudioReceiveMode == "portaudio"){
-            ugCLIarg = " portaudio";
+            ugCLIarg = "portaudio";
             if(ugPortaudio_receive != DEFAULT){
                 ugCLIarg += ":" + ugPortaudio_receive;
             }
