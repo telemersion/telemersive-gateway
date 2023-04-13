@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 687.0, 283.0, 461.0, 217.0 ],
+		"rect" : [ 687.0, 283.0, 461.0, 118.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,30 +41,6 @@
 		"title" : "Dependencies",
 		"boxes" : [ 			{
 				"box" : 				{
-					"args" : [ "@package", "shell", "@version", "1.0.0", "@url", "https://github.com/jeremybernstein/shell/releases/tag/1.0b4" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-8",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "tg.dep.packageTest.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 32.0, 230.85714285714289, 440.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 136.0, 440.0, 24.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"args" : [ "@package", "Zero", "@version", "1.0.4" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -82,31 +58,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 32.0, 199.85714285714289, 440.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 107.0, 440.0, 24.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "@package", "Sadam Library", "@version", "20.3.7" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "tg.dep.packageTest.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 32.0, 169.85714285714289, 440.0, 24.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 78.0, 440.0, 24.0 ],
+					"presentation_rect" : [ 11.0, 76.0, 440.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -216,7 +168,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 109.5, 287.5, 34.0, 22.0 ],
-					"text" : "sel 4"
+					"text" : "sel 2"
 				}
 
 			}
@@ -227,10 +179,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 8.0, 527.0, 33.0 ],
+					"patching_rect" : [ 31.0, 8.0, 527.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 11.0, 7.0, 248.0, 33.0 ],
+					"presentation_rect" : [ 11.0, 7.0, 248.0, 34.0 ],
 					"text" : "In order to run Gateway without issues, \nthe following packages need to be installed:"
 				}
 
@@ -255,7 +207,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.0, 317.5, 83.0, 49.0 ],
+					"patching_rect" : [ 16.0, 317.5, 83.0, 50.0 ],
 					"text" : "window flags nomenu, window exec"
 				}
 
@@ -301,13 +253,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -400,22 +345,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-8", 0 ]
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "tg.dep.packageTest.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -426,13 +364,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
