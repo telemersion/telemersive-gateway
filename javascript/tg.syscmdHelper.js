@@ -18,6 +18,10 @@ function loadbang(){
 	bang();
 }
 
+function ignore(){
+	// do just that
+}
+
 function bang(){
 	myOS = this.max.os;
 	//post("os:" + myOS + '\n' );
