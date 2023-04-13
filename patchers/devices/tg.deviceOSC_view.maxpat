@@ -1023,7 +1023,8 @@
 									"patching_rect" : [ 263.925925925925867, 69.0, 42.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 226.0, 49.0, 31.0, 14.0 ],
-									"text" : "reset"
+									"text" : "reset",
+									"varname" : "reset"
 								}
 
 							}
@@ -1033,21 +1034,19 @@
 									"bordercolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 									"id" : "obj-13",
 									"keymode" : 1,
-									"linecount" : 2,
 									"lines" : 1,
 									"maxclass" : "textedit",
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 312.0, 248.0, 80.0, 23.0 ],
+									"patching_rect" : [ 312.0, 245.5, 128.0, 25.5 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.0, 49.15625, 177.0, 22.0 ],
 									"readonly" : 1,
 									"rounded" : 0.0,
-									"text" : "10.130.133.120",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"varname" : "inputIP"
+									"text" : "<empty>",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1084,12 +1083,12 @@
 									"patching_rect" : [ 113.0, 14.0, 56.0, 22.0 ],
 									"restore" : 									{
 										"enableTwo" : [ 0 ],
-										"inputIP" : [ "10.130.133.120" ],
 										"inputPort" : [ 10029 ],
 										"outputIPOne" : [ "10.130.133.120" ],
 										"outputIPTwo" : [ "10.130.133.120" ],
 										"outputPortOne" : [ 10028 ],
-										"outputPortTwo" : [ 10027 ]
+										"outputPortTwo" : [ 10027 ],
+										"reset" : [ -1 ]
 									}
 ,
 									"text" : "autopattr",
@@ -1962,7 +1961,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -1978,7 +1977,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-30", 0 ]
 				}
 
