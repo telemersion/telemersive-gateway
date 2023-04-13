@@ -538,7 +538,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "" ],
+					"outlettype" : [ "", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -579,6 +579,19 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 568.629629629629335, 468.0, 24.0, 24.0 ],
+									"varname" : "reset"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-12",
@@ -1023,8 +1036,7 @@
 									"patching_rect" : [ 263.925925925925867, 69.0, 42.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 226.0, 49.0, 31.0, 14.0 ],
-									"text" : "reset",
-									"varname" : "reset"
+									"text" : "reset"
 								}
 
 							}
@@ -1045,7 +1057,7 @@
 									"presentation_rect" : [ 80.0, 49.15625, 177.0, 22.0 ],
 									"readonly" : 1,
 									"rounded" : 0.0,
-									"text" : "<empty>",
+									"text" : "10.130.133.120",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1088,7 +1100,7 @@
 										"outputIPTwo" : [ "10.130.133.120" ],
 										"outputPortOne" : [ 10028 ],
 										"outputPortTwo" : [ 10027 ],
-										"reset" : [ -1 ]
+										"reset" : [ 0 ]
 									}
 ,
 									"text" : "autopattr",
@@ -1454,6 +1466,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-24", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-40", 5 ],
 									"source" : [ "obj-25", 0 ]
 								}
@@ -1484,7 +1503,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-12", 0 ],
+									"destination" : [ "obj-24", 0 ],
 									"order" : 0,
 									"source" : [ "obj-31", 0 ]
 								}
@@ -1800,7 +1819,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 450.166666666666742, 349.0, 95.0, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 75.0, 26.0, 330.0, 80.0 ],
+					"presentation_rect" : [ 75.0, 26.0, 330.0, 129.0 ],
 					"proportion" : 0.5
 				}
 
