@@ -662,6 +662,30 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 372.5, 381.0, 49.0, 22.0 ],
+									"text" : "print #2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 372.5, 336.0, 19.0, 22.0 ],
+									"text" : "t l",
+									"varname" : "connectDump"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -817,7 +841,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 79.0, 190.0, 528.0, 35.0 ],
-									"text" : "script newobject newobj @text $1 @varname udpchain @patching_rect 200. 280. 400. 22., script connect udpchain 0 connect 0"
+									"text" : "script newobject newobj @text $1 @varname udpchain @patching_rect 200. 280. 400. 22., script connect udpchain 0 connect 0, script connect udpchain 1 connectDump 0"
 								}
 
 							}
@@ -932,6 +956,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -2887,7 +2918,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 206.0, 211.0, 96.0, 22.0 ],
+					"patching_rect" : [ 206.0, 215.0, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3438,9 +3469,9 @@
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 52.0, 168.0, 173.0, 22.0 ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 52.0, 168.0, 250.0, 22.0 ],
 					"text" : "#1 #2 #3 1 0",
 					"varname" : "gui"
 				}
@@ -3502,6 +3533,14 @@
 					"destination" : [ "obj-2", 0 ],
 					"midpoints" : [ 61.5, 252.0, 9.5, 252.0, 9.5, 11.0, 61.5, 11.0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"midpoints" : [ 292.5, 200.0, 388.5, 200.0, 388.5, 76.0, 221.5, 76.0 ],
+					"source" : [ "obj-3", 3 ]
 				}
 
 			}

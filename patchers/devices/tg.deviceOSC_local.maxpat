@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 482.5, 484.0, 49.0, 22.0 ],
+					"text" : "print #2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 482.5, 450.0, 19.0, 22.0 ],
+					"text" : "t l",
+					"varname" : "connectDump"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -381,7 +405,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 243.0, 304.0, 635.0, 35.0 ],
-					"text" : "script newobject newobj @text $1 @varname udpchain @patching_rect 320. 380. 400. 22., script connect udpchain 0 connect 0"
+					"text" : "script newobject newobj @text $1 @varname udpchain @patching_rect 320. 380. 400. 22., script connect udpchain 0 connect 0, script connect udpchain 1 connectDump 0"
 				}
 
 			}
@@ -608,6 +632,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
