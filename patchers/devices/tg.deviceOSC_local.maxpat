@@ -43,9 +43,10 @@
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 482.5, 484.0, 49.0, 22.0 ],
-					"text" : "print #2"
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 598.5, 481.0, 96.0, 22.0 ],
+					"text" : "prepend monitor"
 				}
 
 			}
@@ -56,7 +57,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 482.5, 450.0, 19.0, 22.0 ],
+					"patching_rect" : [ 598.5, 450.0, 19.0, 22.0 ],
 					"text" : "t l",
 					"varname" : "connectDump"
 				}
@@ -646,6 +647,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 608.0, 513.0, 14.25, 513.0, 14.25, 101.0, 76.5, 101.0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
