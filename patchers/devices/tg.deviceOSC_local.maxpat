@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 611.0, 450.0, 57.0, 22.0 ],
+					"text" : "tosymbol"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 598.5, 481.0, 96.0, 22.0 ],
+					"patching_rect" : [ 611.0, 482.0, 96.0, 22.0 ],
 					"text" : "prepend monitor"
 				}
 
@@ -57,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 598.5, 450.0, 19.0, 22.0 ],
+					"patching_rect" : [ 611.0, 420.0, 19.0, 22.0 ],
 					"text" : "t l",
 					"varname" : "connectDump"
 				}
@@ -353,7 +365,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 320.5, 450.0, 19.0, 22.0 ],
+					"patching_rect" : [ 333.0, 420.0, 19.0, 22.0 ],
 					"text" : "t l",
 					"varname" : "connect"
 				}
@@ -500,6 +512,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-14", 1 ]
 				}
@@ -617,7 +636,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 330.0, 492.0, 25.5, 492.0, 25.5, 108.0, 76.5, 108.0 ],
+					"midpoints" : [ 342.5, 492.0, 25.5, 492.0, 25.5, 108.0, 76.5, 108.0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -638,7 +657,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -653,7 +672,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 608.0, 513.0, 14.25, 513.0, 14.25, 101.0, 76.5, 101.0 ],
+					"midpoints" : [ 620.5, 513.0, 14.25, 513.0, 14.25, 101.0, 76.5, 101.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
