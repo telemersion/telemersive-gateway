@@ -1,4 +1,4 @@
-# Telemersive Gateway 2.0.0
+# Telemersive Gateway 6.2.0
 
 Telemersive Gateway is a peer to peer application based on MaxMSP. It allows to converse with multiple peers in different networks. A central server (called the [telemersive-router](https://gitlab.zhdk.ch/telemersion/telemersive-router)) allows to create virtual rooms inside which all peers can share their available resources.
 
@@ -35,10 +35,8 @@ The easy way to install all dependencies: open the package launcher and follow t
 
 The telemersive-gateway requires additional MaxMSP packages.
 
-* Sadam Objects
 * Zero
 * Spout / Syphon
-* shell
 
 It also needs a local installation of
 
@@ -49,7 +47,7 @@ Make sure MaxMSP has read-write access rights on the folders ultragrid and NatNe
 
 ## Credits
 
-Martin Froehlich (c) 2022 [Immersive Arts Space](http://immersive-arts.ch)
+Martin Froehlich (c) 2023 [Immersive Arts Space](http://immersive-arts.ch)
 
 Telemersive-gateway is developed in the research project Spatial Dis-/Continuities in Telematic Performances. It is one element of our toolset to enable remote locations to create overlapping spaces on physical and virtual stages.
 
