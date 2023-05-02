@@ -307,8 +307,10 @@ function ugf_audio_channels(_channels){ // 0 = all
 }
 
 function ugf_audio_channel_mapping(_mapping){
-    ugAudio_channel_mapping = _mapping.replace(/\s/g, ""); // removing white spaces
-	dpost("ugAudio_channel_mapping:  fff" + ugAudio_channel_mapping + "\n");
+	if (typeof _mapping === 'string' || _mapping instanceof String){
+    	ugAudio_channel_mapping = _mapping.replace(/\s/g, ""); // removing white spaces
+		dpost("ugAudio_channel_mapping:  fff" + ugAudio_channel_mapping + "\n");
+	}
 }
 
 function ugf_audio_codec_sample_rate(_sample_rate){
@@ -708,8 +710,8 @@ function cliADD_holePunching(){
     ugCLIarg += ":coord_srv='" + ugHolePuncherURL + ":" + ugHolePuncherPort + "'";
     ugCLIarg += ":stun_srv='" + ugStunServerURL + ":" + ugStunServerPort + "'";
 
-    ugCLIcommand += " " + ugLANip;
-	ugCLIargs.push(ugLANip);      
+    //ugCLIcommand += " " + ugLANip;
+	//ugCLIargs.push(ugLANip);      
 }
 
 function cliADD_captureFilter(){
