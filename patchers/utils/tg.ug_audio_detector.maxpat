@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 3,
+			"minor" : 3,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -205,8 +205,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -412,7 +412,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1013.0, 531.339539000000059, 147.0, 35.0 ],
+					"patching_rect" : [ 1013.0, 531.339539000000059, 147.0, 36.0 ],
 					"text" : "prepend menu_jackReceiveRange"
 				}
 
@@ -438,7 +438,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "bang" ],
-					"patching_rect" : [ 1013.0, 394.5, 52.0, 23.0 ],
+					"patching_rect" : [ 1013.0, 394.5, 54.0, 23.0 ],
 					"text" : "syscmd"
 				}
 
@@ -466,8 +466,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -673,7 +673,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 531.339539000000059, 147.0, 35.0 ],
+					"patching_rect" : [ 210.0, 531.339539000000059, 147.0, 36.0 ],
 					"text" : "prepend menu_jackCaptureRange"
 				}
 
@@ -699,7 +699,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "bang" ],
-					"patching_rect" : [ 210.0, 394.5, 52.0, 23.0 ],
+					"patching_rect" : [ 210.0, 394.5, 54.0, 23.0 ],
 					"text" : "syscmd"
 				}
 
@@ -711,15 +711,10 @@
 					"id" : "obj-60",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 1390.0, 394.5, 100.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"shell" : "(default)",
-						"stderr" : 1
-					}
-,
-					"text" : "shell @stderr 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "bang" ],
+					"patching_rect" : [ 1390.0, 394.5, 54.0, 23.0 ],
+					"text" : "syscmd"
 				}
 
 			}
@@ -730,15 +725,10 @@
 					"id" : "obj-61",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 1185.0, 394.5, 100.0, 23.0 ],
-					"saved_object_attributes" : 					{
-						"shell" : "(default)",
-						"stderr" : 1
-					}
-,
-					"text" : "shell @stderr 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "int", "bang" ],
+					"patching_rect" : [ 1185.0, 394.5, 54.0, 23.0 ],
+					"text" : "syscmd"
 				}
 
 			}
@@ -749,8 +739,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1390.0, 359.0, 100.0, 22.0 ],
-					"text" : "$1 -r wasapi:help"
+					"patching_rect" : [ 1390.0, 359.0, 157.0, 22.0 ],
+					"text" : "args $1 -r wasapi:help, start"
 				}
 
 			}
@@ -773,8 +763,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1185.0, 359.0, 115.0, 22.0 ],
-					"text" : "$1 -r coreaudio:help"
+					"patching_rect" : [ 1185.0, 359.0, 172.0, 22.0 ],
+					"text" : "args $1 -r coreaudio:help, start"
 				}
 
 			}
@@ -789,8 +779,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -996,7 +986,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1390.0, 531.339539000000059, 164.0, 35.0 ],
+					"patching_rect" : [ 1390.0, 531.339539000000059, 164.0, 36.0 ],
 					"text" : "prepend menu_wasapiReceiveRange"
 				}
 
@@ -1024,8 +1014,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1265,8 +1255,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1536,7 +1526,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 808.0, 531.339539000000059, 174.0, 35.0 ],
+					"patching_rect" : [ 808.0, 531.339539000000059, 174.0, 36.0 ],
 					"text" : "prepend menu_portaudioReceiveRange"
 				}
 
@@ -1561,7 +1551,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1185.0, 531.339539000000059, 177.0, 35.0 ],
+					"patching_rect" : [ 1185.0, 531.339539000000059, 177.0, 36.0 ],
 					"text" : "prepend menu_coreaudioReceiveRange"
 				}
 
@@ -1575,7 +1565,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "bang" ],
-					"patching_rect" : [ 808.0, 394.5, 52.0, 23.0 ],
+					"patching_rect" : [ 808.0, 394.5, 54.0, 23.0 ],
 					"text" : "syscmd"
 				}
 
@@ -1625,7 +1615,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "bang" ],
-					"patching_rect" : [ 615.0, 394.5, 52.0, 23.0 ],
+					"patching_rect" : [ 615.0, 394.5, 54.0, 23.0 ],
 					"text" : "syscmd"
 				}
 
@@ -1639,7 +1629,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "bang" ],
-					"patching_rect" : [ 410.0, 394.5, 52.0, 23.0 ],
+					"patching_rect" : [ 410.0, 394.5, 54.0, 23.0 ],
 					"text" : "syscmd"
 				}
 
@@ -1751,8 +1741,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1958,7 +1948,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 615.0, 531.339539000000059, 163.0, 35.0 ],
+					"patching_rect" : [ 615.0, 531.339539000000059, 163.0, 36.0 ],
 					"text" : "prepend menu_wasapiCaptureRange"
 				}
 
@@ -1986,8 +1976,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2227,8 +2217,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 3,
+							"minor" : 3,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2498,7 +2488,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 531.339539000000059, 176.0, 35.0 ],
+					"patching_rect" : [ 19.0, 531.339539000000059, 176.0, 36.0 ],
 					"text" : "prepend menu_portaudioCaptureRange"
 				}
 
@@ -2572,7 +2562,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 410.0, 531.339539000000059, 177.0, 35.0 ],
+					"patching_rect" : [ 410.0, 531.339539000000059, 177.0, 36.0 ],
 					"text" : "prepend menu_coreaudioCaptureRange"
 				}
 
@@ -2622,7 +2612,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "bang" ],
-					"patching_rect" : [ 19.0, 394.5, 52.0, 23.0 ],
+					"patching_rect" : [ 19.0, 394.5, 54.0, 23.0 ],
 					"text" : "syscmd"
 				}
 
@@ -3341,23 +3331,19 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "syscmd.mxo",
-				"type" : "iLaX"
+				"name" : "syscmd.mxe64",
+				"type" : "mx64"
 			}
 , 			{
 				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
