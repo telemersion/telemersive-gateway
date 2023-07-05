@@ -1,0 +1,14 @@
+open thispatcher
+appicon <replacePath>build_app/Bundle/icon.icns
+folder <replacePath>media
+folder <replacePath>misc
+folder <replacePath>misc/icons
+folder <replacePath>patchers
+folder <replacePath>patchers/devices
+folder <replacePath>patchers/doc
+folder <replacePath>patchers/peer
+folder <replacePath>patchers/tools
+folder <replacePath>patchers/UDP
+folder <replacePath>patchers/utils
+folder <replacePath>javascript
+folder <replacePath>javascript/node_content

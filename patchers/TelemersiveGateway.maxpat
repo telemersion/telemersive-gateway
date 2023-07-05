@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
+			"minor" : 6,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 65.0, 749.0, 60.0 ],
+		"rect" : [ 50.0, 66.0, 749.0, 60.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,6 +41,38 @@
 		"title" : "TelemersiveGateway",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 366.0, 64.0, 67.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"allwindowsactive" : 0,
+						"appicon_mac" : "",
+						"appicon_win" : "",
+						"audiosupport" : 1,
+						"bundleidentifier" : "ch.zhdk.gitlab.telemersive-gateway",
+						"cantclosetoplevelpatchers" : 1,
+						"cefsupport" : 1,
+						"copysupport" : 1,
+						"database" : 0,
+						"extensions" : 1,
+						"gensupport" : 0,
+						"midisupport" : 1,
+						"noloadbangdefeating" : 0,
+						"overdrive" : 0,
+						"preffilename" : "Max 8 Preferences",
+						"searchformissingfiles" : 1,
+						"statusvisible" : 0,
+						"usesearchpath" : 1
+					}
+,
+					"text" : "standalone"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -61,7 +93,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -354,7 +386,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -509,7 +541,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -546,6 +578,30 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 250.0, 44.5, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 250.0, 11.0, 85.0, 22.0 ],
+									"text" : "r tg.patch.path"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"comment" : "",
 									"id" : "obj-5",
 									"index" : 1,
@@ -567,7 +623,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 132.0, 140.0, 443.0, 34.0 ],
+									"patching_rect" : [ 83.0, 135.0, 443.0, 34.0 ],
 									"text" : "window flags menu, window flags zoom, window flags minimize, window flags close, window flags grow, window exec"
 								}
 
@@ -594,7 +650,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 100.0, 32.0, 21.0 ],
+									"patching_rect" : [ 250.0, 72.0, 32.0, 21.0 ],
 									"text" : "path"
 								}
 
@@ -609,7 +665,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 99.0, 100.0, 494.0, 34.0 ],
+									"patching_rect" : [ 50.0, 95.0, 494.0, 34.0 ],
 									"text" : "window flags nomenu, window flags nozoom, window flags nominimize, window flags noclose, window flags nogrow, window exec"
 								}
 
@@ -628,6 +684,13 @@
 							}
  ],
 						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-2", 0 ]
@@ -650,16 +713,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 0 ],
-									"order" : 1,
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-52", 0 ],
-									"order" : 0,
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -668,6 +722,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"source" : [ "obj-52", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-7", 0 ]
 								}
 
 							}
@@ -903,7 +964,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1358,7 +1419,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "j6khtRVr491dWKU5EnKNWu",
+									"text" : "1vcfJCfTvYkorwPAYDK1LY",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -1719,7 +1780,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
+							"minor" : 6,
 							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
@@ -1757,6 +1818,29 @@
 						"showontab" : 0,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 275.5, 17.0, 76.0, 22.0 ],
+									"text" : "r tg.app.path"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 252.5, 100.0, 99.0, 22.0 ],
+									"text" : "print preset_path"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-23",
 									"maxclass" : "message",
@@ -1835,7 +1919,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -2267,7 +2351,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -2390,7 +2474,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -2561,7 +2645,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 5,
+																			"minor" : 6,
 																			"revision" : 0,
 																			"architecture" : "x64",
 																			"modernui" : 1
@@ -3055,7 +3139,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -3719,7 +3803,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -3871,7 +3955,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -3944,7 +4028,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -4611,7 +4695,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -5026,7 +5110,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -5347,7 +5431,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -5588,7 +5672,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -5909,7 +5993,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -6431,7 +6515,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 230.5, 17.0, 30.0, 30.0 ]
+									"patching_rect" : [ 230.5, 6.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -6469,7 +6553,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -6792,7 +6876,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -7145,7 +7229,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -7967,7 +8051,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -8504,7 +8588,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -8561,7 +8645,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -9684,7 +9768,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -10053,6 +10137,8 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
+														"node_bin_path" : "",
+														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -10255,7 +10341,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -10365,7 +10451,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -10988,7 +11074,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -11756,7 +11842,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -12027,7 +12113,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -12134,7 +12220,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 5,
+																			"minor" : 6,
 																			"revision" : 0,
 																			"architecture" : "x64",
 																			"modernui" : 1
@@ -12556,7 +12642,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 121.5, 40.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "<empty>" ]
+																		"filepath" : [ "" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -12685,7 +12771,6 @@
 																	"patching_rect" : [ 56.0, 245.5, 213.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 350.0, 22.0 ],
-																	"text" : "<empty>",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -13086,7 +13171,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -13505,7 +13590,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "/Applications/_Video/uv-qt_continous.app" ]
+																		"filepath" : [ "> locate uv-qt.app" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -13547,7 +13632,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 5,
+																			"minor" : 6,
 																			"revision" : 0,
 																			"architecture" : "x64",
 																			"modernui" : 1
@@ -13752,7 +13837,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 5,
+																			"minor" : 6,
 																			"revision" : 0,
 																			"architecture" : "x64",
 																			"modernui" : 1
@@ -14062,7 +14147,7 @@
 																	"patching_rect" : [ 50.0, 314.0, 311.0, 20.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 364.0, 22.0 ],
-																	"text" : "/Applications/_Video/uv-qt_continous.app",
+																	"text" : "> locate uv-qt.app",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -14713,7 +14798,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
+											"minor" : 6,
 											"revision" : 0,
 											"architecture" : "x64",
 											"modernui" : 1
@@ -14807,7 +14892,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -15279,7 +15364,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -15986,7 +16071,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -16114,7 +16199,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 5,
+																			"minor" : 6,
 																			"revision" : 0,
 																			"architecture" : "x64",
 																			"modernui" : 1
@@ -16201,7 +16286,7 @@
 																						"fileversion" : 1,
 																						"appversion" : 																						{
 																							"major" : 8,
-																							"minor" : 5,
+																							"minor" : 6,
 																							"revision" : 0,
 																							"architecture" : "x64",
 																							"modernui" : 1
@@ -17419,7 +17504,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 5,
+																			"minor" : 6,
 																			"revision" : 0,
 																			"architecture" : "x64",
 																			"modernui" : 1
@@ -18043,7 +18128,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 5,
+															"minor" : 6,
 															"revision" : 0,
 															"architecture" : "x64",
 															"modernui" : 1
@@ -18111,9 +18196,9 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 264.0, 26.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"peerName" : [ "MartinsMac" ],
-																		"roomName" : [ "Osmosis" ],
-																		"roomPwd" : [ "2022" ]
+																		"peerName" : [ "MartinMac" ],
+																		"roomName" : [ "zmodule" ],
+																		"roomPwd" : [ "2023" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -18183,7 +18268,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 5,
+																			"minor" : 6,
 																			"revision" : 0,
 																			"architecture" : "x64",
 																			"modernui" : 1
@@ -18418,7 +18503,7 @@
 																	"patching_rect" : [ 107.5, 121.0, 201.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 80.0, 0.0, 180.0, 20.0 ],
-																	"text" : "MartinsMac",
+																	"text" : "MartinMac",
 																	"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																	"varname" : "peerName"
 																}
@@ -18441,7 +18526,7 @@
 																	"patching_rect" : [ 156.5, 177.5, 199.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 80.0, 40.0, 180.0, 20.0 ],
-																	"text" : "2022",
+																	"text" : "2023",
 																	"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																	"varname" : "roomPwd"
 																}
@@ -18463,7 +18548,7 @@
 																	"patching_rect" : [ 132.0, 149.5, 199.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 80.0, 20.0, 180.0, 20.0 ],
-																	"text" : "Osmosis",
+																	"text" : "zmodule",
 																	"textcolor" : [ 0.054901960784314, 0.054901960784314, 0.054901960784314, 1.0 ],
 																	"varname" : "roomName"
 																}
@@ -18662,7 +18747,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.5, 459.0, 308.0, 22.0 ],
-													"text" : "join MartinsMac Osmosis \"2022\""
+													"text" : "join MartinMac zmodule \"2023\""
 												}
 
 											}
@@ -19160,7 +19245,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"order" : 0,
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-34", 3 ],
+									"order" : 1,
 									"source" : [ "obj-14", 0 ]
 								}
 
@@ -19258,6 +19352,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-40", 0 ],
 									"source" : [ "obj-23", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-24", 0 ]
 								}
 
 							}
@@ -19660,21 +19761,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "UI_Switch.png",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/media",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "config.json",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "config_peer.json",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -19691,14 +19792,14 @@
 			}
 , 			{
 				"name" : "jsui_toggle_svg.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "maxBusClient.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript/node_content",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/javascript/node_content",
 				"patcherrelativepath" : "../javascript/node_content",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -19711,14 +19812,14 @@
 			}
 , 			{
 				"name" : "peerList.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "peerLogic.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -19734,295 +19835,362 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "shellHelper.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
-				"patcherrelativepath" : "../javascript",
-				"type" : "TEXT",
+				"name" : "syscmd.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "tg.Channel.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
+				"patcherrelativepath" : "./peer",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.OSDependentPatches.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Page.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Peer.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.PeerBus.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.PeerList.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Rack.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
 				"patcherrelativepath" : "./peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.SVGButton.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "tg.channel.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/peer",
-				"patcherrelativepath" : "./peer",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "tg.dep.packageTest.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dep.test.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.device.menu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.deviceMC_button.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : "./devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceMC_icon.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : "./devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceMC_local.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : "./devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceMC_view.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : "./devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceOSC_button.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : "./devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceOSC_icon.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : "./devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceOSC_info.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : "./devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceOSC_local.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : "./devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceOSC_view.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
+				"patcherrelativepath" : "./devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.deviceUG_button.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_icon.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_info.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_local.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.deviceUG_view.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/devices",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : "./devices",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dynRangeMenu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dynamic.editor.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.filesync.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.main.menu.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.monitor.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ndi_detector.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.root.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.sendC.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.sendR.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.shell.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.syphon_detector.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "tg.syscmd.maxpat",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
+				"patcherrelativepath" : "./utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.syscmdHelper.js",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
+				"patcherrelativepath" : "../javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.texture.selection.gate.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ug.streamParser.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ug_audio_detector.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ultragrid.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/javascript",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.appearance.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.view.simplewin.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_AudioCapture.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_AudioReceive.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_advanced.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_videoCapture.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_videoReceive.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : "./utils",
 				"type" : "JSON",
 				"implicit" : 1
@@ -20034,7 +20202,7 @@
 , 			{
 				"name" : "zero.menu.format.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/zero/patchers",
-				"patcherrelativepath" : "../../../../../../../../Documents/Max 8/Packages/zero/patchers",
+				"patcherrelativepath" : "../../../../../../Users/mfroehli/Documents/Max 8/Packages/zero/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
