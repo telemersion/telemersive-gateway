@@ -445,7 +445,7 @@ function cliADD_advancedFlags(){
     if(ugCustomFlagsAdvanced != NONE){
         ugCLIcommand += " " + ugCustomFlagsAdvanced;
 
-		ugCLIargs.push.apply(ugCustomFlagsAdvanced.split(" "));
+		ugCLIargs = ugCLIargs.concat(ugCustomFlagsAdvanced.split(" "));
     }
 }
 
@@ -462,7 +462,7 @@ function cliADD_videoCapture(){
     if(ugVideoCaptureMode == "custom"){
         if(ugCustomFlagsVideo_capture != NONE){
             ugCLIcommand += " " + ugCustomFlagsVideo_capture;
-			ugCLIargs.push.apply(ugCustomFlagsVideo_capture.split(" "));
+			ugCLIargs = ugCLIargs.concat(ugCustomFlagsVideo_capture.split(" "));
         }
     } else {
         ugCLIcommand += " -t";
@@ -499,7 +499,7 @@ function cliADD_audioCapture(){
     if(ugAudioCaptureMode == "custom"){
         if(ugCustomFlagsAudio_capture != NONE){
             ugCLIcommand += " " + ugCustomFlagsAudio_capture;
-			ugCLIargs.push.apply(ugCustomFlagsAudio_capture.split(" "));
+			ugCLIargs = ugCLIargs.concat(ugCustomFlagsAudio_capture.split(" "));
         }
     } else {
         ugCLIcommand += " -s";
