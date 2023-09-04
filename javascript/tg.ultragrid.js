@@ -629,7 +629,7 @@ function cliADD_videoReceive(){
     if(ugVideoReceiverMode == "custom"){
         if(ugCustomFlagsVideo_receive != NONE){
             ugCLIcommand += " " + ugCustomFlagsVideo_receive;
-			ugCLIargs.push.apply(ugCustomFlagsVideo_receive.split(" "));
+			ugCLIargs = ugCLIargs.concat(ugCustomFlagsVideo_receive.split(" "));
         }
     } else {
         ugCLIcommand += " -d ";
@@ -653,7 +653,7 @@ function cliADD_audioReceive(){
     if(ugAudioReceiveMode == "custom"){
         if(ugCustomFlagsAudio_receive != NONE){
             ugCLIcommand += " " + ugCustomFlagsAudio_receive;
-			ugCLIargs.push.apply(ugCustomFlagsAudio_receive.split(" "));
+			ugCLIargs = ugCLIargs.concat(ugCustomFlagsAudio_receive.split(" "));
         }
     } else {
         ugCLIcommand += " -r";
