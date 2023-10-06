@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 0,
+			"minor" : 3,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 306.0, 203.0, 725.0, 627.0 ],
+		"rect" : [ 628.0, 254.0, 725.0, 627.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -85,14 +85,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 0,
+							"minor" : 3,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 715.0, 192.0, 554.0, 560.0 ],
+						"rect" : [ 1046.0, 168.0, 554.0, 560.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -257,13 +257,14 @@
 								"box" : 								{
 									"fontsize" : 8.0,
 									"id" : "obj-32",
-									"linecount" : 8,
+									"linecount" : 9,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 65.0, 359.0, 84.5, 80.0 ],
-									"text" : "clear, append add..., append ... osc device, append ... ultragrid device, append ... natnet2OSC device, enableitem 0 0, enableitem 2 $1"
+									"patching_rect" : [ 70.0, 356.0, 86.0, 91.0 ],
+									"presentation_linecount" : 10,
+									"text" : "clear, append add..., append ... osc device, append ... ultragrid device, append ... natnet2OSC device, append ... stage control device, enableitem 0 0, enableitem 2 $1"
 								}
 
 							}
@@ -288,7 +289,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 297.0, 166.0, 47.0, 35.0 ],
+									"patching_rect" : [ 297.0, 166.0, 47.0, 36.0 ],
 									"text" : "\"select device\""
 								}
 
@@ -301,7 +302,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 167.0, 166.0, 122.5, 89.0 ],
+									"patching_rect" : [ 167.0, 166.0, 122.5, 91.0 ],
 									"text" : "\"Warning: No valid ultragrid path detected. Check [config -> externals] and select installed ultragrid app.\""
 								}
 
@@ -645,7 +646,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
-					"items" : [ "empty", ",", "tg.deviceOSC", "tg.deviceOSC_view", ",", "tg.deviceUG", "tg.deviceUG_view", ",", "tg.deviceMC", "tg.deviceMC_view" ],
+					"items" : [ "empty", ",", "tg.deviceOSC", "tg.deviceOSC_view", ",", "tg.deviceUG", "tg.deviceUG_view", ",", "tg.deviceMC", "tg.deviceMC_view", ",", "tg.deviceSC", "tg.deviceSC_view" ],
 					"maxclass" : "umenu",
 					"menumode" : 1,
 					"numinlets" : 1,
@@ -915,7 +916,7 @@
 					"fontsize" : 10.0,
 					"hint" : "select device",
 					"id" : "obj-9",
-					"items" : [ "add...", ",", "...", "osc", "device", ",", "...", "ultragrid", "device", ",", "...", "natnet2OSC", "device" ],
+					"items" : [ "add...", ",", "...", "osc", "device", ",", "...", "ultragrid", "device", ",", "...", "natnet2OSC", "device", ",", "...", "stage", "control", "device" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -962,7 +963,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 502.999999999999886, 458.0, 197.0, 62.0 ],
+					"patching_rect" : [ 502.999999999999886, 458.0, 197.0, 64.0 ],
 					"text" : "script newobject bpatcher $1 @size #4 38 @args $2 #1 #2 @presentation_rect 0 0 #4 38 @varname device @presentation 1"
 				}
 
@@ -975,7 +976,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 336.5, 356.5, 105.0, 35.0 ],
+					"patching_rect" : [ 336.5, 356.5, 105.0, 36.0 ],
 					"text" : "presentation_rect 0 0 $1 38"
 				}
 
@@ -1317,8 +1318,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "../utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
