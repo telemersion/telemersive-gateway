@@ -21,7 +21,7 @@
 identity="-"
 
 # path to your app
-apppath="/Users/user/Desktop/TelemersiveGateway.app"
+apppath="/Users/mfroehli/Downloads/TelemersiveGateway/TelemersiveGateway.app"
 
 entitlements_file="${0}.entitlements"
 
