@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 6,
-			"revision" : 0,
+			"minor" : 5,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 696.0, 458.0, 336.0, 202.0 ],
+		"rect" : [ 792.0, 450.0, 336.0, 300.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,18 +41,92 @@
 		"title" : "About",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 45.0, 342.5, 367.0, 22.0 ],
+					"text" : "https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/home"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 45.0, 424.5, 136.0, 36.0 ],
+					"text" : ";\r\nmax launch_browser $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 19.0, 377.0, 214.0, 22.0 ],
+					"text" : "https://data.snf.ch/grants/grant/192745"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.850980392156863, 0.568627450980392, 0.129411764705882, 0.68 ],
+					"id" : "obj-7",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 19.0, 315.5, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 73.0, 199.0, 176.0, 20.0 ],
+					"rounded" : 8.0,
+					"text" : "Spatial Dis/Continuities",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.850980392156863, 0.568627450980392, 0.129411764705882, 1.0 ],
+					"id" : "obj-4",
+					"maxclass" : "textbutton",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 45.0, 279.5, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 30.0, 27.0, 262.0, 20.0 ],
+					"rounded" : 8.0,
+					"text" : "Telemersive Gateway V8.0",
+					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595186999999999,
 					"id" : "obj-2",
-					"linecount" : 6,
+					"linecount" : 14,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 38.0, 78.5, 262.0, 84.0 ],
+					"patching_rect" : [ 31.0, 54.5, 262.0, 193.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 6,
-					"presentation_rect" : [ 30.0, 64.5, 262.0, 84.0 ],
-					"text" : "created by \n\nMartin Fröhlich, Florian Bruggisser, Joel Gähwiler\n\n\n(c) 2023 immersive-arts.ch"
+					"presentation_linecount" : 14,
+					"presentation_rect" : [ 59.5, 70.5, 203.0, 193.0 ],
+					"text" : "created by \n\nMartin Fröhlich\n\nand \n\nFlorian Bruggisser, Joel Gähwiler\n\nrealized for SNF Project\n\n\n\n\n(c) 2023 immersive-arts.ch",
+					"textjustification" : 1
 				}
 
 			}
@@ -65,7 +139,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 344.0, 397.5, 67.0, 21.0 ],
+					"patching_rect" : [ 344.0, 397.5, 67.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -80,7 +154,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 347.5, 40.0, 21.0 ],
+					"patching_rect" : [ 344.0, 347.5, 40.0, 22.0 ],
 					"text" : "round"
 				}
 
@@ -94,7 +168,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 373.5, 210.0, 21.0 ],
+					"patching_rect" : [ 344.0, 373.5, 210.0, 22.0 ],
 					"text" : "window size $1 $2 $3 $4, window exec"
 				}
 
@@ -108,7 +182,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 344.0, 95.5, 158.0, 21.0 ],
+					"patching_rect" : [ 344.0, 95.5, 158.0, 22.0 ],
 					"text" : "b"
 				}
 
@@ -122,7 +196,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 344.0, 321.5, 56.0, 21.0 ],
+					"patching_rect" : [ 344.0, 321.5, 56.0, 22.0 ],
 					"text" : "zl join"
 				}
 
@@ -136,7 +210,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 381.0, 279.5, 158.0, 21.0 ],
+					"patching_rect" : [ 381.0, 279.5, 158.0, 22.0 ],
 					"text" : "vexpr $f1 + $f2"
 				}
 
@@ -150,7 +224,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 250.5, 158.0, 21.0 ],
+					"patching_rect" : [ 344.0, 250.5, 158.0, 22.0 ],
 					"text" : "vexpr $f1 - $f2"
 				}
 
@@ -164,7 +238,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 483.0, 177.5, 86.0, 21.0 ],
+					"patching_rect" : [ 483.0, 177.5, 86.0, 22.0 ],
 					"text" : "vexpr $i1 * 0.5"
 				}
 
@@ -178,7 +252,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 205.5, 86.0, 21.0 ],
+					"patching_rect" : [ 344.0, 205.5, 86.0, 22.0 ],
 					"text" : "vexpr $i1 * 0.5"
 				}
 
@@ -192,7 +266,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 344.0, 177.5, 56.0, 21.0 ],
+					"patching_rect" : [ 344.0, 177.5, 56.0, 22.0 ],
 					"text" : "zl slice 2"
 				}
 
@@ -206,8 +280,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 483.0, 146.5, 84.0, 21.0 ],
-					"text" : "zl reg 336 202"
+					"patching_rect" : [ 483.0, 146.5, 82.0, 22.0 ],
+					"text" : "zl reg 336 300"
 				}
 
 			}
@@ -220,7 +294,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 344.0, 68.5, 58.0, 21.0 ],
+					"patching_rect" : [ 344.0, 68.5, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -234,7 +308,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
-					"patching_rect" : [ 344.0, 123.5, 67.0, 21.0 ],
+					"patching_rect" : [ 344.0, 123.5, 67.0, 22.0 ],
 					"text" : "screensize"
 				}
 
@@ -255,21 +329,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 15.0,
-					"id" : "obj-3",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 38.0, 32.0, 187.0, 23.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 28.0, 187.0, 23.0 ],
-					"text" : "Telemersive Gateway V7.0"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"angle" : 0.0,
 					"grad1" : [ 0.74902, 0.788235, 0.929412, 0.470588 ],
 					"grad2" : [ 0.658824, 0.658824, 0.721569, 0.501961 ],
@@ -278,9 +337,9 @@
 					"mode" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 336.0, 202.0 ],
+					"patching_rect" : [ 2.0, 0.0, 340.0, 266.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 336.0, 202.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 336.0, 299.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0
 				}
@@ -303,6 +362,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"order" : 1,
 					"source" : [ "obj-14", 0 ]
@@ -314,6 +380,13 @@
 					"destination" : [ "obj-19", 0 ],
 					"order" : 0,
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -384,8 +457,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
