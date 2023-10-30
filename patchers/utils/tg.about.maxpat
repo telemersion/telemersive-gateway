@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -107,7 +107,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 27.0, 262.0, 20.0 ],
 					"rounded" : 8.0,
-					"text" : "Telemersive Gateway V8.0",
+					"text" : "Telemersive Gateway V8.0.1",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
