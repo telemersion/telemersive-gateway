@@ -92,10 +92,12 @@ function loadbang(){
     dpost("gathering information on the patcher hierarchy..\n");
 }
 
-function ug_printoutCLI(){
-    generate();
-	post("ultragrid - channel# " + ugChannelNr + ": CLI: " + ugCLIcommand.toString() + "\n");
-	outlet(1, "cli_command", ugCLIcommand.toString());
+function ug_printoutCLI(_enable){
+	if(_enable){
+    	generate();
+		post("ultragrid - channel# " + ugChannelNr + ": CLI: " + ugCLIcommand.toString() + "\n");
+		outlet(1, "cli_command", ugCLIcommand.toString());
+	}
 }
 
 function ug_verboseExecute(_verbose){
