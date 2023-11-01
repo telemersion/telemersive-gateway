@@ -21,7 +21,7 @@
 identity="-"
 
 # path to your app
-apppath="/Users/mfroehli/Downloads/TelemersiveGateway/TelemersiveGateway.app"
+apppath="/Volumes/Ddrive/04_projects/Telematics/01_telemersion/telemersive-gateway_app/Telemersivegateway_801/TelemersiveGateway.app"
 
 entitlements_file="${0}.entitlements"
 
@@ -36,9 +36,17 @@ frameworks=(
     "MaxLua"
     "MaxLuaImpl"
 )
+
 libs=(
     "libmozjs185"
     "libmozjs185_impl"
+)
+
+externals=(
+    "iasnet"
+    "jit.gl.syphonclient"
+    "syscmd"
+    "zero.browse"
 )
 
 apps=(
@@ -70,6 +78,12 @@ for fw in "${frameworks[@]}"
 do
     echo "Codesigning Framework: ${fw}"
     codesign --force --sign "$identity" --entitlements "${entitlements_file}" "${apppath}/Contents/Frameworks/${fw}.framework"
+done
+
+for ex in "${externals[@]}"
+do
+    echo "Codesigning Externals: ${ex}"
+    codesign --force --sign "$identity" --entitlements "${entitlements_file}" "${apppath}/Contents/Resources/C74/externals/${ex}.mxo"
 done
 
 # Sign dynamic libraries
