@@ -21,7 +21,7 @@
 identity="Mac Developer: Martin Fröhlich (9XFUJ78J3P)"
 
 # path to your app
-apppath="/Volumes/Ddrive/04_projects/Telematics/01_telemersion/telemersive-gateway_app/Telemersivegateway_802/TelemersiveGateway.app"
+apppath="/Volumes/Ddrive/04_projects/Telematics/01_telemersion/telemersive-gateway_app/Telemersivegateway_803/TelemersiveGateway.app"
 
 entitlements_file="${0}.entitlements"
 
