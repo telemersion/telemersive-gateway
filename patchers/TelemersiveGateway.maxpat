@@ -1492,7 +1492,7 @@
 									"patching_rect" : [ 498.708333333333258, 203.0, 115.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.833333333333371, 113.5, 159.0, 22.0 ],
-									"text" : "telemersion.zhdk.ch"
+									"text" : "<empty>"
 								}
 
 							}
@@ -1729,7 +1729,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "936vCyoKtd3WgFbikUFuj9",
+									"text" : "unkown",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -7446,12 +7446,13 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-46",
+													"linecount" : 3,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 28.5, 441.0, 244.5, 22.0 ],
-													"text" : "read A://.telemersion/config_peer.json"
+													"text" : "read C:/Users/IAAdmin/.telemersion/config_peer.json"
 												}
 
 											}
@@ -7475,7 +7476,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 450.0, 441.0, 384.5, 22.0 ],
-													"text" : "read A://.telemersion/config.json"
+													"text" : "read C:/Users/IAAdmin/.telemersion/config.json"
 												}
 
 											}
@@ -14266,7 +14267,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 121.5, 40.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/natnet/NatNetThree2OSC.exe" ]
+																		"filepath" : [ "D:/00_core/NatNet2OSC/Motive3.x/NatNetThree2OSC.exe" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -14395,7 +14396,7 @@
 																	"patching_rect" : [ 56.0, 245.5, 213.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 350.0, 22.0 ],
-																	"text" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/natnet/NatNetThree2OSC.exe",
+																	"text" : "D:/00_core/NatNet2OSC/Motive3.x/NatNetThree2OSC.exe",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -16115,7 +16116,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/ultragrid/uv.exe" ]
+																		"filepath" : [ "C:/Program Files/UltraGrid/UltraGrid-1.8.3/uv.exe" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -16673,7 +16674,7 @@
 																	"patching_rect" : [ 50.0, 314.0, 311.0, 20.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 364.0, 22.0 ],
-																	"text" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/ultragrid/uv.exe",
+																	"text" : "C:/Program Files/UltraGrid/UltraGrid-1.8.3/uv.exe",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -18987,7 +18988,7 @@
 																					"outlettype" : [ "", "", "", "" ],
 																					"patching_rect" : [ 181.0, 7.0, 56.0, 22.0 ],
 																					"restore" : 																					{
-																						"card" : [ "Ethernet 2" ]
+																						"card" : [ "" ]
 																					}
 ,
 																					"text" : "autopattr",
@@ -19508,7 +19509,6 @@
 																					"presentation_rect" : [ 0.0, -0.0, 180.0, 20.0 ],
 																					"readonly" : 1,
 																					"rounded" : 0.0,
-																					"text" : "Ethernet 2",
 																					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 																					"varname" : "card"
 																				}
@@ -21532,7 +21532,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.5, 459.0, 308.0, 22.0 ],
-													"text" : "join"
+													"text" : "join Monitors ZANGEZI \"2023\""
 												}
 
 											}
@@ -22574,6 +22574,24 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "UI_Switch.png",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "config.json",
+				"bootpath" : "~/.telemersion",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "config_peer.json",
+				"bootpath" : "~/.telemersion",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
@@ -22585,15 +22603,13 @@
 			}
 , 			{
 				"name" : "jsui_toggle_svg.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
-				"patcherrelativepath" : "../javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "maxBusClient.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript/node_content",
-				"patcherrelativepath" : "../javascript/node_content",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript/node_content",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -22605,15 +22621,13 @@
 			}
 , 			{
 				"name" : "peerList.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
-				"patcherrelativepath" : "../javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "peerLogic.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
-				"patcherrelativepath" : "../javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -22632,191 +22646,296 @@
 				"type" : "mx64"
 			}
 , 			{
+				"name" : "tg.Channel.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/peer",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "tg.OSDependentPatches.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Page.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
-				"patcherrelativepath" : "./peer",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Peer.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
-				"patcherrelativepath" : "./peer",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.PeerBus.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
-				"patcherrelativepath" : "./peer",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.PeerList.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
-				"patcherrelativepath" : "./peer",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.Rack.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
-				"patcherrelativepath" : "./peer",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/peer",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.SVGButton.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.about.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "tg.channel.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer",
-				"patcherrelativepath" : "./peer",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dep.packageTest.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.dep.test.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.device.menu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceSC_button.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceSC_icon.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceSC_info.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceSC_local.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceSC_view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceUG_button.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceUG_icon.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceUG_info.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceUG_local.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.deviceUG_view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/devices",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.dynRangeMenu.audio.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.dynRangeMenu.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.dynamic.editor.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.filesync.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.main.menu.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.monitor.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ndi_detector.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveC.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.root.js",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript",
-				"patcherrelativepath" : "../javascript",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.sendC.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.sendR.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.spout_detector.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.syscmd.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.syscmdHelper.js",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.texture.selection.gate.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.ug.streamParser.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.ug_audio_detector.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.ultragrid.js",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.view.appearance.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tg.view.simplewin.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_AudioCapture.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_AudioReceive.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_advanced.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_videoCapture.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ug_cheatsheet_videoReceive.maxpat",
-				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
-				"patcherrelativepath" : "./utils",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
 				"type" : "JSON",
 				"implicit" : 1
 			}

@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -126,7 +126,7 @@
 					"patching_rect" : [ 187.0, 74.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"toggle" : [ 0 ],
-						"toggle[1]" : [ 0 ],
+						"toggle[1]" : [ 1 ],
 						"toggle[2]" : [ 0 ]
 					}
 ,
@@ -167,19 +167,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"filename" : "MacintoshHD:/Users/maybites/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code/deviceButton.js",
-					"id" : "obj-3",
-					"maxclass" : "jsui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 327.0, 40.0, 244.0, 237.0 ]
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -204,16 +191,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "deviceButton.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
-				"patcherrelativepath" : "../../code",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "jsui_toggle_svg.js",
-				"bootpath" : "~/Arbeiten/01_projekte/181111_IASpace/01_projekte/20xx_Telematik/01_dev/telemersive-gateway/code",
-				"patcherrelativepath" : "../../code",
+				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
