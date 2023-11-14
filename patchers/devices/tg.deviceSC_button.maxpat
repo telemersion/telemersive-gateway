@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 449.0, 240.0, 268.0, 247.0 ],
+		"rect" : [ 449.0, 240.0, 250.0, 248.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -129,7 +129,7 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "tg.deviceOSC_icon.maxpat",
+					"name" : "tg.deviceSC_icon.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -218,7 +218,7 @@
 			}
 , 			{
 				"box" : 				{
-					"bgoncolor" : [ 0.052632, 0.359294, 1.0, 1.0 ],
+					"bgoncolor" : [ 0.77602, 0.003302, 0.838803, 1.0 ],
 					"id" : "obj-6",
 					"ignoreclick" : 1,
 					"maxclass" : "textbutton",
@@ -310,7 +310,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "tg.deviceOSC_icon.maxpat",
+				"name" : "tg.deviceSC_icon.maxpat",
 				"bootpath" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
