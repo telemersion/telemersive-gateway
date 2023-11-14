@@ -18,10 +18,10 @@
 
 # '-' means ad-hoc signing without Developer Certificate
 # Specifiy the name of your certificate if you have one
-identity="-"
+identity="Mac Developer: Martin Fröhlich (9XFUJ78J3P)"
 
 # path to your app
-apppath="/Volumes/Ddrive/04_projects/Telematics/01_telemersion/telemersive-gateway_app/Telemersivegateway_801/TelemersiveGateway.app"
+apppath="/Volumes/Ddrive/04_projects/Telematics/01_telemersion/telemersive-gateway_app/Telemersivegateway_802/TelemersiveGateway.app"
 
 entitlements_file="${0}.entitlements"
 
@@ -62,6 +62,8 @@ entitlements='
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+        <key>com.apple.security.device.microphone</key>
+        <true/>
         <key>com.apple.security.device.audio-input</key>
         <true/>
         <key>com.apple.security.device.camera</key>
