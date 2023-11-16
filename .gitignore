@@ -5,4 +5,3 @@ package-lock.json
 node_content/node_modules/
 *.log
 javascript/node_content/node_modules/
-step_02_maxScriptForExport.txt

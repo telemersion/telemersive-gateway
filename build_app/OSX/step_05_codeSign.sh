@@ -23,7 +23,7 @@ identity="Mac Developer: Martin Fröhlich (9XFUJ78J3P)"
 # path to your app
 apppath="/Volumes/Ddrive/04_projects/Telematics/01_telemersion/telemersive-gateway_app/Telemersivegateway_803/TelemersiveGateway.app"
 
-entitlements_file="${0}.entitlements"
+entitlements_file="TelemersiveGateway.entitlements"
 
 frameworks=(
     "Chromium Embedded Framework"
@@ -56,25 +56,6 @@ apps=(
     "TelemersiveGateway Helper"
 )
 
-# Grant your app some capabilities like camera or microphone access
-entitlements='
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-        <key>com.apple.security.device.microphone</key>
-        <true/>
-        <key>com.apple.security.device.audio-input</key>
-        <true/>
-        <key>com.apple.security.device.camera</key>
-        <true/>
-</dict>
-</plist>
-'
-
-# Write entitlements file
-echo "$entitlements" > "${entitlements_file}"
-
 # Sign frameworks
 for fw in "${frameworks[@]}"
 do
@@ -105,6 +86,3 @@ done
 # Sign the actual app
 echo "Now codesigning app: ${apppath}"
 codesign --force --sign "$identity" --entitlements "${entitlements_file}" "${apppath}"
-
-# Clean up
-rm "${entitlements_file}"

@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 792.0, 450.0, 336.0, 300.0 ],
+		"rect" : [ 696.0, 409.0, 336.0, 300.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -59,8 +59,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 424.5, 136.0, 36.0 ],
-					"text" : ";\r\nmax launch_browser $1"
+					"patching_rect" : [ 45.0, 424.5, 136.0, 35.0 ],
+					"text" : ";\rmax launch_browser $1"
 				}
 
 			}
@@ -87,7 +87,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 19.0, 315.5, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 73.0, 199.0, 176.0, 20.0 ],
+					"presentation_rect" : [ 80.0, 219.0, 176.0, 20.0 ],
 					"rounded" : 8.0,
 					"text" : "Spatial Dis/Continuities",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -117,15 +117,15 @@
 					"fontname" : "Arial",
 					"fontsize" : 11.595186999999999,
 					"id" : "obj-2",
-					"linecount" : 14,
+					"linecount" : 16,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 54.5, 262.0, 193.0 ],
+					"patching_rect" : [ 31.0, 54.5, 262.0, 214.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 14,
-					"presentation_rect" : [ 59.5, 70.5, 203.0, 193.0 ],
-					"text" : "created by \n\nMartin Fröhlich\n\nand \n\nFlorian Bruggisser, Joel Gähwiler\n\nrealized for SNF Project\n\n\n\n\n(c) 2023 immersive-arts.ch",
+					"presentation_linecount" : 16,
+					"presentation_rect" : [ 60.5, 57.5, 215.0, 214.0 ],
+					"text" : "created by \n\nMartin Fröhlich\n\nand \n\nFlorian Bruggisser (telemersive-bus), \nJoel Gähwiler (max externals) and\nRoman Häfeli (telemersive-switchboard)\n\nrealized for SNF Project\n\n\n\n\n(c) 2023 immersive-arts.ch",
 					"textjustification" : 1
 				}
 
@@ -139,7 +139,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 344.0, 397.5, 67.0, 22.0 ],
+					"patching_rect" : [ 344.0, 397.5, 67.0, 21.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -154,7 +154,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 347.5, 40.0, 22.0 ],
+					"patching_rect" : [ 344.0, 347.5, 40.0, 21.0 ],
 					"text" : "round"
 				}
 
@@ -168,7 +168,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 373.5, 210.0, 22.0 ],
+					"patching_rect" : [ 344.0, 373.5, 210.0, 21.0 ],
 					"text" : "window size $1 $2 $3 $4, window exec"
 				}
 
@@ -182,7 +182,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 344.0, 95.5, 158.0, 22.0 ],
+					"patching_rect" : [ 344.0, 95.5, 158.0, 21.0 ],
 					"text" : "b"
 				}
 
@@ -196,7 +196,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 344.0, 321.5, 56.0, 22.0 ],
+					"patching_rect" : [ 344.0, 321.5, 56.0, 21.0 ],
 					"text" : "zl join"
 				}
 
@@ -210,7 +210,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 381.0, 279.5, 158.0, 22.0 ],
+					"patching_rect" : [ 381.0, 279.5, 158.0, 21.0 ],
 					"text" : "vexpr $f1 + $f2"
 				}
 
@@ -224,7 +224,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 250.5, 158.0, 22.0 ],
+					"patching_rect" : [ 344.0, 250.5, 158.0, 21.0 ],
 					"text" : "vexpr $f1 - $f2"
 				}
 
@@ -238,7 +238,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 483.0, 177.5, 86.0, 22.0 ],
+					"patching_rect" : [ 483.0, 177.5, 86.0, 21.0 ],
 					"text" : "vexpr $i1 * 0.5"
 				}
 
@@ -252,7 +252,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 344.0, 205.5, 86.0, 22.0 ],
+					"patching_rect" : [ 344.0, 205.5, 86.0, 21.0 ],
 					"text" : "vexpr $i1 * 0.5"
 				}
 
@@ -266,7 +266,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 344.0, 177.5, 56.0, 22.0 ],
+					"patching_rect" : [ 344.0, 177.5, 56.0, 21.0 ],
 					"text" : "zl slice 2"
 				}
 
@@ -280,7 +280,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 483.0, 146.5, 82.0, 22.0 ],
+					"patching_rect" : [ 483.0, 146.5, 82.0, 21.0 ],
 					"text" : "zl reg 336 300"
 				}
 
@@ -294,7 +294,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 344.0, 68.5, 58.0, 22.0 ],
+					"patching_rect" : [ 344.0, 68.5, 58.0, 21.0 ],
 					"text" : "loadbang"
 				}
 
@@ -308,7 +308,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "list", "list" ],
-					"patching_rect" : [ 344.0, 123.5, 67.0, 22.0 ],
+					"patching_rect" : [ 344.0, 123.5, 67.0, 21.0 ],
 					"text" : "screensize"
 				}
 
