@@ -1,0 +1,14 @@
+open thispatcher
+appicon D:/00_core/MaxMSP_Packages/telemersive-gateway/build_app/Bundle/icon.ico
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/media
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/misc
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/misc/icons
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/devices
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/doc
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/peer
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/tools
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/UDP
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript
+folder D:/00_core/MaxMSP_Packages/telemersive-gateway/javascript/node_content
