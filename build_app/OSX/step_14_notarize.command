@@ -5,8 +5,8 @@ cd "$BASEDIR"
 
 # path to your app
 keychain="Telemersive-Notarization"
-zippath="../distribution/OSX/TelemersiveGateway_Notarize.zip"
+zippath="../distribution/OSX/packed/TelemersiveGateway_signed.pkg"
 
-echo "Notarizing APP: ${zippath}"
+echo "Notarizing Package: ${zippath}"
 
 xcrun notarytool submit "${zippath}" --keychain-profile "${keychain}" --wait
