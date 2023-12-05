@@ -6,3 +6,4 @@ node_content/node_modules/
 *.log
 javascript/node_content/node_modules/
 build_app/distribution
+*.pkg
