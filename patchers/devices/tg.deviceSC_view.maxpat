@@ -506,7 +506,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@helpurl", "https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/OSC_GUI", "@hint", "menu" ],
+					"args" : [ "@helpurl", "https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/StageControl_GUI", "@hint", "menu" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
