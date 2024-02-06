@@ -1492,7 +1492,7 @@
 									"patching_rect" : [ 498.708333333333258, 203.0, 115.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.833333333333371, 113.5, 159.0, 22.0 ],
-									"text" : "telemersion.zhdk.ch"
+									"text" : "bang"
 								}
 
 							}
@@ -1729,7 +1729,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "1NYNtyUdXZxUkjP8koB469",
+									"text" : "29bUkLmS9rTiambcWk7Ezf",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -11102,6 +11102,8 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
+														"node_bin_path" : "",
+														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -13679,6 +13681,7 @@
 																			}
 , 																			{
 																				"box" : 																				{
+																					"hidden" : 1,
 																					"id" : "obj-41",
 																					"maxclass" : "comment",
 																					"numinlets" : 1,
@@ -14260,7 +14263,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 121.5, 40.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "" ]
+																		"filepath" : [ "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/natnet/s" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -14389,6 +14392,7 @@
 																	"patching_rect" : [ 56.0, 245.5, 213.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 350.0, 22.0 ],
+																	"text" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/natnet/s",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -16108,7 +16112,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "/Applications/_Network/ultragrid/186/uv-qt.app" ]
+																		"filepath" : [ "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/ultragrid/uv-qt.app" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -16666,7 +16670,7 @@
 																	"patching_rect" : [ 50.0, 314.0, 311.0, 20.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 364.0, 22.0 ],
-																	"text" : "/Applications/_Network/ultragrid/186/uv-qt.app",
+																	"text" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/ultragrid/uv-qt.app",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -18980,7 +18984,7 @@
 																					"outlettype" : [ "", "", "", "" ],
 																					"patching_rect" : [ 181.0, 7.0, 56.0, 22.0 ],
 																					"restore" : 																					{
-																						"card" : [ "" ]
+																						"card" : [ "en0" ]
 																					}
 ,
 																					"text" : "autopattr",
@@ -19501,6 +19505,7 @@
 																					"presentation_rect" : [ 0.0, -0.0, 180.0, 20.0 ],
 																					"readonly" : 1,
 																					"rounded" : 0.0,
+																					"text" : "en0",
 																					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 																					"varname" : "card"
 																				}
@@ -21524,7 +21529,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 373.5, 459.0, 308.0, 22.0 ],
-													"text" : "join MartinsMax ZANGEZI \"2023\""
+													"text" : "join"
 												}
 
 											}
@@ -22566,20 +22571,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "config.json",
-				"bootpath" : "~/.telemersion",
-				"patcherrelativepath" : "../../../../../../Users/mfroehli/.telemersion",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "config_peer.json",
-				"bootpath" : "~/.telemersion",
-				"patcherrelativepath" : "../../../../../../Users/mfroehli/.telemersion",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "fit_jweb_to_bounds.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "TEXT",
