@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 5,
+			"revision" : 6,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -107,7 +107,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 27.0, 262.0, 20.0 ],
 					"rounded" : 8.0,
-					"text" : "Telemersive Gateway V8.1.0",
+					"text" : "Telemersive Gateway V8.1.1",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -318,7 +318,7 @@
 					"comment" : "",
 					"hidden" : 1,
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -483,9 +483,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
