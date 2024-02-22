@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 4,
+			"minor" : 6,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -598,14 +598,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 4,
+							"minor" : 6,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 595.0, 497.0, 782.0, 571.0 ],
+						"rect" : [ 884.0, 297.0, 782.0, 571.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -772,14 +772,14 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 4,
+											"minor" : 6,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 616.0, 148.0, 235.0, 356.0 ],
+										"rect" : [ 896.0, 143.0, 235.0, 356.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1114,7 +1114,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 263.925925925925867, 9.0, 42.0, 20.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 42.0, 28.0, 31.0, 14.0 ],
+									"presentation_rect" : [ 226.0, 49.15625, 31.0, 14.0 ],
 									"text" : "reset"
 								}
 
