@@ -1,6 +1,6 @@
 # Telemersive Gateway 8.1.2
 
-Telemersive Gateway is a peer to peer application based on MaxMSP. It allows to converse with multiple peers in different networks. A central server (called the [telemersive-router](https://gitlab.zhdk.ch/telemersion/telemersive-router)) allows to create virtual rooms inside which all peers can share their available resources.
+Telemersive Gateway is a peer to peer application based on MaxMSP. It allows to converse with multiple peers in different networks. A central server (called the [telemersive-router](https://github.com/telemersion/telemersive-router)) allows to create virtual rooms inside which all peers can share their available resources.
 
 ![Diagram](media/DiagramUserView.svg "Solution")
 
@@ -16,9 +16,9 @@ The Userinterface makes the configuration of the CLI apps very simple and user f
 
 ![Diagram](media/TG_device_ultragrid_2peers.png "GUI")
 
-For more information please visit  the [documentation](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/home).
+For more information please visit  the [documentation](https://github.com/telemersion/telemersive-gateway/wiki).
 
-For issues, please report them [here](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/issues).
+For issues, please report them [here](https://github.com/telemersion/telemersive-gateway/issues).
 
 ## Installation
 
@@ -26,7 +26,7 @@ For issues, please report them [here](https://gitlab.zhdk.ch/telemersion/telemer
 You need to have [MaxMSP](https://cycling74.com/) installed. There is no need for a license if you just want to work with telemersive-gateway.
 
 ### Download
-To install the Telemersive Gateway: download the [latest release](https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/releases) and drop the unpacked folder inside the [MaxMSP package folder](https://docs.cycling74.com/max8/vignettes/packages) and call it 'telemersive-gateway'. It is not important that the directory is called this way, but otherwise the MaxProject will not work.
+To install the Telemersive Gateway: download the [latest release](https://github.com/telemersion/telemersive-gateway/releases) and drop the unpacked folder inside the [MaxMSP package folder](https://docs.cycling74.com/max8/vignettes/packages) and call it 'telemersive-gateway'. It is not important that the directory is called this way, but otherwise the MaxProject will not work.
 
 Restart Max. Now you should be able to find the telemersive-gateway package inside the package manager.
 
