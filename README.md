@@ -47,7 +47,11 @@ Make sure MaxMSP has read-write access rights on the folders ultragrid and NatNe
 
 ## Credits
 
-Martin Froehlich (c) 2023 [Immersive Arts Space](http://immersive-arts.ch)
+(c) 2024 [Immersive Arts Space](http://immersive-arts.ch)
+
+* Martin Froehlich
+* Florian Bruggisser
+* Joel Gähwiler
 
 Telemersive-gateway is developed in the research project Spatial Dis-/Continuities in Telematic Performances. It is one element of our toolset to enable remote locations to create overlapping spaces on physical and virtual stages.
 
