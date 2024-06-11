@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 6,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 687.0, 283.0, 461.0, 118.0 ],
+		"rect" : [ 539.0, 569.0, 466.0, 135.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,6 +41,30 @@
 		"title" : "Dependencies",
 		"boxes" : [ 			{
 				"box" : 				{
+					"args" : [ "@package", "Shell", "@url", "https://github.com/jeremybernstein/shell/releases" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-1",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "tg.dep.packageTest.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 31.0, 171.0, 440.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 11.0, 76.0, 440.0, 24.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "@package", "Zero", "@version", "1.0.4" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -58,7 +82,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 32.0, 199.85714285714289, 440.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 11.0, 76.0, 440.0, 24.0 ],
+					"presentation_rect" : [ 11.0, 102.0, 440.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -168,7 +192,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 109.5, 287.5, 34.0, 22.0 ],
-					"text" : "sel 2"
+					"text" : "sel 3"
 				}
 
 			}
@@ -253,6 +277,13 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
