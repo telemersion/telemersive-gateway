@@ -1730,7 +1730,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "5t9NudNRjiEnz1muDXLwSD",
+									"text" : "rj9zYE5ZJdxK6b6oz2s64y",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -2098,7 +2098,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 450.0, 700.0 ],
+						"rect" : [ 34.0, 34.0, 450.0, 700.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -11108,6 +11108,8 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
+														"node_bin_path" : "",
+														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -11317,7 +11319,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
+										"rect" : [ 34.0, 60.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -13688,7 +13690,7 @@
 																					"patching_rect" : [ 106.000005333333348, 194.0, 178.0, 20.0 ],
 																					"presentation" : 1,
 																					"presentation_rect" : [ 0.0, 0.0, 248.0, 20.0 ],
-																					"text" : "locate > NatNetThree2OSC.exe",
+																					"text" : "locate > NatNetFour2OSC.exe",
 																					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 																				}
 
@@ -13854,6 +13856,7 @@
 															}
 , 															{
 																"box" : 																{
+																	"hidden" : 1,
 																	"id" : "obj-18",
 																	"linecount" : 2,
 																	"maxclass" : "comment",
@@ -13876,6 +13879,7 @@
 																	"embed" : 1,
 																	"enablehscroll" : 0,
 																	"enablevscroll" : 0,
+																	"hidden" : 1,
 																	"id" : "obj-11",
 																	"lockeddragscroll" : 0,
 																	"lockedsize" : 0,
@@ -14262,7 +14266,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 121.5, 40.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "D:/00_coreApps/build_telemersiveGateway/TelemersiveGateway/externals/natnet/NatNetFour2OSC.exe" ]
+																		"filepath" : [ "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/natnet/NatNetFour2OSC.exe" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -14390,7 +14394,7 @@
 																	"patching_rect" : [ 56.0, 245.5, 213.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 350.0, 22.0 ],
-																	"text" : "D:/00_coreApps/build_telemersiveGateway/TelemersiveGateway/externals/natnet/NatNetFour2OSC.exe",
+																	"text" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/natnet/NatNetFour2OSC.exe",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -15006,14 +15010,15 @@
 														"boxes" : [ 															{
 																"box" : 																{
 																	"id" : "obj-15",
+																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 705.0, 135.0, 84.0, 22.0 ],
+																	"patching_rect" : [ 705.0, 135.0, 84.0, 36.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 318.0, 4.0, 77.0, 22.0 ],
-																	"text" : "NDI Mac libs",
+																	"presentation_rect" : [ 312.0, 4.0, 87.0, 22.0 ],
+																	"text" : "NDI 6 Mac libs",
 																	"textjustification" : 1
 																}
 
@@ -15027,8 +15032,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 705.0, 180.0, 287.0, 36.0 ],
-																	"presentation_linecount" : 3,
-																	"text" : ";\r\nmax launchbrowser http://ndi.link/NDIRedistV5Apple"
+																	"text" : ";\r\nmax launchbrowser http://ndi.link/NDIRedistV6Apple"
 																}
 
 															}
@@ -15909,6 +15913,7 @@
 															}
 , 															{
 																"box" : 																{
+																	"hidden" : 1,
 																	"id" : "obj-9",
 																	"linecount" : 3,
 																	"maxclass" : "comment",
@@ -15925,14 +15930,15 @@
 , 															{
 																"box" : 																{
 																	"id" : "obj-21",
+																	"linecount" : 2,
 																	"maxclass" : "message",
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 599.0, 41.0, 75.0, 22.0 ],
+																	"patching_rect" : [ 599.0, 41.0, 75.0, 36.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 238.0, 4.0, 78.0, 22.0 ],
-																	"text" : "NDI Win libs",
+																	"presentation_rect" : [ 225.0, 4.0, 85.0, 22.0 ],
+																	"text" : "NDI 6 Win libs",
 																	"textjustification" : 1
 																}
 
@@ -15946,7 +15952,7 @@
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 599.0, 86.0, 256.0, 36.0 ],
-																	"text" : ";\r\nmax launchbrowser http://ndi.link/NDIRedistV5"
+																	"text" : ";\r\nmax launchbrowser http://ndi.link/NDIRedistV6"
 																}
 
 															}
@@ -15959,7 +15965,7 @@
 																	"outlettype" : [ "" ],
 																	"patching_rect" : [ 394.0, 44.0, 97.0, 22.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 136.0, 4.0, 100.0, 22.0 ],
+																	"presentation_rect" : [ 123.0, 4.0, 100.0, 22.0 ],
 																	"text" : "download 1.9.8+",
 																	"textjustification" : 1
 																}
@@ -16134,7 +16140,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "D:/00_coreApps/build_telemersiveGateway/TelemersiveGateway/externals/ultragrid/uv.exe" ]
+																		"filepath" : [ "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/ultragrid/uv.exe" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -16150,7 +16156,7 @@
 																	"numoutlets" : 0,
 																	"patching_rect" : [ 147.5, 230.0, 150.0, 20.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 40.0, 5.0, 94.0, 20.0 ],
+																	"presentation_rect" : [ 40.0, 5.0, 81.0, 20.0 ],
 																	"text" : "Ultragrid app"
 																}
 
@@ -16164,6 +16170,7 @@
 																	"embed" : 1,
 																	"enablehscroll" : 0,
 																	"enablevscroll" : 0,
+																	"hidden" : 1,
 																	"id" : "obj-26",
 																	"lockeddragscroll" : 0,
 																	"lockedsize" : 0,
@@ -16690,7 +16697,7 @@
 																	"patching_rect" : [ 50.0, 314.0, 311.0, 20.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 364.0, 22.0 ],
-																	"text" : "D:/00_coreApps/build_telemersiveGateway/TelemersiveGateway/externals/ultragrid/uv.exe",
+																	"text" : "D:/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/ultragrid/uv.exe",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
