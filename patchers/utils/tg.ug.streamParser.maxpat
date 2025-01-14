@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 388.0, 152.0, 1263.0, 891.0 ],
+		"rect" : [ 1033.0, 90.0, 1263.0, 891.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -536,11 +536,11 @@
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
-					"numinlets" : 19,
-					"numoutlets" : 19,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 257.5, 177.0, 870.0, 22.0 ],
-					"text" : "route [Spout] [SPOUT] [Syphon] [SYPHON] [Decklink [DeckLink [Syphon [SYPHON [Spout [SPOUT [screen [AVfoundation [NDI [ndi [Audio [dshow] [GL] [testcard]"
+					"numinlets" : 21,
+					"numoutlets" : 21,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 257.5, 177.0, 951.0, 22.0 ],
+					"text" : "route [Spout] [SPOUT] [Syphon] [SYPHON] [Decklink [DeckLink [syphon [Syphon [SYPHON [spout [Spout [SPOUT [screen [AVfoundation [NDI [ndi [Audio [dshow] [GL] [testcard]"
 				}
 
 			}
@@ -1049,14 +1049,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-6", 17 ]
+					"source" : [ "obj-6", 19 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"source" : [ "obj-6", 15 ]
+					"source" : [ "obj-6", 17 ]
 				}
 
 			}
@@ -1085,6 +1085,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-6", 16 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"source" : [ "obj-6", 15 ]
 				}
 
 			}
@@ -1168,7 +1182,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-6", 16 ]
+					"source" : [ "obj-6", 18 ]
 				}
 
 			}

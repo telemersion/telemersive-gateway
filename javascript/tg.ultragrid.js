@@ -433,7 +433,7 @@ function get_path(){
 
 function cliADD_params(){
     ugCLIcommand += " --param ";
-	ugCLIarg = "log-nocolor"
+	ugCLIarg = "log-color=no"
     if(ugParams != NONE){
         ugCLIarg += "," + ugParams;
     }
