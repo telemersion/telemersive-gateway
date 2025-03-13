@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 585.0, 246.0, 1178.0, 673.0 ],
+		"rect" : [ 198.0, 378.0, 1178.0, 673.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -205,8 +205,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -412,7 +412,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1013.0, 531.339539000000059, 147.0, 36.0 ],
+					"patching_rect" : [ 1013.0, 531.339539000000059, 147.0, 35.0 ],
 					"text" : "prepend menu_jackReceiveRange"
 				}
 
@@ -466,8 +466,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -673,7 +673,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 210.0, 531.339539000000059, 147.0, 36.0 ],
+					"patching_rect" : [ 210.0, 531.339539000000059, 147.0, 35.0 ],
 					"text" : "prepend menu_jackCaptureRange"
 				}
 
@@ -779,8 +779,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -986,7 +986,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1390.0, 531.339539000000059, 164.0, 36.0 ],
+					"patching_rect" : [ 1390.0, 531.339539000000059, 164.0, 35.0 ],
 					"text" : "prepend menu_wasapiReceiveRange"
 				}
 
@@ -1014,8 +1014,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1255,14 +1255,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 746.0, 287.0, 355.0, 421.0 ],
+						"rect" : [ 422.0, 304.0, 506.0, 545.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1292,12 +1292,36 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 197.25, 314.0, 144.0, 22.0 ],
+									"text" : "regexp in: @substitute in:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 208.5, 240.0, 159.0, 22.0 ],
+									"text" : "regexp out: @substitute out:"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 51.0, 237.0, 214.0, 22.0 ],
+									"patching_rect" : [ 51.0, 286.0, 214.0, 22.0 ],
 									"text" : "regexp \"input channels\" @substitute in"
 								}
 
@@ -1322,7 +1346,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 3.0, 353.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 3.0, 458.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1334,7 +1358,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 241.0, 348.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 241.0, 453.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1345,7 +1369,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 195.0, 271.839539000000059, 111.0, 22.0 ],
+									"patching_rect" : [ 195.0, 376.0, 111.0, 22.0 ],
 									"text" : "route UltraGrid Exit"
 								}
 
@@ -1357,7 +1381,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 51.0, 271.839539000000059, 57.0, 22.0 ],
+									"patching_rect" : [ 51.0, 376.0, 57.0, 22.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -1419,7 +1443,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 51.0, 353.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 51.0, 458.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1491,8 +1515,36 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-3", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-4", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
 									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -1526,7 +1578,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 808.0, 531.339539000000059, 174.0, 36.0 ],
+					"patching_rect" : [ 808.0, 531.339539000000059, 174.0, 35.0 ],
 					"text" : "prepend menu_portaudioReceiveRange"
 				}
 
@@ -1551,7 +1603,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1185.0, 531.339539000000059, 177.0, 36.0 ],
+					"patching_rect" : [ 1185.0, 531.339539000000059, 177.0, 35.0 ],
 					"text" : "prepend menu_coreaudioReceiveRange"
 				}
 
@@ -1741,8 +1793,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1948,7 +2000,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 615.0, 531.339539000000059, 163.0, 36.0 ],
+					"patching_rect" : [ 615.0, 531.339539000000059, 163.0, 35.0 ],
 					"text" : "prepend menu_wasapiCaptureRange"
 				}
 
@@ -1976,8 +2028,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2217,14 +2269,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 872.0, 598.0, 559.0, 442.0 ],
+						"rect" : [ 367.0, 252.0, 534.0, 495.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2254,12 +2306,36 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 196.0, 303.0, 144.0, 22.0 ],
+									"text" : "regexp in: @substitute in:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 5,
+									"outlettype" : [ "", "", "", "", "" ],
+									"patching_rect" : [ 207.5, 236.0, 159.0, 22.0 ],
+									"text" : "regexp out: @substitute out:"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 50.0, 233.0, 214.0, 22.0 ],
+									"patching_rect" : [ 50.0, 272.0, 214.0, 22.0 ],
 									"text" : "regexp \"input channels\" @substitute in"
 								}
 
@@ -2284,7 +2360,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 2.0, 345.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 2.0, 424.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -2296,7 +2372,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 263.0, 345.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 263.0, 424.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -2307,7 +2383,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 194.0, 263.839539000000059, 111.0, 22.0 ],
+									"patching_rect" : [ 194.0, 342.0, 111.0, 22.0 ],
 									"text" : "route UltraGrid Exit"
 								}
 
@@ -2319,7 +2395,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 263.839539000000059, 57.0, 22.0 ],
+									"patching_rect" : [ 50.0, 342.0, 57.0, 22.0 ],
 									"text" : "tosymbol"
 								}
 
@@ -2381,7 +2457,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 345.839538999999945, 30.0, 30.0 ]
+									"patching_rect" : [ 50.0, 424.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -2453,8 +2529,36 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-3", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-4", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
 									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-6", 0 ]
 								}
 
 							}
@@ -2488,7 +2592,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 531.339539000000059, 176.0, 36.0 ],
+					"patching_rect" : [ 19.0, 531.339539000000059, 176.0, 35.0 ],
 					"text" : "prepend menu_portaudioCaptureRange"
 				}
 
@@ -2562,7 +2666,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 410.0, 531.339539000000059, 177.0, 36.0 ],
+					"patching_rect" : [ 410.0, 531.339539000000059, 177.0, 35.0 ],
 					"text" : "prepend menu_coreaudioCaptureRange"
 				}
 
@@ -3331,19 +3435,19 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "syscmd.mxe64",
-				"type" : "mx64"
+				"name" : "syscmd.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "tg.generateMenu.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tg.receiveR.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/telemersive-gateway/patchers/utils",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/utils",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
