@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1112.0, 390.0, 336.0, 300.0 ],
+		"rect" : [ 1470.0, 569.0, 336.0, 300.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -46,8 +46,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 342.5, 367.0, 22.0 ],
-					"text" : "https://gitlab.zhdk.ch/telemersion/telemersive-gateway/-/wikis/home"
+					"patching_rect" : [ 45.0, 342.5, 305.0, 22.0 ],
+					"text" : "https://github.com/telemersion/telemersive-gateway/wiki"
 				}
 
 			}
@@ -107,7 +107,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 30.0, 27.0, 262.0, 20.0 ],
 					"rounded" : 8.0,
-					"text" : "Telemersive Gateway 9.0.0",
+					"text" : "Telemersive Gateway 9.0.1",
 					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
