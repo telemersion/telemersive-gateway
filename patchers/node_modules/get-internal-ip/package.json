@@ -1,0 +1,26 @@
+{
+  "name": "get-internal-ip",
+  "version": "3.0.0",
+  "description": "Get your internal IPv4 / IPv6 address",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onur2677/get-internal-ip.git"
+  },
+  "keywords": [
+    "get",
+    "ip",
+    "address",
+    "ipv4",
+    "ipv6"
+  ],
+  "author": "Onur Atam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onur2677/get-internal-ip/issues"
+  },
+  "homepage": "https://github.com/onur2677/get-internal-ip#readme"
+}
