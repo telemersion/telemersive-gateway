@@ -1433,7 +1433,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 100.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "213.55.241.108",
+									"text" : "unkown",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1464,7 +1464,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 20.0, 98.0, 22.0 ],
 									"readonly" : 1,
-									"text" : "192.168.1.100",
+									"text" : "unkown",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1692,7 +1692,7 @@
 									"patching_rect" : [ 73.333333333333371, 225.5, 103.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 80.833333333333371, 65.5, 159.0, 22.0 ],
-									"text" : "Space"
+									"text" : "unkown"
 								}
 
 							}
@@ -1730,7 +1730,7 @@
 									"patching_rect" : [ 44.041666666666657, 259.5, 172.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 250.0, 20.0, 224.0, 22.0 ],
-									"text" : "mPqLXzJ3xYa5gi5BJu9idT",
+									"text" : "fZjw2JkNuizrGFFhSr2UQ6",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 1
 								}
@@ -2098,7 +2098,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 450.0, 700.0 ],
+						"rect" : [ 34.0, 34.0, 450.0, 700.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6891,7 +6891,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 380.5, 215.0, 115.333333333333371, 22.0 ],
-													"text" : "\">not joined<\"",
+													"text" : "unkown",
 													"textjustification" : 1
 												}
 
@@ -11104,6 +11104,8 @@
 													"saved_object_attributes" : 													{
 														"autostart" : 1,
 														"defer" : 0,
+														"node_bin_path" : "",
+														"npm_bin_path" : "",
 														"watch" : 1
 													}
 ,
@@ -13681,6 +13683,7 @@
 																			}
 , 																			{
 																				"box" : 																				{
+																					"hidden" : 1,
 																					"id" : "obj-41",
 																					"maxclass" : "comment",
 																					"numinlets" : 1,
@@ -14262,7 +14265,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 121.5, 40.0, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "" ]
+																		"filepath" : [ "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/natnet/s" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -14391,6 +14394,7 @@
 																	"patching_rect" : [ 56.0, 245.5, 213.0, 22.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 350.0, 22.0 ],
+																	"text" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/natnet/s",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -15909,6 +15913,7 @@
 															}
 , 															{
 																"box" : 																{
+																	"hidden" : 1,
 																	"id" : "obj-9",
 																	"linecount" : 3,
 																	"maxclass" : "comment",
@@ -15958,10 +15963,10 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 394.0, 44.0, 97.0, 22.0 ],
+																	"patching_rect" : [ 394.0, 44.0, 104.0, 22.0 ],
 																	"presentation" : 1,
-																	"presentation_rect" : [ 123.0, 4.0, 100.0, 22.0 ],
-																	"text" : "download 1.9.8+",
+																	"presentation_rect" : [ 117.0, 4.0, 106.0, 22.0 ],
+																	"text" : "download 1.10.1+",
 																	"textjustification" : 1
 																}
 
@@ -16135,7 +16140,7 @@
 																	"outlettype" : [ "", "", "", "" ],
 																	"patching_rect" : [ 342.0, 7.5, 56.0, 22.0 ],
 																	"restore" : 																	{
-																		"filepath" : [ "/Applications/_Network/ultragrid/187/uv-qt.app" ]
+																		"filepath" : [ "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/ultragrid/uv-qt.app" ]
 																	}
 ,
 																	"text" : "autopattr",
@@ -16165,6 +16170,7 @@
 																	"embed" : 1,
 																	"enablehscroll" : 0,
 																	"enablevscroll" : 0,
+																	"hidden" : 1,
 																	"id" : "obj-26",
 																	"lockeddragscroll" : 0,
 																	"lockedsize" : 0,
@@ -16691,7 +16697,7 @@
 																	"patching_rect" : [ 50.0, 314.0, 311.0, 20.0 ],
 																	"presentation" : 1,
 																	"presentation_rect" : [ 40.0, 53.0, 364.0, 22.0 ],
-																	"text" : "/Applications/_Network/ultragrid/187/uv-qt.app",
+																	"text" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers/externals/ultragrid/uv-qt.app",
 																	"varname" : "filepath",
 																	"wordwrap" : 0
 																}
@@ -17526,7 +17532,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 0.0, 26.0, 450.0, 674.0 ],
+										"rect" : [ 34.0, 60.0, 450.0, 674.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -20864,8 +20870,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 527.333333333333371, 172.5, 35.0, 35.0 ],
-													"text" : "KKKG"
+													"patching_rect" : [ 527.333333333333371, 172.5, 33.0, 35.0 ],
+													"text" : "bang"
 												}
 
 											}
@@ -21589,7 +21595,7 @@
 , 											{
 												"box" : 												{
 													"id" : "obj-48",
-													"items" : "KKKG",
+													"items" : "<empty>",
 													"maxclass" : "umenu",
 													"numinlets" : 1,
 													"numoutlets" : 3,
@@ -22658,8 +22664,8 @@
 			}
 , 			{
 				"name" : "maxBusClient.js",
-				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/javascript/node_content",
-				"patcherrelativepath" : "../javascript/node_content",
+				"bootpath" : "/Volumes/Ddrive/00_core/MaxMSP_Packages/telemersive-gateway/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
